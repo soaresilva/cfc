@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Organization extends Model
 {
-    public function events() 
+    public function events()
     {
-       return $this->hasMany(Event::class);
+        return $this->hasMany(Event::class);
     }
 }

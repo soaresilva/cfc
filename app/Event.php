@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    public function organization() 
+    public function organization()
     {
-       return $this->belongsTo(Organization::class);
+        return $this->belongsTo(Organization::class);
     }
 
-    public function trips() 
+    public function trips()
     {
-       return $this->hasMany(Trip::class);
+        return $this->hasMany(Trip::class);
     }
 }
