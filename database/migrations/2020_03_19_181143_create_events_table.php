@@ -13,8 +13,8 @@ class CreateEventsTable extends Migration
      */
     public function up()
     {
-        Schema::table('events', function (Blueprint $table) {
-            $table->id();
+        Schema::create('events', function (Blueprint $table) {
+            $table->unsignedBigInteger('id');
             $table->string('name');
             $table->unsignedBigInteger('organization_id');
             $table->text('description')->nullable();
