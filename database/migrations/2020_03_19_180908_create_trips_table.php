@@ -22,7 +22,7 @@ class CreateTripsTable extends Migration
             $table->dateTime('flight_date')->nullable();
             $table->string('airport_from')->nullable();
             $table->string('airport_to')->nullable();
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 
