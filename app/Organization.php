@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class Organization extends Authenticatable //this already extends Model
+//class Organization extends Model //this already extends Model
+
 {
     use Notifiable;
 
