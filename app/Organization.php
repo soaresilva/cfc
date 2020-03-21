@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class Organization extends Authenticatable //this already extends Model
 {
+<<<<<<< HEAD
     use Notifiable;
 
     /**
@@ -40,7 +41,10 @@ class Organization extends Authenticatable //this already extends Model
 
 
     public function events() 
+=======
+    public function events()
+>>>>>>> 082b6f71bfa14e4966ffa0cb0609dcf462f11bda
     {
-       return $this->hasMany(Event::class);
+        return $this->hasMany(Event::class);
     }
 }
