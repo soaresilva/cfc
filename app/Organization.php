@@ -2,16 +2,16 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model; 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Organization extends Authenticatable //this already extends Model
+class Organization extends Authenticatable//this already extends Model
 //class Organization extends Model //this already extends Model
 
 {
     use Notifiable;
+
+    protected $guard = 'organization';
 
     /**
      * The attributes that are mass assignable.
@@ -40,8 +40,7 @@ class Organization extends Authenticatable //this already extends Model
         'email_verified_at' => 'datetime',
     ];
 
-
-    public function events() 
+    public function events()
     {
         return $this->hasMany(Event::class);
     }
