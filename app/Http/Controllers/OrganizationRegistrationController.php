@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
+use App\Organization;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Organization; 
 
 class OrganizationRegistrationController extends Controller
 {
@@ -12,13 +12,13 @@ class OrganizationRegistrationController extends Controller
     {
         return view('auth.organization-register');
     }
-    
+
     public function register(Request $request)
     {
-        $this->validate ($request, [
-            'name'=> 'required',
-            'email'=> 'required',
-            'password'=> 'required',
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
         ]);
 
         Organization::create([
@@ -28,17 +28,11 @@ class OrganizationRegistrationController extends Controller
         ]);
 
         Auth::attempt([ // this is so that the user gets logged in after registering, needs the credentials of the user
-            'email' =>$request->input('email'),
-            'password' =>$request->input('password'),
+            'email' => $request->input('email'),
+            'password' => $request->input('password'),
         ]);
 
-       // return redirect()->route('home');
-        return redirect('/'); 
+        return redirect()->route('home');
+        // return redirect('/');
     }
 }
-
-
-
-
-
-    

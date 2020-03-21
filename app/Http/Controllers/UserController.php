@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\User; 
 
 class UserController extends Controller
 {
@@ -12,14 +12,14 @@ class UserController extends Controller
     {
         return view('auth.user-register');
     }
-    
+
     public function register(Request $request)
     {
-        $this->validate ($request, [
-            'first_name'=> 'required',
-            'surname'=> 'required',
-            'email'=> 'required',
-            'password'=> 'required',
+        $this->validate($request, [
+            'first_name' => 'required',
+            'surname' => 'required',
+            'email' => 'required',
+            'password' => 'required',
         ]);
 
         User::create([
@@ -30,11 +30,11 @@ class UserController extends Controller
         ]);
 
         Auth::attempt([ // this is so that the user gets logged in after registering, needs the credentials of the user
-            'email' =>$request->input('email'),
-            'password' =>$request->input('password'),
+            'email' => $request->input('email'),
+            'password' => $request->input('password'),
         ]);
 
-       // return redirect()->route('home');
-        return redirect('/'); 
+        return redirect()->route('home');
+        // return redirect('/');
     }
 }
