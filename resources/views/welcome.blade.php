@@ -87,12 +87,17 @@
         </div>
         {{-- @endif  --}}
 
-        <div class="content">
-            <div class="title m-b-md">
-                Carbon Footprint Calculator
-            </div>
-
+    <div class="content">
+        <div class="title m-b-md">
+            Carbon Footprint Calculator
         </div>
+
+
+    </div>
+    <div id="app"></div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
+
     </div>
 </body>
 
