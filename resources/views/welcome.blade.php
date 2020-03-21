@@ -80,6 +80,10 @@
                         @if (Route::has('org-register'))
                             <a href="{{ route('org-register') }}">Register for Org</a>
                         @endif
+
+                        @if (Route::has('user-register'))
+                        <a href="{{ route('user-register') }}">Register for Users</a>
+                    @endif
                      @endauth
                 </div>
             @endif

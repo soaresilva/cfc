@@ -27,6 +27,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('organization-registration', 'OrganizationRegistrationController@form')->name('org-register'); //shows registration form
 Route::post('organization-registration', 'OrganizationRegistrationController@register'); //stores registration form
 
+Route::get('user-registration', 'UserRegistrationController@form')->name('user-register'); //shows registration form
+
+
 /* WE'LL NEED TO CHANGE THIS 
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
