@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function form()
     {
-        return view('auth.user-register');
+        return view('auth.register');
     }
 
     public function register(Request $request)

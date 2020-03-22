@@ -38,15 +38,15 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        // $this->middleware('guest:organization')->except('logout');
+        $this->middleware('guest:organization')->except('logout');
     }
 
-    public function showOrgLoginForm()
+    public function showOrganizationLoginForm()
     {
         return view('auth.login', ['url' => 'organization']);
     }
 
-    public function orgLogin(Request $request)
+    public function organizationLogin(Request $request)
     {
         $this->validate($request, [
             'email' => 'required|email',

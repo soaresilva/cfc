@@ -18,6 +18,9 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
+        if ($guard == "organization" && Auth::guard($guard)->check()) {
+            return redirect('/organization');
+        }
         if (Auth::guard($guard)->check()) {
             return redirect(RouteServiceProvider::HOME);
         }
