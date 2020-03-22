@@ -8,7 +8,9 @@
         <div class="card-header">Dashboard</div>
 
         <div class="card-body">
-          Hi organization that has just logged in!
+          Hi there! {{ Auth::guard('organization')->check() ? "Logged In" : "Logged Out" }}
+          {{ Auth::guard('organization')->user()->name }}
+
         </div>
       </div>
     </div>

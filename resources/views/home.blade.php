@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
 <div class="container">
@@ -14,7 +14,8 @@
                     </div>
                     @endif
 
-                    You are logged in, regular user!
+                    You are logged in, regular user! <br>{{ Auth::check() ? "Logged In" : "Logged Out" }}
+                    {{ Auth::user()->first_name }} {{ Auth::user()->surname  }}
                 </div>
             </div>
         </div>
