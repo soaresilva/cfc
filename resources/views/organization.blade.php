@@ -8,8 +8,7 @@
         <div class="card-header">Dashboard</div>
 
         <div class="card-body">
-          Hi there! {{ Auth::guard('organization')->check() ? "Logged In" : "Logged Out" }}
-          {{ Auth::guard('organization')->user()->name }}
+          You are now managing {{ Auth::guard('organization')->user()->name }}'s Carbon Footprint Calculator.
 
         </div>
       </div>

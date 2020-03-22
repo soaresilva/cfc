@@ -68,12 +68,9 @@
 
 <body>
     <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
         <div class="top-right links">
-            @auth('organization')
-            <a href="{{ url('/home') }}">Home</a>
-            @endauth
-            @auth
+            {{-- Checking if an user or organization are logged in --}}
+            @if (Auth::check() || Auth::guard('organization')->check())
             <a href="{{ url('/home') }}">Home</a>
             @else
             <a href="{{ route('login') }}">Login</a>
@@ -90,11 +87,9 @@
             <a href="{{ route('org-register') }}">Register as Organization</a>
             @endif
 
-            @endauth
+            @endif
         </div>
-        @endif
-        {{-- @endauth --}}
-        {{-- @endif --}}
+
 
         <div class="content">
             <div class="title m-b-md">

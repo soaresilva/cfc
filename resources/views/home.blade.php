@@ -14,8 +14,9 @@
                     </div>
                     @endif
 
-                    You are logged in, regular user! <br>{{ Auth::check() ? "Logged In" : "Logged Out" }}
-                    {{ Auth::user()->first_name }} {{ Auth::user()->surname  }}
+                    {{ Auth::user()->first_name }} {{ Auth::user()->surname  }}, welcome to the Carbon Footprint
+                    Calculator!
+
                 </div>
             </div>
         </div>
