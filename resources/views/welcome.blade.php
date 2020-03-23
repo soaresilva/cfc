@@ -46,7 +46,7 @@
         }
 
         .title {
-            font-size: 84px;
+            /* font-size: 84px; */
         }
 
         .links>a {
@@ -91,14 +91,9 @@
         </div>
 
 
-        <div class="content">
-            <div class="title m-b-md">
-                Carbon Footprint Calculator
-            </div>
+
 
             <div id="root"></div>
-
-        </div>
 
     </div>
 

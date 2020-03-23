@@ -6442,7 +6442,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".WelcomeText {\r\n  border: 1px solid black;\r\n  background-color: aliceblue;\r\n  padding: 1rem;\r\n  height: 50vh;\r\n  z-index: 1;\r\n}\r\n\r\n.CardItems {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  margin-bottom: 5rem;\r\n}\r\n\r\n.CardItem-About {\r\n  margin-top: -5rem;\r\n  background-color: oldlace;\r\n  z-index: 3;\r\n  border: 1px solid black;\r\n}\r\n.CardItem-Calc {\r\n  margin-top: -5rem;\r\n  background-color: gold;\r\n  z-index: 3;\r\n  border: 1px solid black;\r\n}\r\n.CardItem-Offset {\r\n  margin-top: -5rem;\r\n  background-color: salmon;\r\n  z-index: 3;\r\n  border: 1px solid black;\r\n}", ""]);
+exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    color: white;\r\n    /* overflow-x: hidden; */\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\r\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\r\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color:  #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\r\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\r\n}\r\n", ""]);
 
 // exports
 
@@ -6461,7 +6461,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".CardItem {\r\n  height: 50vh;\r\n  width: 20vw;\r\n}", ""]);
+exports.push([module.i, ".CardItem {\r\n  height: 60vh;\r\n  width: 20vw;\r\n  text-align: center;\r\n  margin-top: 2rem;\r\n}", ""]);
 
 // exports
 
@@ -66247,13 +66247,9 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
@@ -66263,44 +66259,51 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
- // import img from '../../assets/coverr-wood-1568650087945.jpg';
+
 
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
-  var _super = _createSuper(App);
-
   function App() {
     _classCallCheck(this, App);
 
-    return _super.apply(this, arguments);
+    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
   }
 
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "WelcomeText"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-        autoPlay: true,
-        muted: true,
-        loop: true
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-        src: "https://www.w3schools.com/tags/movie.mp4",
-        type: "video/mp4"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Shape our future", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " myclimate is your partner for effective climate protection \u2013 both locally and globally")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "CardItems"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "CardItem-About"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "CardItem-Calc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Calculate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "CardItem-Offset"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Offset"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "WelcomeText"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Searchbars for flights go here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "WelcomeText"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "\"footcha\"")));
+      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+          playsInline: true,
+          autoPlay: true,
+          muted: true,
+          loop: true,
+          className: "Video"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+          src: "/videos/coverr-wood-1568650087945.mp4",
+          type: "video/mp4"
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "WelcomeTitle"
+        }, "Carbon Footprint Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "WelcomeDescription"
+        }, "Shape our future", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " myclimate is your partner for effective climate protection \u2013 both locally and globally")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "Section-CardItems"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItems"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-About"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "About us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-Calc"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Calculate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-Offset"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Offset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Searchbars for flights go here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "\"footcha\"")))
+      );
     }
   }]);
 
@@ -66358,9 +66361,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function CardItem(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "CardItem"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.children));
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "CardItem"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.children))
+  );
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CardItem);
@@ -66381,7 +66385,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function test() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "A new title"));
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "A new title"))
+  );
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (test);

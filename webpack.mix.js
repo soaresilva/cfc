@@ -21,6 +21,17 @@ if (!mix.inProduction()) {
     }).sourceMaps();
 }
 
+// mix.webpackConfig({
+//     module: {
+//         loaders: [
+//             {
+//                 test: /\.mp4$/,
+//                 use: "file-loader?name=videos/[name].[ext]"
+//             }
+//         ]
+//     }
+// });
+
 mix.react("resources/js/app.js", "public/js")
     .sass("resources/sass/app.scss", "public/css")
 

@@ -1,32 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    /* overflow-x: hidden; */
+}
+
 .WelcomeText {
-  border: 1px solid black;
-  background-color: aliceblue;
-  padding: 1rem;
-  height: 50vh;
-  z-index: 1;
+    position: relative;
+    height: 100vh;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.WelcomeTitle {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.WelcomeDescription {
+    width: 40ch;
+    align-self: flex-start;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 2.5rem;
 }
 
+.Video {
+    object-fit: cover;
+    width: 99vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Section-CardItems {
+    width: 98.9vw;
+    height: 70vh;
+    background-color: #1f2317;
+    position: relative;
+}
 .CardItems {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
 }
-
 .CardItem-About {
-  margin-top: -5rem;
-  background-color: oldlace;
-  z-index: 3;
-  border: 1px solid black;
+    margin-top: -5rem;
+    background-color: #62684d;
+    border-radius: 7px;
+    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),
+        -2px -2px 4.5px rgba(255, 255, 255, 0.7);
 }
 .CardItem-Calc {
-  margin-top: -5rem;
-  background-color: gold;
-  z-index: 3;
-  border: 1px solid black;
+    margin-top: -5rem;
+    background-color: #484d37;
+    border-radius: 7px;
+    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),
+        -2px -2px 4.5px rgba(255, 255, 255, 0.7);
 }
 .CardItem-Offset {
-  margin-top: -5rem;
-  background-color: salmon;
-  z-index: 3;
-  border: 1px solid black;
+    margin-top: -5rem;
+    background-color:  #3a452e;
+    border-radius: 7px;
+    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),
+        -2px -2px 4.5px rgba(255, 255, 255, 0.7);
 }

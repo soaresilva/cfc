@@ -1,4 +1,6 @@
 .CardItem {
-  height: 50vh;
+  height: 60vh;
   width: 20vw;
+  text-align: center;
+  margin-top: 2rem;
 }
