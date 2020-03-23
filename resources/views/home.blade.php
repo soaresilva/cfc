@@ -16,7 +16,6 @@
 
                     {{ Auth::user()->first_name }} {{ Auth::user()->surname  }}, welcome to the Carbon Footprint
                     Calculator!
-
                 </div>
             </div>
         </div>

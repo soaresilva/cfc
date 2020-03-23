@@ -9,5 +9,10 @@ require("./bootstrap");
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App/Components/App.jsx";
+import Test from "./App/components/test.jsx";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+if (document.getElementById("root")) {
+    ReactDOM.render(<App />, document.getElementById("root"));
+} else if(document.getElementById("rootOne")) {
+    ReactDOM.render(<Test />, document.getElementById("rootOne"));
+}
