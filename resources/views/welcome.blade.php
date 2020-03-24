@@ -60,6 +60,12 @@
             color: white;
         }
 
+        .links>a:hover {
+            text-decoration: none;
+            color: greenyellow;
+        }
+
+
         .m-b-md {
             margin-top: 10rem;
             margin-bottom: 30px;
@@ -71,8 +77,12 @@
     <div class="flex-center position-ref full-height">
         <div class="top-right links">
             {{-- Checking if an user or organization are logged in --}}
-            @if (Auth::check() || Auth::guard('organization')->check())
-            <a href="{{ url('/home') }}">Home</a>
+            @if (Auth::check())
+            <a href="{{ url('/home') }}">
+                {{ Auth::user()->first_name }}{{ " " }}{{ Auth::user()->surname  }}
+            </a>
+            @elseif (Auth::guard('organization')->check())
+            <a href="{{ url('/home') }}">{{ Auth::guard('organization')->user()->name }}</a>
             @else
             <a href="{{ route('login') }}">Login</a>
 
@@ -94,7 +104,7 @@
 
 
 
-            <div id="root"></div>
+        <div id="root"></div>
 
     </div>
 
