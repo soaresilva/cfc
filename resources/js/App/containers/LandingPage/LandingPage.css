@@ -1,0 +1,35 @@
+.LandingPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.LandingPageTitle {
+  height: 10rem;
+}
+
+.Dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DF {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.CheckboxOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+  width: 12rem;
+}
+
+.Blue {
+  padding-bottom: 2rem;
+  font-weight: 200;
+}

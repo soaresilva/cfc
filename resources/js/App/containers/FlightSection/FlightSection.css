@@ -1,0 +1,8 @@
+.FlightSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.Warning {
+  color: red;
+}

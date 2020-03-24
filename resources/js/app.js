@@ -10,6 +10,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App/Components/App.jsx";
 import Test from "./App/components/test.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 if (document.getElementById("root")) {
     ReactDOM.render(<App />, document.getElementById("root"));
