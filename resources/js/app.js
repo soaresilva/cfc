@@ -8,11 +8,22 @@ require("./bootstrap");
 
 import React from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import App from "./App/Components/App.jsx";
-import Test from "./App/components/test.jsx";
+import UserReactExample from './App/components/UserReactExample';
+import OrganizationReactExample from './App/components/OrganizationReactExample';
 
 if (document.getElementById("root")) {
     ReactDOM.render(<App />, document.getElementById("root"));
-} else if(document.getElementById("rootOne")) {
-    ReactDOM.render(<Test />, document.getElementById("rootOne"));
+} else if (document.getElementById("orgProfile")) {
+    ReactDOM.render(
+        <OrganizationReactExample />,
+        document.getElementById("orgProfile")
+    );
+} else if (document.getElementById("userProfile")) {
+    ReactDOM.render(
+        <UserReactExample />,
+        document.getElementById("userProfile")
+    );
 }

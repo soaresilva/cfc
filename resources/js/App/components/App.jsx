@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./App.css";
-import CardItem from "./CardItem/CardItem";
-//import UserProfile from "./UserProfile/UserProfile";
+import CardItem from "./UI/CardItem/CardItem";
+import LandingPage from './../containers/LandingPage/LandingPage';
 
 export default class App extends React.Component {
     render() {
@@ -37,10 +37,10 @@ export default class App extends React.Component {
                     </div>
                 </div>
 
-                <div className="WelcomeText">
+                <div className="SearchSection">
                     <h1>Calculate and offset your Emissions!</h1>
                     <br></br>
-                    <h2>Searchbars for flights go here</h2>
+                    <LandingPage />
                 </div>
 
             

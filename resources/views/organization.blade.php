@@ -8,11 +8,19 @@
         <div class="card-header">Dashboard</div>
 
         <div class="card-body">
-          You are now managing {{ Auth::guard('organization')->user()->name }}'s Carbon Footprint Calculator.
+          @if (session('status'))
+          <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+          </div>
+          @endif
 
+          You are now managing {{ Auth::guard('organization')->user()->name }}'s Carbon Footprint Calculator.
         </div>
       </div>
+      <div id="orgProfile"></div>
+
     </div>
+
   </div>
 </div>
 @endsection
