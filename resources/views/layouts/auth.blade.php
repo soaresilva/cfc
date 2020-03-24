@@ -69,7 +69,6 @@
 
         <main class="py-4">
             @yield('content')
-            <div id="rootOne"></div>
         </main>
     </div>
 </body>

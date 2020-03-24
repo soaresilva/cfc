@@ -41,7 +41,6 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
-        // $this->middleware('guest:user');
         $this->middleware('guest:organization');
 
     }
@@ -86,12 +85,17 @@ class RegisterController extends Controller
     protected function createOrganization(Request $request)
     {
         $this->validator($request->all())->validate();
-        $organization = Organization::create([
+        Organization::create([
             'name' => $request['name'],
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        return redirect()->intended('login/organization');
+
+        auth()->guard('organization')->attempt([
+            'email' => $request->input('email'),
+            'password' => $request->input('password'),
+        ]);
+        return redirect()->intended('organization');
     }
 
 }
