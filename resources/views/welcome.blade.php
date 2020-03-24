@@ -39,6 +39,7 @@
             position: absolute;
             right: 10px;
             top: 18px;
+            z-index: 6;
         }
 
         .content {
@@ -50,13 +51,13 @@
         }
 
         .links>a {
-            color: #636b6f;
             padding: 0 25px;
             font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
+            color: white;
         }
 
         .m-b-md {

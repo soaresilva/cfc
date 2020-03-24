@@ -8,9 +8,11 @@ require("./bootstrap");
 
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App/Components/App.jsx";
-import Test from "./App/components/test.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import App from "./App/Components/App.jsx";
+import UserReactExample from './App/components/UserReactExample';
+import OrganizationReactExample from './App/components/OrganizationReactExample';
 
 if (document.getElementById("root")) {
     ReactDOM.render(<App />, document.getElementById("root"));

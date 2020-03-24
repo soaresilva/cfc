@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
     /* overflow-x: hidden; */
 }
 
@@ -10,6 +10,7 @@
     position: relative;
     height: 100vh;
     width: 70vw;
+    color: white;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -40,6 +41,7 @@
 }
 
 .Section-CardItems {
+    color: white;
     width: 98.9vw;
     height: 70vh;
     background-color: #1f2317;
@@ -74,6 +76,7 @@
 }
 
 .SearchSection {
+    color: white;
     position: relative;
     height: 100vh;
     width: 98.9vw;
