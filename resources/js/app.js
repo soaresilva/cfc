@@ -9,10 +9,19 @@ require("./bootstrap");
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App/Components/App.jsx";
-import Test from "./App/components/test.jsx";
+import OrganizationReactExample from "./App/Components/OrganizationReactExample.jsx";
+import UserReactExample from "./App/Components/UserReactExample.jsx";
 
 if (document.getElementById("root")) {
     ReactDOM.render(<App />, document.getElementById("root"));
-} else if(document.getElementById("rootOne")) {
-    ReactDOM.render(<Test />, document.getElementById("rootOne"));
+} else if (document.getElementById("orgProfile")) {
+    ReactDOM.render(
+        <OrganizationReactExample />,
+        document.getElementById("orgProfile")
+    );
+} else if (document.getElementById("userProfile")) {
+    ReactDOM.render(
+        <UserReactExample />,
+        document.getElementById("userProfile")
+    );
 }

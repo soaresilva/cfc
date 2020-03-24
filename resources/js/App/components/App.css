@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
     /* overflow-x: hidden; */
 }
 
@@ -67,7 +67,7 @@
 }
 .CardItem-Offset {
     margin-top: -5rem;
-    background-color:  #3a452e;
+    background-color: #3a452e;
     border-radius: 7px;
     box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),
         -2px -2px 4.5px rgba(255, 255, 255, 0.7);

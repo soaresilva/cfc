@@ -18,6 +18,7 @@
                     Calculator!
                 </div>
             </div>
+            <div id="userProfile"></div>
         </div>
     </div>
 </div>
