@@ -7088,7 +7088,11 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
+<<<<<<< HEAD
+exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    color: white;\n    /* overflow-x: hidden; */\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color:  #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.7),\n        -2px -2px 4.5px rgba(255, 255, 255, 0.7);\n}\n", ""]);
+=======
 exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    /* color: white; */\r\n    /* overflow-x: hidden; */\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    color: white;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    color: white;\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color: #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n\r\n.SearchSection {\r\n    color: white;\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 98.9vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n    background-color: #484d37;\r\n}\r\n", ""]);
+>>>>>>> 83ba216f43cf48f98a02c0ad194b7e0dff9d4aa6
 
 // exports
 
@@ -7107,7 +7111,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".CardItem {\r\n  height: 60vh;\r\n  width: 20vw;\r\n  text-align: center;\r\n  margin-top: 2rem;\r\n}", ""]);
+exports.push([module.i, ".CardItem {\n  height: 60vh;\n  width: 20vw;\n  text-align: center;\n  margin-top: 2rem;\n}", ""]);
 
 // exports
 
@@ -90196,6 +90200,15 @@ if(false) {}
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./resources/js/App/Components/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardItem/CardItem */ "./resources/js/App/Components/CardItem/CardItem.jsx");
+/* harmony import */ var _UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserProfile/UserProfile */ "./resources/js/App/Components/UserProfile/UserProfile.jsx");
+=======
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -90207,6 +90220,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_searchFlights__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../functions/searchFlights */ "./resources/js/App/functions/searchFlights.js");
 
 
+>>>>>>> 83ba216f43cf48f98a02c0ad194b7e0dff9d4aa6
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -90244,6 +90258,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+<<<<<<< HEAD
+
+var App = /*#__PURE__*/function (_React$Component) {
+  _inherits(App, _React$Component);
+=======
+>>>>>>> 83ba216f43cf48f98a02c0ad194b7e0dff9d4aa6
 
 
 
@@ -90323,6 +90343,39 @@ var FlightSection = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+<<<<<<< HEAD
+      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+          playsInline: true,
+          autoPlay: true,
+          muted: true,
+          loop: true,
+          className: "Video"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+          src: "/videos/coverr-wood-1568650087945.mp4",
+          type: "video/mp4"
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "WelcomeTitle"
+        }, "Carbon Footprint Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "WelcomeDescription"
+        }, "Shape our future", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " myclimate is your partner for effective climate protection \u2013 both locally and globally")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "Section-CardItems"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItems"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-About"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "About us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-Calc"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Calculate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "CardItem-Offset"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Offset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Searchbars for flights go here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "WelcomeText"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "\"footcha\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_3__["default"], null)))
+      );
+=======
       // Flight is a Spinner while loading and then it renders as flights
       var flight = null;
       var content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Voyage, voyage");
@@ -90350,6 +90403,7 @@ var FlightSection = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "FlightSection"
       }, flight, content);
+>>>>>>> 83ba216f43cf48f98a02c0ad194b7e0dff9d4aa6
     }
   }]);
 
@@ -90592,11 +90646,48 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./resources/js/App/Components/UserProfile/UserProfile.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/App/Components/UserProfile/UserProfile.jsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserProfile; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+ //import "./App.css";
+
+function UserProfile() {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "userprofile"
+    }, "user profile works!!!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "user-summary"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Summary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Total Carbon Footprint:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "calculated from DB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Total Carbon Offset:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "calculated from DB!!!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "user-history"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Trip History"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "user-trip"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Trip Origin - Trip Destination"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Date: calculated from DB!!!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "calculated from DB!!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Carbon Footprint:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "calculated from DB!!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Carbon Offset:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "calculated from DB!!!"))))
+  );
+}
+
+/***/ }),
+
+/***/ "./resources/js/App/components/test.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/App/components/test.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+=======
 /***/ "./resources/js/App/destinations/destinations.js":
 /*!*******************************************************!*\
   !*** ./resources/js/App/destinations/destinations.js ***!
   \*******************************************************/
 /*! exports provided: flightsFrom, flightsTo */
+>>>>>>> 83ba216f43cf48f98a02c0ad194b7e0dff9d4aa6
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90797,8 +90888,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

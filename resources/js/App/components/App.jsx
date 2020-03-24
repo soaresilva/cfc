@@ -43,10 +43,12 @@ export default class App extends React.Component {
                     <LandingPage />
                 </div>
 
+            
                 <div className="WelcomeText">
                     <h1>"footcha"</h1>
                 </div>
             </div>
+
         );
     }
 }
