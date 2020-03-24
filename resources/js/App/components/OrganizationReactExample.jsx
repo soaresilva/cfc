@@ -35,7 +35,6 @@ export default class OrganizationReactExample extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         const user = this.state.user ? this.state.user : "";
 
         return (

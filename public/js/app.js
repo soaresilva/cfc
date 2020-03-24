@@ -89589,7 +89589,31 @@ var flight = function flight(props) {
   var timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
   var dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
   var timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
+  var newArr = [];
+  var result = null;
+
+  var haversineDistance = function haversineDistance(lat1, lat2, lon2, lon1) {
+    var R = 6371; // km
+
+    var pi = Math.PI;
+    var φ1 = lat1 / (180 / pi);
+    var φ2 = lat2 / (180 / pi);
+    var Δφ = (lat2 - lat1) / (180 / pi);
+    var Δλ = (lon2 - lon1) / (180 / pi);
+    var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    var d = (R * c).toFixed(2);
+    newArr.push(Number(d));
+    result = newArr.reduce(function (a, b) {
+      return a + b;
+    });
+    console.log('newArr', newArr);
+    console.log('result', result);
+  };
+
   var stopovers = null;
+  var latFrom, latTo, lngFrom, lngTo;
+  var distanceArray = [];
 
   if (route.length > 1) {
     stopovers = route.slice(0, route.length - 1).map(function (stopover) {
@@ -89602,6 +89626,14 @@ var flight = function flight(props) {
         className: "FlightTime"
       }, stopover.cityTo));
     });
+
+    for (var index in route) {
+      latFrom = route[index].latFrom;
+      latTo = route[index].latTo;
+      lngTo = route[index].lngTo;
+      lngFrom = route[index].lngFrom;
+      haversineDistance(latFrom, latTo, lngFrom, lngTo);
+    }
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -89630,30 +89662,12 @@ var flight = function flight(props) {
     className: "FlightInfo"
   }, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "FlightTime"
-  }, "\u20AC", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, result, "km")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "FlightStopovers"
   }, stopovers));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (flight);
-
-var haversineDistance = function haversineDistance(lat1, lat2, lon2, lon1) {
-  var R = 6371; // km
-
-  var pi = Math.PI; // let lat1 = 52.3786111;
-  // let lat2 = 47.4369444;
-  // let lon2 = 13.5205556;
-  // let lon1 = 19.2555556;
-
-  var φ1 = lat1 / (180 / pi);
-  var φ2 = lat2 / (180 / pi);
-  var Δφ = (lat2 - lat1) / (180 / pi);
-  var Δλ = (lon2 - lon1) / (180 / pi);
-  var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  var d = R * c;
-  console.log(d.toFixed(2));
-};
 
 /***/ }),
 
@@ -89744,7 +89758,6 @@ var OrganizationReactExample = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log(this.state);
       var user = this.state.user ? this.state.user : "";
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
