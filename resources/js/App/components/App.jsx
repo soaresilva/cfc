@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 import CardItem from "./CardItem/CardItem";
+//import UserProfile from "./UserProfile/UserProfile";
 
 export default class App extends React.Component {
     render() {
@@ -42,10 +43,12 @@ export default class App extends React.Component {
                     <h2>Searchbars for flights go here</h2>
                 </div>
 
+            
                 <div className="WelcomeText">
                     <h1>"footcha"</h1>
                 </div>
             </div>
+
         );
     }
 }
