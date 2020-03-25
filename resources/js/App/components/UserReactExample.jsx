@@ -1,41 +1,36 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import UserProfile from './UserProfile/UserProfile';
 
-export default class UserReactExample extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            user: ""
-        };
-    }
+export default function UserReactExample() {
+    const [user, setUser] = useState("");
+    const [userID, setUserID] = useState(0);
 
-    componentDidMount() {
+    const makeUser = () => {
         let token = document
-            .querySelector("meta[name='csrf-token']")
-            .getAttribute("content");
-
+        .querySelector("meta[name='csrf-token']")
+        .getAttribute("content");
         $.ajax({
-            url: "/indexAjax",
-            type: "POST",
-            data: { _token: token, message: "bravo" },
-            dataType: "JSON",
+        url: "/indexAjax",
+        type: "POST",
+        data: { _token: token, message: "bravo" },
+        dataType: "JSON",
+        success: response => {
+            console.log("success");
+            console.log(response);
+            setUser(response);
+            setUserID(response.id);
+        },
+        error: response => {
+            console.log("error");
+            console.log(response);
+        }
+    });
 
-            success: response => {
-                console.log("success");
-                console.log(response);
-                this.setState({
-                    user: response
-                });
-            },
-            error: response => {
-                console.log("error");
-                console.log(response);
-            }
-        });
     }
 
-    render() {
-        console.log(this.state);
-        const user = this.state.user ? this.state.user : "";
+    useEffect(()=> {
+        makeUser();
+    },[])
 
         return (
             <div className="container">
@@ -43,7 +38,7 @@ export default class UserReactExample extends React.Component {
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">
-                                Data from{" "}
+                                {/* Data from{" "} */}
                                 <strong>Laravel to React component</strong> with
                                 Ajax
                             </div>
@@ -54,7 +49,8 @@ export default class UserReactExample extends React.Component {
                         </div>
                     </div>
                 </div>
+                <UserProfile userID={userID}/>
             </div>
         );
-    }
+    
 }
