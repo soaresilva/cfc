@@ -57,8 +57,8 @@ class FlightSection extends React.Component {
         } else if (this.state.data.length === 0) {
             flight = (
                 <h3 className="Warning">
-                    <i class="fas fa-plane-slash"></i> Warning: Flights might be
-                    cancelled due to COVID-19
+                    <i className="fas fa-plane-slash"></i> Warning: Flights
+                    might be cancelled due to COVID-19
                 </h3>
             );
         } else {
