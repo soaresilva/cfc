@@ -7,7 +7,6 @@ const flight = props => {
         cityFrom,
         cityTo,
         fly_duration,
-        price,
         dTime,
         aTime,
         route
@@ -40,7 +39,6 @@ const flight = props => {
 
     let stopovers = null;
     let latFrom, latTo, lngFrom, lngTo;
-    let distanceArray = [];
     if (route.length > 1) {
         stopovers = route.slice(0, route.length - 1).map(stopover => {
             const randomNum = Math.random();
