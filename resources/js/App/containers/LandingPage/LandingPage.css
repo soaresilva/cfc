@@ -33,3 +33,17 @@
   padding-bottom: 2rem;
   font-weight: 200;
 }
+
+.SearchSection {
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 98.9vw;
+  margin: 0 auto;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #62684d;
+}
+

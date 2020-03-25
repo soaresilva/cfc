@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Flight.css";
+import Button from "./../UI/Button/Button";
 
 const flight = props => {
     const {
@@ -17,7 +18,7 @@ const flight = props => {
     const dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
     const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
-    let newArr = [];
+    let arrayWithDistances = [];
     let result = null;
     const haversineDistance = (lat1, lat2, lon2, lon1) => {
         var R = 6371; // km
@@ -31,8 +32,8 @@ const flight = props => {
             Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = (R * c).toFixed(2);
-        newArr.push(Number(d));
-        result = newArr.reduce((a, b) => a + b).toFixed(0);
+        arrayWithDistances.push(Number(d));
+        result = arrayWithDistances.reduce((a, b) => a + b).toFixed(0);
     };
 
     let stopovers = null;
@@ -83,6 +84,7 @@ const flight = props => {
                 <h4 className="FlightTime">€{price}</h4>
             </div>
             <div className="FlightStopovers">{stopovers}</div>
+                <Button>Select</Button>
         </div>
     );
 };
