@@ -83,7 +83,7 @@ const flight = props => {
             </div>
             <div>
                 <h3 className="FlightInfo">Price:</h3>
-                <h4 className="FlightTime">{price}km</h4>
+                <h4 className="FlightTime">€{price}</h4>
             </div>
             <div className="FlightStopovers">{stopovers}</div>
         </div>
