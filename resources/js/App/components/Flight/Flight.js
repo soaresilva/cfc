@@ -7,8 +7,8 @@ const flight = props => {
         cityFrom,
         cityTo,
         fly_duration,
-        price,
         dTime,
+        price,
         aTime,
         route
     } = props;
@@ -17,8 +17,27 @@ const flight = props => {
     const dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
     const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
+    let newArr = [];
+    let result = null;
+    const haversineDistance = (lat1, lat2, lon2, lon1) => {
+        var R = 6371; // km
+        const pi = Math.PI;
+        var φ1 = lat1 / (180 / pi);
+        var φ2 = lat2 / (180 / pi);
+        var Δφ = (lat2 - lat1) / (180 / pi);
+        var Δλ = (lon2 - lon1) / (180 / pi);
+        var a =
+            Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+            Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = (R * c).toFixed(2);
+        newArr.push(Number(d));
+        result = newArr.reduce((a, b) => a + b).toFixed(0);
+    };
+
     let stopovers = null;
-    if (route.length > 1) {
+    let latFrom, latTo, lngFrom, lngTo;
+    if (route.length >= 0) {
         stopovers = route.slice(0, route.length - 1).map(stopover => {
             const randomNum = Math.random();
             return (
@@ -28,7 +47,15 @@ const flight = props => {
                 </div>
             );
         });
+        for (const index in route) {
+            latFrom = route[index].latFrom;
+            latTo = route[index].latTo;
+            lngTo = route[index].lngTo;
+            lngFrom = route[index].lngFrom;
+            haversineDistance(latFrom, latTo, lngFrom, lngTo);
+        }
     }
+
     return (
         <div className="Flight">
             <div>
@@ -49,6 +76,10 @@ const flight = props => {
             </div>
             <div>
                 <h3 className="FlightInfo">Distance:</h3>
+                <h4 className="FlightTime">{result}km</h4>
+            </div>
+            <div>
+                <h3 className="FlightInfo">Price:</h3>
                 <h4 className="FlightTime">€{price}</h4>
             </div>
             <div className="FlightStopovers">{stopovers}</div>
@@ -57,22 +88,3 @@ const flight = props => {
 };
 
 export default flight;
-
-const haversineDistance = (lat1, lat2, lon2, lon1) => {
-    var R = 6371; // km
-    const pi = Math.PI;
-    // let lat1 = 52.3786111;
-    // let lat2 = 47.4369444;
-    // let lon2 = 13.5205556;
-    // let lon1 = 19.2555556;
-    var φ1 = lat1 / (180 / pi);
-    var φ2 = lat2 / (180 / pi);
-    var Δφ = (lat2 - lat1) / (180 / pi);
-    var Δλ = (lon2 - lon1) / (180 / pi);
-    var a =
-        Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-        Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    var d = R * c;
-    console.log(d.toFixed(2));
-};

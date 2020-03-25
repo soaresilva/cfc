@@ -77,6 +77,8 @@ class LandingPage extends React.Component {
     };
 
     submitDataHandler = () => {
+        if (this.state.flightFrom === "From" || this.state.flightTo === "To")
+            return;
         this.setState({ submitted: !this.state.submitted });
     };
 
@@ -115,9 +117,7 @@ class LandingPage extends React.Component {
                             </div>
                             <div className="CheckboxOption">
                                 <label>Flights with layover:</label>
-                                <input
-                                    type="checkbox"
-                                />
+                                <input type="checkbox" />
                             </div>
                         </div>
                         <Button clicked={this.submitDataHandler}>Search</Button>
