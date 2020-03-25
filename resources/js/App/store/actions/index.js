@@ -1,0 +1,1 @@
+export { selectFlightDetails } from "./selectedFlight";

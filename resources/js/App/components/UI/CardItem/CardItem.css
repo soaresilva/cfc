@@ -1,6 +1,29 @@
 .CardItem {
-  height: 60vh;
-  width: 20vw;
-  text-align: center;
-  margin-top: 2rem;
+    height: 60vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.CardItemsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+    height: 60vh;
+    margin-top: -2rem;
+}
+
+.CardItemsPicture {
+    width: 20vw;
+    display: block;
+    border-radius: 7px;
+}
+
+.CardItemsDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35vh;
 }
