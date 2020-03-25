@@ -7088,7 +7088,11 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    background-color: #62684d;\n}\n\n", ""]);
+=======
+exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
+>>>>>>> b68d4b302ea1150ec0572c2e687c5ebb87684cb5
 
 // exports
 
@@ -90152,8 +90156,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
  //import "./App.css";
 
 
+
+var Spinner = function Spinner() {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "spinner")
+  );
+};
+
 function UserProfile(_ref) {
-  var userID = _ref.userID;
+  var user_id = _ref.user_id;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -90171,7 +90181,7 @@ function UserProfile(_ref) {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return fetch("".concat(getTripsUrl, "2"));
+              return fetch("".concat(getTripsUrl).concat(user_id));
 
             case 3:
               response = _context.sent;
@@ -90205,9 +90215,8 @@ function UserProfile(_ref) {
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     getTrips();
-    console.log("user id", userID);
   }, []);
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, !userTrips ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Spinner, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
       setUserTrips: setUserTrips,
       userTrips: userTrips
     }))
@@ -90383,11 +90392,6 @@ function UserReactExample() {
       user = _useState2[0],
       setUser = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState4 = _slicedToArray(_useState3, 2),
-      userID = _useState4[0],
-      setUserID = _useState4[1];
-
   var makeUser = function makeUser() {
     var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
     $.ajax({
@@ -90402,7 +90406,6 @@ function UserReactExample() {
         console.log("success");
         console.log(response);
         setUser(response);
-        setUserID(response.id);
       },
       error: function error(response) {
         console.log("error");
@@ -90411,9 +90414,10 @@ function UserReactExample() {
     });
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"])(function () {
     makeUser();
   }, []);
+  console.log("react user example user id", user.id);
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -90426,8 +90430,8 @@ function UserReactExample() {
       className: "card-header"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "card-body"
-    }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      userID: userID
+    }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))), !user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Loading...") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      user_id: user.id
     }))
   );
 }
@@ -91153,8 +91157,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
+>>>>>>> b68d4b302ea1150ec0572c2e687c5ebb87684cb5
 
 
 /***/ })

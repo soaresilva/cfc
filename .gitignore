@@ -17,3 +17,5 @@ yarn-error.log
 /config/database.php
 /.vagrant
 .phpunit.result.cache
+/public/js/app.js.map
+/public/css/app.css.map
