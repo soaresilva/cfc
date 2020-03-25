@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import "./Flight.css";
 import Button from "./../UI/Button/Button";
+import { selectFlightDetails } from "../../store/actions/index";
 
 const flight = props => {
     const {
@@ -11,7 +13,8 @@ const flight = props => {
         dTime,
         price,
         aTime,
-        route
+        route,
+        id
     } = props;
     const dateDepart = new Date(dTime * 1000).toDateString();
     const timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
@@ -34,6 +37,12 @@ const flight = props => {
         var d = (R * c).toFixed(2);
         arrayWithDistances.push(Number(d));
         result = arrayWithDistances.reduce((a, b) => a + b).toFixed(0);
+    };
+
+    const getFlightIdHandler = (id, cityFrom, cityTo, duration) => {
+        console.log(
+            `Your flight from ${cityFrom} to ${cityTo}. Distance: ${id}`
+        );
     };
 
     let stopovers = null;
@@ -84,9 +93,29 @@ const flight = props => {
                 <h4 className="FlightTime">€{price}</h4>
             </div>
             <div className="FlightStopovers">{stopovers}</div>
-                <Button>Select</Button>
+            <Button
+                clicked={() =>
+                    props.onSelectFlightDetails(
+                        cityFrom,
+                        cityTo,
+                        result,
+                        fly_duration
+                    )
+                }
+            >
+                Select
+            </Button>
         </div>
     );
 };
 
-export default flight;
+const mapDispatchToProps = dispatch => {
+    return {
+        onSelectFlightDetails: (cityFrom, cityTo, distance, fly_duration) =>
+            dispatch(
+                selectFlightDetails(cityFrom, cityTo, distance, fly_duration)
+            )
+    };
+};
+
+export default connect(null, mapDispatchToProps)(flight);
