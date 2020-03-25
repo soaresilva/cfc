@@ -1,11 +1,14 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=bf94b3e0332b91197693",
     "/css/app.css": "/css/app.css?id=1a4c67fed83beaacf384",
     "/js/app.js.map": "/js/app.js.map?id=7f069fb110b76a8a2ec2",
     "/css/app.css.map": "/css/app.css.map?id=90e06e1b5a7ed9bdfddd"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
     "/js/app.js": "/js/app.js?id=92b372fb573c4412b2a9",
 =======
 <<<<<<< HEAD
@@ -28,5 +31,8 @@
 >>>>>>> cd2a1fb0111b6ad0811193a7fc208c64320d88ba
 >>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
 >>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
+<<<<<<< HEAD
+>>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
+=======
 >>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
 }
