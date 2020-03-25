@@ -18,6 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('trips/{user_id}', 'TripController@getTrips');
+Route::get('trips/{user_id}', 'TripController@getUserTrips');
 Route::delete('trips/{user_id}', 'TripController@deleteTrips');
+
+Route::get('events/{org_id}', 'EventController@getEvents');
+Route::get('events/trips/{event_id}', 'TripController@getOrgTrips');
+
+
 

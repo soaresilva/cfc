@@ -8,11 +8,11 @@ const Spinner = () => {
 
 export default function UserProfile({ user_id }) {
     const [userTrips, setUserTrips] = useState([]);
-    const getTripsUrl = "/api/trips/";
+    const getUserTripsUrl = "/api/trips/";
 
-    const getTrips = async () => {
+    const getUserTrips = async () => {
         try {
-            const response = await fetch(`${getTripsUrl}${user_id}`);
+            const response = await fetch(`${getUserTripsUrl}${user_id}`);
             const data = await response.json();
             console.log("data", data);
             setUserTrips(data);
@@ -21,7 +21,7 @@ export default function UserProfile({ user_id }) {
         }
     };
     useEffect(() => {
-        getTrips();
+        getUserTrips();
     }, []);
 
     return (

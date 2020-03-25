@@ -1,29 +1,37 @@
-import React, { useEffect, useState } from "react";
-//import "./App.css";
+import React, { useState, useEffect } from "react";
 import { deleteTrip } from "../../../Api/trips";
-import UserTripSummary from "./UserTripSummary";
 
-export default function UserTripHistory({ setUserTrips, userTrips }) {
-    let totalDistance = 0;
-    let totalCarbonFootprint = 0;
-    let totalCarbonOffset = 0;
+export default function OrganizationTripHistory({ event_id }) {
+    const [orgTrips, setOrgTrips] = useState([]);
+    const getOrgTripsUrl = "/api/events/trips/";
+
+    const getOrgTrips = async () => {
+        try {
+            const response = await fetch(`${getOrgTripsUrl}${event_id}`);
+            const data = await response.json();
+            setOrgTrips(data);
+        } catch (err) {
+            console.log("getOrgTrips error", err);
+        }
+    };
+    useEffect(() => {
+        getOrgTrips();
+    }, []);
 
     const handleDeleteTrip = async id => {
         try {
             await deleteTrip(id);
-            const newTrips = userTrips.filter(trip => trip.id !== id);
-            setUserTrips(newTrips);
+            const newTrips = orgTrips.filter(trip => trip.id !== id);
+            setOrgTrips(newTrips);
         } catch (err) {
             console.log("error", err);
         }
     };
 
-    const trips = userTrips.map((trip, index) => {
-        totalDistance = totalDistance + trip.distance;
-        totalCarbonFootprint = totalCarbonFootprint + trip.carbon_amount;
-        totalCarbonOffset = totalCarbonOffset + trip.offset_amount;
+    console.log("org trips", orgTrips);
+    const trips = orgTrips.map((trip, index) => {
         return (
-            <div className="user-trip" key={index}>
+            <div className="org-trip" key={index}>
                 <h4>
                     {trip.airport_from} - {trip.airport_to}
                 </h4>
@@ -43,20 +51,7 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
             </div>
         );
     });
-
-    return (
-        <div>
-            <UserTripSummary
-                totalDistance={totalDistance}
-                totalCarbonFootprint={totalCarbonFootprint}
-                totalCarbonOffset={totalCarbonOffset}
-            />
-            <div className="user-history">
-                <h3>Trip History</h3>
-                {trips}
-            </div>
-        </div>
-    );
+    return <div>{trips}</div>;
 }
 
 function DeleteTripButton({ handleDeleteTrip, trip }) {

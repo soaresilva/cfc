@@ -89414,7 +89414,16 @@ var deleteTrip = /*#__PURE__*/function () {
   return function deleteTrip(_x) {
     return _ref.apply(this, arguments);
   };
-}();
+}(); // export const DeleteTripButton = ({ handleDeleteTrip, trip }) => {
+//   return (
+//       <button
+//           className="delete-trip-button"
+//           onClick={() => handleDeleteTrip(trip.id)}
+//       >
+//           delete trip
+//       </button>
+//   );
+// }
 
 /***/ }),
 
@@ -89742,6 +89751,316 @@ var flight = function flight(props) {
 
 /***/ }),
 
+/***/ "./resources/js/App/components/OrganizationProfile/OrganizationEventHistory.jsx":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/App/components/OrganizationProfile/OrganizationEventHistory.jsx ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrganizationEventHistory; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../sass/app.scss */ "./resources/sass/app.scss");
+/* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_app_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _OrganizationTripHistory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrganizationTripHistory */ "./resources/js/App/components/OrganizationProfile/OrganizationTripHistory.jsx");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+ //import './App.css';
+
+
+function OrganizationEventHistory(_ref) {
+  var orgEvents = _ref.orgEvents,
+      setOrgEvents = _ref.setOrgEvents;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showOrgTrips = _useState2[0],
+      setShowOrgTrips = _useState2[1];
+
+  var handleShowOrgTrips = function handleShowOrgTrips() {
+    setShowOrgTrips(!showOrgTrips); //do we want the rest of the trips to go away when showing the trips?
+  };
+
+  var events = orgEvents.map(function (event, index) {
+    return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "org-event",
+        key: index
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, event.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, event.date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: handleShowOrgTrips,
+        className: "showOrgTripsButton"
+      }, "See trips"), showOrgTrips ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_OrganizationTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        event_id: event.id
+      }) : "")
+    );
+  });
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, events)
+  );
+}
+
+/***/ }),
+
+/***/ "./resources/js/App/components/OrganizationProfile/OrganizationProfile.jsx":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/App/components/OrganizationProfile/OrganizationProfile.jsx ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrganizationProfile; });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _OrganizationEventHistory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrganizationEventHistory */ "./resources/js/App/components/OrganizationProfile/OrganizationEventHistory.jsx");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+ //import "./App.css";
+
+
+
+var Spinner = function Spinner() {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "spinner")
+  );
+};
+
+function OrganizationProfile(_ref) {
+  var org_id = _ref.org_id;
+  var getEventsUrl = "/api/events/";
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      orgEvents = _useState2[0],
+      setOrgEvents = _useState2[1];
+
+  var getEvents = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var response, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return fetch("".concat(getEventsUrl).concat(org_id));
+
+            case 3:
+              response = _context.sent;
+              console.log('data fetch', response);
+              _context.next = 7;
+              return response.json();
+
+            case 7:
+              data = _context.sent;
+              console.log("data", data);
+              setOrgEvents(data);
+              _context.next = 15;
+              break;
+
+            case 12:
+              _context.prev = 12;
+              _context.t0 = _context["catch"](0);
+              console.log("getEvents error", _context.t0);
+
+            case 15:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 12]]);
+    }));
+
+    return function getEvents() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    getEvents();
+  }, []);
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, !orgEvents ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Spinner, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_OrganizationEventHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      setOrgEvents: setOrgEvents,
+      orgEvents: orgEvents
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "HElllllooo!!"))
+  );
+}
+
+/***/ }),
+
+/***/ "./resources/js/App/components/OrganizationProfile/OrganizationTripHistory.jsx":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/App/components/OrganizationProfile/OrganizationTripHistory.jsx ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrganizationTripHistory; });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Api_trips__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../Api/trips */ "./resources/js/Api/trips.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+function OrganizationTripHistory(_ref) {
+  var event_id = _ref.event_id;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      orgTrips = _useState2[0],
+      setOrgTrips = _useState2[1];
+
+  var getOrgTripsUrl = "/api/events/trips/";
+
+  var getOrgTrips = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var response, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return fetch("".concat(getOrgTripsUrl).concat(event_id));
+
+            case 3:
+              response = _context.sent;
+              _context.next = 6;
+              return response.json();
+
+            case 6:
+              data = _context.sent;
+              setOrgTrips(data);
+              _context.next = 13;
+              break;
+
+            case 10:
+              _context.prev = 10;
+              _context.t0 = _context["catch"](0);
+              console.log("getOrgTrips error", _context.t0);
+
+            case 13:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 10]]);
+    }));
+
+    return function getOrgTrips() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    getOrgTrips();
+  }, []);
+
+  var handleDeleteTrip = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(id) {
+      var newTrips;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.prev = 0;
+              _context2.next = 3;
+              return Object(_Api_trips__WEBPACK_IMPORTED_MODULE_2__["deleteTrip"])(id);
+
+            case 3:
+              newTrips = orgTrips.filter(function (trip) {
+                return trip.id !== id;
+              });
+              setOrgTrips(newTrips);
+              _context2.next = 10;
+              break;
+
+            case 7:
+              _context2.prev = 7;
+              _context2.t0 = _context2["catch"](0);
+              console.log("error", _context2.t0);
+
+            case 10:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2, null, [[0, 7]]);
+    }));
+
+    return function handleDeleteTrip(_x) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+
+  console.log("org trips", orgTrips);
+  var trips = orgTrips.map(function (trip, index) {
+    return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "org-trip",
+        key: index
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, trip.airport_from, " - ", trip.airport_to), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("em", null, trip.flight_date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.distance, " KM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Footprint:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.carbon_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Offset:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, " ", trip.offset_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DeleteTripButton, {
+        trip: trip,
+        handleDeleteTrip: handleDeleteTrip
+      }))
+    );
+  });
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, trips)
+  );
+}
+
+function DeleteTripButton(_ref4) {
+  var handleDeleteTrip = _ref4.handleDeleteTrip,
+      trip = _ref4.trip;
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: "delete-trip-button",
+      onClick: function onClick() {
+        return handleDeleteTrip(trip.id);
+      }
+    }, "delete trip")
+  );
+}
+
+/***/ }),
+
 /***/ "./resources/js/App/components/OrganizationReactExample.jsx":
 /*!******************************************************************!*\
   !*** ./resources/js/App/components/OrganizationReactExample.jsx ***!
@@ -89756,95 +90075,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* harmony import */ var _OrganizationProfile_OrganizationProfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrganizationProfile/OrganizationProfile */ "./resources/js/App/components/OrganizationProfile/OrganizationProfile.jsx");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
-var OrganizationReactExample = /*#__PURE__*/function (_React$Component) {
-  _inherits(OrganizationReactExample, _React$Component);
+function OrganizationReactExample() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      user = _useState2[0],
+      setUser = _useState2[1];
 
-  function OrganizationReactExample(props) {
-    var _this;
+  var makeOrgUser = function makeOrgUser() {
+    var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+    $.ajax({
+      url: "/orgIndexAjax",
+      type: "POST",
+      data: {
+        _token: token,
+        message: "bravo"
+      },
+      dataType: "JSON",
+      success: function success(response) {
+        console.log("success");
+        console.log(response);
+        setUser(response);
+      },
+      error: function error(response) {
+        console.log("error");
+        console.log(response);
+      }
+    });
+  };
 
-    _classCallCheck(this, OrganizationReactExample);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(OrganizationReactExample).call(this, props));
-    _this.state = {
-      user: ""
-    };
-    return _this;
-  }
-
-  _createClass(OrganizationReactExample, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-      $.ajax({
-        url: "/orgIndexAjax",
-        type: "POST",
-        data: {
-          _token: token,
-          message: "bravo"
-        },
-        dataType: "JSON",
-        success: function success(response) {
-          console.log("success");
-          console.log(response);
-
-          _this2.setState({
-            user: response
-          });
-        },
-        error: function error(response) {
-          console.log("error");
-          console.log(response);
-        }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var user = this.state.user ? this.state.user : "";
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "row justify-content-center"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "col-md-8"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-header"
-        }, "Data from", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-body"
-        }, "Currently logged user: ", user.name, " #", user.id)))))
-      );
-    }
-  }]);
-
-  return OrganizationReactExample;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    makeOrgUser();
+  }, []);
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row justify-content-center"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-8"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card-header"
+    }, "Data from", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card-body"
+    }, "Currently logged user: ", user.name, " #", user.id)))), !user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Loading...") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_OrganizationProfile_OrganizationProfile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      org_id: user.id
+    }))
+  );
+}
 
 /***/ }),
 
@@ -90166,9 +90456,9 @@ function UserProfile(_ref) {
       userTrips = _useState2[0],
       setUserTrips = _useState2[1];
 
-  var getTripsUrl = "/api/trips/";
+  var getUserTripsUrl = "/api/trips/";
 
-  var getTrips = /*#__PURE__*/function () {
+  var getUserTrips = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var response, data;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
@@ -90177,7 +90467,7 @@ function UserProfile(_ref) {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return fetch("".concat(getTripsUrl).concat(user_id));
+              return fetch("".concat(getUserTripsUrl).concat(user_id));
 
             case 3:
               response = _context.sent;
@@ -90204,13 +90494,13 @@ function UserProfile(_ref) {
       }, _callee, null, [[0, 11]]);
     }));
 
-    return function getTrips() {
+    return function getUserTrips() {
       return _ref2.apply(this, arguments);
     };
   }();
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    getTrips();
+    getUserTrips();
   }, []);
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, !userTrips ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Spinner, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
       setUserTrips: setUserTrips,
@@ -90261,30 +90551,29 @@ function UserTripHistory(_ref) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              console.log("delete working");
-              _context.prev = 1;
-              _context.next = 4;
+              _context.prev = 0;
+              _context.next = 3;
               return Object(_Api_trips__WEBPACK_IMPORTED_MODULE_2__["deleteTrip"])(id);
 
-            case 4:
+            case 3:
               newTrips = userTrips.filter(function (trip) {
                 return trip.id !== id;
               });
               setUserTrips(newTrips);
-              _context.next = 11;
+              _context.next = 10;
               break;
 
-            case 8:
-              _context.prev = 8;
-              _context.t0 = _context["catch"](1);
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
               console.log("error", _context.t0);
 
-            case 11:
+            case 10:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[1, 8]]);
+      }, _callee, null, [[0, 7]]);
     }));
 
     return function handleDeleteTrip(_x) {
@@ -90299,7 +90588,7 @@ function UserTripHistory(_ref) {
     return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "user-trip",
         key: index
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, trip.airport_from, " - ", trip.airport_to), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("em", null, trip.flight_date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.distance, " KM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Footprint:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.carbon_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Offset:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, " ", trip.offset_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DeleteTrackButton, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, trip.airport_from, " - ", trip.airport_to), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("em", null, trip.flight_date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.distance, " KM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Footprint:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, trip.carbon_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Carbon Offset:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, " ", trip.offset_amount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DeleteTripButton, {
         trip: trip,
         handleDeleteTrip: handleDeleteTrip
       }))
@@ -90315,7 +90604,7 @@ function UserTripHistory(_ref) {
   );
 }
 
-function DeleteTrackButton(_ref3) {
+function DeleteTripButton(_ref3) {
   var handleDeleteTrip = _ref3.handleDeleteTrip,
       trip = _ref3.trip;
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
