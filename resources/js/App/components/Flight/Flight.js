@@ -17,7 +17,6 @@ const flight = props => {
     const dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
     const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
-
     let newArr = [];
     let result = null;
     const haversineDistance = (lat1, lat2, lon2, lon1) => {
@@ -33,9 +32,9 @@ const flight = props => {
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = (R * c).toFixed(2);
         newArr.push(Number(d));
-        result = newArr.reduce((a, b) => a + b);
-        console.log('newArr', newArr);
-        console.log('result', result);
+        result = newArr.reduce((a, b) => a + b).toFixed(0);
+        console.log("newArr", newArr);
+        console.log("result", result);
     };
 
     let stopovers = null;
@@ -81,6 +80,10 @@ const flight = props => {
             <div>
                 <h3 className="FlightInfo">Distance:</h3>
                 <h4 className="FlightTime">{result}km</h4>
+            </div>
+            <div>
+                <h3 className="FlightInfo">Price:</h3>
+                <h4 className="FlightTime">{price}km</h4>
             </div>
             <div className="FlightStopovers">{stopovers}</div>
         </div>

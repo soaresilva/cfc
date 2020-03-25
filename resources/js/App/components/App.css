@@ -4,6 +4,7 @@
     box-sizing: border-box;
     /* color: white; */
     /* overflow-x: hidden; */
+    border-right: none;
 }
 
 .WelcomeText {
