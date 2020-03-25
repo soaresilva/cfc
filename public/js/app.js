@@ -7088,36 +7088,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
-=======
-<<<<<<< HEAD
 exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
-=======
-<<<<<<< HEAD
-=======
-exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
-=======
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    /* color: white; */\r\n    /* overflow-x: hidden; */\r\n    border-right: none;\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    color: white;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    color: white;\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color: #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n\r\n.SearchSection {\r\n    color: white;\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 98.9vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n    background-color: #484d37;\r\n}\r\n", ""]);
-=======
-<<<<<<< HEAD
-exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
-=======
-<<<<<<< HEAD
-exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    /* color: white; */\r\n    /* overflow-x: hidden; */\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    color: white;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    color: white;\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color: #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n\r\n.SearchSection {\r\n    color: white;\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 98.9vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n    background-color: #484d37;\r\n}\r\n", ""]);
-=======
-exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
->>>>>>> cd2a1fb0111b6ad0811193a7fc208c64320d88ba
->>>>>>> d7bc932b986ceb3fa6fa0376caf2beb913185166
->>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
->>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
 
 // exports
 
@@ -7155,21 +7126,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.push([module.i, ".Flight {\n  width: 70vw;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  margin-bottom: 1rem;\n  padding-bottom: .5rem;\n  padding-top: .5rem;\n  border-bottom: 1.5px solid #3a452e;\n  border-right: 1.5px solid #3a452e;\n  box-shadow: 1px 2px 2px 2px #3a452edc;\n}\n\n.FlightTitle {\n  font-size: 1.4rem;\n}\n\n.FlightInfo {\n  font-size: 1rem;\n}\n\n.FlightTime {\n  font-size: .8rem;\n}\n\n.FlightStopovers {\n  display: flex;\n  flex-direction: column;\n}", ""]);
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-exports.push([module.i, ".Flight {\r\n  width: 70vw;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  margin-bottom: 1rem;\r\n  padding-bottom: .5rem;\r\n  padding-top: .5rem;\r\n  border-bottom: 1.5px solid #3a452e;\r\n  border-right: 1.5px solid #3a452e;\r\n  box-shadow: 1px 2px 2px 2px #3a452edc;\r\n}\r\n\r\n.FlightTitle {\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.FlightInfo {\r\n  font-size: 1rem;\r\n}\r\n\r\n.FlightTime {\r\n  font-size: .8rem;\r\n}\r\n\r\n.FlightStopovers {\r\n  display: flex;\r\n  flex-direction: column;\r\n}", ""]);
-=======
 exports.push([module.i, ".Flight {\n    width: 70vw;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    margin-bottom: 1rem;\n    padding-bottom: 0.5rem;\n    padding-top: 0.5rem;\n    border-bottom: 1.5px solid #3a452e;\n    border-right: 1.5px solid #3a452e;\n    box-shadow: 1px 2px 2px 2px #3a452edc;\n}\n\n.FlightTitle {\n    font-size: 1.4rem;\n}\n\n.FlightInfo {\n    font-size: 1rem;\n}\n\n.FlightTime {\n    font-size: 0.8rem;\n}\n\n.FlightStopovers {\n    display: flex;\n    flex-direction: column;\n}\n", ""]);
->>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
 
 // exports
 
@@ -7226,15 +7183,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.push([module.i, ".Button {\n  padding: .5rem;\n  width: 5rem;\n  border-radius: 10px;\n  background-color: #6c757d;\n  outline: none;\n  cursor: pointer;\n  border: none;\n  transition: .3s all;\n}\n\n.Button:hover {\n  background-color: #5a6268;\n  outline: none;\n}", ""]);
-=======
-exports.push([module.i, ".Button {\r\n  padding: .5rem;\r\n  width: 5rem;\r\n  border-radius: 10px;\r\n  background-color: #6c757d;\r\n  outline: none;\r\n  cursor: pointer;\r\n  border: none;\r\n  color: white;\r\n  transition: .3s all;\r\n}\r\n\r\n.Button:hover {\r\n  background-color: #5a6268;\r\n  outline: none;\r\n}", ""]);
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
-exports.push([module.i, ".Button {\r\n  padding: .5rem;\r\n  width: 5rem;\r\n  border-radius: 10px;\r\n  background-color: #6c757d;\r\n  outline: none;\r\n  cursor: pointer;\r\n  border: none;\r\n  color: white;\r\n  transition: .3s all;\r\n}\r\n\r\n.Button:hover {\r\n  background-color: #5a6268;\r\n  outline: none;\r\n}", ""]);
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
+exports.push([module.i, ".Button {\n  padding: .5rem;\n  width: 5rem;\n  border-radius: 10px;\n  background-color: #6c757d;\n  outline: none;\n  cursor: pointer;\n  border: none;\n  color: white;\n  transition: .3s all;\n}\n\n.Button:hover {\n  background-color: #5a6268;\n  outline: none;\n}", ""]);
 
 // exports
 
@@ -89732,50 +89681,6 @@ var flight = function flight(props) {
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Flight"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "FlightTitle"
-  }, cityFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "FlightInfo"
-  }, "Departure:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, dateDepart), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, timeDepart)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "FlightTitle"
-  }, cityTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "FlightInfo"
-  }, "Arrival:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, dateArrival), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, timeArrival)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "FlightInfo"
-  }, "Duration:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, fly_duration)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "FlightInfo"
-  }, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, result, "km")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "FlightInfo"
-  }, "Price:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "FlightTime"
-  }, "\u20AC", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "FlightStopovers"
-  }, stopovers));
-=======
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "Flight"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -89802,31 +89707,14 @@ var flight = function flight(props) {
       className: "FlightInfo"
     }, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       className: "FlightTime"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
     }, result, "km")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "FlightInfo"
     }, "Price:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       className: "FlightTime"
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
     }, "\u20AC", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "FlightStopovers"
     }, stopovers))
   );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (flight);
@@ -90243,8 +90131,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
  //import "./App.css";
 
 
+
+var Spinner = function Spinner() {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "spinner")
+  );
+};
+
 function UserProfile(_ref) {
-  var userID = _ref.userID;
+  var user_id = _ref.user_id;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -90262,7 +90156,7 @@ function UserProfile(_ref) {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return fetch("".concat(getTripsUrl, "2"));
+              return fetch("".concat(getTripsUrl).concat(user_id));
 
             case 3:
               response = _context.sent;
@@ -90296,9 +90190,8 @@ function UserProfile(_ref) {
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     getTrips();
-    console.log("user id", userID);
   }, []);
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, !userTrips ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Spinner, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserTripHistory__WEBPACK_IMPORTED_MODULE_2__["default"], {
       setUserTrips: setUserTrips,
       userTrips: userTrips
     }))
@@ -90474,11 +90367,6 @@ function UserReactExample() {
       user = _useState2[0],
       setUser = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState4 = _slicedToArray(_useState3, 2),
-      userID = _useState4[0],
-      setUserID = _useState4[1];
-
   var makeUser = function makeUser() {
     var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
     $.ajax({
@@ -90493,7 +90381,6 @@ function UserReactExample() {
         console.log("success");
         console.log(response);
         setUser(response);
-        setUserID(response.id);
       },
       error: function error(response) {
         console.log("error");
@@ -90502,9 +90389,10 @@ function UserReactExample() {
     });
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"])(function () {
     makeUser();
   }, []);
+  console.log("react user example user id", user.id);
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -90517,8 +90405,8 @@ function UserReactExample() {
       className: "card-header"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "card-body"
-    }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      userID: userID
+    }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))), !user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Loading...") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_UserProfile__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      user_id: user.id
     }))
   );
 }
@@ -90714,31 +90602,10 @@ var FlightSection = /*#__PURE__*/function (_React$Component) {
         });
       }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
       return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "FlightSection"
         }, flight, content)
       );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "FlightSection"
-      }, flight, content);
->>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
-<<<<<<< HEAD
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
-=======
->>>>>>> 7a8361bf5713c6128c8f59a6c74cf8d2a621e2ae
     }
   }]);
 
@@ -91185,13 +91052,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
+__webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/gabriellewildfeuer/WebDev/bootcamp/projects/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

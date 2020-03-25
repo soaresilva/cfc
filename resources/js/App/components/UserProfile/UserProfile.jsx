@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 //import "./App.css";
 import UserTripHistory from "./UserTripHistory";
 
-export default function UserProfile({ userID }) {
-    const [userTrips, setUserTrips] = useState([]);
+const Spinner = () => {
+    return <h1>spinner</h1>;
+};
 
+export default function UserProfile({ user_id }) {
+    const [userTrips, setUserTrips] = useState([]);
     const getTripsUrl = "/api/trips/";
 
     const getTrips = async () => {
         try {
-            const response = await fetch(`${getTripsUrl}2`);
+            const response = await fetch(`${getTripsUrl}${user_id}`);
             const data = await response.json();
             console.log("data", data);
             setUserTrips(data);
@@ -19,15 +22,18 @@ export default function UserProfile({ userID }) {
     };
     useEffect(() => {
         getTrips();
-        console.log("user id", userID);
     }, []);
 
     return (
         <div>
-            <UserTripHistory
-                setUserTrips={setUserTrips}
-                userTrips={userTrips}
-            />
+            {!userTrips ? (
+                <Spinner />
+            ) : (
+                <UserTripHistory
+                    setUserTrips={setUserTrips}
+                    userTrips={userTrips}
+                />
+            )}
         </div>
     );
 }

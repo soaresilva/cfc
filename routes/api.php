@@ -18,6 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('trips/{user_id}', 'UserController@getTrips');
-Route::delete('trips/{user_id}', 'UserController@deleteTrips');
+Route::get('trips/{user_id}', 'TripController@getTrips');
+Route::delete('trips/{user_id}', 'TripController@deleteTrips');
 
