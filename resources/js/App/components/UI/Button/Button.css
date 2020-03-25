@@ -6,6 +6,7 @@
   outline: none;
   cursor: pointer;
   border: none;
+  color: white;
   transition: .3s all;
 }
 

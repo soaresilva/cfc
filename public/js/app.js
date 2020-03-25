@@ -7088,7 +7088,23 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
+=======
+<<<<<<< HEAD
+exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    /* color: white; */\r\n    /* overflow-x: hidden; */\r\n    border-right: none;\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    color: white;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    color: white;\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color: #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n\r\n.SearchSection {\r\n    color: white;\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 98.9vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n    background-color: #484d37;\r\n}\r\n", ""]);
+=======
+<<<<<<< HEAD
+exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    min-height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
+=======
+<<<<<<< HEAD
+exports.push([module.i, "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    /* color: white; */\r\n    /* overflow-x: hidden; */\r\n}\r\n\r\n.WelcomeText {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 70vw;\r\n    color: white;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n}\r\n.WelcomeTitle {\r\n    font-size: 5rem;\r\n    margin-bottom: 3rem;\r\n}\r\n.WelcomeDescription {\r\n    width: 40ch;\r\n    align-self: flex-start;\r\n    font-size: 2rem;\r\n    text-align: start;\r\n    margin-left: 2.5rem;\r\n}\r\n\r\n.Video {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 99vw;\r\n    height: 100vh;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.Section-CardItems {\r\n    color: white;\r\n    width: 98.9vw;\r\n    height: 70vh;\r\n    background-color: #1f2317;\r\n    position: relative;\r\n}\r\n.CardItems {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 70vw;\r\n    margin: 0 auto;\r\n}\r\n.CardItem-About {\r\n    margin-top: -5rem;\r\n    background-color: #62684d;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Calc {\r\n    margin-top: -5rem;\r\n    background-color: #484d37;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n.CardItem-Offset {\r\n    margin-top: -5rem;\r\n    background-color: #3a452e;\r\n    border-radius: 7px;\r\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\r\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\r\n}\r\n\r\n.SearchSection {\r\n    color: white;\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 98.9vw;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 5rem;\r\n    background-color: #484d37;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    /* color: white; */\n    /* overflow-x: hidden; */\n    border-right: none;\n}\n\n.WelcomeText {\n    position: relative;\n    height: 100vh;\n    width: 70vw;\n    color: white;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n}\n.WelcomeTitle {\n    font-size: 5rem;\n    margin-bottom: 3rem;\n}\n.WelcomeDescription {\n    width: 40ch;\n    align-self: flex-start;\n    font-size: 2rem;\n    text-align: start;\n    margin-left: 2.5rem;\n}\n\n.Video {\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 99vw;\n    height: 100vh;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n\n.Section-CardItems {\n    color: white;\n    width: 98.9vw;\n    height: 70vh;\n    background-color: #1f2317;\n    position: relative;\n}\n.CardItems {\n    display: flex;\n    justify-content: space-between;\n    width: 70vw;\n    margin: 0 auto;\n}\n.CardItem-About {\n    margin-top: -5rem;\n    background-color: #62684d;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Calc {\n    margin-top: -5rem;\n    background-color: #484d37;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n.CardItem-Offset {\n    margin-top: -5rem;\n    background-color: #3a452e;\n    border-radius: 7px;\n    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),\n        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);\n}\n\n.SearchSection {\n    color: white;\n    position: relative;\n    height: 100vh;\n    width: 98.9vw;\n    margin: 0 auto;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 5rem;\n    background-color: #484d37;\n}\n", ""]);
+>>>>>>> cd2a1fb0111b6ad0811193a7fc208c64320d88ba
+>>>>>>> d7bc932b986ceb3fa6fa0376caf2beb913185166
+>>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
+>>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
 
 // exports
 
@@ -7126,7 +7142,11 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
+<<<<<<< HEAD
+exports.push([module.i, ".Flight {\r\n  width: 70vw;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  margin-bottom: 1rem;\r\n  padding-bottom: .5rem;\r\n  padding-top: .5rem;\r\n  border-bottom: 1.5px solid #3a452e;\r\n  border-right: 1.5px solid #3a452e;\r\n  box-shadow: 1px 2px 2px 2px #3a452edc;\r\n}\r\n\r\n.FlightTitle {\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.FlightInfo {\r\n  font-size: 1rem;\r\n}\r\n\r\n.FlightTime {\r\n  font-size: .8rem;\r\n}\r\n\r\n.FlightStopovers {\r\n  display: flex;\r\n  flex-direction: column;\r\n}", ""]);
+=======
 exports.push([module.i, ".Flight {\n    width: 70vw;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    margin-bottom: 1rem;\n    padding-bottom: 0.5rem;\n    padding-top: 0.5rem;\n    border-bottom: 1.5px solid #3a452e;\n    border-right: 1.5px solid #3a452e;\n    box-shadow: 1px 2px 2px 2px #3a452edc;\n}\n\n.FlightTitle {\n    font-size: 1.4rem;\n}\n\n.FlightInfo {\n    font-size: 1rem;\n}\n\n.FlightTime {\n    font-size: 0.8rem;\n}\n\n.FlightStopovers {\n    display: flex;\n    flex-direction: column;\n}\n", ""]);
+>>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
 
 // exports
 
@@ -7145,7 +7165,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".DropItem {\n  padding: 0 3rem;\n}\n", ""]);
+exports.push([module.i, ".DropItem {\r\n  padding: 0 3rem;\r\n}\r\n", ""]);
 
 // exports
 
@@ -7164,7 +7184,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".DropItem {\n  padding: 0 3rem;\n}\n", ""]);
+exports.push([module.i, ".DropItem {\r\n  padding: 0 3rem;\r\n}\r\n", ""]);
 
 // exports
 
@@ -7183,7 +7203,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".Button {\n  padding: .5rem;\n  width: 5rem;\n  border-radius: 10px;\n  background-color: #6c757d;\n  outline: none;\n  cursor: pointer;\n  border: none;\n  transition: .3s all;\n}\n\n.Button:hover {\n  background-color: #5a6268;\n  outline: none;\n}", ""]);
+exports.push([module.i, ".Button {\r\n  padding: .5rem;\r\n  width: 5rem;\r\n  border-radius: 10px;\r\n  background-color: #6c757d;\r\n  outline: none;\r\n  cursor: pointer;\r\n  border: none;\r\n  color: white;\r\n  transition: .3s all;\r\n}\r\n\r\n.Button:hover {\r\n  background-color: #5a6268;\r\n  outline: none;\r\n}", ""]);
 
 // exports
 
@@ -7202,7 +7222,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".Loader,\n.Loader:before,\n.Loader:after {\n  border-radius: 50%;\n}\n.Loader {\n  color: #1f2317;\n  font-size: 11px;\n  text-indent: -99999em;\n  margin: 55px auto;\n  position: relative;\n  width: 10em;\n  height: 10em;\n  box-shadow: inset 0 0 0 1em;\n  transform: translateZ(0);\n}\n.Loader:before,\n.Loader:after {\n  position: absolute;\n  content: '';\n}\n.Loader:before {\n  width: 5.2em;\n  height: 10.2em;\n  background: #1f2317;\n  border-radius: 10.2em 0 0 10.2em;\n  top: -0.1em;\n  left: -0.1em;\n  transform-origin: 5.1em 5.1em;\n  -webkit-animation: load2 2s infinite ease 1.5s;\n  animation: load2 2s infinite ease 1.5s;\n}\n.Loader:after {\n  width: 5.2em;\n  height: 10.2em;\n  background: #1f2317;\n  border-radius: 0 10.2em 10.2em 0;\n  top: -0.1em;\n  left: 4.9em;\n  transform-origin: 0.1em 5.1em;\n  -webkit-animation: load2 2s infinite ease;\n  animation: load2 2s infinite ease;\n}\n@-webkit-keyframes load2 {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes load2 {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n", ""]);
+exports.push([module.i, ".Loader,\r\n.Loader:before,\r\n.Loader:after {\r\n  border-radius: 50%;\r\n}\r\n.Loader {\r\n  color: #1f2317;\r\n  font-size: 11px;\r\n  text-indent: -99999em;\r\n  margin: 55px auto;\r\n  position: relative;\r\n  width: 10em;\r\n  height: 10em;\r\n  box-shadow: inset 0 0 0 1em;\r\n  transform: translateZ(0);\r\n}\r\n.Loader:before,\r\n.Loader:after {\r\n  position: absolute;\r\n  content: '';\r\n}\r\n.Loader:before {\r\n  width: 5.2em;\r\n  height: 10.2em;\r\n  background: #1f2317;\r\n  border-radius: 10.2em 0 0 10.2em;\r\n  top: -0.1em;\r\n  left: -0.1em;\r\n  transform-origin: 5.1em 5.1em;\r\n  -webkit-animation: load2 2s infinite ease 1.5s;\r\n  animation: load2 2s infinite ease 1.5s;\r\n}\r\n.Loader:after {\r\n  width: 5.2em;\r\n  height: 10.2em;\r\n  background: #1f2317;\r\n  border-radius: 0 10.2em 10.2em 0;\r\n  top: -0.1em;\r\n  left: 4.9em;\r\n  transform-origin: 0.1em 5.1em;\r\n  -webkit-animation: load2 2s infinite ease;\r\n  animation: load2 2s infinite ease;\r\n}\r\n@-webkit-keyframes load2 {\r\n  0% {\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n@keyframes load2 {\r\n  0% {\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -7221,7 +7241,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".FlightSection {\n  display: flex;\n  flex-direction: column;\n}\n\n.Warning {\n  color: red;\n}\n", ""]);
+exports.push([module.i, ".FlightSection {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.Warning {\r\n  color: red;\r\n}\r\n", ""]);
 
 // exports
 
@@ -7240,7 +7260,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".LandingPage {\n  display: flex;\n  flex-direction: column;\n}\n\n.LandingPageTitle {\n  height: 10rem;\n}\n\n.Dropdown {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.DF {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  align-items: center;\n}\n\n.CheckboxOption {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-right: 1.5rem;\n  width: 12rem;\n}\n\n.Blue {\n  padding-bottom: 2rem;\n  font-weight: 200;\n}\n", ""]);
+exports.push([module.i, ".LandingPage {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.LandingPageTitle {\r\n  height: 10rem;\r\n}\r\n\r\n.Dropdown {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.DF {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.CheckboxOption {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding-right: 1.5rem;\r\n  width: 12rem;\r\n}\r\n\r\n.Blue {\r\n  padding-bottom: 2rem;\r\n  font-weight: 200;\r\n}\r\n", ""]);
 
 // exports
 
@@ -89402,9 +89422,13 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
@@ -89420,46 +89444,47 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
+  var _super = _createSuper(App);
+
   function App() {
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-          playsInline: true,
-          autoPlay: true,
-          muted: true,
-          loop: true,
-          className: "Video"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-          src: "/videos/coverr-wood-1568650087945.mp4",
-          type: "video/mp4"
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "WelcomeText"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-          className: "WelcomeTitle"
-        }, "Carbon Footprint Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-          className: "WelcomeDescription"
-        }, "Shape our future", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " myclimate is your partner for effective climate protection \u2013 both locally and globally")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "Section-CardItems"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CardItems"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CardItem-About"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "About us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CardItem-Calc"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Calculate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CardItem-Offset"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Offset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "SearchSection"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_LandingPage_LandingPage__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "WelcomeText"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "\"footcha\"")))
-      );
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+        playsInline: true,
+        autoPlay: true,
+        muted: true,
+        loop: true,
+        className: "Video"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+        src: "/videos/coverr-wood-1568650087945.mp4",
+        type: "video/mp4"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "WelcomeText"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "WelcomeTitle"
+      }, "Carbon Footprint Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "WelcomeDescription"
+      }, "Shape our future", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " myclimate is your partner for effective climate protection \u2013 both locally and globally")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "Section-CardItems"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CardItems"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CardItem-About"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "About us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CardItem-Calc"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Calculate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CardItem-Offset"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_CardItem_CardItem__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Offset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "SearchSection"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_LandingPage_LandingPage__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "WelcomeText"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "\"footcha\"")));
     }
   }]);
 
@@ -89517,10 +89542,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function CardItem(props) {
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "CardItem"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.children))
-  );
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "CardItem"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.children));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CardItem);
@@ -89578,6 +89602,7 @@ var flight = function flight(props) {
       cityTo = props.cityTo,
       fly_duration = props.fly_duration,
       dTime = props.dTime,
+      price = props.price,
       aTime = props.aTime,
       route = props.route;
   var dateDepart = new Date(dTime * 1000).toDateString();
@@ -89602,24 +89627,21 @@ var flight = function flight(props) {
     result = newArr.reduce(function (a, b) {
       return a + b;
     }).toFixed(0);
-    console.log("newArr", newArr);
-    console.log("result", result);
   };
 
   var stopovers = null;
   var latFrom, latTo, lngFrom, lngTo;
 
-  if (route.length > 1) {
+  if (route.length >= 0) {
     stopovers = route.slice(0, route.length - 1).map(function (stopover) {
       var randomNum = Math.random();
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          key: "".concat(stopover.cityTo, "-").concat(randomNum)
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-          className: "FlightInfo"
-        }, "Stopover:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "FlightTime"
-        }, stopover.cityTo))
-      );
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        key: "".concat(stopover.cityTo, "-").concat(randomNum)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "FlightInfo"
+      }, "Stopover:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "FlightTime"
+      }, stopover.cityTo));
     });
 
     for (var index in route) {
@@ -89631,6 +89653,41 @@ var flight = function flight(props) {
     }
   }
 
+<<<<<<< HEAD
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "Flight"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "FlightTitle"
+  }, cityFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "FlightInfo"
+  }, "Departure:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, dateDepart), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, timeDepart)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "FlightTitle"
+  }, cityTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "FlightInfo"
+  }, "Arrival:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, dateArrival), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, timeArrival)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "FlightInfo"
+  }, "Duration:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, fly_duration)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "FlightInfo"
+  }, "Distance:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, result, "km")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "FlightInfo"
+  }, "Price:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "FlightTime"
+  }, "\u20AC", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "FlightStopovers"
+  }, stopovers));
+=======
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "Flight"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -89665,6 +89722,7 @@ var flight = function flight(props) {
       className: "FlightStopovers"
     }, stopovers))
   );
+>>>>>>> 91a8d2f8fbf8a610c1111b50ec2bb958d478dea8
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (flight);
@@ -89693,9 +89751,13 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
@@ -89709,12 +89771,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var OrganizationReactExample = /*#__PURE__*/function (_React$Component) {
   _inherits(OrganizationReactExample, _React$Component);
 
+  var _super = _createSuper(OrganizationReactExample);
+
   function OrganizationReactExample(props) {
     var _this;
 
     _classCallCheck(this, OrganizationReactExample);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(OrganizationReactExample).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {
       user: ""
     };
@@ -89753,20 +89817,19 @@ var OrganizationReactExample = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var user = this.state.user ? this.state.user : "";
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "row justify-content-center"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "col-md-8"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-header"
-        }, "Data from", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-body"
-        }, "Currently logged user: ", user.name, " #", user.id)))))
-      );
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row justify-content-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-8"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, "Data from", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, "Currently logged user: ", user.name, " #", user.id)))));
     }
   }]);
 
@@ -89801,23 +89864,21 @@ function searchBar(props) {
       flightsFrom = props.flightsFrom,
       itemSelectFromHandler = props.itemSelectFromHandler;
   var flightFrom = flightsFrom.map(function (item) {
-    return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
-        key: item,
-        onClick: itemSelectFromHandler
-      }, item)
-    );
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
+      key: item,
+      onClick: itemSelectFromHandler
+    }, item);
   });
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "DropItem"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Dropdown"], {
-      isOpen: dropdownOpen,
-      toggle: dropDownClickHandler
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
-      caret: true
-    }, props.children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
-      header: true
-    }, props.children), flightFrom)))
-  );
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "DropItem"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Dropdown"], {
+    isOpen: dropdownOpen,
+    toggle: dropDownClickHandler
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
+    caret: true
+  }, props.children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
+    header: true
+  }, props.children), flightFrom)));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (searchBar);
@@ -89908,24 +89969,22 @@ function searchBar(props) {
       flightsTo = props.flightsTo,
       itemSelectToHandler = props.itemSelectToHandler;
   var flightTo = flightsTo.map(function (item) {
-    return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
-        key: item,
-        onClick: itemSelectToHandler
-      }, item)
-    );
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
+      key: item,
+      onClick: itemSelectToHandler
+    }, item);
   });
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "DropItem"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Dropdown"], {
-      isOpen: dropdownOpen,
-      toggle: dropDownClickHandler
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
-      caret: true,
-      className: "Dropdown"
-    }, props.children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
-      header: true
-    }, props.children), flightTo)))
-  );
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "DropItem"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Dropdown"], {
+    isOpen: dropdownOpen,
+    toggle: dropDownClickHandler
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
+    caret: true,
+    className: "Dropdown"
+  }, props.children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
+    header: true
+  }, props.children), flightTo)));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (searchBar);
@@ -89981,11 +90040,10 @@ __webpack_require__.r(__webpack_exports__);
 function Button(props) {
   var clicked = props.clicked,
       children = props.children;
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      className: "Button",
-      onClick: clicked
-    }, children)
-  );
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "Button",
+    onClick: clicked
+  }, children);
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
@@ -90039,10 +90097,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var spinner = function spinner() {
-  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "Loader"
-    }, "Loading...")
-  );
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "Loader"
+  }, "Loading...");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (spinner);
@@ -90069,9 +90126,13 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
@@ -90084,12 +90145,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var UserReactExample = /*#__PURE__*/function (_React$Component) {
   _inherits(UserReactExample, _React$Component);
 
+  var _super = _createSuper(UserReactExample);
+
   function UserReactExample(props) {
     var _this;
 
     _classCallCheck(this, UserReactExample);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(UserReactExample).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {
       user: ""
     };
@@ -90129,20 +90192,19 @@ var UserReactExample = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       console.log(this.state);
       var user = this.state.user ? this.state.user : "";
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "row justify-content-center"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "col-md-8"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-header"
-        }, "Data from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-body"
-        }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))))
-      );
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row justify-content-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-8"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, "Data from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Laravel to React component"), " with Ajax"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, "Currently logged user: ", user.first_name, " ", user.surname, " #", user.id)))));
     }
   }]);
 
@@ -90221,11 +90283,15 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -90242,9 +90308,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var FlightSection = /*#__PURE__*/function (_React$Component) {
   _inherits(FlightSection, _React$Component);
 
-  function FlightSection() {
-    var _getPrototypeOf2;
+  var _super = _createSuper(FlightSection);
 
+  function FlightSection() {
     var _this;
 
     _classCallCheck(this, FlightSection);
@@ -90253,7 +90319,7 @@ var FlightSection = /*#__PURE__*/function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(FlightSection)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       data: [],
@@ -90335,17 +90401,22 @@ var FlightSection = /*#__PURE__*/function (_React$Component) {
       } else {
         content = null;
         flight = this.state.data.map(function (flight) {
-          return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Flight_Flight__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
-              key: flight.id
-            }, flight))
-          );
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Flight_Flight__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
+            key: flight.id
+          }, flight));
         });
       }
 
+<<<<<<< HEAD
       return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "FlightSection"
         }, flight, content)
       );
+=======
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "FlightSection"
+      }, flight, content);
+>>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
     }
   }]);
 
@@ -90412,11 +90483,15 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -90435,9 +90510,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var LandingPage = /*#__PURE__*/function (_React$Component) {
   _inherits(LandingPage, _React$Component);
 
-  function LandingPage() {
-    var _getPrototypeOf2;
+  var _super = _createSuper(LandingPage);
 
+  function LandingPage() {
     var _this;
 
     _classCallCheck(this, LandingPage);
@@ -90446,7 +90521,7 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(LandingPage)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       dropdownToOpen: false,
@@ -90514,6 +90589,8 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "submitDataHandler", function () {
+      if (_this.state.flightFrom === "From" || _this.state.flightTo === "To") return;
+
       _this.setState({
         submitted: !_this.state.submitted
       });
@@ -90537,44 +90614,43 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var destinationTo = Object.values(this.state.flightsTo);
       var destinationFrom = Object.values(this.state.flightsFrom);
-      return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "LandingPage"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "LandingPageTitle"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-          className: "Blue"
-        }, "Flight Explorer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "Dropdown"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SearchBars_SearchBarFrom__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          flightsFrom: destinationFrom,
-          dropdownOpen: this.state.dropdownFromOpen,
-          dropDownClickHandler: this.dropDownFromClickHandler,
-          itemSelectFromHandler: this.itemSelectFromHandler
-        }, this.state.flightFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Searchbars_SearchbarTo__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          flightsTo: destinationTo,
-          dropdownOpen: this.state.dropdownToOpen,
-          dropDownClickHandler: this.dropDownToClickHandler,
-          itemSelectToHandler: this.itemSelectToHandler
-        }, this.state.flightTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "DF"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CheckboxOption"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Direct flights only:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-          type: "checkbox",
-          onChange: this.directFlightsClickHandler
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "CheckboxOption"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Flights with layover:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-          type: "checkbox"
-        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_UI_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          clicked: this.submitDataHandler
-        }, "Search"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FlightSection_FlightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          origin: this.state.originFrom,
-          destination: this.state.destination,
-          submitted: this.state.submitted,
-          direct: this.state.direct
-        }))
-      );
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "LandingPage"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "LandingPageTitle"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "Blue"
+      }, "Flight Explorer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "Dropdown"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SearchBars_SearchBarFrom__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        flightsFrom: destinationFrom,
+        dropdownOpen: this.state.dropdownFromOpen,
+        dropDownClickHandler: this.dropDownFromClickHandler,
+        itemSelectFromHandler: this.itemSelectFromHandler
+      }, this.state.flightFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Searchbars_SearchbarTo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        flightsTo: destinationTo,
+        dropdownOpen: this.state.dropdownToOpen,
+        dropDownClickHandler: this.dropDownToClickHandler,
+        itemSelectToHandler: this.itemSelectToHandler
+      }, this.state.flightTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "DF"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CheckboxOption"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Direct flights only:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox",
+        onChange: this.directFlightsClickHandler
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "CheckboxOption"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Flights with layover:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_UI_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        clicked: this.submitDataHandler
+      }, "Search"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FlightSection_FlightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        origin: this.state.originFrom,
+        destination: this.state.destination,
+        submitted: this.state.submitted,
+        direct: this.state.direct
+      }));
     }
   }]);
 
@@ -90651,7 +90727,7 @@ var searchFlights = /*#__PURE__*/function () {
               dateFrom: todayDate,
               dateTo: when,
               max_stopovers: direct,
-              limit: 5
+              limit: 3
             });
             url = new URL("?".concat(query), "https://api.skypicker.com/flights"); // console.log("url", url);
 
@@ -90790,8 +90866,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/diogo/webdev/cbp/projects/finalproject/cfc/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Lyuben\Desktop\BootcampPrague\FinalProject\cfc\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> 290ee444412d7a53c5e7eb7241f5fba7afc7ae5a
 
 
 /***/ })
