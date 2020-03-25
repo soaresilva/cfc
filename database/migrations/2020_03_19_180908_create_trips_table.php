@@ -20,7 +20,8 @@ class CreateTripsTable extends Migration
             $table->string('name')->nullable();
             $table->integer('distance');
             $table->float('carbon_amount', 8, 3);
-            $table->dateTime('flight_date')->nullable();
+            $table->float('offset_amount', 8, 3)->nullable();
+            $table->date('flight_date')->nullable();
             $table->string('airport_from')->nullable();
             $table->string('airport_to')->nullable();
             $table->timestamps();

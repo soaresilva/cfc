@@ -49,3 +49,10 @@ Route::get('/register/organization', 'Auth\RegisterController@showOrganizationRe
 
 Route::post('/login/organization', 'Auth\LoginController@organizationLogin');
 Route::post('/register/organization', 'Auth\RegisterController@createOrganization');
+
+
+
+
+
+//testing db call functions
+//Route::get('/test/{user_id}', 'UserController@getTrips');
