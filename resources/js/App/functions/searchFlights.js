@@ -14,7 +14,7 @@ const searchFlights = async (origin, destination, direct) => {
     dateFrom: todayDate,
     dateTo: when,
     max_stopovers: direct,
-    limit: 5
+    limit: 3
   });
   const url = new URL(`?${query}`, "https://api.skypicker.com/flights");
   // console.log("url", url);

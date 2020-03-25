@@ -8,6 +8,7 @@ const flight = props => {
         cityTo,
         fly_duration,
         dTime,
+        price,
         aTime,
         route
     } = props;
@@ -32,13 +33,11 @@ const flight = props => {
         var d = (R * c).toFixed(2);
         newArr.push(Number(d));
         result = newArr.reduce((a, b) => a + b).toFixed(0);
-        console.log("newArr", newArr);
-        console.log("result", result);
     };
 
     let stopovers = null;
     let latFrom, latTo, lngFrom, lngTo;
-    if (route.length > 1) {
+    if (route.length >= 0) {
         stopovers = route.slice(0, route.length - 1).map(stopover => {
             const randomNum = Math.random();
             return (
