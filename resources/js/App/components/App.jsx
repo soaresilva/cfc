@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import CardItem from "./UI/CardItem/CardItem";
-import LandingPage from './../containers/LandingPage/LandingPage';
+import LandingPage from "./../containers/LandingPage/LandingPage";
 
 export default class App extends React.Component {
     render() {
@@ -36,19 +36,12 @@ export default class App extends React.Component {
                         </div>
                     </div>
                 </div>
-
-                <div className="SearchSection">
-                    <h1>Calculate and offset your Emissions!</h1>
-                    <br></br>
                     <LandingPage />
-                </div>
 
-            
                 <div className="WelcomeText">
                     <h1>"footcha"</h1>
                 </div>
             </div>
-
         );
     }
 }

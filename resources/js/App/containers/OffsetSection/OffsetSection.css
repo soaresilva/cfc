@@ -1,0 +1,24 @@
+.OffsetSection {
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 98.9vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  background-color: #3a452e;
+}
+
+.SelectedFlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #62684d;
+  border-radius: 6px;
+  height: 8rem;
+}

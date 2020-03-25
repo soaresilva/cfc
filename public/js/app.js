@@ -7126,7 +7126,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".Flight {\n    width: 70vw;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    margin-bottom: 1rem;\n    padding-bottom: 0.5rem;\n    padding-top: 0.5rem;\n    border-bottom: 1.5px solid #3a452e;\n    border-right: 1.5px solid #3a452e;\n    box-shadow: 1px 2px 2px 2px #3a452edc;\n}\n\n.FlightTitle {\n    font-size: 1.4rem;\n}\n\n.FlightInfo {\n    font-size: 1rem;\n}\n\n.FlightTime {\n    font-size: 0.8rem;\n}\n\n.FlightStopovers {\n    display: flex;\n    flex-direction: column;\n}\n", ""]);
+exports.push([module.i, ".Flight {\n    width: 70vw;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    margin-bottom: 1rem;\n    padding-bottom: 0.5rem;\n    padding-top: 0.5rem;\n    border-bottom: 1.5px solid #3a452e;\n    border-right: 1.5px solid #3a452e;\n    box-shadow: 1px 2px 2px 2px #3a452edc;\n}\n\n.FlightTitle {\n    font-size: 1.4rem;\n}\n\n.FlightInfo {\n    font-size: 1rem;\n}\n\n.FlightTime {\n    font-size: 0.8rem;\n}\n\n.FlightStopovers {\n    display: flex;\n    flex-direction: column;\n}\n\n", ""]);
 
 // exports
 
@@ -7240,7 +7240,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".LandingPage {\n  display: flex;\n  flex-direction: column;\n}\n\n.LandingPageTitle {\n  height: 10rem;\n}\n\n.Dropdown {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.DF {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  align-items: center;\n}\n\n.CheckboxOption {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-right: 1.5rem;\n  width: 12rem;\n}\n\n.Blue {\n  padding-bottom: 2rem;\n  font-weight: 200;\n}\n", ""]);
+exports.push([module.i, ".LandingPage {\n  display: flex;\n  flex-direction: column;\n}\n\n.LandingPageTitle {\n  height: 10rem;\n}\n\n.Dropdown {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.DF {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  align-items: center;\n}\n\n.CheckboxOption {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-right: 1.5rem;\n  width: 12rem;\n}\n\n.Blue {\n  padding-bottom: 2rem;\n  font-weight: 200;\n}\n\n.SearchSection {\n  color: white;\n  position: relative;\n  min-height: 100vh;\n  width: 98.9vw;\n  margin: 0 auto;\n  /* text-align: center; */\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  background-color: #62684d;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/App/containers/OffsetSection/OffsetSection.css":
+/*!*****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/App/containers/OffsetSection/OffsetSection.css ***!
+  \*****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".OffsetSection {\n  color: white;\n  position: relative;\n  min-height: 100vh;\n  width: 98.9vw;\n  margin: 0 auto;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin-bottom: 5rem;\n  background-color: #3a452e;\n}\n\n.SelectedFlight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: flex-start;\n  background-color: #62684d;\n  border-radius: 6px;\n  height: 8rem;\n}\n", ""]);
 
 // exports
 
@@ -89621,6 +89640,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Flight_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Flight.css */ "./resources/js/App/components/Flight/Flight.css");
 /* harmony import */ var _Flight_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Flight_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _UI_Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../UI/Button/Button */ "./resources/js/App/components/UI/Button/Button.js");
+
 
 
 
@@ -89636,7 +89657,7 @@ var flight = function flight(props) {
   var timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
   var dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
   var timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
-  var newArr = [];
+  var arrayWithDistances = [];
   var result = null;
 
   var haversineDistance = function haversineDistance(lat1, lat2, lon2, lon1) {
@@ -89650,8 +89671,8 @@ var flight = function flight(props) {
     var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     var d = (R * c).toFixed(2);
-    newArr.push(Number(d));
-    result = newArr.reduce(function (a, b) {
+    arrayWithDistances.push(Number(d));
+    result = arrayWithDistances.reduce(function (a, b) {
       return a + b;
     }).toFixed(0);
   };
@@ -89713,7 +89734,7 @@ var flight = function flight(props) {
       className: "FlightTime"
     }, "\u20AC", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "FlightStopovers"
-    }, stopovers))
+    }, stopovers), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Select"))
   );
 };
 
@@ -90663,7 +90684,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FlightSection_FlightSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../FlightSection/FlightSection */ "./resources/js/App/containers/FlightSection/FlightSection.js");
 /* harmony import */ var _components_Searchbars_SearchbarTo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Searchbars/SearchbarTo */ "./resources/js/App/components/Searchbars/SearchbarTo.js");
 /* harmony import */ var _components_SearchBars_SearchBarFrom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/SearchBars/SearchBarFrom */ "./resources/js/App/components/SearchBars/SearchBarFrom.js");
-/* harmony import */ var _destinations_destinations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../destinations/destinations */ "./resources/js/App/destinations/destinations.js");
+/* harmony import */ var _OffsetSection_OffsetSection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../OffsetSection/OffsetSection */ "./resources/js/App/containers/OffsetSection/OffsetSection.js");
+/* harmony import */ var _destinations_destinations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../destinations/destinations */ "./resources/js/App/destinations/destinations.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -90683,6 +90705,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -90717,8 +90740,8 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
       originFrom: "",
       submitted: false,
       direct: 2,
-      flightFrom: "From",
-      flightTo: "To"
+      flightFrom: "From*",
+      flightTo: "To*"
     });
 
     _defineProperty(_assertThisInitialized(_this), "dropDownToClickHandler", function () {
@@ -90774,7 +90797,7 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "submitDataHandler", function () {
-      if (_this.state.flightFrom === "From" || _this.state.flightTo === "To") return;
+      if (_this.state.flightFrom === "From*" || _this.state.flightTo === "To*") return;
 
       _this.setState({
         submitted: !_this.state.submitted
@@ -90789,8 +90812,8 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       this.setState(function (prevState) {
         return {
-          flightsFrom: _destinations_destinations__WEBPACK_IMPORTED_MODULE_6__["flightsFrom"],
-          flightsTo: _destinations_destinations__WEBPACK_IMPORTED_MODULE_6__["flightsTo"]
+          flightsFrom: _destinations_destinations__WEBPACK_IMPORTED_MODULE_7__["flightsFrom"],
+          flightsTo: _destinations_destinations__WEBPACK_IMPORTED_MODULE_7__["flightsTo"]
         };
       });
     }
@@ -90802,8 +90825,10 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
       return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "LandingPage"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "SearchSection"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "LandingPageTitle"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Calculate and offset your Emissions!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
           className: "Blue"
         }, "Flight Explorer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "Dropdown"
@@ -90835,7 +90860,7 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
           destination: this.state.destination,
           submitted: this.state.submitted,
           direct: this.state.direct
-        }))
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_OffsetSection_OffsetSection__WEBPACK_IMPORTED_MODULE_6__["default"], null))
       );
     }
   }]);
@@ -90844,6 +90869,65 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (LandingPage);
+
+/***/ }),
+
+/***/ "./resources/js/App/containers/OffsetSection/OffsetSection.css":
+/*!*********************************************************************!*\
+  !*** ./resources/js/App/containers/OffsetSection/OffsetSection.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./OffsetSection.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/App/containers/OffsetSection/OffsetSection.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/App/containers/OffsetSection/OffsetSection.js":
+/*!********************************************************************!*\
+  !*** ./resources/js/App/containers/OffsetSection/OffsetSection.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _OffsetSection_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OffsetSection.css */ "./resources/js/App/containers/OffsetSection/OffsetSection.css");
+/* harmony import */ var _OffsetSection_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_OffsetSection_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+function OffsetSection() {
+  return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "OffsetSection"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Offset options"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "SelectedFlight"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Your flight:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "CO2 amount: ")))
+  );
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (OffsetSection);
 
 /***/ }),
 

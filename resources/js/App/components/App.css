@@ -2,8 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* color: white; */
-    /* overflow-x: hidden; */
     border-right: none;
 }
 
@@ -87,6 +85,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
-    background-color: #484d37;
+    background-color: #62684d;
 }
+

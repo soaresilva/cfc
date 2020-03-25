@@ -5,6 +5,7 @@ import Button from "../../components/UI/Button/Button";
 import FlightSection from "../FlightSection/FlightSection";
 import SearchBarTo from "../../components/Searchbars/SearchbarTo";
 import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
+import OffsetSection from "./../OffsetSection/OffsetSection";
 import { flightsFrom, flightsTo } from "../../destinations/destinations";
 
 class LandingPage extends React.Component {
@@ -17,8 +18,8 @@ class LandingPage extends React.Component {
         originFrom: "",
         submitted: false,
         direct: 2,
-        flightFrom: "From",
-        flightTo: "To"
+        flightFrom: "From*",
+        flightTo: "To*"
     };
 
     componentDidMount() {
@@ -77,7 +78,7 @@ class LandingPage extends React.Component {
     };
 
     submitDataHandler = () => {
-        if (this.state.flightFrom === "From" || this.state.flightTo === "To")
+        if (this.state.flightFrom === "From*" || this.state.flightTo === "To*")
             return;
         this.setState({ submitted: !this.state.submitted });
     };
@@ -88,47 +89,61 @@ class LandingPage extends React.Component {
 
         return (
             <div className="LandingPage">
-                <div className="LandingPageTitle">
-                    <h1 className="Blue">Flight Explorer</h1>
-                    <div className="Dropdown">
-                        <SearchBarFrom
-                            flightsFrom={destinationFrom}
-                            dropdownOpen={this.state.dropdownFromOpen}
-                            dropDownClickHandler={this.dropDownFromClickHandler}
-                            itemSelectFromHandler={this.itemSelectFromHandler}
-                        >
-                            {this.state.flightFrom}
-                        </SearchBarFrom>
-                        <SearchBarTo
-                            flightsTo={destinationTo}
-                            dropdownOpen={this.state.dropdownToOpen}
-                            dropDownClickHandler={this.dropDownToClickHandler}
-                            itemSelectToHandler={this.itemSelectToHandler}
-                        >
-                            {this.state.flightTo}
-                        </SearchBarTo>
-                        <div className="DF">
-                            <div className="CheckboxOption">
-                                <label>Direct flights only:</label>
-                                <input
-                                    type="checkbox"
-                                    onChange={this.directFlightsClickHandler}
-                                />
+                <div className="SearchSection">
+                    <div className="LandingPageTitle">
+                        <h1>Calculate and offset your Emissions!</h1>
+                        <h1 className="Blue">Flight Explorer</h1>
+                        <div className="Dropdown">
+                            <SearchBarFrom
+                                flightsFrom={destinationFrom}
+                                dropdownOpen={this.state.dropdownFromOpen}
+                                dropDownClickHandler={
+                                    this.dropDownFromClickHandler
+                                }
+                                itemSelectFromHandler={
+                                    this.itemSelectFromHandler
+                                }
+                            >
+                                {this.state.flightFrom}
+                            </SearchBarFrom>
+                            <SearchBarTo
+                                flightsTo={destinationTo}
+                                dropdownOpen={this.state.dropdownToOpen}
+                                dropDownClickHandler={
+                                    this.dropDownToClickHandler
+                                }
+                                itemSelectToHandler={this.itemSelectToHandler}
+                            >
+                                {this.state.flightTo}
+                            </SearchBarTo>
+                            <div className="DF">
+                                <div className="CheckboxOption">
+                                    <label>Direct flights only:</label>
+                                    <input
+                                        type="checkbox"
+                                        onChange={
+                                            this.directFlightsClickHandler
+                                        }
+                                    />
+                                </div>
+                                <div className="CheckboxOption">
+                                    <label>Flights with layover:</label>
+                                    <input type="checkbox" />
+                                </div>
                             </div>
-                            <div className="CheckboxOption">
-                                <label>Flights with layover:</label>
-                                <input type="checkbox" />
-                            </div>
+                            <Button clicked={this.submitDataHandler}>
+                                Search
+                            </Button>
                         </div>
-                        <Button clicked={this.submitDataHandler}>Search</Button>
                     </div>
+                    <FlightSection
+                        origin={this.state.originFrom}
+                        destination={this.state.destination}
+                        submitted={this.state.submitted}
+                        direct={this.state.direct}
+                    />
                 </div>
-                <FlightSection
-                    origin={this.state.originFrom}
-                    destination={this.state.destination}
-                    submitted={this.state.submitted}
-                    direct={this.state.direct}
-                />
+                <OffsetSection />
             </div>
         );
     }
