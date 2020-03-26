@@ -9,7 +9,6 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
     let totalCarbonOffset = 0;
 
     const handleDeleteTrip = async id => {
-        console.log("delete working");
         try {
             await deleteTrip(id);
             const newTrips = userTrips.filter(trip => trip.id !== id);
@@ -37,7 +36,7 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
                 <p>{trip.carbon_amount}</p>
                 <h5>Carbon Offset:</h5>
                 <p> {trip.offset_amount}</p>
-                <DeleteTrackButton
+                <DeleteTripButton
                     trip={trip}
                     handleDeleteTrip={handleDeleteTrip}
                 />
@@ -60,7 +59,7 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
     );
 }
 
-function DeleteTrackButton({ handleDeleteTrip, trip }) {
+function DeleteTripButton({ handleDeleteTrip, trip }) {
     return (
         <button
             className="delete-trip-button"

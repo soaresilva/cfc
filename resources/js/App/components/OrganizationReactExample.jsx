@@ -1,15 +1,12 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
+import OrganizationProfile from "./OrganizationProfile/OrganizationProfile";
 
-export default class OrganizationReactExample extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            user: ""
-        };
-    }
+export default function OrganizationReactExample () {
+    const [user, setUser] = useState("");
+ 
 
-    componentDidMount() {
+    const makeOrgUser = () => {
         let token = document
             .querySelector("meta[name='csrf-token']")
             .getAttribute("content");
@@ -19,23 +16,22 @@ export default class OrganizationReactExample extends React.Component {
             type: "POST",
             data: { _token: token, message: "bravo" },
             dataType: "JSON",
-
             success: response => {
                 console.log("success");
                 console.log(response);
-                this.setState({
-                    user: response
-                });
+                setUser(response);
             },
             error: response => {
                 console.log("error");
                 console.log(response);
             }
         });
+
     }
 
-    render() {
-        const user = this.state.user ? this.state.user : "";
+    useEffect(()=> {
+        makeOrgUser();
+    },[])
 
         return (
             <div className="container">
@@ -53,7 +49,7 @@ export default class OrganizationReactExample extends React.Component {
                         </div>
                     </div>
                 </div>
+                {!user ? <p>Loading...</p> : <OrganizationProfile org_id={user.id} />}
             </div>
         );
-    }
 }
