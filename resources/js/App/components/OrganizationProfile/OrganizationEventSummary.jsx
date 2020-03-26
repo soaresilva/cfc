@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
 //import { deleteTrip } from "../../../Api/trips";
 
-export default function OrganizationEventSummary() {
-
-  //need to grab all the trips with the same event id, and do basic calculations
- /* let totalDistance = 0;
-  let totalCarbonFootprint = 0;
-  let totalCarbonOffset = 0;
-
-  const trips = userTrips.map((trip, index) => {
-    totalDistance = totalDistance + trip.distance;
-    totalCarbonFootprint = totalCarbonFootprint + trip.carbon_amount;
-    totalCarbonOffset = totalCarbonOffset + trip.offset_amount;
-    */
-} 
+export default function OrganizationEventSummary({
+    totalDistance,
+    totalCarbonFootprint,
+    totalCarbonOffset
+}) {
+    return (
+        <div className="org-summary">
+            <h3>Summary</h3>
+            <h4>Total Distances Traveled:</h4>
+            <p>{totalDistance}</p>
+            <h4>Total Carbon Footprint:</h4>
+            <p>{totalCarbonFootprint}</p>
+            <h4>Total Carbon Offset:</h4>
+            <p>{totalCarbonOffset}</p>
+        </div>
+    );
+}

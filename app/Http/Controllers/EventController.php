@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
+use App\Trip;
 
 class EventController extends Controller
 {
@@ -13,4 +14,10 @@ class EventController extends Controller
         return $events;
     }
 
+    public function deleteEventAndTrips(Request $request, $id) {  
+        Event::where('id', '=', $id)->delete();
+        Trip::where('event_id', '=', $id)->delete();
+        return response()->json(['okay' => true],200);
+    }
+    
 }

@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { deleteTrip } from "../../../Api/trips";
+import { deleteTrip, deleteEventAndTrips} from "../../../Api/trips";
+import OrganizationEventSummary from "./OrganizationEventSummary";
 
-export default function OrganizationTripHistory({ event_id }) {
+export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents }) {
     const [orgTrips, setOrgTrips] = useState([]);
+    let totalDistance = 0;
+    let totalCarbonFootprint = 0;
+    let totalCarbonOffset = 0;
     const getOrgTripsUrl = "/api/events/trips/";
 
     const getOrgTrips = async () => {
@@ -28,8 +32,20 @@ export default function OrganizationTripHistory({ event_id }) {
         }
     };
 
-    console.log("org trips", orgTrips);
+    const handleDeleteEventAndTrips = async id => {
+        try {
+            await deleteEventAndTrips(id);
+            const newEvents = orgEvents.filter(event => event.id !== id);
+            setOrgEvents(newEvents);
+        } catch (err) {
+            console.log("error", err);
+        }
+    }
+
     const trips = orgTrips.map((trip, index) => {
+        totalDistance = totalDistance + trip.distance;
+        totalCarbonFootprint = totalCarbonFootprint + trip.carbon_amount;
+        totalCarbonOffset = totalCarbonOffset + trip.offset_amount;
         return (
             <div className="org-trip" key={index}>
                 <h4>
@@ -51,7 +67,12 @@ export default function OrganizationTripHistory({ event_id }) {
             </div>
         );
     });
-    return <div>{trips}</div>;
+    return (
+    <div>
+        <OrganizationEventSummary totalDistance={totalDistance} totalCarbonFootprint={totalCarbonFootprint} totalCarbonOffset={totalCarbonOffset}  />
+        {trips}
+        <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id}/> 
+    </div>)
 }
 
 function DeleteTripButton({ handleDeleteTrip, trip }) {
@@ -61,6 +82,17 @@ function DeleteTripButton({ handleDeleteTrip, trip }) {
             onClick={() => handleDeleteTrip(trip.id)}
         >
             delete trip
+        </button>
+    );
+}
+
+function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
+    return (
+        <button
+            className="delete-event-button"
+            onClick={() => handleDeleteEventAndTrips(event_id)}
+        >
+            delete event
         </button>
     );
 }

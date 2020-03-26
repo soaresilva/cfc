@@ -24,5 +24,8 @@ Route::delete('trips/{user_id}', 'TripController@deleteTrips');
 Route::get('events/{org_id}', 'EventController@getEvents');
 Route::get('events/trips/{event_id}', 'TripController@getOrgTrips');
 
+Route::delete('events/{user_id}', 'EventController@deleteEventAndTrips');
+
+
 
 

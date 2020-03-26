@@ -22,7 +22,7 @@ export default function OrganizationEventHistory({orgEvents, setOrgEvents}) {
           <em>{event.date}</em>
       </p>
       <button onClick={handleShowOrgTrips} className="showOrgTripsButton">See trips</button>
-      {showOrgTrips ? <OrganizationTripHistory event_id={event.id} /> : ""}
+      {showOrgTrips ? <OrganizationTripHistory event_id={event.id} orgEvents={orgEvents} setOrgEvents={setOrgEvents} /> : ""}
       
   </div>
     )
