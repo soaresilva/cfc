@@ -9,7 +9,7 @@ import "./Searchbar.css";
 
 function ComboBoxTo() {
   const filterOptions = createFilterOptions({
-    limit: 5,
+    limit: 20,
     stringify: (option) => option.title
   });
 
