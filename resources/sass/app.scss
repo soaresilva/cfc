@@ -7,22 +7,12 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+//UserProfile
+@import "user-profile";
+
+//OrgProfile
+@import "org-profile";
+
 .userprofile {
     color: black;
-}
-
-
-.org-event {
-    display:flex;
-    flex-direction: column;
-    margin-bottom:2em;
-    border: 2px dotted black;
-    text-align: center;
-}
-
-.org-trip {
-    display:flex;
-    flex-direction: column;
-    border: 2px dotted blue;
-    text-align: center;
 }
