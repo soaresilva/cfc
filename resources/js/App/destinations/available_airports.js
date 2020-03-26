@@ -118,8 +118,7 @@ export const availableAirports = [
 { key: "AEY", title: "AEY, Akureyri, Iceland, IS"},
 { key: "AFA", title: "AFA, San Rafael, Argentina, AR"},
 { key: "AFD", title: "AFD, Port Alfred, South Africa, ZA"},
-{ key: "AFF:
-{ key: "{ key", title: "AFF, Colorado Springs Usaf Academy Airfield, United States of America, US"},
+{ key: "AFF", title: "AFF, Colorado Springs Usaf Academy Airfield, United States of America, US"},
 { key: "AFI", title: "AFI, Amalfi, Colombia, CO"},
 { key: "AFK", title: "AFK, Ampara Kondavattavan Tank Spb, Sri Lanka, LK"},
 { key: "AFL", title: "AFL, Alta Floresta, Brazil, BR"},
@@ -425,8 +424,7 @@ export const availableAirports = [
 { key: "ATE", title: "ATE, Antlers, OK [Antlers Municipal Airport]A, US"},
 { key: "ATF", title: "ATF, Ambato, Ecuador, EC"},
 { key: "ATG", title: "ATG, Attock, Pakistan, PK"},
-{ key: "ATH:
-{ key: "{ key", title: "ATH, Athens (Athinai) [Eleftherios Venizelos International Airport], Greece, GR"},
+{ key: "ATH", title: "ATH, Athens (Athinai) [Eleftherios Venizelos International Airport], Greece, GR"},
 { key: "ATI", title: "ATI, Artigas, Uruguay, UY"},
 { key: "ATJ", title: "ATJ, Antsirabe Airport, MG"},
 { key: "ATK", title: "ATK, Atqasuk, AK [Atqasuk Airport]A, US"},
@@ -445,16 +443,14 @@ export const availableAirports = [
 { key: "ATX", title: "ATX, Atbasar, Kazakhstan, KZ"},
 { key: "ATY", title: "ATY, Watertown, SD [Watertown Municipal Airport]A, US"},
 { key: "ATZ", title: "ATZ, Assiut, Egypt, EG"},
-{ key: "AUA:
-{ key: "{ key", title: "AUA, Aruba (Oranjestad) [Queen Beatrix International Airport], Aruba, AW"},
+{ key: "AUA", title: "AUA, Aruba (Oranjestad) [Queen Beatrix International Airport], Aruba, AW"},
 { key: "AUB", title: "AUB, Itauba Airport , BR"},
 { key: "AUC", title: "AUC, Arauca, Colombia, CO"},
 { key: "AUD", title: "AUD, Augustus Downs, Queensland, Australia, AU"},
 { key: "AUE", title: "AUE, Aub Rudeis, Egypt, EG"},
 { key: "AUF", title: "AUF, Auxerre Branches, France, FR"},
 { key: "AUG", title: "AUG, Augusta, ME [Augusta State Airport]A, US"},
-{ key: "AUH:
-{ key: "{ key", title: "AUH, Abu Dhabi [Nadia International Airport], United Arab Emirates, AE"},
+{ key: "AUH", title: "AUH, Abu Dhabi [Nadia International Airport], United Arab Emirates, AE"},
 { key: "AUI", title: "AUI, Aua, Papua New Guinea, PG"},
 { key: "AUJ", title: "AUJ, Ambunti, Papua New Guinea, PG"},
 { key: "AUK", title: "AUK, Alakanuk, AK [Alakanuk Airport]A, US"},
@@ -520,8 +516,7 @@ export const availableAirports = [
 { key: "AYA", title: "AYA, Ayapel, Colombia, CO"},
 { key: "AYC", title: "AYC, Ayacucho, Colombia, CO"},
 { key: "AYD", title: "AYD, Alroy Downs, Northern Territory, Australia, AU"},
-{ key: "AYE:
-{ key: "{ key", title: "AYE, Fort Devens Army Air Field Heliport, United States of America, US"},
+{ key: "AYE", title: "AYE, Fort Devens Army Air Field Heliport, United States of America, US"},
 { key: "AYG", title: "AYG, Yaguara Ii, Colombia, CO"},
 { key: "AYH", title: "AYH, Alconbury, United Kingdom, GB"},
 { key: "AYI", title: "AYI, Yari, Colombia, CO"},
@@ -780,8 +775,7 @@ export const availableAirports = [
 { key: "BIU", title: "BIU, Bildudalur, Iceland, IS"},
 { key: "BIV", title: "BIV, Bria, Central African Republic, CF"},
 { key: "BIW", title: "BIW, Billiluna Station, Western Australia, Australia, AU"},
-{ key: "BIX:
-{ key: "{ key", title: "BIX, Gulfport/Biloxi Keesler Air Force Base, United States of America, US"},
+{ key: "BIX", title: "BIX, Gulfport/Biloxi Keesler Air Force Base, United States of America, US"},
 { key: "BIY", title: "BIY, Bisho, South Africa, ZA"},
 { key: "BIZ", title: "BIZ, Bimin, Papua New Guinea, PG"},
 { key: "BJA", title: "BJA, Bejaia [Soummam], Algeria, DZ"},
@@ -881,8 +875,7 @@ export const availableAirports = [
 { key: "BMQ", title: "BMQ, Bamburi, Kenya, KE"},
 { key: "BMR", title: "BMR, Baltrum, Germany, DE"},
 { key: "BMS", title: "BMS, Brumado, BA, Brazil, BR"},
-{ key: "BMT:
-{ key: "{ key", title: "BMT, Beaumont/Port Arthur Municipal Apt, United States of America, US"},
+{ key: "BMT", title: "BMT, Beaumont/Port Arthur Municipal Apt, United States of America, US"},
 { key: "BMU", title: "BMU, Bima, Indonesia, ID"},
 { key: "BMV", title: "BMV, Ban Me Thout, Vietnam, VN"},
 { key: "BMW", title: "BMW, Bordj Badji Mokhtar, Algeria, DZ"},
@@ -927,8 +920,7 @@ export const availableAirports = [
 { key: "BOK", title: "BOK, Brookings, OR [Brookings State Airport]A, US"},
 { key: "BOL", title: "BOL, Ballykelly, United Kingdom, GB"},
 { key: "BOM", title: "BOM, Mumbai [Sahar (Santa Cruz) International Airport], India, IN"},
-{ key: "BON:
-{ key: "{ key", title: "BON, Bonaire (Kralendijk) [Flamingo Airport], Netherlands Antilles, AN"},
+{ key: "BON", title: "BON, Bonaire (Kralendijk) [Flamingo Airport], Netherlands Antilles, AN"},
 { key: "BOO", title: "BOO, Bodo, Norway, NO"},
 { key: "BOP", title: "BOP, Bouar, Central African Republic, CF"},
 { key: "BOQ", title: "BOQ, Boku, Papua New Guinea, PG"},
@@ -968,8 +960,7 @@ export const availableAirports = [
 { key: "BQJ", title: "BQJ, Batagay, Russian Federation, RU"},
 { key: "BQK", title: "BQK, Brunswick, GA [Glynco Jetport]A, US"},
 { key: "BQL", title: "BQL, Boulia, Queensland, Australia, AU"},
-{ key: "BQN:
-{ key: "{ key", title: "BQN, Aguadilla [Aeropuerto Rafael Hernandez (Borinquen)], Puerto Rico, PR"},
+{ key: "BQN", title: "BQN, Aguadilla [Aeropuerto Rafael Hernandez (Borinquen)], Puerto Rico, PR"},
 { key: "BQO", title: "BQO, Bouna, Ivory Coast, CI"},
 { key: "BQQ", title: "BQQ, Barra, BA, Brazil, BR"},
 { key: "BQS", title: "BQS, Blagoveschensk, Amur, Russia, RU"},
@@ -1167,8 +1158,7 @@ export const availableAirports = [
 { key: "BYP", title: "BYP, Barimunya, Australia, AU"},
 { key: "BYQ", title: "BYQ, Bunyu, Indonesia, ID"},
 { key: "BYR", title: "BYR, Laeso, Denmark, DK"},
-{ key: "BYS:
-{ key: "{ key", title: "BYS, Fort Irwin/Barstow Bicycle Lake Army Ai, United States of America, US"},
+{ key: "BYS", title: "BYS, Fort Irwin/Barstow Bicycle Lake Army Ai, United States of America, US"},
 { key: "BYT", title: "BYT, Bantry, Ireland, IE"},
 { key: "BYU", title: "BYU, Bayreuth, Germany, DE"},
 { key: "BYV", title: "BYV, Colombo Beira Lake Spb, Sri Lanka, LK"},
@@ -1178,8 +1168,7 @@ export const availableAirports = [
 { key: "BZB", title: "BZB, Bazaruto Island, Mozambique, MZ"},
 { key: "BZC", title: "BZC, Buzios, Brazil, BR"},
 { key: "BZD", title: "BZD, Balranald, New South Wales, Australia, AU"},
-{ key: "BZE:
-{ key: "{ key", title: "BZE, Belize City [Philip S. W. Goldson International Airport], Belize, BZ"},
+{ key: "BZE", title: "BZE, Belize City [Philip S. W. Goldson International Airport], Belize, BZ"},
 { key: "BZF", title: "BZF, Redding Benton Field, United States of America, US"},
 { key: "BZG", title: "BZG, Bydgoszcz, Poland, PL"},
 { key: "BZH", title: "BZH, Bumi Hills, Zimbabwe, ZW"},
@@ -1303,8 +1292,7 @@ export const availableAirports = [
 { key: "CEC", title: "CEC, Crescent City, CA [Jack McNamara Field.]A, US"},
 { key: "CED", title: "CED, Ceduna, South Australia, Australia, AU"},
 { key: "CEE", title: "CEE, Cherepovets Airport, RU"},
-{ key: "CEF:
-{ key: "{ key", title: "CEF, Springfield/Westover Metropolitan Apt, United States of America, US"},
+{ key: "CEF", title: "CEF, Springfield/Westover Metropolitan Apt, United States of America, US"},
 { key: "CEG", title: "CEG, Chester, United Kingdom, GB"},
 { key: "CEH", title: "CEH, Chelinda, Malawi, MW"},
 { key: "CEI", title: "CEI, Chiang Rai [Chiang Rai INternational Airport], Thailand, TH"},
@@ -1371,8 +1359,7 @@ export const availableAirports = [
 { key: "CGZ", title: "CGZ, Casa Grande, AZ [Casa Grande Municipal Airport]A, US"},
 { key: "CHA", title: "CHA, Chattanooga, TN [Lovell Field]A, US"},
 { key: "CHB", title: "CHB, Chilas, Pakistan, PK"},
-{ key: "CHC:
-{ key: "{ key", title: "CHC, Christchurch [Christchurch International Airport], New Zealand, NZ"},
+{ key: "CHC", title: "CHC, Christchurch [Christchurch International Airport], New Zealand, NZ"},
 { key: "CHD", title: "CHD, Chandler, AZ [Chandler Municipal Airport]A, US"},
 { key: "CHE", title: "CHE, Tallinn Heliport City Hall Heliport, Estonia, EE"},
 { key: "CHF", title: "CHF, Chinhae, South Korea, KR"},
@@ -1418,8 +1405,7 @@ export const availableAirports = [
 { key: "CIT", title: "CIT, Shimkent (Chimkent), South Kazakhstan, Kazakhstan, KZ"},
 { key: "CIU", title: "CIU, Sault Ste. Marie, MI [Chippewa County Int. Airport]A, US"},
 { key: "CIV", title: "CIV, Chomley, AKA, US"},
-{ key: "CIW:
-{ key: "{ key", title: "CIW, Canouan Island, Canouan Island, St. Vincent and the Grenadines, VC"},
+{ key: "CIW", title: "CIW, Canouan Island, Canouan Island, St. Vincent and the Grenadines, VC"},
 { key: "CIX", title: "CIX, Chiclayo, Peru, PE"},
 { key: "CIY", title: "CIY, Comiso, Italy, IT"},
 { key: "CIZ", title: "CIZ, Coari, AM, Brazil, BR"},
@@ -1626,8 +1612,7 @@ export const availableAirports = [
 { key: "CSI", title: "CSI, Casino, New South Wales, Australia, AU"},
 { key: "CSJ", title: "CSJ, Columbus, United States of America, US"},
 { key: "CSK", title: "CSK, Cap Skirring, Senegal, SN"},
-{ key: "CSL:
-{ key: "{ key", title: "CSL, Camp San Luis Obispo O'Sullivan Ahp, United States of America, US"},
+{ key: "CSL", title: "CSL, Camp San Luis Obispo O'Sullivan Ahp, United States of America, US"},
 { key: "CSM", title: "CSM, Clinton, OK [Clinton-Sherman Airport]A, US"},
 { key: "CSN", title: "CSN, Carson City, NV [Carson Airport]A, US"},
 { key: "CSO", title: "CSO, Magdeburg Cochstedt, Germany, DE"},
@@ -1683,8 +1668,7 @@ export const availableAirports = [
 { key: "CUO", title: "CUO, Caruru, Colombia, CO"},
 { key: "CUP", title: "CUP, Carupano, Venezuela, VE"},
 { key: "CUQ", title: "CUQ, Coen, Queensland, Australia, AU"},
-{ key: "CUR:
-{ key: "{ key", title: "CUR, Curacao (Willemstad) [Aeropuerto Hato], Netherlands Antilles, AN"},
+{ key: "CUR", title: "CUR, Curacao (Willemstad) [Aeropuerto Hato], Netherlands Antilles, AN"},
 { key: "CUS", title: "CUS, Columbus, NM [Columbus Municipal Airport]A, US"},
 { key: "CUT", title: "CUT, Cutral-Co, Argentina, AR"},
 { key: "CUU", title: "CUU, Chihuahua [General Roberto Fierro V.], Mexico, MX"},
@@ -1714,8 +1698,7 @@ export const availableAirports = [
 { key: "CWA", title: "CWA, Wausau (Mosinee), WI [Central Wisconsin Airport]A, US"},
 { key: "CWB", title: "CWB, Curitiba, PR [Afonso Pena], Brazil, BR"},
 { key: "CWC", title: "CWC, Chernivtsi (Chernovtsy), Chernivtsi, Ukraine, UA"},
-{ key: "CWF:
-{ key: "{ key", title: "CWF, Lake Charles Chennault International, United States of America, US"},
+{ key: "CWF", title: "CWF, Lake Charles Chennault International, United States of America, US"},
 { key: "CWG", title: "CWG, Callaway Gardens, GAA, US"},
 { key: "CWI", title: "CWI, Clinton, IA [Clinton Municipal Airport]A, US"},
 { key: "CWJ", title: "CWJ, Cangyuan Washan, China, CN"},
@@ -1732,8 +1715,7 @@ export const availableAirports = [
 { key: "CXC", title: "CXC, Chitina, AK [Chitina Airport]A, US"},
 { key: "CXF", title: "CXF, Coldfoot, AK [Coldfoot Airport]A, US"},
 { key: "CXH", title: "CXH, Vancouver (Coal Harbour), BC, Canada, CA"},
-{ key: "CXI:
-{ key: "{ key", title: "CXI, Christmas Island (Kiritimati), Line Islands [Cassidy], Kiribati, KI"},
+{ key: "CXI", title: "CXI, Christmas Island (Kiritimati), Line Islands [Cassidy], Kiribati, KI"},
 { key: "CXJ", title: "CXJ, Caxias do Sul, RS, Brazil, BR"},
 { key: "CXL", title: "CXL, Calexico, CA [Calexico International Airport]A, US"},
 { key: "CXN", title: "CXN, Candala, Somalia, SO"},
@@ -2144,8 +2126,7 @@ export const availableAirports = [
 { key: "ECI", title: "ECI, Rivas Costa Esmeralda, Nicaragua, NI"},
 { key: "ECN", title: "ECN, Ercan, Cyprus, CY"},
 { key: "ECO", title: "ECO, El Encanto, Colombia, CO"},
-{ key: "ECP:
-{ key: "{ key", title: "ECP, Northwest Florida Beaches International Airport, Panama City Beach, United States, US"},
+{ key: "ECP", title: "ECP, Northwest Florida Beaches International Airport, Panama City Beach, United States, US"},
 { key: "ECR", title: "ECR, El Charco, Colombia, CO"},
 { key: "ECS", title: "ECS, Newcastle, WY [Mondell Field]A, US"},
 { key: "EDA", title: "EDA, Edna Bay, AKA, US"},
@@ -2206,8 +2187,7 @@ export const availableAirports = [
 { key: "EKD", title: "EKD, Elkedra, Northern Territory, Australia, AU"},
 { key: "EKE", title: "EKE, Ekereku, Guyana, GY"},
 { key: "EKI", title: "EKI, Elkhart, IN [Elkhart Municipal Airport]A, US"},
-{ key: "EKN:
-{ key: "{ key", title: "EKN, Elkins, WV [Elkins-Randolph County-Jennings Randolph Field]A, US"},
+{ key: "EKN", title: "EKN, Elkins, WV [Elkins-Randolph County-Jennings Randolph Field]A, US"},
 { key: "EKO", title: "EKO, Elko, NV [Elko Municipal Airport-J. C. Harris Field]A, US"},
 { key: "EKS", title: "EKS, Shakhtersk, Russian Federation, RU"},
 { key: "EKT", title: "EKT, Eskilstuna, Sweden, SE"},
@@ -2327,8 +2307,7 @@ export const availableAirports = [
 { key: "ESM", title: "ESM, Esmeraldas [General Rivadeneira], Ecuador, EC"},
 { key: "ESN", title: "ESN, Easton, MD [Easton Airport/Newnam Field]A, US"},
 { key: "ESO", title: "ESO, Espanola, NM [San Juan Pueblo Airport]A, US"},
-{ key: "ESP:
-{ key: "{ key", title: "ESP, East Stroudsburg Stroudsburg-Pocono, United States of America, US"},
+{ key: "ESP", title: "ESP, East Stroudsburg Stroudsburg-Pocono, United States of America, US"},
 { key: "ESR", title: "ESR, El Salvador, Chile, CL"},
 { key: "ESS", title: "ESS, Essen, Germany, DE"},
 { key: "EST", title: "EST, Estherville, IA [Estherville Municipal Airport]A, US"},
@@ -2419,8 +2398,7 @@ export const availableAirports = [
 { key: "FCA", title: "FCA, Kalispell, MT [Glacier Park International Airport]A, US"},
 { key: "FCB", title: "FCB, Ficksburg, South Africa, ZA"},
 { key: "FCH", title: "FCH, Fresno Chandler Executive Apt, United States of America, US"},
-{ key: "FCM:
-{ key: "{ key", title: "FCM, Minneapolis/St Paul Flying Cloud Apt, United States of America, US"},
+{ key: "FCM", title: "FCM, Minneapolis/St Paul Flying Cloud Apt, United States of America, US"},
 { key: "FCN", title: "FCN, Nordholz Naval Airbase Cuxhaven, DE"},
 { key: "FCO", title: "FCO, Roma (Rome,Rom) [Leonardo da Vinci/Fiumicino], Italy, IT"},
 { key: "FCS", title: "FCS, Colorado Fort Carson/Butts Aaf, United States of America, US"},
@@ -2475,8 +2453,7 @@ export const availableAirports = [
 { key: "FKI", title: "FKI, Kisangani [Bangoka], Congo (Zaire), CD"},
 { key: "FKJ", title: "FKJ, Fukui, Japan, JP"},
 { key: "FKL", title: "FKL, Franklin, PA [Venango Regional Airport]A, US"},
-{ key: "FKN:
-{ key: "{ key", title: "FKN, Franklin, VA [Franklin Municipal-John Beverly Rose Airport]A, US"},
+{ key: "FKN", title: "FKN, Franklin, VA [Franklin Municipal-John Beverly Rose Airport]A, US"},
 { key: "FKQ", title: "FKQ, Fakfak (Fak Fak), New Guinea, Indonesia, ID"},
 { key: "FKS", title: "FKS, Fukushima, Japan, JP"},
 { key: "FLA", title: "FLA, Florencia, Colombia, CO"},
@@ -2545,8 +2522,7 @@ export const availableAirports = [
 { key: "FOU", title: "FOU, Fougamou, Gabon, GA"},
 { key: "FOX", title: "FOX, Fox, AKA, US"},
 { key: "FOY", title: "FOY, Foya, Liberia, LR"},
-{ key: "FPO:
-{ key: "{ key", title: "FPO, Freeport, Grand Bahama [Freeport International Airport], Bahamas, BS"},
+{ key: "FPO", title: "FPO, Freeport, Grand Bahama [Freeport International Airport], Bahamas, BS"},
 { key: "FPR", title: "FPR, Fort Pierce, FL [St. Lucie County International Airport]A, US"},
 { key: "FPY", title: "FPY, Perry, FL [Perry-Foley Airport]A, US"},
 { key: "FRA", title: "FRA, Frankfurt [Rhein-Main], Germany, DE"},
@@ -2575,13 +2551,11 @@ export const availableAirports = [
 { key: "FRZ", title: "FRZ, Fritzlar, Germany, DE"},
 { key: "FSC", title: "FSC, Figari, Corsica, France, FR"},
 { key: "FSD", title: "FSD, Sioux Falls, SD [Joe Foss Field]A, US"},
-{ key: "FSI:
-{ key: "{ key", title: "FSI, Lawton/Fort Sill Henry Post Army Air Fi, United States of America, US"},
+{ key: "FSI", title: "FSI, Lawton/Fort Sill Henry Post Army Air Fi, United States of America, US"},
 { key: "FSK", title: "FSK, Fort Scott, KS [Fort Scott Municipal Airport]A, US"},
 { key: "FSL", title: "FSL, Fossil Downs, Western Australia, Australia, AU"},
 { key: "FSM", title: "FSM, Fort Smith, AR [Fort Smith Municipal Airport]A, US"},
-{ key: "FSN:
-{ key: "{ key", title: "FSN, Fort Sheridan Haley Army Air Field, United States of America, US"},
+{ key: "FSN", title: "FSN, Fort Sheridan Haley Army Air Field, United States of America, US"},
 { key: "FSP", title: "FSP, St. Pierre, St. Pierre & Miquelon, PM"},
 { key: "FSS", title: "FSS, Forres, United Kingdom, GB"},
 { key: "FST", title: "FST, Fort Stockton, TX [Fort Stockton-Pecos County Airport]A, US"},
@@ -2726,8 +2700,7 @@ export const availableAirports = [
 { key: "GEW", title: "GEW, Gewoya, Papua New Guinea, PG"},
 { key: "GEX", title: "GEX, Geelong, Victoria, Australia, AU"},
 { key: "GEY", title: "GEY, Greybull, WY [South Big Horn County Airport]A, US"},
-{ key: "GFA:
-{ key: "{ key", title: "GFA, Great Falls Malmstrom Afb Heliport, United States of America, US"},
+{ key: "GFA", title: "GFA, Great Falls Malmstrom Afb Heliport, United States of America, US"},
 { key: "GFB", title: "GFB, Togiak Fish, AKA, US"},
 { key: "GFD", title: "GFD, Greenfield, United States of America, US"},
 { key: "GFE", title: "GFE, Grenfell, New South Wales, Australia, AU"},
@@ -2829,8 +2802,7 @@ export const availableAirports = [
 { key: "GMR", title: "GMR, Mangareva, Gambier Islands, French Polynesia, PF"},
 { key: "GMS", title: "GMS, Guimaraes, MA, Brazil, BR"},
 { key: "GMT", title: "GMT, Granite Mountain, AKA, US"},
-{ key: "GMU:
-{ key: "{ key", title: "GMU, Greenville/Spartanburg Downtown Apt, United States of America, US"},
+{ key: "GMU", title: "GMU, Greenville/Spartanburg Downtown Apt, United States of America, US"},
 { key: "GMV", title: "GMV, Monument Valley, United States of America, US"},
 { key: "GMY", title: "GMY, Rheindahlen, Germany, DE"},
 { key: "GMZ", title: "GMZ, La Gomera Airport, ES"},
@@ -3035,17 +3007,14 @@ export const availableAirports = [
 { key: "HAM", title: "HAM, Hamburg [Fuhlsbuttel], Germany, DE"},
 { key: "HAN", title: "HAN, Hanoi [Noi-Bai], Vietnam, VN"},
 { key: "HAO", title: "HAO, Hamilton, OH [Hamilton-Fairfield Airport]A, US"},
-{ key: "HAP:
-{ key: "{ key", title: "HAP, Whitsunday Kontiki Resort (Long Island), Queensland, Australia, AU"},
+{ key: "HAP", title: "HAP, Whitsunday Kontiki Resort (Long Island), Queensland, Australia, AU"},
 { key: "HAQ", title: "HAQ, Hanimaadhoo Island, Maldives, MV"},
 { key: "HAR", title: "HAR, Harrisburg, PA [Capital City Airport]A, US"},
 { key: "HAS", title: "HAS, Hail, Saudi Arabia, SA"},
 { key: "HAT", title: "HAT, Heathlands, Australia, AU"},
 { key: "HAU", title: "HAU, Haugesund [Karmoy], Norway, NO"},
-{ key: "HAV:
-{ key: "{ key", title: "HAV, La Habana (Havana) [Aeropuerto Internacional Jose Marti], Cuba, CU"},
-{ key: "HAW:
-{ key: "{ key", title: "HAW, Haverfordwest, Wales [Haverfordwest Airport], United Kingdom, GB"},
+{ key: "HAV", title: "HAV, La Habana (Havana) [Aeropuerto Internacional Jose Marti], Cuba, CU"},
+{ key: "HAW", title: "HAW, Haverfordwest, Wales [Haverfordwest Airport], United Kingdom, GB"},
 { key: "HAX", title: "HAX, Muskogee Hatbox Field, United States of America, US"},
 { key: "HAY", title: "HAY, Haycock, AK [Haycock Airport]A, US"},
 { key: "HAZ", title: "HAZ, Hatzfeldthaven, Papua New Guinea, PG"},
@@ -3054,8 +3023,7 @@ export const availableAirports = [
 { key: "HBC", title: "HBC, Hanus Bay, United States of America, US"},
 { key: "HBD", title: "HBD, Habi, Papua New Guinea, PG"},
 { key: "HBE", title: "HBE, Borg el Arab, EG"},
-{ key: "HBG:
-{ key: "{ key", title: "HBG, Hattiesburg/Laurel Bobby L. Chain Munic, United States of America, US"},
+{ key: "HBG", title: "HBG, Hattiesburg/Laurel Bobby L. Chain Munic, United States of America, US"},
 { key: "HBH", title: "HBH, Hobart Bay, AKA, US"},
 { key: "HBI", title: "HBI, Harbour Island, Bahamas, BS"},
 { key: "HBK", title: "HBK, Holbrook Municipal, United States of America, US"},
@@ -3110,8 +3078,7 @@ export const availableAirports = [
 { key: "HFA", title: "HFA, Haifa, Israel, IL"},
 { key: "HFD", title: "HFD, Hartford, CT [Hartford-Brainard Airport]A, US"},
 { key: "HFE", title: "HFE, Hefei, China, CN"},
-{ key: "HFF:
-{ key: "{ key", title: "HFF, Camp Mackall Mackall Army Air Field, United States of America, US"},
+{ key: "HFF", title: "HFF, Camp Mackall Mackall Army Air Field, United States of America, US"},
 { key: "HFN", title: "HFN, Hofn [Hornafjordur], Iceland, IS"},
 { key: "HFS", title: "HFS, Hagfors, Sweden, SE"},
 { key: "HFT", title: "HFT, Hammerfest, Norway, NO"},
@@ -3236,8 +3203,7 @@ export const availableAirports = [
 { key: "HOM", title: "HOM, Homer, AK [Homer Airport]A, US"},
 { key: "HON", title: "HON, Huron, SD [Huron Regional Airport]A, US"},
 { key: "HOO", title: "HOO, Quanduc, Vietnam, VN"},
-{ key: "HOP:
-{ key: "{ key", title: "HOP, Hopkinsville Campbell Army Air Field, United States of America, US"},
+{ key: "HOP", title: "HOP, Hopkinsville Campbell Army Air Field, United States of America, US"},
 { key: "HOQ", title: "HOQ, Hof, Germany, DE"},
 { key: "HOR", title: "HOR, Horta (Faial Island), Azores, Portugal, PT"},
 { key: "HOS", title: "HOS, Chos Malal, Argentina, AR"},
@@ -3423,10 +3389,8 @@ export const availableAirports = [
 { key: "IFJ", title: "IFJ, Isafjordur, Iceland, IS"},
 { key: "IFL", title: "IFL, Innisfail, Queensland, Australia, AU"},
 { key: "IFN", title: "IFN, Isfahan, Iran, IR"},
-{ key: "IFO:
-{ key: "{ key", title: "IFO, Ivano-Frankivs'k (Ivano Frankovsk), Ivano-Frankivs'k, Ukraine, UA"},
-{ key: "IFP:
-{ key: "{ key", title: "IFP, Bullhead City Laughlin/Bullhead Interna, United States of America, US"},
+{ key: "IFO", title: "IFO, Ivano-Frankivs'k (Ivano Frankovsk), Ivano-Frankivs'k, Ukraine, UA"},
+{ key: "IFP", title: "IFP, Bullhead City Laughlin/Bullhead Interna, United States of America, US"},
 { key: "IFU", title: "IFU, Ifuru, Maldives, MV"},
 { key: "IGA", title: "IGA, Inagua (Matthew Town), Great Inagua, Bahamas, BS"},
 { key: "IGB", title: "IGB, Ingeniero Jacobacci, Argentina, AR"},
@@ -3455,8 +3419,7 @@ export const availableAirports = [
 { key: "IJK", title: "IJK, Izhevsk, Udmurtia, Russia, RU"},
 { key: "IJU", title: "IJU, Ijui, RS, Brazil, BR"},
 { key: "IJX", title: "IJX, Jacksonville, IL [Jacksonville Municipal Airport]A, US"},
-{ key: "IKA:
-{ key: "{ key", title: "IKA, Tehran (Teheran) [Imam Khomeini International Airport], Iran, IR"},
+{ key: "IKA", title: "IKA, Tehran (Teheran) [Imam Khomeini International Airport], Iran, IR"},
 { key: "IKB", title: "IKB, Wilkesboro, NC [Wilkes County Airport]A, US"},
 { key: "IKE", title: "IKE, Ikerasak Ikerasat Heliport, Greenland, GL"},
 { key: "IKI", title: "IKI, Iki, Japan, JP"},
@@ -3528,8 +3491,7 @@ export const availableAirports = [
 { key: "INZ", title: "INZ, In Salah, Algeria, DZ"},
 { key: "IOA", title: "IOA, Ioannina, Greece, GR"},
 { key: "IOK", title: "IOK, Iokea, Papua New Guinea, PG"},
-{ key: "IOM:
-{ key: "{ key", title: "IOM, Isle of Man, Isle of Man [Ronaldsway Airport], United Kingdom, GB"},
+{ key: "IOM", title: "IOM, Isle of Man, Isle of Man [Ronaldsway Airport], United Kingdom, GB"},
 { key: "ION", title: "ION, Impfondo, Congo, CG"},
 { key: "IOP", title: "IOP, Ioma, Papua New Guinea, PG"},
 { key: "IOQ", title: "IOQ, Isortoq Heliport, Greenland, GL"},
@@ -3679,8 +3641,7 @@ export const availableAirports = [
 { key: "JBC", title: "JBC, Boston, MA [Boston City Heliport]A, US"},
 { key: "JBK", title: "JBK, Berkeley, CAA, US"},
 { key: "JBP", title: "JBP, Los Angeles (Commerce), CA [Heliport]A, US"},
-{ key: "JBQ:
-{ key: "{ key", title: "JBQ, La Isabela International Airport Aeropuerto Internacional Dr. Joaquin Balaguer, DO"},
+{ key: "JBQ", title: "JBQ, La Isabela International Airport Aeropuerto Internacional Dr. Joaquin Balaguer, DO"},
 { key: "JBR", title: "JBR, Jonesboro, AR [Jonesboro Municipal Airport]A, US"},
 { key: "JBS", title: "JBS, Pleasanton, CA [Camp Parks Heliport]A, US"},
 { key: "JBT", title: "JBT, Bethel, AK [Bethel Seaplane Base]A, US"},
@@ -3792,8 +3753,7 @@ export const availableAirports = [
 { key: "JMA", title: "JMA, Houston Marriott Astrodome, United States of America, US"},
 { key: "JMB", title: "JMB, Jamba, Angola, AO"},
 { key: "JMC", title: "JMC, Sausalito, CA [Commodore Center Heliport]A, US"},
-{ key: "JMD:
-{ key: "{ key", title: "JMD, Dallas/Fort Worth Market Center H/P, United States of America, US"},
+{ key: "JMD", title: "JMD, Dallas/Fort Worth Market Center H/P, United States of America, US"},
 { key: "JMH", title: "JMH, Chicago/Schaumburg, IL [Schaumburg Air Park]A, US"},
 { key: "JMJ", title: "JMJ, Langcang Jingmai, China, CN"},
 { key: "JMK", title: "JMK, Mikonos, Greece, GR"},
@@ -3804,11 +3764,9 @@ export const availableAirports = [
 { key: "JMU", title: "JMU, Jiamusi, China, CN"},
 { key: "JMY", title: "JMY, Freetown Mammy Yoko Heliport, Sierra Leone, SL"},
 { key: "JNA", title: "JNA, Januaria, MG, Brazil, BR"},
-{ key: "JNB:
-{ key: "{ key", title: "JNB, Johannesburg, [O.R Tambo International, ORTIA], South Africa, ZA"},
+{ key: "JNB", title: "JNB, Johannesburg, [O.R Tambo International, ORTIA], South Africa, ZA"},
 { key: "JNG", title: "JNG, Jining [Jining Airport], China, CN"},
-{ key: "JNH:
-{ key: "{ key", title: "JNH, Dallas/Ft Worth North Park Inn H/P, United States of America, US"},
+{ key: "JNH", title: "JNH, Dallas/Ft Worth North Park Inn H/P, United States of America, US"},
 { key: "JNI", title: "JNI, Junin, Argentina, AR"},
 { key: "JNJ", title: "JNJ, Duqm Jaaluni, Oman, OM"},
 { key: "JNN", title: "JNN, Nanortalik, Greenland, GL"},
@@ -3896,8 +3854,7 @@ export const availableAirports = [
 { key: "JVI", title: "JVI, Manville Central Jersey Regional, United States of America, US"},
 { key: "JVL", title: "JVL, Janesville, WI [Rock County Airport]A, US"},
 { key: "JWA", title: "JWA, Jwaneng Airport, BW"},
-{ key: "JWC:
-{ key: "{ key", title: "JWC, Los Angeles Warner Center Plaza H/P, United States of America, US"},
+{ key: "JWC", title: "JWC, Los Angeles Warner Center Plaza H/P, United States of America, US"},
 { key: "JWH", title: "JWH, Houston Westchase Heliport, United States of America, US"},
 { key: "JWL", title: "JWL, Houston Woodlands H/P, United States of America, US"},
 { key: "JWN", title: "JWN, Zanjan, Iran, IR"},
@@ -4101,8 +4058,7 @@ export const availableAirports = [
 { key: "KIM", title: "KIM, Kimberley, South Africa, ZA"},
 { key: "KIN", title: "KIN, Kingston [Norman Manley], Jamaica, JM"},
 { key: "KIO", title: "KIO, Kili Island [Kili Airport], Marshall Islands, MH"},
-{ key: "KIP:
-{ key: "{ key", title: "KIP, Wichita Falls Kickapoo Downtown Apt, United States of America, US"},
+{ key: "KIP", title: "KIP, Wichita Falls Kickapoo Downtown Apt, United States of America, US"},
 { key: "KIQ", title: "KIQ, Kira, Papua New Guinea, PG"},
 { key: "KIR", title: "KIR, Killarney/Kerry County, Ireland, IE"},
 { key: "KIS", title: "KIS, Kisumu, Kenya, KE"},
@@ -4542,13 +4498,11 @@ export const availableAirports = [
 { key: "LDV", title: "LDV, Landivisiau, France, FR"},
 { key: "LDW", title: "LDW, Lansdowne Station, Western Australia, Australia, AU"},
 { key: "LDX", title: "LDX, St. Laurent du Maroni, French Guyana, GF"},
-{ key: "LDY:
-{ key: "{ key", title: "LDY, Londonderry, Northern Ireland [Eglinton Airport], United Kingdom, GB"},
+{ key: "LDY", title: "LDY, Londonderry, Northern Ireland [Eglinton Airport], United Kingdom, GB"},
 { key: "LDZ", title: "LDZ, Londolozi, [Londolozi Airport], ZA"},
 { key: "LEA", title: "LEA, Learmouth (Exmouth), Western Australia, Australia, AU"},
 { key: "LEB", title: "LEB, Lebanon, NH [Lebanon Municipal Airport]A, US"},
-{ key: "LEC:
-{ key: "{ key", title: "LEC, Lençóis Chapada Diamantina [Coronel Horácio de Mattos Airport], BR"},
+{ key: "LEC", title: "LEC, Lençóis Chapada Diamantina [Coronel Horácio de Mattos Airport], BR"},
 { key: "LED", title: "LED, St. Petersburg (Leningrad), Leningrad [Pulkowo-2], Russia, RU"},
 { key: "LEE", title: "LEE, Leesburg, FL [Leesburg Municipal Airport]A, US"},
 { key: "LEF", title: "LEF, Lebakeng, Lesotho, LS"},
@@ -4638,15 +4592,13 @@ export const availableAirports = [
 { key: "LIP", title: "LIP, Lins, SP, Brazil, BR"},
 { key: "LIQ", title: "LIQ, Lisala, Congo (Zaire), CD"},
 { key: "LIR", title: "LIR, Liberia [Tomas Guardia], Costa Rica, CR"},
-{ key: "LIS:
-{ key: "{ key", title: "LIS, Lisboa (Lisbon,Lissabon) [Aeroporto da Portela de Sacavem], Portugal, PT"},
+{ key: "LIS", title: "LIS, Lisboa (Lisbon,Lissabon) [Aeroporto da Portela de Sacavem], Portugal, PT"},
 { key: "LIT", title: "LIT, Little Rock, AR [Adams Field]A, US"},
 { key: "LIU", title: "LIU, Linosa, Italy, IT"},
 { key: "LIV", title: "LIV, Livingood, AKA, US"},
 { key: "LIW", title: "LIW, Loikaw, Myanmar, MM"},
 { key: "LIX", title: "LIX, Likoma Island, Malawi, MW"},
-{ key: "LIY:
-{ key: "{ key", title: "LIY, Hinesville/Ft Stewart Midcoast Regional, United States of America, US"},
+{ key: "LIY", title: "LIY, Hinesville/Ft Stewart Midcoast Regional, United States of America, US"},
 { key: "LIZ", title: "LIZ, Limestone Loring International, United States of America, US"},
 { key: "LJA", title: "LJA, Lodja, Congo (Zaire), CD"},
 { key: "LJC", title: "LJC, Louisville Intercontinental Apt, United States of America, US"},
@@ -4797,8 +4749,7 @@ export const availableAirports = [
 { key: "LRC", title: "LRC, Laarbruch, Germany, DE"},
 { key: "LRD", title: "LRD, Laredo, TX [Laredo International Airport]A, US"},
 { key: "LRE", title: "LRE, Longreach, Queensland, Australia, AU"},
-{ key: "LRF:
-{ key: "{ key", title: "LRF, Jacksonville Little Rock Air Force Base, United States of America, US"},
+{ key: "LRF", title: "LRF, Jacksonville Little Rock Air Force Base, United States of America, US"},
 { key: "LRG", title: "LRG, Lora Lai, Pakistan, PK"},
 { key: "LRH", title: "LRH, La Rochelle [Laieu], France, FR"},
 { key: "LRI", title: "LRI, Lorica, Colombia, CO"},
@@ -4872,8 +4823,7 @@ export const availableAirports = [
 { key: "LUI", title: "LUI, La Union, Honduras, HN"},
 { key: "LUJ", title: "LUJ, Lusikisiki, South Africa, ZA"},
 { key: "LUK", title: "LUK, Cincinnati, OH [Cincinnati Municipal Airport/Lunken Field]A, US"},
-{ key: "LUL:
-{ key: "{ key", title: "LUL, Hattiesburg/Laurel Hesler-Noble Field, United States of America, US"},
+{ key: "LUL", title: "LUL, Hattiesburg/Laurel Hesler-Noble Field, United States of America, US"},
 { key: "LUM", title: "LUM, Luxi, China, CN"},
 { key: "LUN", title: "LUN, Lusaka [Lusaka International Airport], Zambia, ZM"},
 { key: "LUO", title: "LUO, Luena (Luso), Angola, AO"},
@@ -5030,8 +4980,7 @@ export const availableAirports = [
 { key: "MDB", title: "MDB, Melinda, Belize, BZ"},
 { key: "MDC", title: "MDC, Manado [Sam Ratulangi], Indonesia, ID"},
 { key: "MDD", title: "MDD, Midland Airpark, United States of America, US"},
-{ key: "MDE:
-{ key: "{ key", title: "MDE, Medellin [Jose Maria Córdova International Airport], Colombia, CO"},
+{ key: "MDE", title: "MDE, Medellin [Jose Maria Córdova International Airport], Colombia, CO"},
 { key: "MDF", title: "MDF, Medford, WI [Taylor County Airport]A, US"},
 { key: "MDG", title: "MDG, Mudanjiang, China, CN"},
 { key: "MDH", title: "MDH, Carbondale/Murphysboro, IL [Southern Illinois Airport]A, US"},
@@ -5112,8 +5061,7 @@ export const availableAirports = [
 { key: "MGF", title: "MGF, Maringa, PR, Brazil, BR"},
 { key: "MGG", title: "MGG, Margarina, Papua New Guinea, PG"},
 { key: "MGH", title: "MGH, Margate, South Africa, ZA"},
-{ key: "MGI:
-{ key: "{ key", title: "MGI, Matagorda Island Matagorda National Wil, United States of America, US"},
+{ key: "MGI", title: "MGI, Matagorda Island Matagorda National Wil, United States of America, US"},
 { key: "MGJ", title: "MGJ, Montgomery, NY [Orange County Airport]A, US"},
 { key: "MGK", title: "MGK, Mong Ton, Myanmar, MM"},
 { key: "MGL", title: "MGL, Moenchengladbach (Monchengladbach), Germany, DE"},
@@ -5421,8 +5369,7 @@ export const availableAirports = [
 { key: "MSB", title: "MSB, St. Maarten (Marigot), Netherlands Antilles, GP"},
 { key: "MSC", title: "MSC, Mesa, AZ [Falcon Field]A, US"},
 { key: "MSD", title: "MSD, Mount Pleasant, UT [Mount Pleasant Airport]A, US"},
-{ key: "MSE:
-{ key: "{ key", title: "MSE, Manston, England [Kent International Airport], United Kingdom, GB"},
+{ key: "MSE", title: "MSE, Manston, England [Kent International Airport], United Kingdom, GB"},
 { key: "MSF", title: "MSF, Mt. Swan, Northern Territory, Australia, AU"},
 { key: "MSG", title: "MSG, Matsaile, Lesotho, LS"},
 { key: "MSH", title: "MSH, Masirah Air Base, OM"},
@@ -5478,8 +5425,7 @@ export const availableAirports = [
 { key: "MUF", title: "MUF, Muting, Indonesia, ID"},
 { key: "MUG", title: "MUG, Mulege, Mexico, MX"},
 { key: "MUH", title: "MUH, Marsa Matrum (Mersa Matruh), Egypt, EG"},
-{ key: "MUI:
-{ key: "{ key", title: "MUI, Fort Indiantown Gap Muir Army Air Field, United States of America, US"},
+{ key: "MUI", title: "MUI, Fort Indiantown Gap Muir Army Air Field, United States of America, US"},
 { key: "MUJ", title: "MUJ, Mui, Ethiopia, ET"},
 { key: "MUK", title: "MUK, Mauke, Cook Islands, CK"},
 { key: "MUL", title: "MUL, Moultrie Spence Apt, United States of America, US"},
@@ -5492,8 +5438,7 @@ export const availableAirports = [
 { key: "MUS", title: "MUS, Minami Torishima Airport, JP"},
 { key: "MUT", title: "MUT, Muscatine, IA [Muscatine Municipal Airport]A, US"},
 { key: "MUU", title: "MUU, Mount Union, PA [Huntingdon County Airport]A, US"},
-{ key: "MUV:
-{ key: "{ key", title: "MUV, Philadelphia Mustin Aux Landing Field, United States of America, US"},
+{ key: "MUV", title: "MUV, Philadelphia Mustin Aux Landing Field, United States of America, US"},
 { key: "MUW", title: "MUW, Ghriss Airport, DZ"},
 { key: "MUX", title: "MUX, Multan, Pakistan, PK"},
 { key: "MUY", title: "MUY, Mouyondzi, Congo, CG"},
@@ -5656,8 +5601,7 @@ export const availableAirports = [
 { key: "NBA", title: "NBA, Nambaiyufa, Papua New Guinea, PG"},
 { key: "NBB", title: "NBB, Barranco Minas Airport, CO"},
 { key: "NBC", title: "NBC, Naberezhnyye Chelny, Tatarstan, Russia, RU"},
-{ key: "NBE:
-{ key: "{ key", title: "NBE, Enfidha [Zine El Abidine Ben Ali International Airport], Tunisia, TN"},
+{ key: "NBE", title: "NBE, Enfidha [Zine El Abidine Ben Ali International Airport], Tunisia, TN"},
 { key: "NBG", title: "NBG, New Orleans Nas Jrb/A. Callender, United States of America, US"},
 { key: "NBH", title: "NBH, Nambucca Heads, New South Wales, Australia, AU"},
 { key: "NBK", title: "NBK, Bangkok Suvarnabhumi International Apt, Thailand, TH"},
@@ -5703,8 +5647,7 @@ export const availableAirports = [
 { key: "NDR", title: "NDR, Nador, Morocco, MA"},
 { key: "NDS", title: "NDS, Sandstone, Western Australia, Australia, AU"},
 { key: "NDU", title: "NDU, Rundu, Namibia, NA"},
-{ key: "NDV:
-{ key: "{ key", title: "NDV, Anacostia United States Navy Heliport, United States of America, US"},
+{ key: "NDV", title: "NDV, Anacostia United States Navy Heliport, United States of America, US"},
 { key: "NDY", title: "NDY, Sanday, Orkney Islands, Scotland, United Kingdom, GB"},
 { key: "NDZ", title: "NDZ, Nordholz, Germany, DE"},
 { key: "NEA", title: "NEA, Glynco Naval Air Station, United States of America, US"},
@@ -5743,15 +5686,13 @@ export const availableAirports = [
 { key: "NGS", title: "NGS, Nagasaki, Japan, JP"},
 { key: "NGU", title: "NGU, Norfolk, VA [Norfolk Naval Air Station (Chambers Field)]A, US"},
 { key: "NGV", title: "NGV, Ngiva, Angola, AO"},
-{ key: "NGW:
-{ key: "{ key", title: "NGW, Corpus Christi Cabaniss Field Nolf, United States of America, US"},
+{ key: "NGW", title: "NGW, Corpus Christi Cabaniss Field Nolf, United States of America, US"},
 { key: "NGX", title: "NGX, Manang, Nepal, NP"},
 { key: "NGZ", title: "NGZ, Alameda Naval Air Station, United States of America, US"},
 { key: "NHA", title: "NHA, Nha-Trang, Vietnam, VN"},
 { key: "NHD", title: "NHD, Dubai Minhad Ab, United Arab Emirates, AE"},
 { key: "NHF", title: "NHF, New Halfa, Sudan, SD"},
-{ key: "NHK:
-{ key: "{ key", title: "NHK, Patuxent River Nas (Trapnell Field), United States of America, US"},
+{ key: "NHK", title: "NHK, Patuxent River Nas (Trapnell Field), United States of America, US"},
 { key: "NHS", title: "NHS, Nushki, Pakistan, PK"},
 { key: "NHT", title: "NHT, Northolt, England [Northholt Aerodrome], United Kingdom, GB"},
 { key: "NHV", title: "NHV, Nuku Hiva, Marquesas Islands, French Polynesia, PF"},
@@ -5930,8 +5871,7 @@ export const availableAirports = [
 { key: "NTY", title: "NTY, Pilanesberg International Airport, ZA"},
 { key: "NUA", title: "NUA, Nuwara Eliya Spb Gregory Lake Spb, Sri Lanka, LK"},
 { key: "NUB", title: "NUB, Numbulwar, Northern Territory, Australia, AU"},
-{ key: "NUC:
-{ key: "{ key", title: "NUC, San Clemente Auxiliary Landing Field, United States of America, US"},
+{ key: "NUC", title: "NUC, San Clemente Auxiliary Landing Field, United States of America, US"},
 { key: "NUD", title: "NUD, En Nahud, Sudan, SD"},
 { key: "NUE", title: "NUE, Nürnberg (Nurnberg,Nuremburg), Germany, DE"},
 { key: "NUF", title: "NUF, Hatton Spb Castlereigh Reservoir Spb, Sri Lanka, LK"},
@@ -6188,8 +6128,7 @@ export const availableAirports = [
 { key: "OPF", title: "OPF, Miami Opa-Locka Executive Apt, United States of America, US"},
 { key: "OPI", title: "OPI, Oenpelli, Northern Territory, Australia, AU"},
 { key: "OPL", title: "OPL, Opelousas, LA [St. Landry Parish Airport-Ahart Field]A, US"},
-{ key: "OPO:
-{ key: "{ key", title: "OPO, Porto (Oporto) [Francisco Sa Carneiro (Pedras Rubras)], Portugal, PT"},
+{ key: "OPO", title: "OPO, Porto (Oporto) [Francisco Sa Carneiro (Pedras Rubras)], Portugal, PT"},
 { key: "OPS", title: "OPS, Sinop, MT, Brazil, BR"},
 { key: "OPU", title: "OPU, Balimo, Papua New Guinea, PG"},
 { key: "OPW", title: "OPW, Opuwa, Namibia, NA"},
@@ -6452,8 +6391,7 @@ export const availableAirports = [
 { key: "PGH", title: "PGH, Pantnagar, India, IN"},
 { key: "PGI", title: "PGI, Chitato [Dundo], Angola, AO"},
 { key: "PGK", title: "PGK, Pangkalpinang, Indonesia, ID"},
-{ key: "PGL:
-{ key: "{ key", title: "PGL, Pascagoula Trent Lott International, United States of America, US"},
+{ key: "PGL", title: "PGL, Pascagoula Trent Lott International, United States of America, US"},
 { key: "PGM", title: "PGM, Port Graham, AK [Port Graham Airport]A, US"},
 { key: "PGN", title: "PGN, Pangia, Papua New Guinea, PG"},
 { key: "PGO", title: "PGO, Pagosa Springs, CO [Stevens Field]A, US"},
@@ -6661,8 +6599,7 @@ export const availableAirports = [
 { key: "PPP", title: "PPP, Proserpine, Queensland, Australia, AU"},
 { key: "PPQ", title: "PPQ, Paraparaumu, New Zealand, NZ"},
 { key: "PPR", title: "PPR, Pasir Pangarayan, Indonesia, ID"},
-{ key: "PPS:
-{ key: "{ key", title: "PPS, Puerto Princesa [Puerto Princesa International], Philippines, PH"},
+{ key: "PPS", title: "PPS, Puerto Princesa [Puerto Princesa International], Philippines, PH"},
 { key: "PPT", title: "PPT, Papeete, Tahiti, Society Islands [Faaa], French Polynesia, PF"},
 { key: "PPU", title: "PPU, Papun, Myanmar, MM"},
 { key: "PPV", title: "PPV, Port Protection, AK [Port Protection Seaplane Base]A, US"},
@@ -6975,8 +6912,7 @@ export const availableAirports = [
 { key: "RDC", title: "RDC, Redencao, Brazil, BR"},
 { key: "RDD", title: "RDD, Redding, CA [Redding Municipal Airport]A, US"},
 { key: "RDE", title: "RDE, Merdey, Indonesia, ID"},
-{ key: "RDG:
-{ key: "{ key", title: "RDG, Reading, PA [Reading Regional Airport/Carl A. Spaatz Field]A, US"},
+{ key: "RDG", title: "RDG, Reading, PA [Reading Regional Airport/Carl A. Spaatz Field]A, US"},
 { key: "RDM", title: "RDM, Redmond, OR [Roberts Field]A, US"},
 { key: "RDN", title: "RDN, Redang Island, Malaysia, MY"},
 { key: "RDO", title: "RDO, Radom Airport, Poland, PL"},
@@ -6993,8 +6929,7 @@ export const availableAirports = [
 { key: "RED", title: "RED, Reedsville, PA [Mifflin County Airport]A, US"},
 { key: "REE", title: "REE, Lubbock Reese Airpark, United States of America, US"},
 { key: "REG", title: "REG, Reggio Calabria, Italy, IT"},
-{ key: "REH:
-{ key: "{ key", title: "REH, Rehoboth Beach/Dewey Beach, DE [Rehoboth Bay Seaplane Base]A, US"},
+{ key: "REH", title: "REH, Rehoboth Beach/Dewey Beach, DE [Rehoboth Bay Seaplane Base]A, US"},
 { key: "REI", title: "REI, Regina, French Guyana, GF"},
 { key: "REK", title: "REK, Reykjavik, Iceland, IS"},
 { key: "REL", title: "REL, Trelew [Almirante Zar], Argentina, AR"},
@@ -7115,8 +7050,7 @@ export const availableAirports = [
 { key: "RMY", title: "RMY, Mariposa-Yosemite, United States of America, US"},
 { key: "RNA", title: "RNA, Arona Ulawa Airport, Solomon Islands, SB"},
 { key: "RNB", title: "RNB, Ronneby [Ronneby Air Base], Sweden, SE"},
-{ key: "RNC:
-{ key: "{ key", title: "RNC, Mcminnville Warren County Memorial, United States of America, US"},
+{ key: "RNC", title: "RNC, Mcminnville Warren County Memorial, United States of America, US"},
 { key: "RND", title: "RND, San Antonio Randolph Afb, United States of America, US"},
 { key: "RNE", title: "RNE, Roanne, France, FR"},
 { key: "RNG", title: "RNG, Rangely, CO [Rangely Airport]A, US"},
@@ -7137,8 +7071,7 @@ export const availableAirports = [
 { key: "ROB", title: "ROB, Monrovia [Roberts Field], Liberia, LR"},
 { key: "ROC", title: "ROC, Rochester, NY [Greater Rochester International Airport]A, US"},
 { key: "ROD", title: "ROD, Robertson, South Africa, ZA"},
-{ key: "ROF:
-{ key: "{ key", title: "ROF, Montague/Yreka Rohrer Field Airport, United States of America, US"},
+{ key: "ROF", title: "ROF, Montague/Yreka Rohrer Field Airport, United States of America, US"},
 { key: "ROG", title: "ROG, Rogers, AR [Rogers Municipal Airport-Carter Field]A, US"},
 { key: "ROH", title: "ROH, Robinhood, Queensland, Australia, AU"},
 { key: "ROI", title: "ROI, Roi Et Airport, TH"},
@@ -7355,8 +7288,7 @@ export const availableAirports = [
 { key: "SDN", title: "SDN, Sandane [Anda], Norway, NO"},
 { key: "SDO", title: "SDO, Ryotsu, Sado Is., Japan, JP"},
 { key: "SDP", title: "SDP, Sand Point, AK [Sand Point Airport]A, US"},
-{ key: "SDQ:
-{ key: "{ key", title: "SDQ, Santo Domingo [Aeropuerto de las Americas], Dominican Republic, DO"},
+{ key: "SDQ", title: "SDQ, Santo Domingo [Aeropuerto de las Americas], Dominican Republic, DO"},
 { key: "SDR", title: "SDR, Santander, Spain, ES"},
 { key: "SDS", title: "SDS, Sado Airport, JP"},
 { key: "SDT", title: "SDT, Saidu Sharif, Pakistan, PK"},
@@ -7389,8 +7321,7 @@ export const availableAirports = [
 { key: "SEW", title: "SEW, Siwa, Egypt, EG"},
 { key: "SEX", title: "SEX, Sembach, Germany, DE"},
 { key: "SEY", title: "SEY, Selibaby, Mauritania, MR"},
-{ key: "SEZ:
-{ key: "{ key", title: "SEZ, Mahe, Mahe Is. [Seychelles International Airport], Seychelles, SC"},
+{ key: "SEZ", title: "SEZ, Mahe, Mahe Is. [Seychelles International Airport], Seychelles, SC"},
 { key: "SFA", title: "SFA, Sfax [Thyna], Tunisia, TN"},
 { key: "SFB", title: "SFB, Sanford, FL [Central Florida Regional Airport]A, US"},
 { key: "SFC", title: "SFC, Saint Francois, Guadeloupe, GP"},
@@ -7475,8 +7406,7 @@ export const availableAirports = [
 { key: "SID", title: "SID, Sal, Sal [Amilcar Cabral], Cape Verde, CV"},
 { key: "SIE", title: "SIE, Sines, Portugal, PT"},
 { key: "SIF", title: "SIF, Simara Airport, NP"},
-{ key: "SIG:
-{ key: "{ key", title: "SIG, San Juan [Ferdinando Luis Ribas Dominicci Airport], Puerto Rico, PR"},
+{ key: "SIG", title: "SIG, San Juan [Ferdinando Luis Ribas Dominicci Airport], Puerto Rico, PR"},
 { key: "SIH", title: "SIH, Silgadi Doti, Nepal, NP"},
 { key: "SII", title: "SII, Sidi Ifni, Morocco, MA"},
 { key: "SIJ", title: "SIJ, Siglufjordur, Iceland, IS"},
@@ -7501,8 +7431,7 @@ export const availableAirports = [
 { key: "SJC", title: "SJC, San Jose, CA [San Jose International Airport]A, US"},
 { key: "SJD", title: "SJD, Los Cabos (San Jose del Cabo), Mexico, MX"},
 { key: "SJE", title: "SJE, San Jose del Guaviaro, Colombia, CO"},
-{ key: "SJF:
-{ key: "{ key", title: "SJF, Cruz Bay, St. John [Cruz Bay Seaplane Base], U.S. Virgin Islands, VI"},
+{ key: "SJF", title: "SJF, Cruz Bay, St. John [Cruz Bay Seaplane Base], U.S. Virgin Islands, VI"},
 { key: "SJG", title: "SJG, San Pedro Jagua, Colombia, CO"},
 { key: "SJH", title: "SJH, San Juan del Cesar, Colombia, CO"},
 { key: "SJI", title: "SJI, San Jose, Philippines, PH"},
@@ -7517,8 +7446,7 @@ export const availableAirports = [
 { key: "SJR", title: "SJR, San Juan de Uraba, Colombia, CO"},
 { key: "SJS", title: "SJS, San Jose, Bolivia, BO"},
 { key: "SJT", title: "SJT, San Angelo, TX [Mathis Field]A, US"},
-{ key: "SJU:
-{ key: "{ key", title: "SJU, San Juan [Luis Munoz Marin International Airport], Puerto Rico, PR"},
+{ key: "SJU", title: "SJU, San Juan [Luis Munoz Marin International Airport], Puerto Rico, PR"},
 { key: "SJV", title: "SJV, San Javier, Bolivia, BO"},
 { key: "SJW", title: "SJW, Shijiazhuang, China, CN"},
 { key: "SJX", title: "SJX, Sartaneja, Belize, BZ"},
@@ -7529,8 +7457,7 @@ export const availableAirports = [
 { key: "SKC", title: "SKC, Suki, Papua New Guinea, PG"},
 { key: "SKD", title: "SKD, Samarqand (Samarkand), Samarqand, Uzbekhistan, UZ"},
 { key: "SKE", title: "SKE, Skein [Geiteryggen], Norway, NO"},
-{ key: "SKF:
-{ key: "{ key", title: "SKF, San Antonio Lackland Afb-Kelly Fld, United States of America, US"},
+{ key: "SKF", title: "SKF, San Antonio Lackland Afb-Kelly Fld, United States of America, US"},
 { key: "SKG", title: "SKG, Thessaloniki (Saloniki) [Mikra], Greece, GR"},
 { key: "SKH", title: "SKH, Sirkhet, Nepal, NP"},
 { key: "SKI", title: "SKI, Skikda, Algeria, DZ"},
@@ -7654,8 +7581,7 @@ export const availableAirports = [
 { key: "SOX", title: "SOX, Sogamoso, Colombia, CO"},
 { key: "SOY", title: "SOY, Stronsay, United Kingdom, GB"},
 { key: "SOZ", title: "SOZ, Solenzara, France, FR"},
-{ key: "SPA:
-{ key: "{ key", title: "SPA, Greenville/Spartanburg Downtown Mem., United States of America, US"},
+{ key: "SPA", title: "SPA, Greenville/Spartanburg Downtown Mem., United States of America, US"},
 { key: "SPB", title: "SPB, Charlotte Amalie St Thomas [Harbor Seaplane Base Airport], VI"},
 { key: "SPC", title: "SPC, Santa Cruz de la Palma, Spain, ES"},
 { key: "SPD", title: "SPD, Said Pur, Bangladesh, BD"},
@@ -7740,8 +7666,7 @@ export const availableAirports = [
 { key: "SSF", title: "SSF, San Antonio Stinson Apt, United States of America, US"},
 { key: "SSG", title: "SSG, Malabo, Equatorial Guinea, GQ"},
 { key: "SSH", title: "SSH, Sharm El Sheikh [Ras Nasrani], Egypt, EG"},
-{ key: "SSI:
-{ key: "{ key", title: "SSI, Brunswick Mckinnon St Simon Is. Apt, United States of America, US"},
+{ key: "SSI", title: "SSI, Brunswick Mckinnon St Simon Is. Apt, United States of America, US"},
 { key: "SSJ", title: "SSJ, Sandnessjoen [Stokka], Norway, NO"},
 { key: "SSK", title: "SSK, Sturt Creek, Western Australia, Australia, AU"},
 { key: "SSL", title: "SSL, Santa Rosalia Airport, CO"},
@@ -7924,8 +7849,7 @@ export const availableAirports = [
 { key: "SZI", title: "SZI, Zaysan, Kazakhstan, KZ"},
 { key: "SZJ", title: "SZJ, Siguanea, Cuba, CU"},
 { key: "SZK", title: "SZK, Skukuza, South Africa, ZA"},
-{ key: "SZL:
-{ key: "{ key", title: "SZL, Knob Noster Whiteman Air Force Base, United States of America, US"},
+{ key: "SZL", title: "SZL, Knob Noster Whiteman Air Force Base, United States of America, US"},
 { key: "SZM", title: "SZM, Sesriem, Namibia, NA"},
 { key: "SZN", title: "SZN, Santa Cruz Island, United States of America, US"},
 { key: "SZO", title: "SZO, Shanzhou, China, CN"},
@@ -8133,11 +8057,9 @@ export const availableAirports = [
 { key: "TIN", title: "TIN, Tindouf, Algeria, DZ"},
 { key: "TIO", title: "TIO, Tilin, Myanmar, MM"},
 { key: "TIP", title: "TIP, Tripoli [Idris], Libya, LY"},
-{ key: "TIQ:
-{ key: "{ key", title: "TIQ, Tinian (Peipeinimaru) [West Tinian Airport], Mariana Islands, MP"},
+{ key: "TTQ", title: "TIQ, Tinian (Peipeinimaru) [West Tinian Airport], Mariana Islands, MP"},
 { key: "TIR", title: "TIR, Tirupati, India, IN"},
-{ key: "TIS:
-{ key: "{ key", title: "TIS, Thursday Island, Queensland [Horn Island Airport], Australia, AU"},
+{ key: "TIS", title: "TIS, Thursday Island, Queensland [Horn Island Airport], Australia, AU"},
 { key: "TIU", title: "TIU, Timaru, New Zealand, NZ"},
 { key: "TIV", title: "TIV, Tivat, ME"},
 { key: "TIW", title: "TIW, Tacoma Narrows, United States of America, US"},
@@ -8387,8 +8309,7 @@ export const availableAirports = [
 { key: "TTX", title: "TTX, Truscott-Mungalalu, Australia, AU"},
 { key: "TUA", title: "TUA, Tulcan [El Rosal-Col. L.M. Guerrero], Ecuador, EC"},
 { key: "TUB", title: "TUB, Tubuai, Tubuai Islands, French Polynesia, PF"},
-{ key: "TUC:
-{ key: "{ key", title: "TUC, Tucuman (San Miguel Tucuman) [Teniente Ben Matienz], Argentina, AR"},
+{ key: "TUC", title: "TUC, Tucuman (San Miguel Tucuman) [Teniente Ben Matienz], Argentina, AR"},
 { key: "TUD", title: "TUD, Tambacounda, Senegal, SN"},
 { key: "TUE", title: "TUE, Tupile, Panama, PA"},
 { key: "TUF", title: "TUF, Tours [Saint-Symphorien], France, FR"},
@@ -8422,8 +8343,7 @@ export const availableAirports = [
 { key: "TVY", title: "TVY, Tavoy, Myanmar, MM"},
 { key: "TWA", title: "TWA, Twin Hills, AK [Twin Hills Airport]A, US"},
 { key: "TWB", title: "TWB, Toowoomba, Queensland, Australia, AU"},
-{ key: "TWD:
-{ key: "{ key", title: "TWD, Port Townsend Jefferson County Intl, United States of America, US"},
+{ key: "TWD", title: "TWD, Port Townsend Jefferson County Intl, United States of America, US"},
 { key: "TWE", title: "TWE, Taylor Airport, US"},
 { key: "TWF", title: "TWF, Twin Falls, IDA, US"},
 { key: "TWH", title: "TWH, Two Harbors Amphibious Terminal, US"},
@@ -8725,8 +8645,7 @@ export const availableAirports = [
 { key: "VCR", title: "VCR, Carora, Venezuela, VE"},
 { key: "VCS", title: "VCS, Co Ong Airport, VN"},
 { key: "VCT", title: "VCT, Victoria, TX [Victoria Regional Airport]A, US"},
-{ key: "VCV:
-{ key: "{ key", title: "VCV, Victorville S. Calif. Logistics Apt, United States of America, US"},
+{ key: "VCV", title: "VCV, Victorville S. Calif. Logistics Apt, United States of America, US"},
 { key: "VDA", title: "VDA, Ovda International Airport, IL"},
 { key: "VDB", title: "VDB, Fagernes [Leirin], Norway, NO"},
 { key: "VDC", title: "VDC, Vitoria da Conquista, BA, Brazil, BR"},
@@ -9298,8 +9217,7 @@ export const availableAirports = [
 { key: "YBG", title: "YBG, Bagotville, QC [Bagotville Airport], Canada, CA"},
 { key: "YBH", title: "YBH, Bull Harbour, BC [Bull Harbour Water Aerodrome], Canada, CA"},
 { key: "YBI", title: "YBI, Black Tickle, NF [Black Tickle Aerodrome], Canada, CA"},
-{ key: "YBJ:
-{ key: "{ key", title: "YBJ, Baie Johan Beetz, QC [Baie Johan Beetz Water Aerodrome], Canada, CA"},
+{ key: "YBJ", title: "YBJ, Baie Johan Beetz, QC [Baie Johan Beetz Water Aerodrome], Canada, CA"},
 { key: "YBK", title: "YBK, Baker Lake, NT [Baker Lake Airport], Canada, CA"},
 { key: "YBL", title: "YBL, Campbell River, BC [Campbell River Airport], Canada, CA"},
 { key: "YBM", title: "YBM, Bronson Creek, BC [Bronson Creek Aerodrome], Canada, CA"},
@@ -9311,8 +9229,7 @@ export const availableAirports = [
 { key: "YBS", title: "YBS, Opapamiskan Lake, Canada, CA"},
 { key: "YBT", title: "YBT, Brochet, MB [Brochet Airport], Canada, CA"},
 { key: "YBV", title: "YBV, Berens River, MB [Berens River Airport], Canada, CA"},
-{ key: "YBW:
-{ key: "{ key", title: "YBW, Bedwell Harbour, BC [Bedwell Harbour Water Aerodrome], Canada, CA"},
+{ key: "YBW", title: "YBW, Bedwell Harbour, BC [Bedwell Harbour Water Aerodrome], Canada, CA"},
 { key: "YBX", title: "YBX, Blanc Sablon, QC, Canada, CA"},
 { key: "YBY", title: "YBY, Bonnyville, AB [Bonnyville Airport], Canada, CA"},
 { key: "YBZ", title: "YBZ, Toronto, ON [Toronto Downtown Heliport], Canada, CA"},
@@ -9354,8 +9271,7 @@ export const availableAirports = [
 { key: "YDK", title: "YDK, Main Duck, ON, Canada, CA"},
 { key: "YDL", title: "YDL, Dease Lake, BC [Dease Lake Airport], Canada, CA"},
 { key: "YDN", title: "YDN, Dauphin, MB [Dauphin Airport], Canada, CA"},
-{ key: "YDO:
-{ key: "{ key", title: "YDO, Dolbeau-St. Methode, QC [Dolbeau-St. Methode Airport], Canada, CA"},
+{ key: "YDO", title: "YDO, Dolbeau-St. Methode, QC [Dolbeau-St. Methode Airport], Canada, CA"},
 { key: "YDP", title: "YDP, Nain, NF [Nain Airport], Canada, CA"},
 { key: "YDQ", title: "YDQ, Dawson Creek, BC [Dawson Creek Airport], Canada, CA"},
 { key: "YDR", title: "YDR, Broadview, SK, Canada, CA"},
@@ -9412,8 +9328,7 @@ export const availableAirports = [
 { key: "YGO", title: "YGO, Gods Narrows, MB [Gods Lake Narrows Airport], Canada, CA"},
 { key: "YGP", title: "YGP, Gaspe, QC [Gaspe Airport], Canada, CA"},
 { key: "YGQ", title: "YGQ, Geraldton, ON [Geraldton Airport], Canada, CA"},
-{ key: "YGR:
-{ key: "{ key", title: "YGR, Iles-de-la-Madeleine, QC [Iles-de-la-Madeleine Airport], Canada, CA"},
+{ key: "YGR", title: "YGR, Iles-de-la-Madeleine, QC [Iles-de-la-Madeleine Airport], Canada, CA"},
 { key: "YGS", title: "YGS, Germansen, BC [Germansen Landing Airport], Canada, CA"},
 { key: "YGT", title: "YGT, Igloolik, NT [Igloolik Airport], Canada, CA"},
 { key: "YGV", title: "YGV, Havre St. Pierre, QC [Havre St. Pierre Airport], Canada, CA"},
@@ -9426,8 +9341,7 @@ export const availableAirports = [
 { key: "YHC", title: "YHC, Hakai Pass, Canada, CA"},
 { key: "YHD", title: "YHD, Dryden, ON [Dryden Municipal Airport], Canada, CA"},
 { key: "YHE", title: "YHE, Hope, BC [Hope Airport], Canada, CA"},
-{ key: "YHF:
-{ key: "{ key", title: "YHF, Hearst, ON [Hearst (Rene Fontaine) Municipal Airport], Canada, CA"},
+{ key: "YHF", title: "YHF, Hearst, ON [Hearst (Rene Fontaine) Municipal Airport], Canada, CA"},
 { key: "YHG", title: "YHG, Charlottetown, NF [Charlottetown Aerodrome], Canada, CA"},
 { key: "YHI", title: "YHI, Holman, NT [Holman Airport], Canada, CA"},
 { key: "YHK", title: "YHK, Gjoa Haven, NT [Gjoa Haven Airport], Canada, CA"},
@@ -9465,8 +9379,7 @@ export const availableAirports = [
 { key: "YKC", title: "YKC, Collins Bay, SK [Collins Bay Airport], Canada, CA"},
 { key: "YKD", title: "YKD, Kincardine Township Airport, Canada, CA"},
 { key: "YKE", title: "YKE, Knee Lake, MB, Canada, CA"},
-{ key: "YKF:
-{ key: "{ key", title: "YKF, Kitchener/Waterloo [Region of Waterloo International Airport], Canada, CA"},
+{ key: "YKF", title: "YKF, Kitchener/Waterloo [Region of Waterloo International Airport], Canada, CA"},
 { key: "YKG", title: "YKG, Kangirsuk, QC [Kangirsuk Airport], Canada, CA"},
 { key: "YKH", title: "YKH, Yingkou [Yingkou Lanqi Airport], CN"},
 { key: "YKI", title: "YKI, Kennosao Lake, Canada, CA"},
@@ -9500,8 +9413,7 @@ export const availableAirports = [
 { key: "YLP", title: "YLP, Mingan, QC [Mingan Airport], Canada, CA"},
 { key: "YLQ", title: "YLQ, La Tuque, QC [La Tuque Airport], Canada, CA"},
 { key: "YLR", title: "YLR, Leaf Rapids, MB [Leaf Rapids Airport], Canada, CA"},
-{ key: "YLS:
-{ key: "{ key", title: "YLS, Lebel-sur-Quevillon, QC [Lebel-sur-Quevillon Aerodrome], Canada, CA"},
+{ key: "YLS", title: "YLS, Lebel-sur-Quevillon, QC [Lebel-sur-Quevillon Aerodrome], Canada, CA"},
 { key: "YLT", title: "YLT, Alert, NT [Alert Airport], Canada, CA"},
 { key: "YLV", title: "YLV, Yevlakh, Azerbaijan, AZ"},
 { key: "YLW", title: "YLW, Kelowna, BC [Kelowna Airport], Canada, CA"},
@@ -9568,8 +9480,7 @@ export const availableAirports = [
 { key: "YOP", title: "YOP, Rainbow Lake, AB [Rainbow Lake Airport], Canada, CA"},
 { key: "YOS", title: "YOS, Owen Sound Billy Bishop Regional, Canada, CA"},
 { key: "YOT", title: "YOT, Yotvata, Israel, IL"},
-{ key: "YOW:
-{ key: "{ key", title: "YOW, Ottawa, ON [Macdonald-Cartier International Airport], Canada, CA"},
+{ key: "YOW", title: "YOW, Ottawa, ON [Macdonald-Cartier International Airport], Canada, CA"},
 { key: "YOX", title: "YOX, Rea Point, NT, Canada, CA"},
 { key: "YOY", title: "YOY, Valcartier, Canada, CA"},
 { key: "YPA", title: "YPA, Prince Albert, SK [Prince Albert Airport], Canada, CA"},
@@ -9627,8 +9538,7 @@ export const availableAirports = [
 { key: "YRI", title: "YRI, Riviere-du-Loup, QC [Riviere-du-Loup Airport], Canada, CA"},
 { key: "YRJ", title: "YRJ, Roberval, QC [Roberval Airport], Canada, CA"},
 { key: "YRL", title: "YRL, Red Lake, ON [Red Lake Airport], Canada, CA"},
-{ key: "YRM:
-{ key: "{ key", title: "YRM, Rocky Mountain House, AB [Rocky Mountain House Airport], Canada, CA"},
+{ key: "YRM", title: "YRM, Rocky Mountain House, AB [Rocky Mountain House Airport], Canada, CA"},
 { key: "YRN", title: "YRN, Rivers Inlet, BC [Rivers Inlet Water Aerodrome], Canada, CA"},
 { key: "YRO", title: "YRO, Ottawa, ON [Rockcliffe Airport], Canada, CA"},
 { key: "YRQ", title: "YRQ, Trois-Rivieres, QC [Trois-Rivieres Airport], Canada, CA"},
@@ -9643,8 +9553,7 @@ export const availableAirports = [
 { key: "YSE", title: "YSE, Squamish Airport, CA"},
 { key: "YSF", title: "YSF, Stony Rapids, SK [Stony Rapids Airport], Canada, CA"},
 { key: "YSG", title: "YSG, Snowdrift, NT [Snowdrift Aerodrome], Canada, CA"},
-{ key: "YSH:
-{ key: "{ key", title: "YSH, Smith Falls/Montague, ON [Smith Falls/Montague Airport], Canada, CA"},
+{ key: "YSH", title: "YSH, Smith Falls/Montague, ON [Smith Falls/Montague Airport], Canada, CA"},
 { key: "YSI", title: "YSI, Sans Souci, ON, Canada, CA"},
 { key: "YSJ", title: "YSJ, Saint John, NB [Saint John Airport], Canada, CA"},
 { key: "YSK", title: "YSK, Sanikiluaq, NT [Sanikiluaq Airport], Canada, CA"},
@@ -9696,8 +9605,7 @@ export const availableAirports = [
 { key: "YUJ", title: "YUJ, Lady Franklin, NT [Lady Franklin Point Airport], Canada, CA"},
 { key: "YUK", title: "YUK, Byron Bay, NT [Byron Bay Airport], Canada, CA"},
 { key: "YUL", title: "YUL, Montreal, QC [Dorval International Airport], Canada, CA"},
-{ key: "YUM:
-{ key: "{ key", title: "YUM, Yuma, AZ [Yuma Marine Corps Air Station/Yuma International]A, US"},
+{ key: "YUM", title: "YUM, Yuma, AZ [Yuma Marine Corps Air Station/Yuma International]A, US"},
 { key: "YUN", title: "YUN, Johnson Point, NT, Canada, CA"},
 { key: "YUR", title: "YUR, Gladman Point, NT [Gladman Point Airport], Canada, CA"},
 { key: "YUS", title: "YUS, Yushu Batang Airport, CN"},
@@ -9724,8 +9632,7 @@ export const availableAirports = [
 { key: "YWB", title: "YWB, Kangiqsujuaq, QC, Canada, CA"},
 { key: "YWF", title: "YWF, Halifax, NS [Halifax Downtown Waterfront Heliport], Canada, CA"},
 { key: "YWG", title: "YWG, Winnipeg, MB [Winnipeg International Airport], Canada, CA"},
-{ key: "YWH:
-{ key: "{ key", title: "YWH, Victoria, BC [Victoria Inner Harbour Water Aerodrome], Canada, CA"},
+{ key: "YWH", title: "YWH, Victoria, BC [Victoria Inner Harbour Water Aerodrome], Canada, CA"},
 { key: "YWJ", title: "YWJ, Fort Franklin, NT [Fort Franklin Airport], Canada, CA"},
 { key: "YWK", title: "YWK, Wabush, NF [Wabush Airport], Canada, CA"},
 { key: "YWL", title: "YWL, Williams Lake, BC [Williams Lake Airport], Canada, CA"},
@@ -9775,8 +9682,7 @@ export const availableAirports = [
 { key: "YYU", title: "YYU, Kapuskasing, QC [Kapuskasing Airport], Canada, CA"},
 { key: "YYW", title: "YYW, Armstrong, ON [Armstrong Airport], Canada, CA"},
 { key: "YYY", title: "YYY, Mont-Joli, QC [Mont-Joli Airport], Canada, CA"},
-{ key: "YYZ:
-{ key: "{ key", title: "YYZ, Toronto, ON [Lester B. Pearson International Airport], Canada, CA"},
+{ key: "YYZ", title: "YYZ, Toronto, ON [Lester B. Pearson International Airport], Canada, CA"},
 { key: "YZA", title: "YZA, Ashcroft, BC, Canada, CA"},
 { key: "YZC", title: "YZC, Beatton River, BC, Canada, CA"},
 { key: "YZD", title: "YZD, Toronto, ON [Downsview Airport], Canada, CA"},
@@ -9846,8 +9752,7 @@ export const availableAirports = [
 { key: "ZGK", title: "ZGK, Butiptiri Airport, ID"},
 { key: "ZGL", title: "ZGL, South Galway, Australia, AU"},
 { key: "ZGM", title: "ZGM, Ngoma, Zambia, ZM"},
-{ key: "ZGR:
-{ key: "{ key", title: "ZGR, Little Grand Rapids, MB [Little Grand Rapids Airport], Canada, CA"},
+{ key: "ZGR", title: "ZGR, Little Grand Rapids, MB [Little Grand Rapids Airport], Canada, CA"},
 { key: "ZGS", title: "ZGS, Gethsemani, QC, Canada, CA"},
 { key: "ZGU", title: "ZGU, Gaua, Vanuatu, VU"},
 { key: "ZHA", title: "ZHA, Zhanjiang, China, CN"},
@@ -9906,16 +9811,14 @@ export const availableAirports = [
 { key: "ZQH", title: "ZQH, Tuebingen, Germany, DE"},
 { key: "ZQL", title: "ZQL, Villingen-Schwenningen, Germany, DE"},
 { key: "ZQN", title: "ZQN, Queenstown, New Zealand, NZ"},
-{ key: "ZQS:
-{ key: "{ key", title: "ZQS, Queen Charlotte, BC [Queen Charlotte Water Aerodrome], Canada, CA"},
+{ key: "ZQS", title: "ZQS, Queen Charlotte, BC [Queen Charlotte Water Aerodrome], Canada, CA"},
 { key: "ZQW", title: "ZQW, Zweibrücken [Zweibrücken Airport], Germany, ZQW, DE"},
 { key: "ZQZ", title: "ZQZ, Zhangjiakou, China, CN"},
 { key: "ZRH", title: "ZRH, Zurich [Zürich-Kloten], Switzerland, CH"},
 { key: "ZRI", title: "ZRI, Serui, Indonesia, ID"},
 { key: "ZRJ", title: "ZRJ, Round Lake, ON [Weagamow Lake Airport], Canada, CA"},
 { key: "ZRM", title: "ZRM, Sarmi, New Guinea, Indonesia, ID"},
-{ key: "ZRR:
-{ key: "{ key", title: "ZRR, Arctic Red River, NT [Arctic Red River Water Aerodrome], Canada, CA"},
+{ key: "ZRR", title: "ZRR, Arctic Red River, NT [Arctic Red River Water Aerodrome], Canada, CA"},
 { key: "ZRS", title: "ZRS, Zuers/Lech Heliport, Austria, AT"},
 { key: "ZSA", title: "ZSA, San Salvador (Cockburn Town), San Salvador, Bahamas, BS"},
 { key: "ZSB", title: "ZSB, Salzburg Central Station, AT"},
@@ -9953,5 +9856,5 @@ export const availableAirports = [
 { key: "ZYR", title: "ZYR, Brussels Midi Railway Station, BE"},
 { key: "ZZO", title: "ZZO, Zonalnoye, Russian Federation, RU"},
 { key: "ZZU", title: "ZZU, Mzuzu, Malawi, MW"},
-{ key: "ZZV", title: "ZZV, Zanesville, OH [Zanesville Municipal Airport]A, US"
-];
+{ key: "ZZV", title: "ZZV, Zanesville, OH [Zanesville Municipal Airport]A, US"}
+]
