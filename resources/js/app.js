@@ -14,8 +14,8 @@ import { Provider} from 'react-redux';
 import { createStore } from 'redux';
 
 import App from "./App/Components/App.jsx";
-import UserReactExample from './App/components/UserReactExample';
-import OrganizationReactExample from './App/components/OrganizationReactExample';
+import UserApp from './App/components/UserProfile/UserApp.jsx';
+import OrganizationApp from './App/components/OrganizationProfile/OrganizationApp.jsx';
 
 // Reducers
 import flightReducer from './App/store/reducers/selectedFlight';
@@ -28,12 +28,12 @@ if (document.getElementById("root")) {
     ReactDOM.render(app, document.getElementById("root"));
 } else if (document.getElementById("orgProfile")) {
     ReactDOM.render(
-        <OrganizationReactExample />,
+        <OrganizationApp />,
         document.getElementById("orgProfile")
     );
 } else if (document.getElementById("userProfile")) {
     ReactDOM.render(
-        <UserReactExample />,
+        <UserApp />,
         document.getElementById("userProfile")
     );
 }

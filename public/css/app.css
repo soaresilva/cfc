@@ -9944,8 +9944,17 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.userprofile {
-  color: black;
+.org-heading {
+  color: blue;
+  min-height: 30vh;
+  background-color: #a9d37c;
+  text-align: center;
+}
+
+.org-profile {
+  color: white;
+  text-align: center;
+  background-color: #1e5856;
 }
 
 .org-event {
@@ -9961,5 +9970,9 @@ h3 {
   flex-direction: column;
   border: 2px dotted blue;
   text-align: center;
+}
+
+.userprofile {
+  color: black;
 }
 /*# sourceMappingURL=app.css.map*/

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 //import "./App.css";
 import UserTripHistory from "./UserTripHistory";
+import {spinner} from './../UI/Spinner/Spinner';
 
-const Spinner = () => {
-    return <h1>spinner</h1>;
-};
+// const Spinner = () => {
+//     return <h1>spinner</h1>;
+// };
 
 export default function UserProfile({ user_id }) {
     const [userTrips, setUserTrips] = useState([]);
@@ -27,7 +28,7 @@ export default function UserProfile({ user_id }) {
     return (
         <div>
             {!userTrips ? (
-                <Spinner />
+                {spinner}
             ) : (
                 <UserTripHistory
                     setUserTrips={setUserTrips}

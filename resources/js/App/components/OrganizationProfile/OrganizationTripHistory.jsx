@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { deleteTrip, deleteEventAndTrips} from "../../../Api/trips";
+import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
 
-export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents }) {
+export default function OrganizationTripHistory({
+    event_id,
+    setOrgEvents,
+    orgEvents
+}) {
     const [orgTrips, setOrgTrips] = useState([]);
     let totalDistance = 0;
     let totalCarbonFootprint = 0;
@@ -40,7 +44,7 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
         } catch (err) {
             console.log("error", err);
         }
-    }
+    };
 
     const trips = orgTrips.map((trip, index) => {
         totalDistance = totalDistance + trip.distance;
@@ -68,11 +72,23 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
         );
     });
     return (
-    <div>
-        <OrganizationEventSummary totalDistance={totalDistance} totalCarbonFootprint={totalCarbonFootprint} totalCarbonOffset={totalCarbonOffset}  />
-        {trips}
-        <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id}/> 
-    </div>)
+        <div>
+            <OrganizationEventSummary
+                totalDistance={totalDistance}
+                totalCarbonFootprint={totalCarbonFootprint}
+                totalCarbonOffset={totalCarbonOffset}
+            />
+            {trips}
+            {orgTrips.length === 0 ? (
+                ""
+            ) : (
+                <DeleteEventButton
+                    handleDeleteEventAndTrips={handleDeleteEventAndTrips}
+                    event_id={event_id}
+                />
+            )}
+        </div>
+    );
 }
 
 function DeleteTripButton({ handleDeleteTrip, trip }) {
