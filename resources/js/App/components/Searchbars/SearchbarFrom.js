@@ -1,41 +1,29 @@
 import React from "react";
-import {
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
-} from "reactstrap";
-// import TextField from "@material-ui/core/TextField";
-// import Autocomplete from "@material-ui/lab/Autocomplete";
+import TextField from "@material-ui/core/TextField";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import { createFilterOptions } from "@material-ui/lab/Autocomplete";
+
+import { availableAirports } from "../../destinations/available_airports";
 
 import "./Searchbar.css";
 
-function searchBar(props) {
-    const {
-        dropdownOpen,
-        dropDownClickHandler,
-        flightsFrom,
-        itemSelectFromHandler
-    } = props;
-    let flightFrom = flightsFrom.map(item => {
-        return (
-            <DropdownItem key={item} onClick={itemSelectFromHandler}>
-                {item}
-            </DropdownItem>
-        );
-    });
+function ComboBoxFrom() {
+  const filterOptions = createFilterOptions({
+    limit: 20,
+    stringify: (option) => option.title
+  });
 
-    return (
-        <div className="DropItem">
-            <Dropdown isOpen={dropdownOpen} toggle={dropDownClickHandler}>
-                <DropdownToggle caret>{props.children}</DropdownToggle>
-                <DropdownMenu>
-                    <DropdownItem header>{props.children}</DropdownItem>
-                    {flightFrom}
-                </DropdownMenu>
-            </Dropdown>
-        </div>
-    );
+  return (
+    <Autocomplete
+      id="combo-box-demo"
+      freeSolo
+      options={availableAirports}
+      filterOptions={filterOptions}
+      getOptionLabel={(airport) => airport.title}
+      style={{ width: 300 }}
+      renderInput={(params) => <TextField {...params} label="From*" variant="outlined" />}
+    />
+  );
 }
 
-export default searchBar;
+export default ComboBoxFrom;
