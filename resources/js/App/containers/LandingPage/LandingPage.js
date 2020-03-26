@@ -89,22 +89,8 @@ class LandingPage extends React.Component {
             <h1>Calculate and offset your Emissions!</h1>
             <h1 className="Blue">Flight Explorer</h1>
             <div className="Dropdown">
-              <SearchBarFrom
-                // flightsFrom={destinationFrom}
-                // dropdownOpen={this.state.dropdownFromOpen}
-                // dropDownClickHandler={this.dropDownFromClickHandler}
-                // itemSelectFromHandler={this.itemSelectFromHandler}
-              >
-                {this.state.flightFrom}
-              </SearchBarFrom>
-              <SearchBarTo
-                // flightsTo={destinationTo}
-                // dropdownOpen={this.state.dropdownToOpen}
-                // dropDownClickHandler={this.dropDownToClickHandler}
-                // itemSelectToHandler={this.itemSelectToHandler}
-              >
-                {this.state.flightTo}
-              </SearchBarTo>
+              <SearchBarFrom>{this.state.flightFrom}</SearchBarFrom>
+              <SearchBarTo>{this.state.flightTo}</SearchBarTo>
               <div className="DF">
                 <div className="CheckboxOption">
                   <label>Direct flights only:</label>
