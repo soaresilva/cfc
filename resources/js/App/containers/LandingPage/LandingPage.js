@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import "./LandingPage.css";
 import Button from "../../components/UI/Button/Button";
@@ -74,14 +75,11 @@ class LandingPage extends React.Component {
   };
 
   submitDataHandler = () => {
-    if (this.state.flightFrom === "From*" || this.state.flightTo === "To*") return;
+    if (!this.props.airportFrom || !this.props.airportTo) return;
     this.setState({ submitted: !this.state.submitted });
   };
 
   render() {
-    let destinationTo = Object.values(this.state.flightsTo);
-    let destinationFrom = Object.values(this.state.flightsFrom);
-
     return (
       <div className="LandingPage">
         <div className="SearchSection">
@@ -89,8 +87,8 @@ class LandingPage extends React.Component {
             <h1>Calculate and offset your Emissions!</h1>
             <h1 className="Blue">Flight Explorer</h1>
             <div className="Dropdown">
-              <SearchBarFrom>{this.state.flightFrom}</SearchBarFrom>
-              <SearchBarTo>{this.state.flightTo}</SearchBarTo>
+              <SearchBarFrom></SearchBarFrom>
+              <SearchBarTo />
               <div className="DF">
                 <div className="CheckboxOption">
                   <label>Direct flights only:</label>
@@ -105,8 +103,8 @@ class LandingPage extends React.Component {
             </div>
           </div>
           <FlightSection
-            origin={this.state.originFrom}
-            destination={this.state.destination}
+            airportTo={this.props.airportTo}
+            airportFrom={this.props.airportFrom}
             submitted={this.state.submitted}
             direct={this.state.direct}
           />
@@ -117,4 +115,11 @@ class LandingPage extends React.Component {
   }
 }
 
-export default LandingPage;
+const mapStateToProps = (state) => {
+  return {
+    airportTo: state.airportTo,
+    airportFrom: state.airportFrom
+  };
+};
+
+export default connect(mapStateToProps)(LandingPage);

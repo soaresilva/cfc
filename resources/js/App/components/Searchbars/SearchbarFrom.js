@@ -1,15 +1,18 @@
 import React from "react";
+import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { createFilterOptions } from "@material-ui/lab/Autocomplete";
 
 import { availableAirports } from "../../destinations/available_airports";
+import { selectAirportFrom } from "../../store/actions/index";
 
 import "./Searchbar.css";
 
-function ComboBoxFrom() {
+function ComboBoxFrom(props) {
   const filterOptions = createFilterOptions({
-    limit: 5,
+    limit: 10,
+    ignoreCase: false,
     stringify: (option) => option.title
   });
 
@@ -20,10 +23,17 @@ function ComboBoxFrom() {
       options={availableAirports}
       filterOptions={filterOptions}
       getOptionLabel={(airport) => airport.title}
+      onChange={props.onSelectAirportFrom}
       style={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="From*" variant="outlined" />}
     />
   );
 }
 
-export default ComboBoxFrom;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSelectAirportFrom: (event, airportFrom, reason) => dispatch(selectAirportFrom(event, airportFrom, reason))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(ComboBoxFrom);

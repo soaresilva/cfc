@@ -5,7 +5,6 @@ import "./OffsetSection.css";
 import CardItem from "./../../components/UI/CardItem/CardItem";
 
 function OffsetSection(props) {
-  console.log("ha");
   const { fetched, cityFrom, cityTo, distance, duration } = props;
   return (
     <div className="OffsetSection">

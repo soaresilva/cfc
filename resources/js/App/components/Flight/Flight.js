@@ -39,12 +39,6 @@ const flight = props => {
         result = arrayWithDistances.reduce((a, b) => a + b).toFixed(0);
     };
 
-    const getFlightIdHandler = (id, cityFrom, cityTo, duration) => {
-        console.log(
-            `Your flight from ${cityFrom} to ${cityTo}. Distance: ${id}`
-        );
-    };
-
     let stopovers = null;
     let latFrom, latTo, lngFrom, lngTo;
     if (route.length >= 0) {
