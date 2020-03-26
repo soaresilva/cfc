@@ -1,19 +1,6 @@
 {
-<<<<<<< HEAD
-    "/js/app.js": "/js/app.js?id=b768973fbe9b424e8574",
+    "/js/app.js": "/js/app.js?id=e8907af56264ba43a554",
     "/css/app.css": "/css/app.css?id=1a4c67fed83beaacf384",
-    "/js/app.js.map": "/js/app.js.map?id=63caffd963eb510ab84b",
+    "/js/app.js.map": "/js/app.js.map?id=b5f5a94c4492286a8164",
     "/css/app.css.map": "/css/app.css.map?id=7481c35ce5b61bbd63ea"
-=======
-<<<<<<< HEAD
-    "/js/app.js": "/js/app.js?id=5718c97576bd1983e4c4",
-    "/css/app.css": "/css/app.css?id=1a4c67fed83beaacf384",
-    "/js/app.js.map": "/js/app.js.map?id=9928d98e6b1ecdc1e63b",
-=======
-    "/js/app.js": "/js/app.js?id=e0254c058d97918eb6c9",
-    "/css/app.css": "/css/app.css?id=1a4c67fed83beaacf384",
-    "/js/app.js.map": "/js/app.js.map?id=42f9d23d31406340885d",
->>>>>>> b68d4b302ea1150ec0572c2e687c5ebb87684cb5
-    "/css/app.css.map": "/css/app.css.map?id=6c2a229d94f760f9e05d"
->>>>>>> 3ea7646a627acea3f6c7ca4fd0f8aeedc9ae670e
 }
