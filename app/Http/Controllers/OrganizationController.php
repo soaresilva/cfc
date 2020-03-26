@@ -30,7 +30,6 @@ class OrganizationController extends Controller
     {
 
         if ($request->ajax()) {
-
             $user = auth()->guard('organization')->user();
             return response()->json($user);
         }
