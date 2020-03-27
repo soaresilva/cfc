@@ -1,54 +1,43 @@
-import React, {useState,useEffect} from 'react'; 
+import React from "react";
 import { connect } from "react-redux";
 
-export function AddTripToDB({totalDistance,airportFrom,airportTo}) {
-  const [userId, setUserId] = useState(null);
+export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg }) {
+  const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
-  const makeUserId = () => {
-    let token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-    $.ajax({
-      url: "/indexAjax",
-      type: "POST",
-      data: { _token: token, message: "bravo" },
-      dataType: "JSON",
-      success: (response) => {
-        setUserId(response.id),
-        console.log('response id', response.id);
-      },
-      error: (response) => {
-        console.log("error");
-        console.log(response);
-      }
-    });
-  };
-  useEffect(() => {
-    makeUserId();
-  }, []);
-
   const sendUserTripsToDB = async () => {
-    console.log('adding trip working');
-    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`)
+    console.log("adding trip working");
+    console.log("user-id", userId);
+    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`);
     await response.json();
     console.log("send user info", response);
-  }
+  };
 
-
+  const sendOrgTripsToDB = async () => {
+    console.log("adding trip working");
+    console.log("user-id", userId);
+    const response = await fetch(`${sendOrgTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`);
+    await response.json();
+    console.log("send user info", response);
+  };
 
   return (
-    <button onClick={sendUserTripsToDB}>Add trip to profile</button>
-  )
-
+    <div>
+      {isUserOrg ? (
+        <button onClick={sendOrgTripsToDB}>Add trip to profile</button>
+      ) : (
+        <button onClick={sendUserTripsToDB}>Add trip to profile</button>
+      )}
+    </div>
+  );
 }
-
 
 const mapStateToProps = (state) => {
   return {
     totalDistance: state.distance,
     airportFrom: state.airportFrom,
-    airportTo: state.airportTo,
+    airportTo: state.airportTo
   };
 };
 
 export default connect(mapStateToProps)(AddTripToDB);
-

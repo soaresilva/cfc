@@ -16,8 +16,8 @@ class CreateTripsTable extends Migration
         Schema::create('trips', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('organization_id')->nullable();
             $table->unsignedBigInteger('event_id')->nullable();
-            $table->string('name')->nullable();
             $table->integer('distance');
             $table->float('carbon_amount', 8, 3)->nullable();
             $table->float('offset_amount', 8, 3)->nullable();
