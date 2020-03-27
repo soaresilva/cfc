@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -9,6 +9,7 @@ import { selectAirportTo } from "../../store/actions/index";
 import "./Searchbar.css";
 
 function ComboBoxTo(props) {
+  const { onSelectAirportTo } = props;
   const filterOptions = createFilterOptions({
     limit: 20,
     stringify: (option) => option.title
@@ -18,10 +19,11 @@ function ComboBoxTo(props) {
     <Autocomplete
       id="combo-box-demo"
       freeSolo
+      className="root"
       options={availableAirports}
       filterOptions={filterOptions}
       getOptionLabel={(airport) => airport.title}
-      onChange={props.onSelectAirportTo}
+      onChange={onSelectAirportTo}
       style={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="To*" variant="outlined" />}
     />

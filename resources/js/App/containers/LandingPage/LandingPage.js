@@ -1,119 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import "./LandingPage.css";
+import Checkbox from "@material-ui/core/Checkbox";
 import Button from "../../components/UI/Button/Button";
 import FlightSection from "../FlightSection/FlightSection";
 import SearchBarTo from "../../components/Searchbars/SearchbarTo";
 import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
 import OffsetSection from "./../OffsetSection/OffsetSection";
-import { flightsFrom, flightsTo } from "../../destinations/destinations";
 
-class LandingPage extends React.Component {
-  state = {
-    dropdownToOpen: false,
-    dropdownFromOpen: false,
-    flightsFrom: "",
-    flightsTo: "",
-    destination: "",
-    originFrom: "",
-    submitted: false,
-    direct: 2,
-    flightFrom: "From*",
-    flightTo: "To*"
-  };
+const LandingPage = (props) => {
+  const { airportFrom, airportTo } = props;
+  const [submitted, setSubmitted] = useState(false);
+  const [direct, setDirect] = useState(2);
 
-  componentDidMount() {
-    this.setState((prevState) => {
-      return {
-        flightsFrom: flightsFrom,
-        flightsTo: flightsTo
-      };
-    });
-  }
-
-  dropDownToClickHandler = () => {
-    this.setState((prevState) => {
-      return {
-        dropdownToOpen: !prevState.dropdownToOpen
-      };
-    });
-  };
-
-  dropDownFromClickHandler = () => {
-    this.setState((prevState) => {
-      return {
-        dropdownFromOpen: !prevState.dropdownFromOpen
-      };
-    });
-  };
-
-  itemSelectFromHandler = (event) => {
-    const destArray = Object.entries(this.state.flightsFrom);
-    const originFrom = destArray.filter((item) => item[1] === event.target.innerText);
-    this.setState({
-      originFrom: originFrom[0][0],
-      flightFrom: originFrom[0][1]
-    });
-  };
-
-  itemSelectToHandler = (event) => {
-    const destArray = Object.entries(this.state.flightsTo);
-    const destination = destArray.filter((item) => item[1] === event.target.innerText);
-    this.setState({
-      destination: destination[0][0],
-      flightTo: destination[0][1]
-    });
-  };
-
-  directFlightsClickHandler = (event) => {
+  const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
-      this.setState({ direct: 0 });
+      setDirect(0);
     } else {
-      this.setState({ direct: 2 });
+      setDirect(2);
     }
   };
 
-  submitDataHandler = () => {
-    if (!this.props.airportFrom || !this.props.airportTo) return;
-    this.setState({ submitted: !this.state.submitted });
+  const submitDataHandler = () => {
+    if (!airportFrom || !airportTo) return;
+    setSubmitted(true);
   };
 
-  render() {
-    return (
-      <div className="LandingPage">
-        <div className="SearchSection">
-          <div className="LandingPageTitle">
-            <h1>Calculate and offset your Emissions!</h1>
-            <h1 className="Blue">Flight Explorer</h1>
-            <div className="Dropdown">
-              <SearchBarFrom></SearchBarFrom>
-              <SearchBarTo />
-              <div className="DF">
-                <div className="CheckboxOption">
-                  <label>Direct flights only:</label>
-                  <input type="checkbox" onChange={this.directFlightsClickHandler} />
-                </div>
-                <div className="CheckboxOption">
-                  <label>Flights with layover:</label>
-                  <input type="checkbox" />
-                </div>
+  return (
+    // Selecting a flight
+    <div className="LandingPage">
+      <div className="SearchSection">
+        <div className="LandingPageTitle">
+          <h1>Calculate and offset your Emissions!</h1>
+          <h1 className="Blue">Flight Explorer</h1>
+          <div className="Dropdown">
+            <SearchBarFrom></SearchBarFrom>
+            <SearchBarTo />
+            <div className="DF">
+              <div className="CheckboxOption">
+                <label>Direct flights only:</label>
+                <Checkbox onChange={directFlightsClickHandler} inputProps={{ "aria-label": "secondary checkbox" }} />
               </div>
-              <Button clicked={this.submitDataHandler}>Search</Button>
+              <div className="CheckboxOption">
+                <label>Flights with layover:</label>
+                <Checkbox color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
+              </div>
             </div>
+            <Button clicked={submitDataHandler}>Search</Button>
           </div>
-          <FlightSection
-            airportTo={this.props.airportTo}
-            airportFrom={this.props.airportFrom}
-            submitted={this.state.submitted}
-            direct={this.state.direct}
-          />
         </div>
-        <OffsetSection />
+        <FlightSection airportTo={airportTo} airportFrom={airportFrom} submitted={submitted} direct={direct} />
       </div>
-    );
-  }
-}
+      {/* Offset options */}
+      <OffsetSection />
+    </div>
+  );
+};
 
 const mapStateToProps = (state) => {
   return {

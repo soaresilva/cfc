@@ -10,6 +10,7 @@ import { selectAirportFrom } from "../../store/actions/index";
 import "./Searchbar.css";
 
 function ComboBoxFrom(props) {
+  const { onSelectAirportFrom } = props;
   const filterOptions = createFilterOptions({
     limit: 20,
     stringify: (option) => option.title
@@ -18,11 +19,12 @@ function ComboBoxFrom(props) {
   return (
     <Autocomplete
       id="combo-box-demo"
+      className="root"
       freeSolo
       options={availableAirports}
       filterOptions={filterOptions}
       getOptionLabel={(airport) => airport.title}
-      onChange={props.onSelectAirportFrom}
+      onChange={onSelectAirportFrom}
       style={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="From*" variant="outlined" />}
     />

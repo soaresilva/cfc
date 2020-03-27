@@ -4,11 +4,7 @@ export const availableAirports = [
   { key: "AAC", title: "AAC, Al Arish, Egypt, EG" },
   { key: "AAD", title: "AAD, Adado, Somalia, SO" },
   { key: "AAE", title: "AAE, Annaba [El Mellah], Algeria, DZ" },
-<<<<<<< HEAD
-  { key: "AAF", title: "AAF, Apalachicola, FL [Apalachicola Municipal Airport]A, US" },
-=======
   { key: "AAF", title: "AAF, Apalachicola, FL [Apalachicola], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AAG", title: "AAG, Arapoti Avelino Vieira, Brazil, BR" },
   { key: "AAH", title: "AAH, Aachen Merzbrueck, Germany, DE" },
   { key: "AAI", title: "AAI, Arraias, GO, Brazil, BR" },
@@ -27,21 +23,6 @@ export const availableAirports = [
   { key: "AAV", title: "AAV, Alah, Philippines, PH" },
   { key: "AAX", title: "AAX, Araxa, MG, Brazil, BR" },
   { key: "AAY", title: "AAY, Al Ghaydah, Yemen, YE" },
-<<<<<<< HEAD
-  { key: "AAZ", title: "AAZ, Quezaltenango Airport, GT" },
-  { key: "ABA", title: "ABA, Abakan, Khakassia, Russia, RU" },
-  { key: "ABB", title: "ABB, Asaba International Airport Asaba, Nigeria , NG" },
-  { key: "ABC", title: "ABC, Albacete Airport, Spain, ES" },
-  { key: "ABD", title: "ABD, Abadan, Iran, IR" },
-  { key: "ABE", title: "ABE, Allentown, PA [Allentown-Bethlehem-Easton Airport]A, US" },
-  { key: "ABF", title: "ABF, Abaiang, Kiribati, KI" },
-  { key: "ABG", title: "ABG, Abingoon, Queensland, Australia, AU" },
-  { key: "ABH", title: "ABH, Alpha, Queensland, Australia, AU" },
-  { key: "ABI", title: "ABI, Abilene, TX [Abilene Regional Airport]A, US" },
-  { key: "ABJ", title: "ABJ, Abidjan [Felix Houphouet Boigny], Ivory Coast, CI" },
-  { key: "ABK", title: "ABK, Kabri Dar, Ethiopia, ET" },
-  { key: "ABL", title: "ABL, Ambler, AK [Ambler Airport]A, US" },
-=======
   { key: "AAZ", title: "AAZ, Quezaltenango, GT" },
   { key: "ABA", title: "ABA, Abakan, Khakassia, Russia, RU" },
   { key: "ABB", title: "ABB, Asaba International Asaba, Nigeria , NG" },
@@ -55,48 +36,29 @@ export const availableAirports = [
   { key: "ABJ", title: "ABJ, Abidjan [Felix Houphouet Boigny], Ivory Coast, CI" },
   { key: "ABK", title: "ABK, Kabri Dar, Ethiopia, ET" },
   { key: "ABL", title: "ABL, Ambler, AK [Ambler], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ABM", title: "ABM, Cape York, Queensland [Bamaga], Australia, AU" },
   { key: "ABN", title: "ABN, Albina, Suriname, SR" },
   { key: "ABO", title: "ABO, Aboisso, Ivory Coast, CI" },
   { key: "ABP", title: "ABP, Atkamba, Papua New Guinea, PG" },
-<<<<<<< HEAD
-  { key: "ABQ", title: "ABQ, Albuquerque, NM [Albuquerque International Airport]A, US" },
-  { key: "ABR", title: "ABR, Aberdeen, SD [Aberdeen Regional Airport]A, US" },
-  { key: "ABS", title: "ABS, Abu Simbel, Egypt, EG" },
-  { key: "ABT", title: "ABT, Al Baha Airport, SA" },
-=======
   { key: "ABQ", title: "ABQ, Albuquerque, NM [Albuquerque International], US" },
   { key: "ABR", title: "ABR, Aberdeen, SD [Aberdeen Regional], US" },
   { key: "ABS", title: "ABS, Abu Simbel, Egypt, EG" },
   { key: "ABT", title: "ABT, Al Baha, SA" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ABU", title: "ABU, Atambua [Haliweni], Indonesia, ID" },
   { key: "ABV", title: "ABV, Abuja, Nigeria, NG" },
   { key: "ABW", title: "ABW, Abau, Papua New Guinea, PG" },
   { key: "ABX", title: "ABX, Albury, New South Wales, Australia, AU" },
-<<<<<<< HEAD
-  { key: "ABY", title: "ABY, Albany, GA [Southwest Georgia Regional Airport]A, US" },
-  { key: "ABZ", title: "ABZ, Aberdeen, Scotland [Dyce], United Kingdom, GB" },
-  { key: "ACA", title: "ACA, Acapulco [General Juan N. Alvarez], Mexico, MX" },
-  { key: "ACB", title: "ACB, Bellaire, MI [Antrim County Airport]A, US" },
-=======
   { key: "ABY", title: "ABY, Albany, GA [Southwest Georgia Regional], US" },
   { key: "ABZ", title: "ABZ, Aberdeen, Scotland [Dyce], United Kingdom, GB" },
   { key: "ACA", title: "ACA, Acapulco [General Juan N. Alvarez], Mexico, MX" },
   { key: "ACB", title: "ACB, Bellaire, MI [Antrim County], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ACC", title: "ACC, Accra [Kotoka], Ghana, GH" },
   { key: "ACD", title: "ACD, Acandi, Colombia, CO" },
   { key: "ACE", title: "ACE, Arrecife, Canary Islands [Lanzarote], Spain, ES" },
   { key: "ACH", title: "ACH, Altenrhein [Rorschach], Switzerland, CH" },
   { key: "ACI", title: "ACI, Alderney, Channel Islands, GB" },
   { key: "ACJ", title: "ACJ, Anuradhapura, Sri Lanka, LK" },
-<<<<<<< HEAD
-  { key: "ACK", title: "ACK, Nantucket, MA [Nantucket Memorial Airport]A, US" },
-=======
   { key: "ACK", title: "ACK, Nantucket, MA [Nantucket Memorial], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ACL", title: "ACL, Aguaclara, Colombia, CO" },
   { key: "ACM", title: "ACM, Arica, Colombia, CO" },
   { key: "ACN", title: "ACN, Ciudad Acuna, Mexico, MX" },
@@ -104,45 +66,17 @@ export const availableAirports = [
   { key: "ACP", title: "ACP, Maragheh Sahand, Iran, IR" },
   { key: "ACR", title: "ACR, Araracuara, Colombia, CO" },
   { key: "ACS", title: "ACS, Anacortes, WA, USA, RU" },
-<<<<<<< HEAD
-  { key: "ACT", title: "ACT, Waco, TX [Waco Regional Airport]A, US" },
-  { key: "ACU", title: "ACU, Achutupo, Panama, PA" },
-  { key: "ACV", title: "ACV, Arcata/Eureka, CA [Arcata Airport]A, US" },
-  { key: "ACX", title: "ACX, Xingyi, China, CN" },
-  { key: "ACY", title: "ACY, Atlantic City, NJ [Atlantic City International Airport]A, US" },
-=======
   { key: "ACT", title: "ACT, Waco, TX [Waco Regional], US" },
   { key: "ACU", title: "ACU, Achutupo, Panama, PA" },
   { key: "ACV", title: "ACV, Arcata/Eureka, CA [Arcata], US" },
   { key: "ACX", title: "ACX, Xingyi, China, CN" },
   { key: "ACY", title: "ACY, Atlantic City, NJ [Atlantic City International], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ACZ", title: "ACZ, Zabol, Iran, IR" },
   { key: "ADA", title: "ADA, Adana, Turkey, TR" },
   { key: "ADB", title: "ADB, Izmir [Adnan Menderes], Turkey, TR" },
   { key: "ADC", title: "ADC, Andakombe, Papua New Guinea, PG" },
   { key: "ADD", title: "ADD, Addis Ababa [Bole], Ethiopia, ET" },
   { key: "ADE", title: "ADE, Aden [International], Yemen, YE" },
-<<<<<<< HEAD
-  { key: "ADF", title: "ADF, Adıyaman Airport Adıyaman, Turkey , TR" },
-  { key: "ADG", title: "ADG, Adrian, MI [Lenawee County Airport]A, US" },
-  { key: "ADH", title: "ADH, Aldan, Yakutia-Sakha, Russia, RU" },
-  { key: "ADI", title: "ADI, Arandis, Namibia, NA" },
-  { key: "ADJ", title: "ADJ, Amman [Marka], Jordan, JO" },
-  { key: "ADK", title: "ADK, Adak Island, AK [Adak Naval Air Station]A, US" },
-  { key: "ADL", title: "ADL, Adelaide, South Australia [International], Australia, AU" },
-  { key: "ADM", title: "ADM, Ardmore, OK [Ardmore Municipal Airport]A, US" },
-  { key: "ADN", title: "ADN, Andes, Colombia, CO" },
-  { key: "ADO", title: "ADO, Andamooka Airport, AU" },
-  { key: "ADP", title: "ADP, Ampara Airport, LK" },
-  { key: "ADQ", title: "ADQ, Kodiak, AK [Kodiak Airport]A, US" },
-  { key: "ADR", title: "ADR, Andrews, SC [Andrews Municipal Airport]A, US" },
-  { key: "ADS", title: "ADS, Dallas Addison Apt, United States of America, US" },
-  { key: "ADT", title: "ADT, Ada, OK [Ada Municipal Airport]A, US" },
-  { key: "ADU", title: "ADU, Ardabil, Iran, IR" },
-  { key: "ADV", title: "ADV, El Daein Airport, SD" },
-  { key: "ADW", title: "ADW, Camp Springs, MD [Andrews Air Force Base]A, US" },
-=======
   { key: "ADF", title: "ADF, Adıyaman Adıyaman, Turkey , TR" },
   { key: "ADG", title: "ADG, Adrian, MI [Lenawee County], US" },
   { key: "ADH", title: "ADH, Aldan, Yakutia-Sakha, Russia, RU" },
@@ -161,7 +95,6 @@ export const availableAirports = [
   { key: "ADU", title: "ADU, Ardabil, Iran, IR" },
   { key: "ADV", title: "ADV, El Daein, SD" },
   { key: "ADW", title: "ADW, Camp Springs, MD [Andrews Air Force Base], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "ADX", title: "ADX, St. Andrews, Scotland, United Kingdom, GB" },
   { key: "ADY", title: "ADY, Alldays, South Africa, ZA" },
   { key: "ADZ", title: "ADZ, San Andres Island, San Andres [Sesquicentenario], Colombia, CO" },
@@ -173,25 +106,15 @@ export const availableAirports = [
   { key: "AEH", title: "AEH, Abeche, Chad, TD" },
   { key: "AEJ", title: "AEJ, Ahmed Al Jaber, Kuwait, KW" },
   { key: "AEK", title: "AEK, Aseki, Papua New Guinea, PG" },
-<<<<<<< HEAD
-  { key: "AEL", title: "AEL, Albert Lea, MN [Albert Lea Municipal Airport]A, US" },
-=======
   { key: "AEL", title: "AEL, Albert Lea, MN [Albert Lea], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AEM", title: "AEM, Amgu, Russian Federation, RU" },
   { key: "AEO", title: "AEO, Aioun el Atrouss, Mauritania, MR" },
   { key: "AEP", title: "AEP, Buenos Aires [Aeroparque Jorge Newbery], Argentina, AR" },
   { key: "AER", title: "AER, Adler/Sochi, Krasnodar, Russia, RU" },
   { key: "AES", title: "AES, Alesund (Aalesund) [Vigra], Norway, NO" },
-<<<<<<< HEAD
-  { key: "AET", title: "AET, Allakaket, AK [Allakaket Airport]A, US" },
-  { key: "AEU", title: "AEU, Abu Musa Island, Iran, IR" },
-  { key: "AEX", title: "AEX, Alexandria International Airport, US" },
-=======
   { key: "AET", title: "AET, Allakaket, AK [Allakaket], US" },
   { key: "AEU", title: "AEU, Abu Musa Island, Iran, IR" },
   { key: "AEX", title: "AEX, Alexandria International, US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AEY", title: "AEY, Akureyri, Iceland, IS" },
   { key: "AFA", title: "AFA, San Rafael, Argentina, AR" },
   { key: "AFD", title: "AFD, Port Alfred, South Africa, ZA" },
@@ -200,11 +123,7 @@ export const availableAirports = [
   { key: "AFK", title: "AFK, Ampara Kondavattavan Tank Spb, Sri Lanka, LK" },
   { key: "AFL", title: "AFL, Alta Floresta, Brazil, BR" },
   { key: "AFN", title: "AFN, Jaffrey Silver Ranch, United States of America, US" },
-<<<<<<< HEAD
-  { key: "AFO", title: "AFO, Afton, WY [Afton Municipal Airport]A, US" },
-=======
   { key: "AFO", title: "AFO, Afton, WY [Afton], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AFR", title: "AFR, Afore, Papua New Guinea, PG" },
   { key: "AFS", title: "AFS, Zarafshan, Uzbekistan, UZ" },
   { key: "AFT", title: "AFT, Afutara, Solomon Islands, SB" },
@@ -214,11 +133,7 @@ export const availableAirports = [
   { key: "AFZ", title: "AFZ, Sabzevar, Iran, IR" },
   { key: "AGA", title: "AGA, Agadir [Al Massira], Morocco, MA" },
   { key: "AGB", title: "AGB, Augsburg, Germany, DE" },
-<<<<<<< HEAD
-  { key: "AGC", title: "AGC, Pittsburgh, PA [Allegheny County Airport]A, US" },
-=======
   { key: "AGC", title: "AGC, Pittsburgh, PA [Allegheny County], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AGD", title: "AGD, Anggi, Indonesia, ID" },
   { key: "AGE", title: "AGE, Wangerooge, Germany, DE" },
   { key: "AGF", title: "AGF, Agen, France, FR" },
@@ -229,21 +144,12 @@ export const availableAirports = [
   { key: "AGK", title: "AGK, Kagua, Papua New Guinea, PG" },
   { key: "AGL", title: "AGL, Wanigela, Papua New Guinea, PG" },
   { key: "AGM", title: "AGM, Anqmaqssalik, Greenland, GL" },
-<<<<<<< HEAD
-  { key: "AGN", title: "AGN, Angoon, AK [Angoon Seaplane Base]A, US" },
-  { key: "AGO", title: "AGO, Magnolia, AR [Magnolia Municipal Airport]A, US" },
-  { key: "AGP", title: "AGP, Malaga [Pablo Ruiz Picasso], Spain, ES" },
-  { key: "AGQ", title: "AGQ, Agrinion, Greece, GR" },
-  { key: "AGR", title: "AGR, Agra, India, IN" },
-  { key: "AGS", title: "AGS, Augusta, GA [Bush Field]A, US" },
-=======
   { key: "AGN", title: "AGN, Angoon, AK [Angoon Seaplane Base], US" },
   { key: "AGO", title: "AGO, Magnolia, AR [Magnolia], US" },
   { key: "AGP", title: "AGP, Malaga [Pablo Ruiz Picasso], Spain, ES" },
   { key: "AGQ", title: "AGQ, Agrinion, Greece, GR" },
   { key: "AGR", title: "AGR, Agra, India, IN" },
   { key: "AGS", title: "AGS, Augusta, GA [Bush Field], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AGT", title: "AGT, Ciudad del Este, Paraguay, PY" },
   { key: "AGU", title: "AGU, Aguascalientes, Mexico, MX" },
   { key: "AGV", title: "AGV, Acarigua, Venezuela, VE" },
@@ -257,17 +163,6 @@ export const availableAirports = [
   { key: "AHD", title: "AHD, Ardmore Downtown Executive Apt, United States of America, US" },
   { key: "AHE", title: "AHE, Ahe, French Polynesia, PF" },
   { key: "AHF", title: "AHF, Arapahoe, United States of America, US" },
-<<<<<<< HEAD
-  { key: "AHH", title: "AHH, Amery, WI [Amery Municipal Airport]A, US" },
-  { key: "AHI", title: "AHI, Amahai, Indonesia, ID" },
-  { key: "AHJ", title: "AHJ,  Hongyuan [Ngawa], China, CN" },
-  { key: "AHL", title: "AHL, Aishalton, Guyana, GY" },
-  { key: "AHM", title: "AHM, Ashland Municipal, United States of America, US" },
-  { key: "AHN", title: "AHN, Athens, GA [Athens/Ben Epps Airport]A, US" },
-  { key: "AHO", title: "AHO, Alghero, Sardinia [Fertilia], Italy, IT" },
-  { key: "AHS", title: "AHS, Ahuas, Honduras, HN" },
-  { key: "AHT", title: "AHT, Amchitka, AK [Amchitka Island Airport]A, US" },
-=======
   { key: "AHH", title: "AHH, Amery, WI [Amery], US" },
   { key: "AHI", title: "AHI, Amahai, Indonesia, ID" },
   { key: "AHJ", title: "AHJ,  Hongyuan [Ngawa], China, CN" },
@@ -277,56 +172,33 @@ export const availableAirports = [
   { key: "AHO", title: "AHO, Alghero, Sardinia [Fertilia], Italy, IT" },
   { key: "AHS", title: "AHS, Ahuas, Honduras, HN" },
   { key: "AHT", title: "AHT, Amchitka, AK [Amchitka Island], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AHU", title: "AHU, Al Hoceima [Cote du Rif], Morocco, MA" },
   { key: "AHW", title: "AHW, Saih Rawl, Oman, OM" },
   { key: "AHY", title: "AHY, Ambatolahy, Madagascar, MG" },
   { key: "AHZ", title: "AHZ, Alpe d'Huez, France, FR" },
-<<<<<<< HEAD
-  { key: "AIA", title: "AIA, Alliance, NE [Alliance Municipal Airport]A, US" },
-  { key: "AIB", title: "AIB, Anita Bay, AKA, US" },
-  { key: "AIC", title: "AIC, Ailinglaplap Airok Airport, MH" },
-  { key: "AID", title: "AID, Anderson Municipal, United States of America, US" },
-=======
   { key: "AIA", title: "AIA, Alliance, NE [Alliance], US" },
   { key: "AIB", title: "AIB, Anita Bay, AKA, US" },
   { key: "AIC", title: "AIC, Ailinglaplap Airok, MH" },
   { key: "AID", title: "AID, Anderson, United States of America, US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AIE", title: "AIE, Aiome, Papua New Guinea, PG" },
   { key: "AIF", title: "AIF, Assis, SP, Brazil, BR" },
   { key: "AIG", title: "AIG, Yalinga, Central African Republic, CF" },
   { key: "AIH", title: "AIH, Aiambak, Papua New Guinea, PG" },
   { key: "AII", title: "AII, Ali Sabieh, Djibouti, DJ" },
-<<<<<<< HEAD
-  { key: "AIK", title: "AIK, Aiken, SC [Aiken Municipal Airport]A, US" },
-  { key: "AIL", title: "AIL, Ailigandi, Panama, PA" },
-  { key: "AIM", title: "AIM, Ailuk, Ine Island, Marshall Islands, MH" },
-  { key: "AIN", title: "AIN, Wainwright, AK [Wainwright Airport]A, US" },
-  { key: "AIO", title: "AIO, Atlantic, IA [Atlantic Municipal Airport]A, US" },
-=======
   { key: "AIK", title: "AIK, Aiken, SC [Aiken], US" },
   { key: "AIL", title: "AIL, Ailigandi, Panama, PA" },
   { key: "AIM", title: "AIM, Ailuk, Ine Island, Marshall Islands, MH" },
   { key: "AIN", title: "AIN, Wainwright, AK [Wainwright], US" },
   { key: "AIO", title: "AIO, Atlantic, IA [Atlantic], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AIP", title: "AIP, Adampur, India, IN" },
   { key: "AIR", title: "AIR, Aripuana, MT, Brazil, BR" },
   { key: "AIS", title: "AIS, Arorae Island, Kiribati, KI" },
   { key: "AIT", title: "AIT, Aitutaki, Cook Islands, CK" },
   { key: "AIU", title: "AIU, Atiu, Cook Islands, CK" },
-<<<<<<< HEAD
-  { key: "AIV", title: "AIV, Aliceville, AL [George Downer Airport]A, US" },
-  { key: "AIW", title: "AIW, Ai-Ais, Namibia, NA" },
-  { key: "AIY", title: "AIY, Atlantic City, NJ [Atlantic City Municipal Airport]A, US" },
-  { key: "AIZ", title: "AIZ, Kaiser/Lake Ozark, MO [Lee C. Fine Memorial Airport]A, US" },
-=======
   { key: "AIV", title: "AIV, Aliceville, AL [George Downer], US" },
   { key: "AIW", title: "AIW, Ai-Ais, Namibia, NA" },
   { key: "AIY", title: "AIY, Atlantic City, NJ [Atlantic City], US" },
   { key: "AIZ", title: "AIZ, Kaiser/Lake Ozark, MO [Lee C. Fine Memorial], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AJA", title: "AJA, Ajaccio, Corsica [Campo Dell'Oro], France, FR" },
   { key: "AJF", title: "AJF, Jouf, Saudi Arabia, SA" },
   { key: "AJI", title: "AJI, Agri, Turkey, TR" },
@@ -340,27 +212,13 @@ export const availableAirports = [
   { key: "AJU", title: "AJU, Aracaju, SE, Brazil, BR" },
   { key: "AJY", title: "AJY, Agades (Agadez), Niger, NE" },
   { key: "AKA", title: "AKA, Ankang, China, CN" },
-<<<<<<< HEAD
-  { key: "AKB", title: "AKB, Atka, AK [Atka Airport]A, US" },
-=======
   { key: "AKB", title: "AKB, Atka, AK [Atka], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AKC", title: "AKC, Akron/Canton Akron Fulton Intl, United States of America, US" },
   { key: "AKD", title: "AKD, Akola, India, IN" },
   { key: "AKE", title: "AKE, Akieni, Gabon, GA" },
   { key: "AKF", title: "AKF, Kufrah, Libya, LY" },
   { key: "AKG", title: "AKG, Anguganak, Papua New Guinea, PG" },
   { key: "AKH", title: "AKH, Al Kharj Prince Sultan Air Base, Saudi Arabia, SA" },
-<<<<<<< HEAD
-  { key: "AKI", title: "AKI, Akiak, AK [Akiak Airport]A, US" },
-  { key: "AKJ", title: "AKJ, Asahikawa, Japan, JP" },
-  { key: "AKK", title: "AKK, Akhiok, AK [Akhiok Airport]A, US" },
-  { key: "AKL", title: "AKL, Auckland [International], New Zealand, NZ" },
-  { key: "AKM", title: "AKM, Zakouma, Chad, TD" },
-  { key: "AKN", title: "AKN, King Salmon, AK [King Salmon Airport]A, US" },
-  { key: "AKO", title: "AKO, Akron, CO [Akron-Washington County Airport]A, US" },
-  { key: "AKP", title: "AKP, Anaktuvuk Pass, AK [Anaktuvuk Pass Airport]A, US" },
-=======
   { key: "AKI", title: "AKI, Akiak, AK [Akiak], US" },
   { key: "AKJ", title: "AKJ, Asahikawa, Japan, JP" },
   { key: "AKK", title: "AKK, Akhiok, AK [Akhiok], US" },
@@ -369,37 +227,16 @@ export const availableAirports = [
   { key: "AKN", title: "AKN, King Salmon, AK [King Salmon], US" },
   { key: "AKO", title: "AKO, Akron, CO [Akron-Washington County], US" },
   { key: "AKP", title: "AKP, Anaktuvuk Pass, AK [Anaktuvuk Pass], US" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AKQ", title: "AKQ, Astraksetra, Indonesia, ID" },
   { key: "AKR", title: "AKR, Akure, Nigeria, NG" },
   { key: "AKS", title: "AKS, Auki, Solomon Islands, SB" },
   { key: "AKT", title: "AKT, Akrotiri Royal Air Force, Cyprus, CY" },
-<<<<<<< HEAD
-  { key: "AKU", title: "AKU, Aksu Airport, CN" },
-=======
   { key: "AKU", title: "AKU, Aksu, CN" },
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
   { key: "AKV", title: "AKV, Akulivik, QC, Canada, CA" },
   { key: "AKW", title: "AKW, Aghajari, Iran, IR" },
   { key: "AKX", title: "AKX, Aqtobe (Aktyubinsk), Aqtobe, Kazakhstan, KZ" },
   { key: "AKY", title: "AKY, Sittwe (Akyab), Myanmar, MM" },
   { key: "ALA", title: "ALA, Almaty (Alma Ata), Alma Ata, Kazakhstan, KZ" },
-<<<<<<< HEAD
-  { key: "ALB", title: "ALB, Albany, NY [Albany County Airport]A, US" },
-  { key: "ALC", title: "ALC, Alicante, Spain, ES" },
-  { key: "ALD", title: "ALD, Alerta, Peru, PE" },
-  { key: "ALE", title: "ALE, Alpine, TX [Alpine-Casparis Municipal Airport]A, US" },
-  { key: "ALF", title: "ALF, Alta, Norway, NO" },
-  { key: "ALG", title: "ALG, Alger (Algiers) [Houari Boumediene], Algeria, DZ" },
-  { key: "ALH", title: "ALH, Albany, Western Australia, Australia, AU" },
-  { key: "ALI", title: "ALI, Alice, TX [Alice International Airport]A, US" },
-  { key: "ALJ", title: "ALJ, Alexander Bay, South Africa, ZA" },
-  { key: "ALK", title: "ALK, Asela, Ethiopia, ET" },
-  { key: "ALL", title: "ALL, Albenga, Italy, IT" },
-  { key: "ALM", title: "ALM, Alamogordo, NM [Alamogordo-White Sands Regional Airport]A, US" },
-  { key: "ALN", title: "ALN, Alton, IL/St. Louis, MO [St. Louis Regional Airport]A, US" },
-  { key: "ALO", title: "ALO, Waterloo, IA [Waterloo Municipal Airport]A, US" }
-=======
   { key: "ALB", title: "ALB, Albany, NY [Albany County], US" },
   { key: "ALC", title: "ALC, Alicante, Spain, ES" },
   { key: "ALD", title: "ALD, Alerta, Peru, PE" },
@@ -10020,5 +9857,4 @@ export const availableAirports = [
   { key: "ZZO", title: "ZZO, Zonalnoye, Russian Federation, RU" },
   { key: "ZZU", title: "ZZU, Mzuzu, Malawi, MW" },
   { key: "ZZV", title: "ZZV, Zanesville, OH [Zanesville], US" }
->>>>>>> 1f2e9cce8bfc6dca4b3bac0f814026c8f9fa6249
 ];

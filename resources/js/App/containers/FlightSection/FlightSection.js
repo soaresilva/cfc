@@ -6,18 +6,19 @@ import Spinner from "../../components/UI/Spinner/Spinner";
 import searchFlights from "../../functions/searchFlights";
 
 const FlightSection = (props) => {
+  const { submitted, airportFrom, airportTo, direct } = props;
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (props.submitted) setLoading(true);
-    if (props.airportFrom && props.airportTo && props.submitted) {
+    if (submitted) setLoading(true);
+    if (airportFrom && airportTo && submitted) {
       getFlightsHandler();
     }
   }, [props]);
 
   const getFlightsHandler = async () => {
-    const data = await searchFlights(props.airportFrom, props.airportTo, props.direct);
+    const data = await searchFlights(airportFrom, airportTo, direct);
     console.log("flightData", data);
     setFlightData((prevFlightData) => {
       return prevFlightData.concat(data);
