@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-const searchFlights = async (origin, destination, direct) => {
+const searchFlights = async (origin, destination, numberOfLayovers) => {
   const when = DateTime.local()
     .plus({ days: 1 })
     .toFormat("dd/MM/yyyy");
@@ -8,16 +8,14 @@ const searchFlights = async (origin, destination, direct) => {
 
   const query = new URLSearchParams({
     partner: "picky",
-    v: 3,
     flyFrom: origin,
     to: destination,
     dateFrom: todayDate,
     dateTo: when,
-    max_stopovers: direct,
+    max_stopovers: numberOfLayovers,
     limit: 3
   });
   const url = new URL(`?${query}`, "https://api.skypicker.com/flights");
-  // console.log("url", url);
   const response = await fetch(url);
   const data = await response.json();
   return data.data;

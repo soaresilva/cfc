@@ -46,4 +46,5 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(OffsetSection);
+
+export default connect(mapStateToProps, null)(OffsetSection);

@@ -23,7 +23,10 @@ const reducer = (state = initialState, action) => {
       };
     case actionTypes.SELECT_AIRPORT_TO:
       if (action.reason === "clear") {
-        return (state.airportTo = "");
+        return {
+          ...state,
+          airportTo: ""
+        };
       }
       return {
         ...state,
@@ -31,7 +34,10 @@ const reducer = (state = initialState, action) => {
       };
     case actionTypes.SELECT_AIRPORT_FROM:
       if (action.reason === "clear") {
-        return (state.airportFrom = "");
+        return {
+          ...state,
+          airportFrom: ""
+        };
       }
       return {
         ...state,

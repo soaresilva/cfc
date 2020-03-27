@@ -1,9 +1,9 @@
-.LandingPage {
+.FlightSearch {
   display: flex;
   flex-direction: column;
 }
 
-.LandingPageTitle {
+.FlightSearchTitle {
   height: 10rem;
   margin-bottom: 2rem;
 }

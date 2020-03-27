@@ -1,37 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
-import "./LandingPage.css";
+import "./FlightSearch.css";
 import Checkbox from "@material-ui/core/Checkbox";
 import Button from "../../components/UI/Button/Button";
 import FlightSection from "../FlightSection/FlightSection";
 import SearchBarTo from "../../components/Searchbars/SearchbarTo";
 import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
-import OffsetSection from "./../OffsetSection/OffsetSection";
+import OffsetSection from "../OffsetSection/OffsetSection";
 
-const LandingPage = (props) => {
+import searchFlights from "../../functions/searchFlights";
+
+const FlightSearch = (props) => {
   const { airportFrom, airportTo } = props;
-  const [submitted, setSubmitted] = useState(false);
-  const [direct, setDirect] = useState(2);
+  const [numberOfLayovers, setNumberOfLayovers] = useState(2);
+  const [flightData, setFlightData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
-      setDirect(0);
+      setNumberOfLayovers(0);
     } else {
-      setDirect(2);
+      setNumberOfLayovers(2);
     }
   };
 
-  const submitDataHandler = () => {
-    if (!airportFrom || !airportTo) return;
-    setSubmitted(true);
+  const searchFlightHandler = () => {
+    setLoading(!loading);
+    if (airportFrom && airportTo) {
+      getFlightsHandler();
+    }
+  };
+
+  const getFlightsHandler = async () => {
+    const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
+    setFlightData(data);
+    setLoading(false);
   };
 
   return (
     // Selecting a flight
-    <div className="LandingPage">
+    <div className="FlightSearch">
       <div className="SearchSection">
-        <div className="LandingPageTitle">
+        <div className="FlightSearchTitle">
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
@@ -47,10 +58,10 @@ const LandingPage = (props) => {
                 <Checkbox color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
               </div>
             </div>
-            <Button clicked={submitDataHandler}>Search</Button>
+            <Button clicked={searchFlightHandler}>Search</Button>
           </div>
         </div>
-        <FlightSection airportTo={airportTo} airportFrom={airportFrom} submitted={submitted} direct={direct} />
+        <FlightSection flightData={flightData} loading={loading} />
       </div>
       {/* Offset options */}
       <OffsetSection />
@@ -65,4 +76,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(LandingPage);
+export default connect(mapStateToProps)(FlightSearch);

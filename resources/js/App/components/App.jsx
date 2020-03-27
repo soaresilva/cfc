@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import CardItem from "./UI/CardItem/CardItem";
-import LandingPage from "./../containers/LandingPage/LandingPage";
+import FlightSearch from "../containers/FlightSearch/FlightSearch";
 
 export default class App extends React.Component {
   render() {
@@ -30,7 +30,8 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
-        <LandingPage />
+
+        <FlightSearch />
 
         <div className="WelcomeText">
           <h1>"footcha"</h1>
