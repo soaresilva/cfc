@@ -19,7 +19,7 @@ class CreateTripsTable extends Migration
             $table->unsignedBigInteger('event_id')->nullable();
             $table->string('name')->nullable();
             $table->integer('distance');
-            $table->float('carbon_amount', 8, 3);
+            $table->float('carbon_amount', 8, 3)->nullable();
             $table->float('offset_amount', 8, 3)->nullable();
             $table->date('flight_date')->nullable();
             $table->string('airport_from')->nullable();
