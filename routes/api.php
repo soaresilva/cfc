@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
-*/
+ */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
@@ -20,17 +20,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('trips/{user_id}', 'TripController@getUserTrips');
 Route::delete('trips/{user_id}', 'TripController@deleteTrips');
-Route::get('trips/{id}/{airportFrom}/{airportTo}/{totalDistance}', 'TripController@sendUserTripToDB');
-
+Route::get('/org/trips/{id}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendOrgTripToDB');
+Route::get('trips/{id}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendUserTripToDB');
 
 //Route::get('events/{org_id}', 'EventController@getEvents');
 Route::get('events/trips/{event_id}', 'TripController@getOrgTrips');
 
 Route::delete('events/{user_id}', 'EventController@deleteEventAndTrips');
 Route::get('org/trips/{id}', 'EventController@getEventsAndTrips');
-
-
-
-
-
-

@@ -26,7 +26,9 @@ function CardItem(props) {
             <p>{(30 * totalCO2amount).toFixed(2)}EUR</p>
             <Button clicked={handleClickOpen}>More Info</Button>
             <CustomizedModal closed={handleClose} opened={open} moreInfo={moreInfo} title={title} />
-            <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} offset={totalCO2amount} />
+            <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} offset={totalCO2amount}>
+              Add to profile with offsetting
+            </AddTripToDB>
           </div>
         </div>
       ) : (

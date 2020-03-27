@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 import "./OffsetSection.css";
@@ -6,6 +6,9 @@ import CardItem from "./../../components/UI/CardItem/CardItem";
 import AddTripToDB from "../../components/AddTrip/AddTripToDB";
 
 function OffsetSection(props) {
+  const [userId, setUserId] = useState(null);
+  const [isUserOrg, setIsUserOrg] = useState(null);
+
   const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount } = props;
 
   const farmers = {
@@ -26,6 +29,51 @@ function OffsetSection(props) {
     moreInfoForest:
       "At least half of your emissions will be reduced in Swiss carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
   };
+
+  const makeUserId = () => {
+    let token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+    $.ajax({
+      url: "/indexAjax",
+      type: "POST",
+      data: { _token: token, message: "bravo" },
+      dataType: "JSON",
+      success: (response) => {
+        setUserId(response.id), console.log("response id", response.id);
+        setIsUserOrg(false);
+      },
+      error: (response) => {
+        console.log("error");
+        console.log(response);
+      }
+    });
+  };
+
+  const makeOrgId = () => {
+    let token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+    $.ajax({
+      url: "/orgIndexAjax",
+      type: "POST",
+      data: { _token: token, message: "bravo" },
+      dataType: "JSON",
+      success: (response) => {
+        console.log("success");
+        console.log(response);
+        setUserId(response.id), console.log("response id", response.id);
+        setIsUserOrg(true);
+      },
+      error: (response) => {
+        console.log("error");
+        console.log(response);
+      }
+    });
+  };
+
+  useEffect(() => {
+    makeUserId();
+    if (!userId) {
+      makeOrgId();
+    }
+  }, []);
 
   return (
     <div className="OffsetSection">
@@ -74,7 +122,15 @@ function OffsetSection(props) {
               />
             </div>
           </div>
-          <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} />
+          <AddTripToDB
+            cityFrom={cityFrom}
+            cityTo={cityTo}
+            distance={distance}
+            totalCO2amount={totalCO2amount}
+            userId={userId}
+            isUserOrg={isUserOrg}
+            offset={0}
+          >Add to profile without offsetting</AddTripToDB>
         </>
       ) : (
         <h1>Select a flight to see offset options</h1>
@@ -90,7 +146,7 @@ const mapStateToProps = (state) => {
     cityTo: state.cityTo,
     distance: state.distance,
     duration: state.duration,
-    totalCO2amount: state.totalCO2amount,
+    totalCO2amount: state.totalCO2amount
   };
 };
 
