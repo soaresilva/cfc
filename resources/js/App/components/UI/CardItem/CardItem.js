@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./CardItem.css";
 import Button from "../Button/Button";
+import CustomizedModal from "./../Modal/Modal";
+import AddTripToDB from "./../../AddTrip/AddTripToDB";
 
 function CardItem(props) {
-  const { children, fetched } = props;
+  const { children, fetched, totalCO2amount, photo, description, moreInfo, title, cityFrom, cityTo, distance } = props;
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="CardItem">
       {fetched ? (
         <div className="CardItemsInfo">
-          <img src="/images/farmers.jpg" className="CardItemsPicture" />
+          <img src={photo} className="CardItemsPicture" alt={photo} />
           <div className="CardItemsDescription">
-            <p>Offset your emissions by helping small farmers in Nicaragua with reforestation.</p>
-            <p>50EUR</p>
-            <Button>To cart</Button>
+            <p>{description}</p>
+            <p>{(30 * totalCO2amount).toFixed(2)}EUR</p>
+            <Button clicked={handleClickOpen}>More Info</Button>
+            <CustomizedModal closed={handleClose} opened={open} moreInfo={moreInfo} title={title} />
+            <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} offset={totalCO2amount} />
           </div>
         </div>
       ) : (

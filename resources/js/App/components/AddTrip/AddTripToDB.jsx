@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react'; 
 import { connect } from "react-redux";
+import ButtonBlue from './../UI/Button/ButtonBlue';
 
 export function AddTripToDB({totalDistance,airportFrom,airportTo}) {
   const [userId, setUserId] = useState(null);
@@ -36,7 +37,7 @@ export function AddTripToDB({totalDistance,airportFrom,airportTo}) {
 
 
   return (
-    <button onClick={sendUserTripsToDB}>Add trip to profile</button>
+    <ButtonBlue clicked={sendUserTripsToDB}>Add trip to profile without offset</ButtonBlue>
   )
 
 }

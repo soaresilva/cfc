@@ -20,5 +20,5 @@ export const carbonFormula = (totalDistance, totalCO2Amount) => {
     airCraftFactor * totalDistance +
     infrastructure;
 
-  return (totalCO2Amount / 1000).toFixed(2);
+  return (totalCO2Amount / 1000).toFixed(3);
 };

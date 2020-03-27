@@ -88,6 +88,8 @@
             @elseif (Auth::guard('organization')->check())
             <a href="{{ url('/home') }}">{{ Auth::guard('organization')->user()->name }}</a>
             @else
+
+            
             <a href="{{ route('login') }}">Login</a>
 
             @if (Route::has('org-login'))
