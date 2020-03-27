@@ -83,7 +83,15 @@ function OffsetSection(props) {
         <h1>Select a flight to see offset options</h1>
       )}
 
-      <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} userId={userId} isUserOrg={isUserOrg} />
+      <AddTripToDB
+        cityFrom={cityFrom}
+        cityTo={cityTo}
+        distance={distance}
+        totalCO2amount={totalCO2amount}
+        userId={userId}
+        isUserOrg={isUserOrg}
+        offset={0}
+      />
     </div>
   );
 }

@@ -27,12 +27,14 @@ class TripController extends Controller
         return response()->json(['okay' => true], 200);
     }
 
-    public function sendUserTripToDB(Request $request, $user_id, $airportFrom, $airportTo, $totalDistance)
+    public function sendUserTripToDB(Request $request, $user_id, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
     {
         // dd(auth()->guard('api')->user());
         $trip = new Trip;
         $trip->user_id = $user_id;
         $trip->distance = $totalDistance;
+        $trip->carbon_amount = $totalCO2amount;
+        $trip->offset_amount = $offset;
         $trip->airport_from = $airportFrom;
         $trip->airport_to = $airportTo;
         $trip->save();
@@ -40,11 +42,13 @@ class TripController extends Controller
 
     }
 
-    public function sendOrgTripToDB(Request $request, $org_id, $airportFrom, $airportTo, $totalDistance)
+    public function sendOrgTripToDB(Request $request, $org_id, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
     {
         $trip = new Trip;
         $trip->organization_id = $org_id;
         $trip->distance = $totalDistance;
+        $trip->carbon_amount = $totalCO2amount;
+        $trip->offset_amount = $offset;
         $trip->airport_from = $airportFrom;
         $trip->airport_to = $airportTo;
         $trip->save();

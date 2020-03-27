@@ -1,14 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 
-export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg }) {
+export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount }) {
   const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
   const sendUserTripsToDB = async () => {
     console.log("adding trip working");
     console.log("user-id", userId);
-    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`);
+    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
     await response.json();
     console.log("send user info", response);
   };
@@ -16,7 +16,7 @@ export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isU
   const sendOrgTripsToDB = async () => {
     console.log("adding trip working");
     console.log("user-id", userId);
-    const response = await fetch(`${sendOrgTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`);
+    const response = await fetch(`${sendOrgTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
     await response.json();
     console.log("send user info", response);
   };
