@@ -14,7 +14,7 @@ const flight = (props) => {
   const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
   let arrayWithDistances = [];
-  let result = null;
+  let totalDistance = null;
   let stopovers = null;
   let latFrom, latTo, lngFrom, lngTo;
   if (route.length >= 0) {
@@ -32,7 +32,7 @@ const flight = (props) => {
       latTo = route[index].latTo;
       lngTo = route[index].lngTo;
       lngFrom = route[index].lngFrom;
-      result = haversineDistance(latFrom, latTo, lngFrom, lngTo, arrayWithDistances, result);
+      totalDistance = haversineDistance(latFrom, latTo, lngFrom, lngTo, arrayWithDistances, totalDistance);
     }
   }
 
@@ -56,14 +56,14 @@ const flight = (props) => {
       </div>
       <div>
         <h3 className="FlightInfo">Distance:</h3>
-        <h4 className="FlightTime">{result}km</h4>
+        <h4 className="FlightTime">{totalDistance}km</h4>
       </div>
       <div>
         <h3 className="FlightInfo">Price:</h3>
         <h4 className="FlightTime">€{price}</h4>
       </div>
       <div className="FlightStopovers">{stopovers}</div>
-      <Button clicked={() => onSelectFlightDetails(cityFrom, cityTo, result, fly_duration)}>Select</Button>
+      <Button clicked={(() => onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration))}>Select</Button>
     </div>
   );
 };
