@@ -26,9 +26,11 @@ const FlightSearch = (props) => {
   };
 
   const searchFlightHandler = () => {
-    setLoading(!loading);
-    if (airportFrom && airportTo) {
-      getFlightsHandler();
+    if (airportFrom.trim() && airportTo.trim()) {
+      setLoading(!loading);
+      if (airportFrom && airportTo) {
+        getFlightsHandler();
+      }
     }
   };
 

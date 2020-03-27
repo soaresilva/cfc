@@ -5,7 +5,7 @@ import "./OffsetSection.css";
 import CardItem from "./../../components/UI/CardItem/CardItem";
 
 function OffsetSection(props) {
-  const { fetched, cityFrom, cityTo, distance, duration } = props;
+  const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount } = props;
   return (
     <div className="OffsetSection">
       {fetched ? (
@@ -15,7 +15,7 @@ function OffsetSection(props) {
             <h6>
               <b>Your flight:</b> From {cityFrom} to {cityTo} with duration {duration} and distance {distance}km.
             </h6>
-            <h6>CO2 amount: </h6>
+            <h6>CO2 amount &asymp; {totalCO2amount}t</h6>
           </div>
           <div className="CardItems">
             <div className="CardItem-Project">
@@ -42,9 +42,9 @@ const mapStateToProps = (state) => {
     cityFrom: state.cityFrom,
     cityTo: state.cityTo,
     distance: state.distance,
-    duration: state.duration
+    duration: state.duration,
+    totalCO2amount: state.totalCO2amount
   };
 };
-
 
 export default connect(mapStateToProps, null)(OffsetSection);
