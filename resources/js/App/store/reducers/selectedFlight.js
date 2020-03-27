@@ -7,7 +7,7 @@ const initialState = {
   airportFrom: "",
   distance: null,
   duration: null,
-  fetched: false
+  fetched: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -43,7 +43,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         airportFrom: action.airportFrom.title.slice(0, 3)
       };
-
+      
     default:
       return state;
   }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
 //import "./App.css";
 import UserTripHistory from "./UserTripHistory";
 import { spinner } from "./../UI/Spinner/Spinner";
@@ -8,9 +7,10 @@ import { spinner } from "./../UI/Spinner/Spinner";
 //     return <h1>spinner</h1>;
 // };
 
-export function UserProfile({ user_id, totalDistance, airportFrom, airportTo }) {
+export default function UserProfile({ user_id }) {
   const [userTrips, setUserTrips] = useState([]);
   const getUserTripsUrl = "/api/trips/";
+
 
   const getUserTrips = async () => {
     try {
@@ -26,15 +26,6 @@ export function UserProfile({ user_id, totalDistance, airportFrom, airportTo }) 
     getUserTrips();
   }, []);
 
+
   return <div>{!userTrips ? { spinner } : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
 }
-
-const mapStateToProps = (state) => {
-  return {
-    totalDistance: state.distance,
-    airportFrom: state.airportFrom,
-    airportTo: state.airportTo
-  };
-};
-
-export default connect(mapStateToProps)(UserProfile);
