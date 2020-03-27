@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, Fragment } from "react";
+import React, { useLayoutEffect, useState, useEffect, Fragment } from "react";
 import UserProfile from "./UserProfile";
 import "../../../../sass/app.scss";
 
@@ -27,6 +27,7 @@ export default function UserApp() {
   useLayoutEffect(() => {
     makeUser();
   }, []);
+  
   console.log("react user example user id", user.id);
 
   return (

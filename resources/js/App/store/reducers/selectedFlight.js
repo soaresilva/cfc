@@ -45,7 +45,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         airportFrom: action.airportFrom.title.slice(0, 3)
       };
-
+      
     default:
       return state;
   }

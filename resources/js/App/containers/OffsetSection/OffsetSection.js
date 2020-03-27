@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import "./OffsetSection.css";
 import CardItem from "./../../components/UI/CardItem/CardItem";
+import AddTripToDB from "../../components/AddTrip/AddTripToDB";
 
 function OffsetSection(props) {
   const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount } = props;
@@ -32,6 +33,8 @@ function OffsetSection(props) {
       ) : (
         <h1>Select a flight to see offset options</h1>
       )}
+      <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} />
+
     </div>
   );
 }
