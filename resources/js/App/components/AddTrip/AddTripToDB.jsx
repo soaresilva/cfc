@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import ButtonBlue from "./../UI/Button/ButtonBlue";
+import ButtonRed from "./../UI/Button/ButtonRed";
 
-export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children, offset }) {
+export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children, offset, clicked }) {
   const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
@@ -24,10 +25,14 @@ export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isU
 
   return (
     <div>
-      {isUserOrg ? (
-        <ButtonBlue clicked={sendOrgTripsToDB}>{children}</ButtonBlue>
+      {isUserOrg || children === "Offset" ? (
+        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked}>
+          {children}
+        </ButtonRed>
       ) : (
-        <ButtonBlue clicked={sendUserTripsToDB}>{children}</ButtonBlue>
+        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked}>
+          {children}
+        </ButtonBlue>
       )}
     </div>
   );

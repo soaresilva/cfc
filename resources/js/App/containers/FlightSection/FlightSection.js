@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
+import Alert from "@material-ui/lab/Alert";
 
 import "./FlightSection.css";
 import Flight from "./../../components/Flight/Flight";
 import Spinner from "../../components/UI/Spinner/Spinner";
 
 const FlightSection = (props) => {
-  const { flightData, loading } = props;
+  const { flightData, loading, submitted } = props;
   const [firstFlight, setFirstFlight] = useState(0);
   const [flightsPerPage, setFlightsPerPage] = useState(2);
   const [pageNumber, setPageNumber] = useState(1);
@@ -46,18 +47,20 @@ const FlightSection = (props) => {
       setFirstFlight(Math.max(firstFlight - next, 0));
     }
   };
-  console.log("I am at index", firstFlight);
 
   let flight = null;
   let pagination = null;
   if (loading) {
     flight = <Spinner />;
-  } else if (flightData.length === 0) {
+  } else if (flightData.length === 0 && !submitted) {
     flight = (
       <h3 className="Warning">
-        <i className="fas fa-plane-slash"></i> Warning: Flights might be cancelled due to COVID-19
+        {/* <i className="fas fa-plane-slash"></i>  */}
+        <Alert severity="warning"> Warning: Flights might be cancelled due to COVID-19</Alert>
       </h3>
     );
+  } else if (flightData.length === 0 && submitted) {
+    flight = <Alert severity="info">Info — No flights found</Alert>;
   } else {
     flight = flightData.slice(firstFlight, firstFlight + flightsPerPage).map((flight) => {
       return <Flight key={flight.id} {...flight} />;
@@ -65,7 +68,7 @@ const FlightSection = (props) => {
     pagination = (
       <div className={classes.root}>
         <Pagination
-          count={Math.floor(flightData.length / 2)}
+          count={flightData.length < 2 ? 1 : Math.floor(flightData.length / 2)}
           variant="outlined"
           color="secondary"
           className="Pagination"
@@ -85,4 +88,3 @@ const FlightSection = (props) => {
 };
 
 export default FlightSection;
-

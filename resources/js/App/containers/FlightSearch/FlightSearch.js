@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import "./FlightSearch.css";
 import Checkbox from "@material-ui/core/Checkbox";
-import Button from "../../components/UI/Button/Button";
+import Button from "../../components/UI/Button/ButtonRed";
 import FlightSection from "../FlightSection/FlightSection";
 import SearchBarTo from "../../components/Searchbars/SearchbarTo";
 import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
@@ -16,6 +16,7 @@ const FlightSearch = (props) => {
   const [numberOfLayovers, setNumberOfLayovers] = useState(2);
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -26,6 +27,7 @@ const FlightSearch = (props) => {
   };
 
   const searchFlightHandler = () => {
+    setSubmitted(false);
     if (airportFrom.trim() && airportTo.trim()) {
       setLoading(!loading);
       if (airportFrom && airportTo) {
@@ -38,6 +40,7 @@ const FlightSearch = (props) => {
     const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
     setFlightData(data);
     setLoading(false);
+    setSubmitted(true);
   };
 
   return (
@@ -63,7 +66,7 @@ const FlightSearch = (props) => {
             <Button clicked={searchFlightHandler}>Search</Button>
           </div>
         </div>
-        <FlightSection flightData={flightData} loading={loading} />
+        <FlightSection flightData={flightData} loading={loading} submitted={submitted} />
       </div>
       {/* Offset options */}
       <OffsetSection />

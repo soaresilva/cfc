@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import "./Flight.css";
-import Button from "./../UI/Button/Button";
+import Button from "../UI/Button/ButtonRed";
 import { selectFlightDetails } from "../../store/actions/index";
 import haversineDistance from "../../functions/haversine";
 
@@ -35,6 +35,11 @@ const flight = (props) => {
       totalDistance = haversineDistance(latFrom, latTo, lngFrom, lngTo, arrayWithDistances, totalDistance);
     }
   }
+
+  // let flight = null;
+  // if(!cityFrom || !cityTo) {
+  //   flight = <h3>No flights found</h3>
+  // } 
 
   return (
     <div className="Flight">

@@ -6,9 +6,12 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    border-bottom: 1.5px solid #3a452e;
-    border-right: 1.5px solid #3a452e;
-    box-shadow: 1px 2px 2px 2px #3a452edc;
+    /* border-bottom: 1.5px solid #3a452e;
+    border-right: 1.5px solid #3a452e; */
+    box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
+        -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+    /* box-shadow: 1px 2px 2px 2px #3a452edc; */
+    background-color: #62684d;
 }
 
 .FlightTitle {

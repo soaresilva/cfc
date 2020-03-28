@@ -4,10 +4,12 @@ import { connect } from "react-redux";
 import "./OffsetSection.css";
 import CardItem from "./../../components/UI/CardItem/CardItem";
 import AddTripToDB from "../../components/AddTrip/AddTripToDB";
+import CustomizedSnackbar from "../../components/UI/Snackbar/Snackbar";
 
 function OffsetSection(props) {
   const [userId, setUserId] = useState(null);
   const [isUserOrg, setIsUserOrg] = useState(null);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount } = props;
 
@@ -28,6 +30,18 @@ function OffsetSection(props) {
     swissForest: "Offset half of your emissions in Swiss carbon offset projects. ",
     moreInfoForest:
       "At least half of your emissions will be reduced in Swiss carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
+  };
+
+  const handleOpenSnackbar = () => {
+    setOpenSnackbar(true);
+    console.log("snackbar", openSnackbar);
+  };
+
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbar(false);
   };
 
   const makeUserId = () => {
@@ -98,6 +112,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
+                price={(30 * totalCO2amount).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -114,6 +129,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
+                price={(35 * totalCO2amount).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -130,6 +146,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
+                price={(25 * totalCO2amount).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -144,12 +161,17 @@ function OffsetSection(props) {
             userId={userId}
             isUserOrg={isUserOrg}
             offset={0}
+            clicked={handleOpenSnackbar}
           >
             Add to profile without offsetting
           </AddTripToDB>
+          <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
         </>
       ) : (
-        <h1>Select a flight to see offset options</h1>
+        <div>
+          <h1>Select a flight to see offset options</h1>
+          <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" />
+        </div>
       )}
     </div>
   );

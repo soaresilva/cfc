@@ -61,7 +61,7 @@ export default function CustomizedModal({ opened, closed, moreInfo, title }) {
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={closed} color="primary">
-            Save changes
+            Close
           </Button>
         </DialogActions>
       </Dialog>
