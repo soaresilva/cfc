@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 //import "./App.css";
 import UserTripHistory from "./UserTripHistory";
-import { spinner } from "./../UI/Spinner/Spinner";
+import { Spinner } from "./../UI/Spinner/Spinner";
 
 // const Spinner = () => {
 //     return <h1>spinner</h1>;

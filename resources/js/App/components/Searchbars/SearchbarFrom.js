@@ -19,7 +19,7 @@ function ComboBoxFrom(props) {
 
   return (
     <Autocomplete
-      id="combo-box-demo"
+      id="grouped-demo"
       className="root"
       freeSolo
       options={availableAirports}
