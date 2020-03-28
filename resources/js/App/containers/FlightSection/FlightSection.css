@@ -6,3 +6,8 @@
 .Warning {
   color: red;
 }
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+}

@@ -130,7 +130,9 @@ function OffsetSection(props) {
             userId={userId}
             isUserOrg={isUserOrg}
             offset={0}
-          >Add to profile without offsetting</AddTripToDB>
+          >
+            Add to profile without offsetting
+          </AddTripToDB>
         </>
       ) : (
         <h1>Select a flight to see offset options</h1>
