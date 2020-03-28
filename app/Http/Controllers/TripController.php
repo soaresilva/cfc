@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Charts\OrganizationTripsChart;
+use App\Charts\UserTripsChart;
 use App\Trip;
 use Illuminate\Http\Request;
 
@@ -12,6 +14,28 @@ class TripController extends Controller
         $user_id = $id;
         $trips = Trip::where('user_id', '=', $user_id)->get();
         return $trips;
+    }
+
+    public function userTripsChart()
+    {
+        // first plucked column is the value, second is the key
+        $trips = Trip::where('user_id', '=', auth()->user()->id)->orderBy('created_at')->pluck('carbon_amount', "created_at");
+        $userChart = new UserTripsChart;
+        $userChart->labels($trips->keys());
+        $userChart->dataset('CO2 (t)', 'bar', $trips->values());
+
+        return view('home', compact('userChart'));
+    }
+
+    public function orgTripsChart()
+    {
+        // first plucked column is the value, second is the key
+        $trips = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('created_at')->pluck('carbon_amount', 'airport_to');
+        $orgChart = new OrganizationTripsChart;
+        $orgChart->labels($trips->keys());
+        $orgChart->dataset('CO2 (t)', 'bar', $trips->values());
+
+        return view('organization', compact('orgChart'));
     }
 
     public function getOrgTrips(Request $request, $id)

@@ -25,7 +25,7 @@ export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isU
 
   return (
     <div>
-      {isUserOrg || children === "Offset" ? (
+      {isUserOrg ? (
         <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked}>
           {children}
         </ButtonRed>

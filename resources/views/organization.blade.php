@@ -16,10 +16,14 @@
 
           You are now managing {{ Auth::guard('organization')->user()->name }}'s Carbon Footprint Calculator.
         </div>
+        <div class="card-body">
+          {!! $orgChart->container() !!}
+        </div>
       </div>
       <div id="orgProfile"></div>
 
     </div>
+    {!! $orgChart->script() !!}
 
   </div>
 </div>

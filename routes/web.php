@@ -21,10 +21,10 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 // Auth::routes(); //all the authentification for the USER
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/indexAjax', 'HomeController@ajaxIndex');
-
-Route::get('/organization', 'OrganizationController@index');
 Route::view('/organization', 'organization');
+Route::get('/organization', 'OrganizationController@index');
+
+Route::post('/indexAjax', 'HomeController@ajaxIndex');
 Route::post('/orgIndexAjax', 'OrganizationController@ajaxIndex');
 
 // Route::view('/home', 'home')->middleware('auth');
@@ -50,9 +50,8 @@ Route::get('/register/organization', 'Auth\RegisterController@showOrganizationRe
 Route::post('/login/organization', 'Auth\LoginController@organizationLogin');
 Route::post('/register/organization', 'Auth\RegisterController@createOrganization');
 
-
-
-
-
 //testing db call functions
 //Route::get('/test/{user_id}', 'UserController@getTrips');
+
+Route::get('/home', 'TripController@userTripsChart');
+Route::get('/organization', 'TripController@orgTripsChart');
