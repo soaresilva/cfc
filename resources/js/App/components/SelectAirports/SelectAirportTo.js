@@ -6,7 +6,7 @@ import { createFilterOptions } from "@material-ui/lab/Autocomplete";
 
 import { availableAirports } from "../../destinations/available_airports";
 import { selectAirportTo } from "../../store/actions/index";
-import "./Searchbar.css";
+import "./SelectAirports.css";
 
 function ComboBoxTo(props) {
   const { onSelectAirportTo } = props;

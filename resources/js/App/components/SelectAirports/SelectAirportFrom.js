@@ -8,7 +8,7 @@ import { createFilterOptions } from "@material-ui/lab/Autocomplete";
 import { availableAirports } from "../../destinations/available_airports";
 import { selectAirportFrom } from "../../store/actions/index";
 
-import "./Searchbar.css";
+import "./SelectAirports.css";
 
 function ComboBoxFrom(props) {
   const { onSelectAirportFrom } = props;
