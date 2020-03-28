@@ -6,7 +6,7 @@ import CustomizedModal from "./../Modal/Modal";
 import AddTripToDB from "./../../AddTrip/AddTripToDB";
 
 function CardItem(props) {
-  const { children, fetched, totalCO2amount, photo, description, moreInfo, title, cityFrom, cityTo, distance } = props;
+  const { children, fetched, totalCO2amount, photo, description, moreInfo, title, cityFrom, cityTo, distance, userId, isUserOrg } = props;
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -26,7 +26,15 @@ function CardItem(props) {
             <p>{(30 * totalCO2amount).toFixed(2)}EUR</p>
             <Button clicked={handleClickOpen}>More Info</Button>
             <CustomizedModal closed={handleClose} opened={open} moreInfo={moreInfo} title={title} />
-            <AddTripToDB cityFrom={cityFrom} cityTo={cityTo} distance={distance} offset={totalCO2amount}>
+            <AddTripToDB
+              userId={userId}
+              isUserOrg={isUserOrg}
+              cityFrom={cityFrom}
+              cityTo={cityTo}
+              distance={distance}
+              totalCO2amount={totalCO2amount}
+              offset={totalCO2amount}
+            >
               Add to profile with offsetting
             </AddTripToDB>
           </div>

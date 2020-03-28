@@ -90,35 +90,49 @@ function OffsetSection(props) {
             <div className="CardItem-Project">
               <CardItem
                 fetched={fetched}
-                totalCO2amount={totalCO2amount}
                 photo="/images/stovesKenya.jpg"
                 description={kenya.stovesForKenya}
                 moreInfo={kenya.moreInfoKenya}
                 title={kenya.title}
                 cityFrom={cityFrom}
                 cityTo={cityTo}
-                distace={distance}
+                distance={distance}
                 totalCO2amount={totalCO2amount}
+                userId={userId}
+                isUserOrg={isUserOrg}
+                offset={totalCO2amount}
               />
             </div>
             <div className="CardItem-Project">
               <CardItem
                 fetched={fetched}
-                totalCO2amount={totalCO2amount}
                 photo="/images/farmers.jpg"
                 description={farmers.farmersDescription}
                 moreInfo={farmers.moreInfoFarmers}
                 title={farmers.title}
+                cityFrom={cityFrom}
+                cityTo={cityTo}
+                distance={distance}
+                totalCO2amount={totalCO2amount}
+                userId={userId}
+                isUserOrg={isUserOrg}
+                offset={totalCO2amount}
               />
             </div>
             <div className="CardItem-Project">
               <CardItem
                 fetched={fetched}
-                totalCO2amount={totalCO2amount}
                 photo="/images/swissOffset.jpg"
                 description={forest.swissForest}
                 moreInfo={forest.moreInfoForest}
                 title={forest.title}
+                cityFrom={cityFrom}
+                cityTo={cityTo}
+                distance={distance}
+                totalCO2amount={totalCO2amount}
+                userId={userId}
+                isUserOrg={isUserOrg}
+                offset={totalCO2amount}
               />
             </div>
           </div>

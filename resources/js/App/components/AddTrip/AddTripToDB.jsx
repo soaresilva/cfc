@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ButtonBlue from "./../UI/Button/ButtonBlue";
 
-export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children }) {
+export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children, offset }) {
   const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
