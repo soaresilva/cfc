@@ -1,7 +1,7 @@
 import React from "react";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-export default function CircularDeterminate() {
+export default function Spinner() {
   const [progress, setProgress] = React.useState(0);
 
   React.useEffect(() => {

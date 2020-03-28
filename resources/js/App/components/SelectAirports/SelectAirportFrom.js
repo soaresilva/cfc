@@ -1,15 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
+
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { createFilterOptions } from "@material-ui/lab/Autocomplete";
 
 import { availableAirports } from "../../destinations/available_airports";
-import { selectAirportTo } from "../../store/actions/index";
-import "./Searchbar.css";
+import { selectAirportFrom } from "../../store/actions/index";
 
-function ComboBoxTo(props) {
-  const { onSelectAirportTo } = props;
+import "./SelectAirports.css";
+
+function ComboBoxFrom(props) {
+  const { onSelectAirportFrom } = props;
   const filterOptions = createFilterOptions({
     limit: 20,
     stringify: (option) => option.title
@@ -18,22 +20,22 @@ function ComboBoxTo(props) {
   return (
     <Autocomplete
       id="combo-box-demo"
-      freeSolo
       className="root"
+      freeSolo
       options={availableAirports}
       filterOptions={filterOptions}
       getOptionLabel={(airport) => airport.title}
-      onChange={onSelectAirportTo}
+      onChange={onSelectAirportFrom}
       style={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="To*" variant="outlined" />}
+      renderInput={(params) => <TextField {...params} label="From*" variant="outlined" />}
     />
   );
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSelectAirportTo: (event, airportTo, reason) => dispatch(selectAirportTo(event, airportTo, reason))
+    onSelectAirportFrom: (event, airportFrom, reason) => dispatch(selectAirportFrom(event, airportFrom, reason))
   };
 };
 
-export default connect(null, mapDispatchToProps)(ComboBoxTo);
+export default connect(null, mapDispatchToProps)(ComboBoxFrom);

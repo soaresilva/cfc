@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 //import "./App.css";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
-import { spinner } from "./../UI/Spinner/Spinner";
+import { Spinner } from "./../UI/Spinner/Spinner";
 
 export default function OrganizationProfile({ org_id }) {
   const [orgEvents, setOrgEvents] = useState([]);
@@ -35,7 +35,7 @@ export default function OrganizationProfile({ org_id }) {
   return (
     <div className="org-profile">
       {orgEvents.length === 0 ? (
-        <div>{spinner}</div>
+        <div>{Spinner}</div>
       ) : (
         <>
           <div className="org-summary">

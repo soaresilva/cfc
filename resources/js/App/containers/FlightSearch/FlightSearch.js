@@ -5,8 +5,8 @@ import "./FlightSearch.css";
 import Checkbox from "@material-ui/core/Checkbox";
 import Button from "../../components/UI/Button/ButtonRed";
 import FlightSection from "../FlightSection/FlightSection";
-import SearchBarTo from "../../components/Searchbars/SearchbarTo";
-import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
+import SelectAirportTo from "../../components/SelectAirports/SelectAirportTo";
+import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom";
 import OffsetSection from "../OffsetSection/OffsetSection";
 
 import searchFlights from "../../functions/searchFlights";
@@ -51,8 +51,8 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SearchBarFrom></SearchBarFrom>
-            <SearchBarTo />
+            <SelectAirportFrom></SelectAirportFrom>
+            <SelectAirportTo />
             <div className="DF">
               <div className="CheckboxOption">
                 <label>Direct flights only:</label>
