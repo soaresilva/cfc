@@ -53,5 +53,5 @@ Route::post('/register/organization', 'Auth\RegisterController@createOrganizatio
 //testing db call functions
 //Route::get('/test/{user_id}', 'UserController@getTrips');
 
-Route::get('/home', 'TripController@userTripsChart');
-Route::get('/organization', 'TripController@orgTripsChart');
+Route::get('/organization', 'TripController@orgTripsChart')->middleware('auth:organization');
+Route::get('/home', 'TripController@userTripsChart')->middleware('auth');
