@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 import "./CardItem.css";
 import InfoIcon from "@material-ui/icons/Info";
@@ -36,12 +37,16 @@ function CardItem(props) {
   const handleOpenSnackbar = () => {
     setOpenSnackbar(true);
   };
-
   const handleCloseSnackbar = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
     setOpenSnackbar(false);
+  };
+
+  const scrollToFlightsSection = () => {
+    const flightsSection = document.getElementById("flightsID");
+    if (flightsSection) flightsSection.scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
   return (
@@ -86,21 +91,24 @@ function CardItem(props) {
             </ul>
           </div>
           <div className="CardItemsLandingPage__links">
-            <a href="/register">User</a>
-            <a href="/register/organization">Organizaton</a>
+            <a href="/register" className="CardItemsLandingPage__Alinks">
+              User
+            </a>
+            <a href="/register/organization" className="CardItemsLandingPage__Alinks">
+              Organizaton
+            </a>
           </div>
         </div>
       ) : children === "Calculate" ? (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p>Calculate something and get this lorem</p>
+            <p>It is surprising how many climate-​harming CO₂ emissions arise when flying, driving, living, working and partying.</p>
             <p>
-              lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem
-              import lorem
+              CFC offers you a solution for your business and your everyday life. Make a concrete commitment to greater climate protection
+              and sustainability with our education project and company offers and help shape the future.
             </p>
           </div>
-          <p></p>
         </div>
       ) : (
         <div className="CardItemsLandingPage">
@@ -113,7 +121,20 @@ function CardItem(props) {
               <li>Did you know about this advantage?</li>
             </ul>
           </div>
-          <p>Let's start, shall we?</p>
+          <div className="CardItemsLandingPage__icons" onClick={scrollToFlightsSection}>
+            <p>Let's start, shall we?</p>
+            <div
+              style={{
+                cursor: "pointer",
+                marginLeft: ".5rem",
+                border: "1px solid white",
+                padding: ".25rem",
+                borderRadius: "7px"
+              }}
+            >
+              <ArrowDownwardIcon />
+            </div>
+          </div>
         </div>
       )}
     </div>

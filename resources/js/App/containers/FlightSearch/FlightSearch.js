@@ -54,7 +54,7 @@ const FlightSearch = (props) => {
         <div className="FlightSearchTitle">
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
-          <div className="Dropdown">
+          <div className="Dropdown" >
             <SelectAirportFrom></SelectAirportFrom>
             <SelectAirportTo />
             <div className="DF">
@@ -72,6 +72,7 @@ const FlightSearch = (props) => {
         </div>
         <FlightSection flightData={flightData} loading={loading} submitted={submitted} />
       </div>
+      <div id="flightsID"></div>
       {/* Offset options */}
       <OffsetSection />
     </div>
