@@ -37,10 +37,14 @@ const FlightSearch = (props) => {
   };
 
   const getFlightsHandler = async () => {
-    const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
-    setFlightData(data);
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
+      setFlightData(data);
+      setLoading(false);
+      setSubmitted(true);
+    } catch {
+      setFlightData([]);
+    }
   };
 
   return (
