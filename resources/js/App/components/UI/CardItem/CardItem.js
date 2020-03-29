@@ -84,7 +84,31 @@ function CardItem(props) {
           <a href="/register">User</a>
           <a href="/register/organization">Organizaton</a>
         </div>
-      ) : null}
+      ) : children === "Calculate" ? (
+        <div>
+          <h1>{children}</h1>
+          <p>Calculate</p>
+          <ul>
+            <li>Some advantages</li>
+            <li>More advantages</li>
+            <li>Did you know about this advantage?</li>
+          </ul>
+          <a href="/register">User</a>
+          <a href="/register/organization">Organizaton</a>
+        </div>
+      ) : (
+        <div>
+          <h1>{children}</h1>
+          <p>Offset with us</p>
+          <ul>
+            <li>Some advantages</li>
+            <li>More advantages</li>
+            <li>Did you know about this advantage?</li>
+          </ul>
+          <a href="/register">User</a>
+          <a href="/register/organization">Organizaton</a>
+        </div>
+      )}
     </div>
   );
 }

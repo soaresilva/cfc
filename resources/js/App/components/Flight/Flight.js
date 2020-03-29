@@ -8,9 +8,9 @@ import haversineDistance from "../../functions/haversine";
 
 const flight = (props) => {
   const { cityFrom, cityTo, fly_duration, dTime, price, aTime, route, onSelectFlightDetails } = props;
-  const dateDepart = new Date(dTime * 1000).toDateString();
+  const dateDepart = new Date(dTime * 1000).toLocaleDateString('en-GB');
   const timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
-  const dateArrival = new Date(aTime * 1000).toDateString().slice(0, 18);
+  const dateArrival = new Date(aTime * 1000).toLocaleDateString('en-GB').slice(0, 18);
   const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
   let arrayWithDistances = [];
@@ -36,10 +36,6 @@ const flight = (props) => {
     }
   }
 
-  // let flight = null;
-  // if(!cityFrom || !cityTo) {
-  //   flight = <h3>No flights found</h3>
-  // } 
 
   return (
     <div className="Flight">
@@ -68,15 +64,15 @@ const flight = (props) => {
         <h4 className="FlightTime">€{price}</h4>
       </div>
       <div className="FlightStopovers">{stopovers}</div>
-      <Button clicked={(() => onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration))}>Select</Button>
+      <Button clicked={(() => onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration, dateDepart))}>Select</Button>
     </div>
   );
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSelectFlightDetails: (cityFrom, cityTo, distance, fly_duration) =>
-      dispatch(selectFlightDetails(cityFrom, cityTo, distance, fly_duration))
+    onSelectFlightDetails: (cityFrom, cityTo, distance, fly_duration, dateDepart) =>
+      dispatch(selectFlightDetails(cityFrom, cityTo, distance, fly_duration, dateDepart))
   };
 };
 

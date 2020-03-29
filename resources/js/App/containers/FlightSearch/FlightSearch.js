@@ -17,8 +17,6 @@ const FlightSearch = (props) => {
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [dateFrom, setDateFrom] = useState("");
-  const [dateTo, setDateTo] = useState("");
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -42,8 +40,6 @@ const FlightSearch = (props) => {
     try {
       const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
       setFlightData(data.data);
-      setDateFrom(data.dateFrom);
-      setDateTo(data.dateTo);
       setLoading(false);
       setSubmitted(true);
     } catch {
@@ -77,7 +73,7 @@ const FlightSearch = (props) => {
         <FlightSection flightData={flightData} loading={loading} submitted={submitted} />
       </div>
       {/* Offset options */}
-      <OffsetSection dateFrom={dateFrom} dateTo={dateTo} />
+      <OffsetSection />
     </div>
   );
 };
