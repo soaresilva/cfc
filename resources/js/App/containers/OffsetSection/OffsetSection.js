@@ -34,7 +34,6 @@ function OffsetSection(props) {
 
   const handleOpenSnackbar = () => {
     setOpenSnackbar(true);
-    console.log("snackbar", openSnackbar);
   };
 
   const handleCloseSnackbar = (event, reason) => {
@@ -89,7 +88,10 @@ function OffsetSection(props) {
     }
   }, []);
 
+<<<<<<< HEAD
   console.log(dateDepart);
+=======
+>>>>>>> f940b96e72866b1f28be384f613c1172d78ed673
   return (
     <div className="OffsetSection">
       {fetched ? (

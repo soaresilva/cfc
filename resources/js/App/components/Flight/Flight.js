@@ -8,9 +8,9 @@ import haversineDistance from "../../functions/haversine";
 
 const flight = (props) => {
   const { cityFrom, cityTo, fly_duration, dTime, price, aTime, route, onSelectFlightDetails } = props;
-  const dateDepart = new Date(dTime * 1000).toLocaleDateString('en-GB');
+  const dateDepart = new Date(dTime * 1000).toLocaleDateString('en-GB').split('/').reverse().join('-');
   const timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
-  const dateArrival = new Date(aTime * 1000).toLocaleDateString('en-GB').slice(0, 18);
+  const dateArrival = new Date(aTime * 1000).toLocaleDateString('en-GB').slice(0, 18).split('/').reverse().join('-');
   const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
   let arrayWithDistances = [];
