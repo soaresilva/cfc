@@ -52,6 +52,8 @@ const FlightSection = (props) => {
   let pagination = null;
   if (loading) {
     flight = <Spinner />;
+  } else if (!flightData) {
+    flight = <Alert severity="info">Info — No flights found</Alert>;
   } else if (flightData.length === 0 && !submitted) {
     flight = (
       <h3 className="Warning">

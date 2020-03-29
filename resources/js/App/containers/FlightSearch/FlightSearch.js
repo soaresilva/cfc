@@ -43,7 +43,7 @@ const FlightSearch = (props) => {
       setLoading(false);
       setSubmitted(true);
     } catch {
-      setFlightData([]);
+      throw new Error ("Could not find flights")
     }
   };
 
