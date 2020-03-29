@@ -3,8 +3,8 @@
 }
 
 .root {
-  background-color: #6c757d;
-  color: white;
+  background-color: rgb(255, 244, 229);
+  color: black;
   outline: none;
   border-radius: 7px;
 }

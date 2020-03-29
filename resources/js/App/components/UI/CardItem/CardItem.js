@@ -77,9 +77,9 @@ function CardItem(props) {
       children === "Register" ? (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <div >
+          <div>
             <p>Start your journey by creating an account</p>
-            <ul className="CardItemsLandingPage_description">
+            <ul>
               <li>Some advantages</li>
               <li>More advantages</li>
               <li>Did you know about this advantage?</li>
@@ -93,21 +93,27 @@ function CardItem(props) {
       ) : children === "Calculate" ? (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <p>Calculate something and get this lorem impsum</p>
-          <p>
-            lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import
-            lorem
-          </p>
+          <div>
+            <p>Calculate something and get this lorem</p>
+            <p>
+              lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem
+              import lorem
+            </p>
+          </div>
+          <p></p>
         </div>
       ) : (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <p>Offset with us</p>
-          <ul>
-            <li>Some advantages</li>
-            <li>More advantages</li>
-            <li>Did you know about this advantage?</li>
-          </ul>
+          <div className="CardItemsLandingPage_description">
+            <p>Offset with us and save the planet</p>
+            <ul>
+              <li>Some advantages</li>
+              <li>More advantages</li>
+              <li>Did you know about this advantage?</li>
+            </ul>
+          </div>
+          <p>Let's start, shall we?</p>
         </div>
       )}
     </div>

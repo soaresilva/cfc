@@ -14,13 +14,10 @@ export default class App extends React.Component {
         <div className="WelcomeText">
           <h1 className="WelcomeTitle">Carbon Footprint Calculator</h1>
           <h1 className="WelcomeDescription">
-            Shape our future<br></br> myclimate is your partner for effective climate protection – both locally and globally
+            Shape our future<br></br> CFC is your partner for effective climate protection – both locally and globally
           </h1>
         </div>
-        <div>
-          <CardsInfoSection />
-        </div>
-
+        <CardsInfoSection />
         <FlightSearch />
 
         <div className="WelcomeText">
