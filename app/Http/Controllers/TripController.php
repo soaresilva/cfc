@@ -19,7 +19,7 @@ class TripController extends Controller
     public function userTripsChart()
     {
         // first plucked column is the value, second is the key
-        $trips = Trip::where('user_id', '=', auth()->user()->id)->orderBy('created_at')->pluck('carbon_amount', "created_at");
+        $trips = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('carbon_amount', 'flight_date');
         $userChart = new UserTripsChart;
         $userChart->labels($trips->keys());
         $userChart->dataset('CO2 (t)', 'bar', $trips->values());
@@ -30,7 +30,7 @@ class TripController extends Controller
     public function orgTripsChart()
     {
         // first plucked column is the value, second is the key
-        $trips = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('created_at')->pluck('carbon_amount', 'airport_to');
+        $trips = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date')->pluck('carbon_amount', 'flight_date');
         $orgChart = new OrganizationTripsChart;
         $orgChart->labels($trips->keys());
         $orgChart->dataset('CO2 (t)', 'bar', $trips->values());
@@ -81,19 +81,20 @@ class TripController extends Controller
 
     }
 
-    public function getEventlessTrips(Request $request, $org_id) {
-        $trips = Trip::where([['organization_id', '=', $org_id],['event_id', '=', null]])->get();
+    public function getEventlessTrips(Request $request, $org_id)
+    {
+        $trips = Trip::where([['organization_id', '=', $org_id], ['event_id', '=', null]])->get();
         return $trips;
 
     }
 
-    public function addTripToEvent($trip_id, $event_id) {
+    public function addTripToEvent($trip_id, $event_id)
+    {
         $trip = Trip::findOrFail($trip_id);
         $trip->event_id = $event_id;
         $trip->save();
-        return response()->json(['okay' => true],200);
+        return response()->json(['okay' => true], 200);
 
     }
-
 
 }
