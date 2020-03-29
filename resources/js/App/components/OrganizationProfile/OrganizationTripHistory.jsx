@@ -100,6 +100,7 @@ export default function OrganizationTripHistory({
       />
       {trips}
       {orgTrips.length === 0 ? "" : <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />}
+      {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id}/> : ""}
     </div>
   );
 }

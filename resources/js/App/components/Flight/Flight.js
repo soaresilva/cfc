@@ -36,7 +36,7 @@ const flight = (props) => {
     }
   }
 
-
+console.log('data depart', dateDepart);
   return (
     <div className="Flight">
       <div>
