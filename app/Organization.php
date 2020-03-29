@@ -44,4 +44,9 @@ class Organization extends Authenticatable//this already extends Model
     {
         return $this->hasMany(Event::class);
     }
+
+    public function trips()
+    {
+        return $this->hasMany(Trip::class);
+    }
 }

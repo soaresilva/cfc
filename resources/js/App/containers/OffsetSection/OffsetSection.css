@@ -24,22 +24,24 @@
   padding: 1rem;
 }
 
-
 .CardItem-Project {
   background-color: #62684d;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
 .CardItem-Calc {
   background-color: #484d37;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
 .CardItem-Offset {
   background-color: #3a452e;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+}
+
+.FlightGif {
+  margin-top: 2rem;
+  border-radius: 7px;
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }

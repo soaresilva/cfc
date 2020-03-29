@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import "./FlightSearch.css";
 import Checkbox from "@material-ui/core/Checkbox";
-import Button from "../../components/UI/Button/Button";
+import Button from "../../components/UI/Button/ButtonRed";
 import FlightSection from "../FlightSection/FlightSection";
-import SearchBarTo from "../../components/Searchbars/SearchbarTo";
-import SearchBarFrom from "../../components/SearchBars/SearchBarFrom";
+import SelectAirportTo from "../../components/SelectAirports/SelectAirportTo";
+import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom";
 import OffsetSection from "../OffsetSection/OffsetSection";
 
 import searchFlights from "../../functions/searchFlights";
@@ -16,6 +16,7 @@ const FlightSearch = (props) => {
   const [numberOfLayovers, setNumberOfLayovers] = useState(2);
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -26,6 +27,7 @@ const FlightSearch = (props) => {
   };
 
   const searchFlightHandler = () => {
+    setSubmitted(false);
     if (airportFrom.trim() && airportTo.trim()) {
       setLoading(!loading);
       if (airportFrom && airportTo) {
@@ -35,9 +37,14 @@ const FlightSearch = (props) => {
   };
 
   const getFlightsHandler = async () => {
-    const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
-    setFlightData(data);
-    setLoading(false);
+    try {
+      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
+      setFlightData(data.data);
+      setLoading(false);
+      setSubmitted(true);
+    } catch {
+      throw new Error("Could not find flights");
+    }
   };
 
   return (
@@ -48,8 +55,8 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SearchBarFrom></SearchBarFrom>
-            <SearchBarTo />
+            <SelectAirportFrom></SelectAirportFrom>
+            <SelectAirportTo />
             <div className="DF">
               <div className="CheckboxOption">
                 <label>Direct flights only:</label>
@@ -63,7 +70,7 @@ const FlightSearch = (props) => {
             <Button clicked={searchFlightHandler}>Search</Button>
           </div>
         </div>
-        <FlightSection flightData={flightData} loading={loading} />
+        <FlightSection flightData={flightData} loading={loading} submitted={submitted} />
       </div>
       {/* Offset options */}
       <OffsetSection />

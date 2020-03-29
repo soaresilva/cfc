@@ -8,6 +8,7 @@ const initialState = {
   distance: null,
   duration: null,
   totalCO2amount: null,
+  dateDepart: null,
   fetched: false
 };
 
@@ -21,7 +22,8 @@ const reducer = (state = initialState, action) => {
         distance: action.distance,
         duration: action.duration,
         fetched: true,
-        totalCO2amount: action.totalCO2amount
+        totalCO2amount: action.totalCO2amount,
+        dateDepart: action.dateDepart
       };
     case actionTypes.SELECT_AIRPORT_TO:
       if (action.reason === "clear") {

@@ -1,54 +1,49 @@
-import React, {useState,useEffect} from 'react'; 
+import React from "react";
 import { connect } from "react-redux";
+import ButtonBlue from "./../UI/Button/ButtonBlue";
+import ButtonRed from "./../UI/Button/ButtonRed";
 
-export function AddTripToDB({totalDistance,airportFrom,airportTo}) {
-  const [userId, setUserId] = useState(null);
+export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children, offset, clicked }) {
+  const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
-  const makeUserId = () => {
-    let token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-    $.ajax({
-      url: "/indexAjax",
-      type: "POST",
-      data: { _token: token, message: "bravo" },
-      dataType: "JSON",
-      success: (response) => {
-        setUserId(response.id),
-        console.log('response id', response.id);
-      },
-      error: (response) => {
-        console.log("error");
-        console.log(response);
-      }
-    });
-  };
-  useEffect(() => {
-    makeUserId();
-  }, []);
-
   const sendUserTripsToDB = async () => {
-    console.log('adding trip working');
-    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}`)
+    console.log("adding trip working");
+    console.log("user-id", userId);
+    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
     await response.json();
     console.log("send user info", response);
-  }
+  };
 
-
+  const sendOrgTripsToDB = async () => {
+    console.log("adding trip working");
+    console.log("user-id", userId);
+    const response = await fetch(`${sendOrgTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
+    await response.json();
+    console.log("send user info", response);
+  };
 
   return (
-    <button onClick={sendUserTripsToDB}>Add trip to profile</button>
-  )
-
+    <div>
+      {isUserOrg ? (
+        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked}>
+          {children}
+        </ButtonRed>
+      ) : (
+        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked}>
+          {children}
+        </ButtonBlue>
+      )}
+    </div>
+  );
 }
-
 
 const mapStateToProps = (state) => {
   return {
     totalDistance: state.distance,
     airportFrom: state.airportFrom,
-    airportTo: state.airportTo,
+    airportTo: state.airportTo
   };
 };
 
 export default connect(mapStateToProps)(AddTripToDB);
-

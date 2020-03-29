@@ -17,8 +17,21 @@
                     {{ Auth::user()->first_name }} {{ Auth::user()->surname  }}, welcome to the Carbon Footprint
                     Calculator!
                 </div>
+                <div class="card-body">
+                    {!! $userChart->container() !!}
+                </div>
             </div>
+
+
+
             <div id="userProfile"></div>
+
+
+
+
+            {!! $userChart->script() !!}
+
+
         </div>
     </div>
 </div>

@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
-//import "./App.css";
 import UserTripHistory from "./UserTripHistory";
-import { spinner } from "./../UI/Spinner/Spinner";
-
-// const Spinner = () => {
-//     return <h1>spinner</h1>;
-// };
+import Spinner from "./../UI/Spinner/Spinner.js";
 
 export default function UserProfile({ user_id }) {
   const [userTrips, setUserTrips] = useState([]);
   const getUserTripsUrl = "/api/trips/";
-
 
   const getUserTrips = async () => {
     try {
@@ -26,6 +20,5 @@ export default function UserProfile({ user_id }) {
     getUserTrips();
   }, []);
 
-
-  return <div>{!userTrips ? { spinner } : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
+  return <div>{!userTrips ? { Spinner } : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
 }
