@@ -24,9 +24,14 @@ Route::get('trips/{id}/{airportFrom}/{airportTo}/{totalDistance}', 'TripControll
 
 
 //Route::get('events/{org_id}', 'EventController@getEvents');
+Route::get('org/trips/find/{org_id}', 'TripController@getEventlessTrips');
+
+Route::get('org/trips/add/{event_id}/{trip_id}', 'TripController@addTripToEvent');
+
 Route::get('events/trips/{event_id}', 'TripController@getOrgTrips');
 
 Route::delete('events/{user_id}', 'EventController@deleteEventAndTrips');
+Route::post('org/event/add/{id}', 'EventController@addEvent');
 Route::get('org/trips/{id}', 'EventController@getEventsAndTrips');
 
 

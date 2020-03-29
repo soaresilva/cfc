@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
+import AddTripsToEvent from './AddTripsToEvent';
 
 export default function OrganizationTripHistory({
     event_id,
     setOrgEvents,
-    orgEvents
+    orgEvents, 
+    org_id
 }) {
     const [orgTrips, setOrgTrips] = useState([]);
     let totalDistance = 0;
@@ -73,11 +75,11 @@ export default function OrganizationTripHistory({
     });
     return (
         <div>
-            <OrganizationEventSummary
+            {/* <OrganizationEventSummary
                 totalDistance={totalDistance}
                 totalCarbonFootprint={totalCarbonFootprint}
                 totalCarbonOffset={totalCarbonOffset}
-            />
+            /> */}
             {trips}
             {orgTrips.length === 0 ? (
                 ""
@@ -87,6 +89,9 @@ export default function OrganizationTripHistory({
                     event_id={event_id}
                 />
             )}
+            {event_id ?
+            <AddTripsToEvent event_id={event_id} org_id={org_id}/> : ""}
+
         </div>
     );
 }
