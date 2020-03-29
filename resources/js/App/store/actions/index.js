@@ -1,1 +1,1 @@
-export { selectFlightDetails, selectAirportFrom, selectAirportTo } from "./selectedFlight";
+export { selectFlightDetails, selectAirportFrom, selectAirportTo, selectDate } from "./selectedFlight";

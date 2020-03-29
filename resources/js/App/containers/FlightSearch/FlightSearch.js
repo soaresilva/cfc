@@ -8,11 +8,12 @@ import FlightSection from "../FlightSection/FlightSection";
 import SelectAirportTo from "../../components/SelectAirports/SelectAirportTo";
 import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom";
 import OffsetSection from "../OffsetSection/OffsetSection";
+import DatePicker from "./../../components/DatePicker/DatePicker";
 
 import searchFlights from "../../functions/searchFlights";
 
 const FlightSearch = (props) => {
-  const { airportFrom, airportTo } = props;
+  const { airportFrom, airportTo, date } = props;
   const [numberOfLayovers, setNumberOfLayovers] = useState(2);
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -38,7 +39,8 @@ const FlightSearch = (props) => {
 
   const getFlightsHandler = async () => {
     try {
-      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers);
+      // console.log('date', date)
+      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers, date);
       setFlightData(data.data);
       setLoading(false);
       setSubmitted(true);
@@ -54,9 +56,10 @@ const FlightSearch = (props) => {
         <div className="FlightSearchTitle">
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
-          <div className="Dropdown" >
-            <SelectAirportFrom></SelectAirportFrom>
-            <SelectAirportTo />
+          <div className="Dropdown">
+              <SelectAirportFrom></SelectAirportFrom>
+              <SelectAirportTo />
+              <DatePicker />
             <div className="DF">
               <div className="CheckboxOption">
                 <label>Direct flights only:</label>
@@ -82,7 +85,8 @@ const FlightSearch = (props) => {
 const mapStateToProps = (state) => {
   return {
     airportTo: state.airportTo,
-    airportFrom: state.airportFrom
+    airportFrom: state.airportFrom,
+    date: state.date
   };
 };
 

@@ -1,46 +1,56 @@
-// import "date-fns";
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import DateFnsUtils from "@date-io/date-fns";
-import { MuiPickersUtilsProvider, KeyboardDatePicker } from "@material-ui/pickers";
+import { connect } from "react-redux";
 
-export default function DatePicker() {
-  const [selectedDate, setSelectedDate] = React.useState(new Date("2014-08-18T21:11:54"));
+import DayPickerInput from "react-day-picker/DayPickerInput";
+import { selectDate } from "../../store/actions/index";
+import "react-day-picker/lib/style.css";
+// import "../../../../../node_modules/react-day-picker/lib/style.css";
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+export class DatePicker extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleDayChange = this.handleDayChange.bind(this);
+    this.state = {
+      selectedDay: undefined
+    };
+  }
 
-  return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      <Grid container justify="space-around">
-        <KeyboardDatePicker
-          disableToolbar
-          variant="inline"
-          format="MM/dd/yyyy"
-          margin="normal"
-          id="date-picker-inline"
-          label="Date picker inline"
-          value={selectedDate}
-          onChange={handleDateChange}
-          KeyboardButtonProps={{
-            "aria-label": "change date"
+  handleDayChange(day) {
+    this.setState({ selectedDay: day }, () => this.props.onSelectDate(this.state.selectedDay.toLocaleDateString("en-GB")));
+  }
+
+  render() {
+    return (
+      <div style={{ color: "black" }}>
+        <DayPickerInput
+          inputProps={{
+            style: {
+              width: "7.5vw",
+              height: 55,
+              textAlign: "center",
+              borderRadius: "7px",
+              backgroundColor: "rgb(255, 244, 229)",
+              border: "none",
+              outline: "none"
+            }
           }}
-        />
-        <KeyboardDatePicker
-          disableToolbar
-          variant="inline"
-          format="MM/dd/yyyy"
-          margin="normal"
-          id="date-picker-inline"
-          label="Date picker inline"
-          value={selectedDate}
-          onChange={handleDateChange}
-          KeyboardButtonProps={{
-            "aria-label": "change date"
+          dayPickerProps={{
+            month: new Date(2020, 2),
+            showWeekNumbers: true,
+            todayButton: "Today"
           }}
+          onDayChange={this.handleDayChange}
+          placeholder="Departure*:"
         />
-      </Grid>
-    </MuiPickersUtilsProvider>
-  );
+      </div>
+    );
+  }
 }
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSelectDate: (date) => dispatch(selectDate(date))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(DatePicker);

@@ -103,12 +103,13 @@ function CardItem(props) {
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p>It is surprising how many climate-​harming CO₂ emissions arise when flying, driving, living, working and partying.</p>
+            {/* <p>It is surprising how many climate-​harming CO₂ emissions arise when flying, driving, living, working and partying.</p> */}
             <p>
               CFC offers you a solution for your business and your everyday life. Make a concrete commitment to greater climate protection
               and sustainability with our education project and company offers and help shape the future.
             </p>
           </div>
+            <p></p>
         </div>
       ) : (
         <div className="CardItemsLandingPage">

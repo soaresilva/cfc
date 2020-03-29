@@ -1,17 +1,17 @@
 import { DateTime } from "luxon";
 
-const searchFlights = async (origin, destination, numberOfLayovers) => {
+const searchFlights = async (origin, destination, numberOfLayovers, date) => {
   const when = DateTime.local()
     .plus({ days: 1 })
     .toFormat("dd/MM/yyyy");
   const todayDate = DateTime.local().toFormat("dd/MM/yyyy");
-
+  console.log(date)
   const query = new URLSearchParams({
     partner: "picky",
     flyFrom: origin,
     to: destination,
     dateFrom: todayDate,
-    dateTo: when,
+    dateTo: date,
     max_stopovers: numberOfLayovers,
     limit: 8
   });
