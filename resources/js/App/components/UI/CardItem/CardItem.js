@@ -87,14 +87,11 @@ function CardItem(props) {
       ) : children === "Calculate" ? (
         <div>
           <h1>{children}</h1>
-          <p>Calculate</p>
-          <ul>
-            <li>Some advantages</li>
-            <li>More advantages</li>
-            <li>Did you know about this advantage?</li>
-          </ul>
-          <a href="/register">User</a>
-          <a href="/register/organization">Organizaton</a>
+          <p>Calculate something and get this lorem impsum</p>
+          <p>
+            lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import lorem lorem lorem lorem lorem lorem import
+            lorem
+          </p>
         </div>
       ) : (
         <div>
@@ -105,8 +102,6 @@ function CardItem(props) {
             <li>More advantages</li>
             <li>Did you know about this advantage?</li>
           </ul>
-          <a href="/register">User</a>
-          <a href="/register/organization">Organizaton</a>
         </div>
       )}
     </div>
