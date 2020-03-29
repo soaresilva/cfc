@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationTripHistory from "./OrganizationTripHistory";
 
-export default function OrganizationEventHistory({ orgEvents, setOrgEvents }) {
+export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_id}) {
   const [showOrgTrips, setShowOrgTrips] = useState(new Array(orgEvents.length).fill(false));
 
   const handleShowOrgTrips = (index) => {
@@ -23,9 +23,13 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents }) {
         <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">
           See trips
         </button>
-        {showOrgTrips[index] ? <OrganizationTripHistory event_id={event.id} orgEvents={orgEvents} setOrgEvents={setOrgEvents} /> : ""}
+        {showOrgTrips[index] ? <OrganizationTripHistory org_id={org_id} event_id={event.id} orgEvents={orgEvents} setOrgEvents={setOrgEvents} /> : ""}
       </div>
     );
   });
-  return <div>{events}</div>;
+  return (
+    <div>
+      {events}
+    </div>
+  );
 }

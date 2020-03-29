@@ -51,14 +51,14 @@ class TripController extends Controller
         return response()->json(['okay' => true], 200);
     }
 
-    public function sendUserTripToDB(Request $request, $user_id, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
+    public function sendUserTripToDB(Request $request, $user_id, $dateDepart, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
     {
-        // dd(auth()->guard('api')->user());
         $trip = new Trip;
         $trip->user_id = $user_id;
         $trip->distance = $totalDistance;
         $trip->carbon_amount = $totalCO2amount;
         $trip->offset_amount = $offset;
+        $trip->flight_date = $dateDepart;
         $trip->airport_from = $airportFrom;
         $trip->airport_to = $airportTo;
         $trip->save();
@@ -66,18 +66,34 @@ class TripController extends Controller
 
     }
 
-    public function sendOrgTripToDB(Request $request, $org_id, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
+    public function sendOrgTripToDB(Request $request, $org_id, $dateDepart, $airportFrom, $airportTo, $totalDistance, $totalCO2amount, $offset)
     {
         $trip = new Trip;
         $trip->organization_id = $org_id;
         $trip->distance = $totalDistance;
         $trip->carbon_amount = $totalCO2amount;
         $trip->offset_amount = $offset;
+        $trip->flight_date = $dateDepart;
         $trip->airport_from = $airportFrom;
         $trip->airport_to = $airportTo;
         $trip->save();
         return response()->json(['okay' => true], 200);
 
     }
+
+    public function getEventlessTrips(Request $request, $org_id) {
+        $trips = Trip::where([['organization_id', '=', $org_id],['event_id', '=', null]])->get();
+        return $trips;
+
+    }
+
+    public function addTripToEvent($trip_id, $event_id) {
+        $trip = Trip::findOrFail($trip_id);
+        $trip->event_id = $event_id;
+        $trip->save();
+        return response()->json(['okay' => true],200);
+
+    }
+
 
 }

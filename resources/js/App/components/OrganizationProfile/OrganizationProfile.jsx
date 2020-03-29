@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 //import "./App.css";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
+import OrganizationAddEvent from "./OrganizationAddEvent";
 import { Spinner } from "./../UI/Spinner/Spinner";
 
 export default function OrganizationProfile({ org_id }) {
@@ -49,8 +50,9 @@ export default function OrganizationProfile({ org_id }) {
             <p> {totalCarbonOffset}</p>
           </div>
 
+          <OrganizationAddEvent org_id={org_id} />
           <h3>Event History</h3>
-          <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} />
+          <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id}/>
         </>
       )}
     </div>

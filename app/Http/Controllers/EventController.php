@@ -26,4 +26,15 @@ class EventController extends Controller
         return response()->json(['okay' => true],200);
     }
     
+    public function addEvent(Request $request, $org_id) {
+        $event =  new Event; 
+        $event->organization_id = $org_id;
+        $event->name = $request->input('name');
+        $event->description = $request->input('description');
+        $event->date = $request->input('date');
+        $event->save();
+       // return response()->json(['okay' => true],200);
+
+
+    }
 }

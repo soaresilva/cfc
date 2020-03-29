@@ -20,7 +20,8 @@ function CardItem(props) {
     distance,
     userId,
     isUserOrg,
-    price
+    price,
+    dateDepart
   } = props;
   const [openInfo, setOpenInfo] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -65,6 +66,7 @@ function CardItem(props) {
               totalCO2amount={totalCO2amount}
               offset={totalCO2amount}
               clicked={handleOpenSnackbar}
+              dateDepart={dateDepart}
             >
               Offset
             </AddTripToDB>
