@@ -87,6 +87,7 @@ function OffsetSection(props) {
       makeOrgId();
     }
   }, []);
+  console.log(dateDepart);
 
   return (
     <div className="OffsetSection">
@@ -115,6 +116,7 @@ function OffsetSection(props) {
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
+                dateDepart={dateDepart}
               />
             </div>
             <div className="CardItem-Project">
@@ -132,6 +134,7 @@ function OffsetSection(props) {
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
+                dateDepart={dateDepart}
               />
             </div>
             <div className="CardItem-Project">
@@ -149,6 +152,7 @@ function OffsetSection(props) {
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
+                dateDepart={dateDepart}
               />
             </div>
           </div>
@@ -161,7 +165,7 @@ function OffsetSection(props) {
             isUserOrg={isUserOrg}
             offset={0}
             clicked={handleOpenSnackbar}
-            dateFrom={dateDepart}
+            dateDepart={dateDepart}
           >
             Add to profile without offsetting
           </AddTripToDB>

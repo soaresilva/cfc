@@ -3,14 +3,27 @@ import { connect } from "react-redux";
 import ButtonBlue from "./../UI/Button/ButtonBlue";
 import ButtonRed from "./../UI/Button/ButtonRed";
 
-export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isUserOrg, totalCO2amount, children, offset, clicked }) {
+export function AddTripToDB({
+  totalDistance,
+  dateDepart,
+  airportFrom,
+  airportTo,
+  userId,
+  isUserOrg,
+  totalCO2amount,
+  children,
+  offset,
+  clicked
+}) {
   const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
   const sendUserTripsToDB = async () => {
     console.log("adding trip working");
     console.log("user-id", userId);
-    const response = await fetch(`${sendUserTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
+    const response = await fetch(
+      `${sendUserTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
+    );
     await response.json();
     console.log("send user info", response);
   };
@@ -18,7 +31,9 @@ export function AddTripToDB({ totalDistance, airportFrom, airportTo, userId, isU
   const sendOrgTripsToDB = async () => {
     console.log("adding trip working");
     console.log("user-id", userId);
-    const response = await fetch(`${sendOrgTripsUrl}${userId}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`);
+    const response = await fetch(
+      `${sendOrgTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
+    );
     await response.json();
     console.log("send user info", response);
   };

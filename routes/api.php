@@ -20,8 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('trips/{user_id}', 'TripController@getUserTrips');
 Route::delete('trips/{user_id}', 'TripController@deleteTrips');
-Route::get('/org/trips/{id}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendOrgTripToDB');
-Route::get('trips/{id}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendUserTripToDB');
+Route::get('/org/trips/{id}/{dateDepart}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendOrgTripToDB');
+Route::get('trips/{id}/{dateDepart}/{airportFrom}/{airportTo}/{totalDistance}/{totalCO2Amount}/{offset}', 'TripController@sendUserTripToDB');
 
 //Route::get('events/{org_id}', 'EventController@getEvents');
 Route::get('org/trips/find/{org_id}', 'TripController@getEventlessTrips');
