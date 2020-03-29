@@ -9,6 +9,7 @@ function buttonBlue(props) {
     <Button
       variant="contained"
       color="primary"
+      type="button"
       onClick={() => {
         clicked ? clicked() : (sendUserTripsToDB(), openSnackbar());
       }}
