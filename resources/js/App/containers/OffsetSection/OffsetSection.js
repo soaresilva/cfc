@@ -87,11 +87,8 @@ function OffsetSection(props) {
       makeOrgId();
     }
   }, []);
-
-<<<<<<< HEAD
   console.log(dateDepart);
-=======
->>>>>>> f940b96e72866b1f28be384f613c1172d78ed673
+
   return (
     <div className="OffsetSection">
       {fetched ? (
