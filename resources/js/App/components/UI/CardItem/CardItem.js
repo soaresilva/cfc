@@ -34,7 +34,6 @@ function CardItem(props) {
 
   const handleOpenSnackbar = () => {
     setOpenSnackbar(true);
-    console.log("snackbar", openSnackbar);
   };
 
   const handleCloseSnackbar = (event, reason) => {
@@ -45,6 +44,7 @@ function CardItem(props) {
   };
 
   return (
+    // Carditems for the Offset section ( the projects ) ********************************************
     <div className="CardItem">
       {fetched ? (
         <div className="CardItemsInfo">
@@ -55,7 +55,6 @@ function CardItem(props) {
               <p>{price}EUR</p>
               <InfoIcon onClick={handleOpenInfo} />
             </div>
-            {/* <Button clicked={handleClickOpen}>More Info</Button> */}
             <CustomizedModal closed={handleCloseInfo} opened={openInfo} moreInfo={moreInfo} title={title} />
             <AddTripToDB
               userId={userId}
@@ -72,20 +71,25 @@ function CardItem(props) {
             <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
           </div>
         </div>
-      ) : children === "Register" ? (
-        <div>
+      ) : // Carditems for the landing page (Register , Calculate, Offset) *****************************
+      children === "Register" ? (
+        <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <p>Start your journey by creating an account</p>
-          <ul>
-            <li>Some advantages</li>
-            <li>More advantages</li>
-            <li>Did you know about this advantage?</li>
-          </ul>
-          <a href="/register">User</a>
-          <a href="/register/organization">Organizaton</a>
+          <div >
+            <p>Start your journey by creating an account</p>
+            <ul className="CardItemsLandingPage_description">
+              <li>Some advantages</li>
+              <li>More advantages</li>
+              <li>Did you know about this advantage?</li>
+            </ul>
+          </div>
+          <div className="CardItemsLandingPage__links">
+            <a href="/register">User</a>
+            <a href="/register/organization">Organizaton</a>
+          </div>
         </div>
       ) : children === "Calculate" ? (
-        <div>
+        <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <p>Calculate something and get this lorem impsum</p>
           <p>
@@ -94,7 +98,7 @@ function CardItem(props) {
           </p>
         </div>
       ) : (
-        <div>
+        <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <p>Offset with us</p>
           <ul>
