@@ -13,7 +13,10 @@ function button(props) {
         clicked ? clicked() : (openSnackbar(), sendOrgTripsToDB());
       }}
     >
-      <a href={isUserOrg && (children === "Offset" || children === "Add to profile without offsetting") ? "/organization" : null}>
+      <a
+        href={isUserOrg && (children === "Offset" || children === "Add to profile without offsetting") ? "/organization" : null}
+        className="ButtonLink"
+      >
         {children}
       </a>
     </Button>

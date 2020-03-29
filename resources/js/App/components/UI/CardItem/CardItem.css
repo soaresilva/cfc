@@ -49,6 +49,12 @@
   justify-content: space-evenly;
 }
 
+.CardItemsLandingPage__icons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 ul {
   list-style-position: inside;
 }
@@ -58,13 +64,17 @@ li {
   margin-left: 1rem;
 }
 
-a {
+.CardItemsLandingPage__Alinks {
   text-decoration: none;
   color: black;
   transition: 0.6s all;
+  border: 1px solid black;
+  padding: 0.25rem;
+  border-radius: 7px;
 }
 
-a:hover {
+.CardItemsLandingPage__Alinks:hover {
   color: white;
   text-decoration: none;
+  border: 1px solid white;
 }

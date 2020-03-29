@@ -14,3 +14,14 @@
   background-color: #5a6268;
   outline: none;
 }
+
+.ButtonLink {
+  text-decoration: none;
+  color: white;
+  transition: .6s all;
+}
+
+.ButtonLink:hover {
+  text-decoration: none;
+  color: black;
+}
