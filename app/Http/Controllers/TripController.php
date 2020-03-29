@@ -81,4 +81,19 @@ class TripController extends Controller
 
     }
 
+    public function getEventlessTrips(Request $request, $org_id) {
+        $trips = Trip::where([['organization_id', '=', $org_id],['event_id', '=', null]])->get();
+        return $trips;
+
+    }
+
+    public function addTripToEvent($trip_id, $event_id) {
+        $trip = Trip::findOrFail($trip_id);
+        $trip->event_id = $event_id;
+        $trip->save();
+        return response()->json(['okay' => true],200);
+
+    }
+
+
 }
