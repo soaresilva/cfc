@@ -72,9 +72,19 @@ function CardItem(props) {
             <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
           </div>
         </div>
-      ) : (
-        <h1>{children}</h1>
-      )}
+      ) : children === "Register" ? (
+        <div>
+          <h1>{children}</h1>
+          <p>Start your journey by creating an account</p>
+          <ul>
+            <li>Some advantages</li>
+            <li>More advantages</li>
+            <li>Did you know about this advantage?</li>
+          </ul>
+          <a href="/register">User</a>
+          <a href="/register/organization">Organizaton</a>
+        </div>
+      ) : null}
     </div>
   );
 }

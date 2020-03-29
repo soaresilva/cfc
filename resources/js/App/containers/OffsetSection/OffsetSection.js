@@ -11,7 +11,7 @@ function OffsetSection(props) {
   const [isUserOrg, setIsUserOrg] = useState(null);
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount } = props;
+  const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount, dateFrom, dateTo } = props;
 
   const farmers = {
     title: "Reforestation in Nicaragua",
@@ -88,7 +88,8 @@ function OffsetSection(props) {
       makeOrgId();
     }
   }, []);
-
+  console.log('datefrom', dateFrom)
+  console.log('dateTo', dateTo)
   return (
     <div className="OffsetSection">
       {fetched ? (
@@ -162,6 +163,8 @@ function OffsetSection(props) {
             isUserOrg={isUserOrg}
             offset={0}
             clicked={handleOpenSnackbar}
+            dateFrom={dateFrom}
+            dateTo={dateTo}
           >
             Add to profile without offsetting
           </AddTripToDB>

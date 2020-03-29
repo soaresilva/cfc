@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./App.css";
-import CardItem from "./UI/CardItem/CardItem";
 import FlightSearch from "../containers/FlightSearch/FlightSearch";
+import CardsInfoSection from "./../containers/CardsInfoSection/CardsInfoSection";
 
 export default class App extends React.Component {
   render() {
@@ -17,18 +17,8 @@ export default class App extends React.Component {
             Shape our future<br></br> myclimate is your partner for effective climate protection – both locally and globally
           </h1>
         </div>
-        <div className="Section-CardItems">
-          <div className="CardItems">
-            <div className="CardItem-About">
-              <CardItem>About us</CardItem>
-            </div>
-            <div className="CardItem-Calc">
-              <CardItem>Calculate</CardItem>
-            </div>
-            <div className="CardItem-Offset">
-              <CardItem>Offset</CardItem>
-            </div>
-          </div>
+        <div>
+          <CardsInfoSection />
         </div>
 
         <FlightSearch />
