@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 // Auth::routes(); //all the authentification for the USER
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->middleware('auth')->name('home');
 Route::view('/organization', 'organization');
 Route::get('/organization', 'OrganizationController@index');
 

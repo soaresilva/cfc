@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\User;
-use App\Trip;
-
-
 
 class UserController extends Controller
 {
@@ -37,8 +34,7 @@ class UserController extends Controller
             'password' => $request->input('password'),
         ]);
 
-        return redirect()->route('home');
-        // return redirect('/');
+        return redirect()->intended('home');
     }
 
 }
