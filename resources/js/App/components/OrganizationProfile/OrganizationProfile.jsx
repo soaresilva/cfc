@@ -50,9 +50,9 @@ export default function OrganizationProfile({ org_id }) {
       ) : (
         <>
           <TableContainer component={Paper}>
+          <h3 align="left">Summary</h3>
             <Table className={classes.table} aria-label="customized table">
               <TableHead align="left">
-                <h3>Summary</h3>
                 <TableRow>
                   <StyledTableCell>Total Number of Events</StyledTableCell>
                   <StyledTableCell>Total Distances Traveled</StyledTableCell>
