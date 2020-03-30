@@ -3,8 +3,18 @@ import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
 import AddTripsToEvent from "./AddTripsToEvent";
 
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Paper from "@material-ui/core/Paper";
+
 export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents, org_id, setShowOrgTrips }) {
   const [orgTrips, setOrgTrips] = useState([]);
+  const classes = useStyles();
   let totalDistance = 0;
   let totalCarbonFootprint = 0;
   let totalCarbonOffset = 0;
@@ -49,23 +59,21 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
     totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
     return (
-      <div className="org-trip" key={index}>
-        <h4>
+      <TableRow key={index}>
+        <TableCell component="th" scope="row">
           {trip.airport_from} - {trip.airport_to}
-        </h4>
-        <p>
-          <em>{trip.flight_date}</em>
-        </p>
-        <h5>Distance:</h5>
-        <p>{trip.distance} KM</p>
-        <h5>Carbon Footprint:</h5>
-        <p>{trip.carbon_amount}</p>
-        <h5>Carbon Offset:</h5>
-        <p> {trip.offset_amount}</p>
-        <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
-      </div>
+        </TableCell>
+        <TableCell align="right">{trip.distance}</TableCell>
+        <TableCell align="right">{trip.carbon_amount}</TableCell>
+        <TableCell align="right">{trip.offset_amount}</TableCell>
+        <TableCell align="right">{trip.flight_date} </TableCell>
+        <TableCell align="right">
+          <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
+        </TableCell>
+      </TableRow>
     );
   });
+
   return (
     <div>
       {orgTrips.length === 0 ? (
@@ -77,7 +85,24 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
           totalCarbonOffset={totalCarbonOffset}
         />
       )}
-      {trips}
+      <br />
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead align="left">
+            <h4>Trips</h4>
+            <StyledTableRow>
+              <StyledTableCell>Trip Route</StyledTableCell>
+              <StyledTableCell align="right">Distance (km) </StyledTableCell>
+              <StyledTableCell align="right">Carbon Footprint (tons)</StyledTableCell>
+              <StyledTableCell align="right">Carbon Offset (tons)</StyledTableCell>
+              <StyledTableCell align="right">Date</StyledTableCell>
+              <StyledTableCell align="right"></StyledTableCell>
+            </StyledTableRow>
+          </TableHead>
+          <TableBody>{trips}</TableBody>
+        </Table>
+      </TableContainer>
+      <br />
       <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
 
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
@@ -100,3 +125,27 @@ function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
     </button>
   );
 }
+
+const useStyles = makeStyles({
+  table: {
+    minWidth: 700
+  }
+});
+
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white
+  },
+  body: {
+    fontSize: 14
+  }
+}))(TableCell);
+
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    "&:nth-of-type(odd)": {
+      backgroundColor: theme.palette.background.default
+    }
+  }
+}))(TableRow);

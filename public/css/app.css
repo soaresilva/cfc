@@ -9956,24 +9956,15 @@ h3 {
   background-color: #1e5856;
 }
 
-.org-event {
+.event-intro {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 2em;
-  border: 1em solid black;
-  text-align: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.org-trip {
+.showOrgTripsButton {
   display: flex;
-  flex-direction: column;
-  border: 0.8em solid black;
-  text-align: center;
-  margin: 2em;
-}
-
-.org-summary {
-  background-color: #3abe05;
+  justify-self: center;
 }
 
 .userprofile {
