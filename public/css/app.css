@@ -9946,7 +9946,6 @@ h3 {
 }
 .org-heading {
   color: blue;
-  min-height: 30vh;
   background-color: #a9d37c;
   text-align: center;
 }
@@ -9961,15 +9960,20 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
-  border: 2px dotted black;
+  border: 1em solid black;
   text-align: center;
 }
 
 .org-trip {
   display: flex;
   flex-direction: column;
-  border: 2px dotted blue;
+  border: 0.8em solid black;
   text-align: center;
+  margin: 2em;
+}
+
+.org-summary {
+  background-color: #3abe05;
 }
 
 .userprofile {

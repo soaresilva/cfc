@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import { deleteTrip } from "../../../Api/trips";
+import "../../../../sass/app.scss";
 
 export default function OrganizationEventSummary({
     totalDistance,
@@ -9,12 +9,9 @@ export default function OrganizationEventSummary({
     return (
         <div className="org-summary">
             <h3>Summary</h3>
-            <h4>Total Distances Traveled:</h4>
-            <p>{totalDistance}</p>
-            <h4>Total Carbon Footprint:</h4>
-            <p>{totalCarbonFootprint}</p>
-            <h4>Total Carbon Offset:</h4>
-            <p>{totalCarbonOffset}</p>
+            <p>Total Distances Traveled:<h4>{totalDistance}</h4>KM</p>
+            <p>Total Carbon Footprint:<h4>{totalCarbonFootprint}</h4>tonnes</p>
+            <p>Total Carbon Offset:<h4>{totalCarbonOffset}</h4>tonnes</p>
         </div>
     );
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-//import "./App.css";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
 import OrganizationAddEvent from "./OrganizationAddEvent";

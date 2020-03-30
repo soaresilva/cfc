@@ -1,30 +1,39 @@
 
 .org-heading {
   color:blue;
-  min-height:30vh;
   background-color: #a9d37c;
   text-align: center;
   
 }
 
+
 .org-profile {
   color:white;
   text-align: center;
   background-color: rgb(30, 88, 86);
-  
+  //margin:2em;
+
 }
 
 .org-event {
   display:flex;
   flex-direction: column;
   margin-bottom:2em;
-  border: 2px dotted black;
+  border: 1em solid black;
   text-align: center;
+  //margin:1em;
+
 }
 
 .org-trip {
   display:flex;
   flex-direction: column;
-  border: 2px dotted blue;
+  border: .8em solid black;
   text-align: center;
+  margin:2em;
+
+}
+
+.org-summary {
+  background-color: rgb(58, 190, 5);
 }
