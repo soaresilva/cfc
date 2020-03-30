@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
 import AddTripsToEvent from "./AddTripsToEvent";
-
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import {useStyles, StyledTableCell, StyledTableRow} from '../UI/Tables/tables';
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -87,9 +86,9 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
       )}
       <br />
       <TableContainer component={Paper}>
+      <h4 align="left">Trips</h4>
         <Table className={classes.table} aria-label="simple table">
           <TableHead align="left">
-            <h4>Trips</h4>
             <StyledTableRow>
               <StyledTableCell>Trip Route</StyledTableCell>
               <StyledTableCell align="right">Distance (km) </StyledTableCell>
@@ -125,27 +124,3 @@ function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
     </button>
   );
 }
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 700
-  }
-});
-
-const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white
-  },
-  body: {
-    fontSize: 14
-  }
-}))(TableCell);
-
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    "&:nth-of-type(odd)": {
-      backgroundColor: theme.palette.background.default
-    }
-  }
-}))(TableRow);

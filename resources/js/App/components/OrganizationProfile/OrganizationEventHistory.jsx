@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationTripHistory from "./OrganizationTripHistory";
-
-import { makeStyles } from "@material-ui/core/styles";
+import {expansionStyles} from '../UI/Tables/tables';
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
@@ -11,7 +10,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_id }) {
   const [showOrgTrips, setShowOrgTrips] = useState(new Array(orgEvents.length).fill(false));
-  const classes = useStyles();
+  const classes = expansionStyles();
 
   const handleShowOrgTrips = (index) => {
     setShowOrgTrips(showOrgTrips.map((s, i) => (i === index ? !s : s)));
@@ -52,12 +51,12 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
   return <div>{events}</div>;
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%"
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
-  }
-}));
+// const expansionStyles = makeStyles((theme) => ({
+//   root: {
+//     width: "100%"
+//   },
+//   heading: {
+//     fontSize: theme.typography.pxToRem(15),
+//     fontWeight: theme.typography.fontWeightRegular
+//   }
+// }));

@@ -1,9 +1,8 @@
 import React from "react";
 import "../../../../sass/app.scss";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import {useStyles, StyledTableCell, StyledTableRow} from '../UI/Tables/tables';
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
@@ -14,9 +13,9 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
 
   return (
     <TableContainer component={Paper}>
+    <h3 align="left">Event Summary</h3>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead align="left">
-            <h3>Event Summary</h3>
+        <TableHead align="left">            
           <TableRow>
             <StyledTableCell>Total Distances Traveled</StyledTableCell>
             <StyledTableCell align="right">Total Carbon Footprint (tons)</StyledTableCell>
@@ -37,26 +36,26 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
   );
 }
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 700
-  }
-});
+// const useStyles = makeStyles({
+//   table: {
+//     minWidth: 700
+//   }
+// });
 
-const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white
-  },
-  body: {
-    fontSize: 14
-  }
-}))(TableCell);
+// const StyledTableCell = withStyles((theme) => ({
+//   head: {
+//     backgroundColor: theme.palette.common.black,
+//     color: theme.palette.common.white
+//   },
+//   body: {
+//     fontSize: 14
+//   }
+// }))(TableCell);
 
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    "&:nth-of-type(odd)": {
-      backgroundColor: theme.palette.background.default
-    }
-  }
-}))(TableRow);
+// const StyledTableRow = withStyles((theme) => ({
+//   root: {
+//     "&:nth-of-type(odd)": {
+//       backgroundColor: theme.palette.background.default
+//     }
+//   }
+// }))(TableRow);
