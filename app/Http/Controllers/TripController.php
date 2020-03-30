@@ -37,11 +37,12 @@ class TripController extends Controller
     public function orgTripsChart()
     {
         // first plucked column is the value, second is the key
-        $carbon = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date')->pluck('carbon_amount', 'flight_date');
-        $offset = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->pluck('offset_amount');
+        $carbon = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('carbon_amount');
+        $offset = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('offset_amount');
+        // dd($carbon);
 
-        $datelabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date')->pluck('flight_date')->toArray();
-        $airportlabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date')->pluck('airport_to')->toArray();
+        $datelabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('flight_date')->toArray();
+        $airportlabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('airport_to')->toArray();
         $chartLabels = array_map(function ($a, $b) {return $a . ', ' . $b;}, $airportlabel, $datelabel);
 
         $orgChart = new OrganizationTripsChart;

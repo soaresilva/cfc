@@ -19,23 +19,19 @@ export function AddTripToDB({
   const sendUserTripsUrl = "/api/trips/";
 
   const sendUserTripsToDB = async () => {
-    console.log("adding trip working");
     console.log("user-id", userId);
     const response = await fetch(
       `${sendUserTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
     );
     await response.json();
-    console.log("send user info", response);
   };
 
   const sendOrgTripsToDB = async () => {
-    console.log("adding trip working");
     console.log("user-id", userId);
     const response = await fetch(
       `${sendOrgTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
     );
     await response.json();
-    console.log("send user info", response);
   };
 
   return (

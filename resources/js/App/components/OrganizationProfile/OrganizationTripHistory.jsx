@@ -53,7 +53,7 @@ export default function OrganizationTripHistory({
     totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
     return (
-           <div className="org-trip" key={index}>
+        <div className="org-trip" key={index}>
         <h4>
           {trip.airport_from} - {trip.airport_to}
         </h4>
@@ -68,36 +68,16 @@ export default function OrganizationTripHistory({
         <p> {trip.offset_amount}</p>
         <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
       </div>
-        // <div>
-        //     {/* <OrganizationEventSummary
-        //         totalDistance={totalDistance}
-        //         totalCarbonFootprint={totalCarbonFootprint}
-        //         totalCarbonOffset={totalCarbonOffset}
-        //     /> */}
-        //     {trips}
-        //     {orgTrips.length === 0 ? (
-        //         ""
-        //     ) : (
-        //         <DeleteEventButton
-        //             handleDeleteEventAndTrips={handleDeleteEventAndTrips}
-        //             event_id={event_id}
-        //         />
-        //     )}
-        //     {event_id ?
-        //     <AddTripsToEvent event_id={event_id} org_id={org_id}/> : ""}
-
-        // </div>
-   
-    
     );
   });
   return (
     <div>
+    {orgTrips.length === 0 ? "" :
       <OrganizationEventSummary
         totalDistance={totalDistance}
         totalCarbonFootprint={totalCarbonFootprint}
         totalCarbonOffset={totalCarbonOffset}
-      />
+      />}
       {trips}
       {orgTrips.length === 0 ? "" : <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />}
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id}/> : ""}
