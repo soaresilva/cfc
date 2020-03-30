@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function OrganizationAddEvent({ org_id }) {
+export default function OrganizationAddEvent({ org_id, getEvents }) {
   const [showAddEventForm, setShowAddEventForm] = useState(false);
   const [addEventName, setAddEventName] = useState("");
   const [addEventDescription, setAddEventDescription] = useState("");
@@ -23,7 +23,7 @@ export default function OrganizationAddEvent({ org_id }) {
         'date': addEventDate,
       }) 
     })
-
+    getEvents();
   };
 
   const handleShowAddEventForm = () => {

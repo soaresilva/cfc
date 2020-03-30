@@ -7,11 +7,8 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
 
   const handleShowOrgTrips = (index) => {
     setShowOrgTrips(showOrgTrips.map((s, i) => (i === index ? !s : s)));
-    console.log("working");
-    //do we want the rest of the trips to go away when showing the trips?
   };
 
-  //console.log("show", orgEvents);
 
   const events = orgEvents.map((event, index) => {
     return (
@@ -23,7 +20,7 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
         <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">
           See trips
         </button>
-        {showOrgTrips[index] ? <OrganizationTripHistory org_id={org_id} event_id={event.id} orgEvents={orgEvents} setOrgEvents={setOrgEvents} /> : ""}
+        {showOrgTrips[index] ? <OrganizationTripHistory setShowOrgTrips={setShowOrgTrips[index]} org_id={org_id} event_id={event.id} orgEvents={orgEvents} setOrgEvents={setOrgEvents} /> : ""}
       </div>
     );
   });
