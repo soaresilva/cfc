@@ -54,7 +54,7 @@ export default function OrganizationProfile({ org_id }) {
           <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id} />
         </>
       )}
-      <OrganizationAddEvent org_id={org_id} />
+      <OrganizationAddEvent org_id={org_id} getEvents={getEvents}  />
     </div>
   );
 }

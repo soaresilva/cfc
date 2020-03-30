@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
-import AddTripsToEvent from './AddTripsToEvent';
+import AddTripsToEvent from "./AddTripsToEvent";
 
-export default function OrganizationTripHistory({
-    event_id,
-    setOrgEvents,
-    orgEvents, 
-    org_id
-}) {
-    const [orgTrips, setOrgTrips] = useState([]);
-    let totalDistance = 0;
-    let totalCarbonFootprint = 0;
-    let totalCarbonOffset = 0;
-    const getOrgTripsUrl = "/api/events/trips/";
+export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents, org_id, setShowOrgTrips }) {
+  const [orgTrips, setOrgTrips] = useState([]);
+  let totalDistance = 0;
+  let totalCarbonFootprint = 0;
+  let totalCarbonOffset = 0;
+  const getOrgTripsUrl = "/api/events/trips/";
 
   const getOrgTrips = async () => {
     try {
@@ -43,6 +38,7 @@ export default function OrganizationTripHistory({
       await deleteEventAndTrips(id);
       const newEvents = orgEvents.filter((event) => event.id !== id);
       setOrgEvents(newEvents);
+      setShowOrgTrips(false);
     } catch (err) {
       console.log("error", err);
     }
@@ -53,7 +49,7 @@ export default function OrganizationTripHistory({
     totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
     return (
-        <div className="org-trip" key={index}>
+      <div className="org-trip" key={index}>
         <h4>
           {trip.airport_from} - {trip.airport_to}
         </h4>
@@ -72,15 +68,19 @@ export default function OrganizationTripHistory({
   });
   return (
     <div>
-    {orgTrips.length === 0 ? "" :
-      <OrganizationEventSummary
-        totalDistance={totalDistance}
-        totalCarbonFootprint={totalCarbonFootprint}
-        totalCarbonOffset={totalCarbonOffset}
-      />}
+      {orgTrips.length === 0 ? (
+        ""
+      ) : (
+        <OrganizationEventSummary
+          totalDistance={totalDistance}
+          totalCarbonFootprint={totalCarbonFootprint}
+          totalCarbonOffset={totalCarbonOffset}
+        />
+      )}
       {trips}
-      {orgTrips.length === 0 ? "" : <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />}
-      {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id}/> : ""}
+      <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
+
+      {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../../../sass/app.scss";
 
 export default function OrganizationEventSummary({
@@ -9,9 +9,9 @@ export default function OrganizationEventSummary({
     return (
         <div className="org-summary">
             <h3>Summary</h3>
-            <p>Total Distances Traveled:<h4>{totalDistance}</h4>KM</p>
-            <p>Total Carbon Footprint:<h4>{totalCarbonFootprint}</h4>tonnes</p>
-            <p>Total Carbon Offset:<h4>{totalCarbonOffset}</h4>tonnes</p>
+            <p>Total Distances Traveled: <strong>{totalDistance}</strong> KM</p>
+            <p>Total Carbon Footprint: <strong>{totalCarbonFootprint}</strong> tonnes</p>
+            <p>Total Carbon Offset: <strong>{totalCarbonOffset}</strong> tonnes</p>
         </div>
     );
 }
