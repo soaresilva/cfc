@@ -8,7 +8,7 @@ import Flight from "./../../components/Flight/Flight";
 import Spinner from "../../components/UI/Spinner/Spinner";
 
 const FlightSection = (props) => {
-  const { flightData, loading, submitted } = props;
+  const { flightData, loading, submitted, economyClass, businessClass } = props;
   const [firstFlight, setFirstFlight] = useState(0);
   const [flightsPerPage, setFlightsPerPage] = useState(2);
   const [pageNumber, setPageNumber] = useState(1);
@@ -65,7 +65,7 @@ const FlightSection = (props) => {
     flight = <Alert severity="info">Info — No flights found</Alert>;
   } else {
     flight = flightData.slice(firstFlight, firstFlight + flightsPerPage).map((flight) => {
-      return <Flight key={flight.id} {...flight} />;
+      return <Flight key={flight.id} economyClass={economyClass} businessClass={businessClass} {...flight} />;
     });
     pagination = (
       <div className={classes.root}>

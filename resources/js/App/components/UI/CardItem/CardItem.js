@@ -83,7 +83,7 @@ function CardItem(props) {
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p>Start your journey by creating an account</p>
+            <p className="CardItemsLandingPage_description">Start your journey by creating an account</p>
             <ul>
               <li>Some advantages</li>
               <li>More advantages</li>
@@ -102,20 +102,20 @@ function CardItem(props) {
       ) : children === "Calculate" ? (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <div>
+          <div className="CardItemsLandingPage_description">
             {/* <p>It is surprising how many climate-​harming CO₂ emissions arise when flying, driving, living, working and partying.</p> */}
             <p>
               CFC offers you a solution for your business and your everyday life. Make a concrete commitment to greater climate protection
               and sustainability with our education project and company offers and help shape the future.
             </p>
           </div>
-            <p></p>
+          <p></p>
         </div>
       ) : (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
-          <div className="CardItemsLandingPage_description">
-            <p>Offset with us and save the planet</p>
+          <div>
+            <p className="CardItemsLandingPage_description">Offset with us and save the planet</p>
             <ul>
               <li>Some advantages</li>
               <li>More advantages</li>

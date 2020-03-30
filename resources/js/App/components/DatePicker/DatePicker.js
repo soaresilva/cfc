@@ -25,7 +25,7 @@ export class DatePicker extends React.Component {
         <DayPickerInput
           inputProps={{
             style: {
-              width: "7.5vw",
+              width: "15vw",
               height: 55,
               textAlign: "center",
               borderRadius: "7px",
