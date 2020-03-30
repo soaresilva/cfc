@@ -47,8 +47,8 @@ class TripController extends Controller
 
         $orgChart = new OrganizationTripsChart;
         $orgChart->labels($chartLabels);
-        $orgChart->dataset('CO2 (t) emitted', 'bar', $carbon->values())->backgroundColor('grey');
-        $orgChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green');
+        $orgChart->dataset('CO2 (t) emitted', 'horizontalBar', $carbon->values())->backgroundColor('grey');
+        $orgChart->dataset('CO2 (t) offset', 'horizontalBar', $offset->values())->backgroundColor('green');
 
         return view('organization', compact('orgChart'));
     }
