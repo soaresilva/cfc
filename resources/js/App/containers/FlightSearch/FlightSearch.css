@@ -5,7 +5,7 @@
 
 .FlightSearchTitle {
   height: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .Dropdown {
@@ -25,9 +25,10 @@
 
 .CheckboxOption {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 12rem;
+  width: 35vw;
+  margin: 1rem auto;
 }
 
 .Blue {

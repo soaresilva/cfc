@@ -55,6 +55,11 @@
   align-items: baseline;
 }
 
+.CardItemsLandingPage_description {
+  max-width: 33ch;
+  margin: 0 auto;
+}
+
 ul {
   list-style-position: inside;
 }

@@ -172,7 +172,6 @@ function OffsetSection(props) {
             </AddTripToDB>
           </div>
           <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
-          <div id="cardItems"></div>
         </>
       ) : (
         <>
@@ -181,6 +180,7 @@ function OffsetSection(props) {
           <div id="cardsID"></div>
         </>
       )}
+      <div id="cardItems"></div>
     </div>
   );
 }

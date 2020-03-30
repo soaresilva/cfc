@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import FlightSearch from "../containers/FlightSearch/FlightSearch";
 import CardsInfoSection from "./../containers/CardsInfoSection/CardsInfoSection";
+import Footer from "../components/Footer/Footer";
 
 export default class App extends React.Component {
   render() {
@@ -19,10 +20,7 @@ export default class App extends React.Component {
         </div>
         <CardsInfoSection />
         <FlightSearch />
-
-        <div className="WelcomeText">
-          <h1>"footcha"</h1>
-        </div>
+        <Footer />
       </div>
     );
   }

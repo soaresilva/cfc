@@ -7,7 +7,7 @@ import { selectFlightDetails } from "../../store/actions/index";
 import haversineDistance from "../../functions/haversine";
 
 const flight = (props) => {
-  const { cityFrom, cityTo, fly_duration, dTime, price, aTime, route, onSelectFlightDetails } = props;
+  const { cityFrom, cityTo, fly_duration, dTime, price, aTime, route, onSelectFlightDetails, economyClass, businessClass } = props;
   const dateDepart = new Date(dTime * 1000)
     .toLocaleDateString("en-GB")
     .split("/")
@@ -80,7 +80,8 @@ const flight = (props) => {
       <div className="FlightStopovers">{stopovers}</div>
       <Button
         clicked={() => {
-          scrollToOffsetSection(), onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration, dateDepart);
+          scrollToOffsetSection(),
+            onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration, dateDepart, economyClass, businessClass);
         }}
       >
         Select
@@ -91,8 +92,8 @@ const flight = (props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSelectFlightDetails: (cityFrom, cityTo, distance, fly_duration, dateDepart) =>
-      dispatch(selectFlightDetails(cityFrom, cityTo, distance, fly_duration, dateDepart))
+    onSelectFlightDetails: (cityFrom, cityTo, distance, fly_duration, dateDepart, economyClass, businessClass) =>
+      dispatch(selectFlightDetails(cityFrom, cityTo, distance, fly_duration, dateDepart, economyClass, businessClass))
   };
 };
 
