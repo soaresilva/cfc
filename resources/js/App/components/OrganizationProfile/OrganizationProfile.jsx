@@ -32,6 +32,7 @@ export default function OrganizationProfile({ org_id }) {
     });
   });
 
+  console.log("org id", org_id);
   return (
     <div className="org-profile">
       {orgEvents.length === 0 ? (
@@ -49,11 +50,11 @@ export default function OrganizationProfile({ org_id }) {
             <p> {totalCarbonOffset}</p>
           </div>
 
-          <OrganizationAddEvent org_id={org_id} />
           <h3>Event History</h3>
-          <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id}/>
+          <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id} />
         </>
       )}
+      <OrganizationAddEvent org_id={org_id} />
     </div>
   );
 }

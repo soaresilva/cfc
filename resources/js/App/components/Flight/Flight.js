@@ -8,9 +8,18 @@ import haversineDistance from "../../functions/haversine";
 
 const flight = (props) => {
   const { cityFrom, cityTo, fly_duration, dTime, price, aTime, route, onSelectFlightDetails } = props;
-  const dateDepart = new Date(dTime * 1000).toLocaleDateString('en-GB').split('/').reverse().join('-');
+  const dateDepart = new Date(dTime * 1000)
+    .toLocaleDateString("en-GB")
+    .split("/")
+    .reverse()
+    .join("-");
   const timeDepart = new Date(dTime * 1000).toTimeString().slice(0, 18);
-  const dateArrival = new Date(aTime * 1000).toLocaleDateString('en-GB').slice(0, 18).split('/').reverse().join('-');
+  const dateArrival = new Date(aTime * 1000)
+    .toLocaleDateString("en-GB")
+    .slice(0, 18)
+    .split("/")
+    .reverse()
+    .join("-");
   const timeArrival = new Date(aTime * 1000).toTimeString().slice(0, 18);
 
   let arrayWithDistances = [];
@@ -35,8 +44,13 @@ const flight = (props) => {
       totalDistance = haversineDistance(latFrom, latTo, lngFrom, lngTo, arrayWithDistances, totalDistance);
     }
   }
+  const scrollToOffsetSection = () => {
+    const beforeRendering = document.getElementById("cardsID");
+    const afterRendering = document.getElementById("cardItems");
+    if (beforeRendering) beforeRendering.scrollIntoView({ behavior: "smooth", block: "end" });
+    if (afterRendering) afterRendering.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
 
-console.log('data depart', dateDepart);
   return (
     <div className="Flight">
       <div>
@@ -64,7 +78,13 @@ console.log('data depart', dateDepart);
         <h4 className="FlightTime">€{price}</h4>
       </div>
       <div className="FlightStopovers">{stopovers}</div>
-      <Button clicked={(() => onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration, dateDepart))}>Select</Button>
+      <Button
+        clicked={() => {
+          scrollToOffsetSection(), onSelectFlightDetails(cityFrom, cityTo, totalDistance, fly_duration, dateDepart);
+        }}
+      >
+        Select
+      </Button>
     </div>
   );
 };

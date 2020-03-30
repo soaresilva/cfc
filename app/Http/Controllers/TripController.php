@@ -15,14 +15,21 @@ class TripController extends Controller
         $trips = Trip::where('user_id', '=', $user_id)->get();
         return $trips;
     }
-
     public function userTripsChart()
     {
         // first plucked column is the value, second is the key
-        $trips = Trip::where('user_id', '=', auth()->user()->id)->orderBy('created_at')->pluck('carbon_amount', "created_at");
+        $carbon = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('carbon_amount');
+        $offset = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('offset_amount');
+
+        $datelabel = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('flight_date')->toArray();
+        $airportlabel = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('airport_to')->toArray();
+        $chartLabels = array_map(function ($a, $b) {return $a . ', ' . $b;}, $airportlabel, $datelabel);
+
+        // dd($chartLabels);
         $userChart = new UserTripsChart;
-        $userChart->labels($trips->keys());
-        $userChart->dataset('CO2 (t)', 'bar', $trips->values());
+        $userChart->labels($chartLabels);
+        $userChart->dataset('CO2 (t) emitted', 'bar', $carbon->values())->backgroundColor('grey');
+        $userChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green');
 
         return view('home', compact('userChart'));
     }
@@ -30,10 +37,18 @@ class TripController extends Controller
     public function orgTripsChart()
     {
         // first plucked column is the value, second is the key
-        $trips = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('created_at')->pluck('carbon_amount', 'airport_to');
+        $carbon = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('carbon_amount');
+        $offset = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('offset_amount');
+        // dd($carbon);
+
+        $datelabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('flight_date')->toArray();
+        $airportlabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('airport_to')->toArray();
+        $chartLabels = array_map(function ($a, $b) {return $a . ', ' . $b;}, $airportlabel, $datelabel);
+
         $orgChart = new OrganizationTripsChart;
-        $orgChart->labels($trips->keys());
-        $orgChart->dataset('CO2 (t)', 'bar', $trips->values());
+        $orgChart->labels($chartLabels);
+        $orgChart->dataset('CO2 (t) emitted', 'bar', $carbon->values())->backgroundColor('grey');
+        $orgChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green');
 
         return view('organization', compact('orgChart'));
     }
@@ -81,19 +96,20 @@ class TripController extends Controller
 
     }
 
-    public function getEventlessTrips(Request $request, $org_id) {
-        $trips = Trip::where([['organization_id', '=', $org_id],['event_id', '=', null]])->get();
+    public function getEventlessTrips(Request $request, $org_id)
+    {
+        $trips = Trip::where([['organization_id', '=', $org_id], ['event_id', '=', null]])->get();
         return $trips;
 
     }
 
-    public function addTripToEvent($trip_id, $event_id) {
+    public function addTripToEvent($trip_id, $event_id)
+    {
         $trip = Trip::findOrFail($trip_id);
         $trip->event_id = $event_id;
         $trip->save();
-        return response()->json(['okay' => true],200);
+        return response()->json(['okay' => true], 200);
 
     }
-
 
 }

@@ -1,21 +1,27 @@
 .CardItem-About {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: -5rem;
   background-color: #62684d;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
 .CardItem-Calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: -5rem;
   background-color: #484d37;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
 .CardItem-Offset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: -5rem;
   background-color: #3a452e;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85),
-      -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }

@@ -30,4 +30,11 @@ export const selectAirportFrom = (event, airportFrom, reason) => {
   };
 };
 
+export const selectDate = (date) => {
+  return {
+    type: actionType.SELECT_DATE,
+    date: date
+  }
+}
+
 

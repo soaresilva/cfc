@@ -47,3 +47,8 @@
   background-color: #484d37;
 }
 
+.DropdownSearch {
+  display: flex;
+  flex-direction: column;
+}
+

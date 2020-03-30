@@ -156,26 +156,30 @@ function OffsetSection(props) {
               />
             </div>
           </div>
-          <AddTripToDB
-            cityFrom={cityFrom}
-            cityTo={cityTo}
-            distance={distance}
-            totalCO2amount={totalCO2amount}
-            userId={userId}
-            isUserOrg={isUserOrg}
-            offset={0}
-            clicked={handleOpenSnackbar}
-            dateDepart={dateDepart}
-          >
-            Add to profile without offsetting
-          </AddTripToDB>
+          <div style={{ marginTop: "2rem" }}>
+            <AddTripToDB
+              cityFrom={cityFrom}
+              cityTo={cityTo}
+              distance={distance}
+              totalCO2amount={totalCO2amount}
+              userId={userId}
+              isUserOrg={isUserOrg}
+              offset={0}
+              clicked={handleOpenSnackbar}
+              dateDepart={dateDepart}
+            >
+              Add to profile without offsetting
+            </AddTripToDB>
+          </div>
           <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
+          <div id="cardItems"></div>
         </>
       ) : (
-        <div>
+        <>
           <h1>Select a flight to see offset options</h1>
           <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" />
-        </div>
+          <div id="cardsID"></div>
+        </>
       )}
     </div>
   );

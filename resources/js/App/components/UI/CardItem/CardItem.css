@@ -1,23 +1,23 @@
 .CardItem {
-    height: 60vh;
-    width: 20vw;
-    text-align: center;
-    margin-top: 2rem;
+  height: 60vh;
+  width: 20vw;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .CardItemsInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20vw;
-    height: 60vh;
-    margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+  height: 60vh;
+  margin-top: -2rem;
 }
 
 .CardItemsPicture {
-    width: 20vw;
-    display: block;
-    border-radius: 7px;
+  width: 20vw;
+  display: block;
+  border-radius: 7px;
 }
 
 .CardItemsDescription {
@@ -29,8 +29,52 @@
 }
 
 .CardItemsDetails {
-    width: 15.5vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-self: flex-end;
+  width: 15.5vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+
+.CardItemsLandingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+  height: 60vh;
+  padding-bottom: 2rem;
+}
+
+.CardItemsLandingPage__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.CardItemsLandingPage__icons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.CardItemsLandingPage__Alinks {
+  text-decoration: none;
+  color: black;
+  transition: 0.6s all;
+  border: 1px solid black;
+  padding: 0.25rem;
+  border-radius: 7px;
+}
+
+.CardItemsLandingPage__Alinks:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
 }

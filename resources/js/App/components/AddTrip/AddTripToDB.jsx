@@ -37,11 +37,11 @@ export function AddTripToDB({
   return (
     <div>
       {isUserOrg ? (
-        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked}>
+        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked} isUserOrg={isUserOrg}>
           {children}
         </ButtonRed>
       ) : (
-        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked}>
+        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked} isUserOrg={isUserOrg}>
           {children}
         </ButtonBlue>
       )}
