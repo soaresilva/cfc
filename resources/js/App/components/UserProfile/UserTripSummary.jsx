@@ -1,21 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Paper from "@material-ui/core/Paper";
 //import "./App.css";
 
 export default function UserTripSummary({ totalDistance, totalCarbonFootprint, totalCarbonOffset }) {
+  const StyledTableCell = withStyles((theme) => ({
+    head: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
+      overflowX: "unset"
+    },
+    body: {
+      fontSize: 14
+    }
+  }))(TableCell);
+
+  const StyledTableRow = withStyles((theme) => ({
+    root: {
+      "&:nth-of-type(odd)": {
+        backgroundColor: theme.palette.background.default
+      }
+    }
+  }))(TableRow);
+
+  function createData(name, amount) {
+    return { name, amount };
+  }
+
+  const rows = [
+    createData("Total Distances Traveled", totalDistance + " km"),
+    createData("Total Carbon Footprint", totalCarbonFootprint + " CO2/t"),
+    createData("Total Carbon Offset", totalCarbonOffset + " CO2/t")
+  ];
+
+  const useStyles = makeStyles({
+    table: {
+      marginTop: "3rem",
+      minWidth: 400
+    }
+  });
+
+  const classes = useStyles();
   return (
-    <div>
-      <div className="user-summary">
-        <h3>Summary</h3>
-        <h4>Total Distances Traveled:</h4>
-        <p>{totalDistance}</p>
-        <h4>Total Carbon Footprint:</h4>
-        <p>{totalCarbonFootprint}</p>
-        <h4>Total Carbon Offset:</h4>
-        <p>{totalCarbonOffset}</p>
-      </div>
-      <div className="user-history">
-        <h3>Trip History</h3>
-      </div>
-    </div>
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
+        <TableHead>
+          <TableRow>
+            <StyledTableCell>Trips summary</StyledTableCell>
+            <StyledTableCell align="right">Amount</StyledTableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <StyledTableRow key={row.name}>
+              <StyledTableCell component="th" scope="row">
+                {row.name}
+              </StyledTableCell>
+              <StyledTableCell align="right">{row.amount}</StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
   );
 }

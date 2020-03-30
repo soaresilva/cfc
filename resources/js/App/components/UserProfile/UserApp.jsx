@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, useEffect, Fragment } from "react";
 import UserProfile from "./UserProfile";
 import "../../../../sass/app.scss";
+import Spinner from "./../UI/Spinner/Spinner";
 
 export default function UserApp() {
   const [user, setUser] = useState("");
@@ -44,7 +45,7 @@ export default function UserApp() {
           </div>
         </div>
       </div> */}
-      {!user ? <p>Loading...</p> : <UserProfile user_id={user.id} />}
+      {!user ? <Spinner /> : <UserProfile user_id={user.id} />}
     </div>
   );
 }

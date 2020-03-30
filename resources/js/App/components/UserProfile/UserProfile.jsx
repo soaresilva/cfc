@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import UserTripHistory from "./UserTripHistory";
+import UserTripHistory from "./UserTripHistory/UserTripHistory";
 import Spinner from "./../UI/Spinner/Spinner.js";
 
 export default function UserProfile({ user_id }) {
@@ -20,5 +20,5 @@ export default function UserProfile({ user_id }) {
     getUserTrips();
   }, []);
 
-  return <div>{!userTrips ? { Spinner } : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
+  return <div>{!userTrips ? <Spinner /> : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
 }

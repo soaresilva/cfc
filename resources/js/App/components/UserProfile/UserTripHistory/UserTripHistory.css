@@ -1,0 +1,7 @@
+.ExpansionPanelDescription {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 42vw;
+  margin: 0 auto;
+}
