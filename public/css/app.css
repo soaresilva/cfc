@@ -4374,7 +4374,7 @@ input[type=button].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  /* background-color: rgba(0, 0, 0, 0.03); */
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
@@ -9969,5 +9969,22 @@ h3 {
 
 .userprofile {
   color: black;
+}
+
+.card-header {
+  text-align: center;
+  font-size: larger;
+}
+
+.card-body {
+  background-color: rgba(174, 201, 121, 0.281);
+}
+
+#app {
+  background-color: #aec979;
+}
+
+#orgProfile {
+  background-color: rgba(174, 201, 121, 0.281);
 }
 /*# sourceMappingURL=app.css.map*/
