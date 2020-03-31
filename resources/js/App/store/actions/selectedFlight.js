@@ -3,8 +3,6 @@ import { carbonFormula } from "./../../functions/carbonFormula";
 
 export const selectFlightDetails = (cityFrom, cityTo, distance, fly_duration, dateDepart, economyClass, businessClass) => {
   const totalCO2Amount = carbonFormula(distance, totalCO2Amount, economyClass, businessClass);
-  console.log(economyClass)
-  console.log(businessClass)
   return {
     type: actionType.SELECT_FLIGHT,
     cityFrom: cityFrom,
@@ -32,9 +30,16 @@ export const selectAirportFrom = (event, airportFrom, reason) => {
   };
 };
 
-export const selectDate = (date) => {
+export const selectDateFrom = (dateFrom) => {
   return {
-    type: actionType.SELECT_DATE,
-    date: date
+    type: actionType.SELECT_DATE_FROM,
+    dateFrom: dateFrom
+  };
+};
+
+export const selectDateTo = (dateTo) => {
+  return {
+    type: actionType.SELECT_DATE_TO,
+    dateTo: dateTo
   };
 };

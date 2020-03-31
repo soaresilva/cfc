@@ -9,7 +9,8 @@ const initialState = {
   duration: null,
   totalCO2amount: null,
   dateDepart: null,
-  date: null,
+  dateFrom: null,
+  dateTo: null,
   fetched: false
 };
 
@@ -49,10 +50,16 @@ const reducer = (state = initialState, action) => {
         airportFrom: action.airportFrom.title.slice(0, 3)
       };
 
-    case actionTypes.SELECT_DATE:
+    case actionTypes.SELECT_DATE_TO:
       return {
         ...state,
-        date: action.date
+        dateTo: action.dateTo
+      };
+
+    case actionTypes.SELECT_DATE_FROM:
+      return {
+        ...state,
+        dateFrom: action.dateFrom
       };
 
     default:
