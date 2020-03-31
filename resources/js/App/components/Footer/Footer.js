@@ -11,7 +11,7 @@ function Footer() {
     <div className="Footer">
       <div>
         <h1>Travel. But don't neglect the environment.</h1>
-        <h4>Use our calculator for your daily trips and make a difference.</h4>
+        <h4>Use our calculator for your leisure and business trips and make a difference.</h4>
       </div>
       <div>
         <h4>Contact us</h4>

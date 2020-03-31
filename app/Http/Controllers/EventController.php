@@ -8,12 +8,6 @@ use App\Trip;
 
 class EventController extends Controller
 {
-    // public function getEvents(Request $request, $id) {
-    //     $org_id = $id;
-    //     $events = Event::orderBy('date', 'desc')->where('organization_id', '=', $org_id)->get();
-    //     return $events;
-    // }
-
     public function getEventsAndTrips(Request $request, $id) {
         $org_id = $id;
         $events = Event::where('organization_id', '=', $id)->with("trips")->get();

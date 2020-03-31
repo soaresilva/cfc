@@ -1,3 +1,6 @@
+.org-app{
+  background-color: transparent;
+}
 
 .org-heading {
   color:blue;
@@ -10,30 +13,40 @@
 .org-profile {
   color:white;
   text-align: center;
-  background-color: rgb(30, 88, 86);
+  //background-color: rgb(30, 88, 86);
   //margin:2em;
 
 }
 
-.org-event {
+.event-intro {
   display:flex;
-  flex-direction: column;
-  margin-bottom:2em;
-  border: 1em solid black;
-  text-align: center;
-  //margin:1em;
-
+  width: 100%;
+  justify-content: space-between;
 }
 
-.org-trip {
-  display:flex;
-  flex-direction: column;
-  border: .8em solid black;
-  text-align: center;
-  margin:2em;
-
+.showOrgTripsButton {
+  display: flex;
+  justify-self: center;
 }
+// .org-event {
+//   display:flex;
+//   flex-direction: column;
+//   margin-bottom:2em;
+//   border: 1em solid black;
+//   text-align: center;
+//   //margin:1em;
 
-.org-summary {
-  background-color: rgb(58, 190, 5);
-}
+// }
+
+// .org-trip {
+//   display:flex;
+//   flex-direction: column;
+//   border: .8em solid black;
+//   text-align: center;
+//   margin:2em;
+
+// }
+
+// .org-summary {
+//   background-color: rgb(58, 190, 5);
+// }

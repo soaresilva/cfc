@@ -34,16 +34,8 @@ export default function OrganizationApp() {
       {!user ? (
         <p>Loading...</p>
       ) : (
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <div className="card">
-                <div className="org-heading">
-                  <h2>{user.name}'s Profile</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+        // <div className="container">
+        <div className="org-app">
           <OrganizationProfile org_id={user.id} />
         </div>
       )}

@@ -24,6 +24,7 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
       }) 
     })
     getEvents();
+    setShowAddEventForm(!showAddEventForm);
   };
 
   const handleShowAddEventForm = () => {
