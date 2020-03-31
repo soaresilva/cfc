@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import ButtonBlue from "./../UI/Button/ButtonBlue";
 import ButtonRed from "./../UI/Button/ButtonRed";
@@ -13,35 +13,40 @@ export function AddTripToDB({
   totalCO2amount,
   children,
   offset,
-  clicked
+  clicked,
+  tripQuantity
 }) {
   const sendOrgTripsUrl = "/api/org/trips/";
   const sendUserTripsUrl = "/api/trips/";
 
   const sendUserTripsToDB = async () => {
-    console.log("user-id", userId);
-    const response = await fetch(
-      `${sendUserTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
-    );
-    await response.json();
+    for (let i = 0; i < tripQuantity; i++) {
+      const response = await fetch(
+        `${sendUserTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
+      );
+      await response.json();
+    }
+    window.location.href = "home";
   };
 
   const sendOrgTripsToDB = async () => {
-    console.log("user-id", userId);
-    const response = await fetch(
-      `${sendOrgTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
-    );
-    await response.json();
+    for (let i = 0; i < tripQuantity; i++) {
+      const response = await fetch(
+        `${sendOrgTripsUrl}${userId}/${dateDepart}/${airportFrom}/${airportTo}/${totalDistance}/${totalCO2amount}/${offset}`
+      );
+      await response.json();
+    }
+    window.location.href = "home";
   };
 
   return (
     <div>
       {isUserOrg ? (
-        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked} isUserOrg={isUserOrg}>
+        <ButtonRed sendOrgTripsToDB={sendOrgTripsToDB} openSnackbar={clicked}>
           {children}
         </ButtonRed>
       ) : (
-        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked} isUserOrg={isUserOrg}>
+        <ButtonBlue sendUserTripsToDB={sendUserTripsToDB} openSnackbar={clicked}>
           {children}
         </ButtonBlue>
       )}

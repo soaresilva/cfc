@@ -22,7 +22,8 @@ function CardItem(props) {
     userId,
     isUserOrg,
     price,
-    dateDepart
+    dateDepart, 
+    tripQuantity
   } = props;
   const [openInfo, setOpenInfo] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -62,7 +63,7 @@ function CardItem(props) {
               <InfoIcon onClick={handleOpenInfo} />
             </div>
             <CustomizedModal closed={handleCloseInfo} opened={openInfo} moreInfo={moreInfo} title={title} />
-            <AddTripToDB
+            {tripQuantity !==0 ? <AddTripToDB
               userId={userId}
               isUserOrg={isUserOrg}
               cityFrom={cityFrom}
@@ -72,9 +73,10 @@ function CardItem(props) {
               offset={totalCO2amount}
               clicked={handleOpenSnackbar}
               dateDepart={dateDepart}
-            >
+              tripQuantity={tripQuantity}
+            > 
               Offset
-            </AddTripToDB>
+            </AddTripToDB> : ""}
             <CustomizedSnackbar opened={openSnackbar} clicked={handleCloseSnackbar} userId={userId} />
           </div>
         </div>
