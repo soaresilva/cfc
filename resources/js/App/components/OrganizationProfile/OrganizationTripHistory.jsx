@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
 import AddTripsToEvent from "./AddTripsToEvent";
-import {useStyles, StyledTableCell, StyledTableRow} from '../UI/Tables/tables';
+import { useStyles, StyledTableCell, StyledTableRow } from "../UI/Tables/tables";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -76,33 +76,36 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
   return (
     <div>
       {orgTrips.length === 0 ? (
-        ""
+        <p>No trips found</p>
       ) : (
-        <OrganizationEventSummary
-          totalDistance={totalDistance}
-          totalCarbonFootprint={totalCarbonFootprint}
-          totalCarbonOffset={totalCarbonOffset}
-        />
+        <div>
+          <OrganizationEventSummary
+            totalDistance={totalDistance}
+            totalCarbonFootprint={totalCarbonFootprint}
+            totalCarbonOffset={totalCarbonOffset}
+          />
+          <br />
+          <TableContainer component={Paper}>
+            <h4 align="left">Trips</h4>
+            <Table className={classes.table} aria-label="simple table">
+              <TableHead align="left">
+                <StyledTableRow>
+                  <StyledTableCell>Trip Route</StyledTableCell>
+                  <StyledTableCell align="right">Distance (km) </StyledTableCell>
+                  <StyledTableCell align="right">Carbon Footprint (tons)</StyledTableCell>
+                  <StyledTableCell align="right">Carbon Offset (tons)</StyledTableCell>
+                  <StyledTableCell align="right">Date</StyledTableCell>
+                  <StyledTableCell align="right"></StyledTableCell>
+                </StyledTableRow>
+              </TableHead>
+              <TableBody>{trips}</TableBody>
+            </Table>
+          </TableContainer>
+          <br />
+        </div>
       )}
-      <br />
-      <TableContainer component={Paper}>
-      <h4 align="left">Trips</h4>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead align="left">
-            <StyledTableRow>
-              <StyledTableCell>Trip Route</StyledTableCell>
-              <StyledTableCell align="right">Distance (km) </StyledTableCell>
-              <StyledTableCell align="right">Carbon Footprint (tons)</StyledTableCell>
-              <StyledTableCell align="right">Carbon Offset (tons)</StyledTableCell>
-              <StyledTableCell align="right">Date</StyledTableCell>
-              <StyledTableCell align="right"></StyledTableCell>
-            </StyledTableRow>
-          </TableHead>
-          <TableBody>{trips}</TableBody>
-        </Table>
-      </TableContainer>
-      <br />
       <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
+
 
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
     </div>

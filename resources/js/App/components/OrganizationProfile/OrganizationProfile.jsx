@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
 import OrganizationAddEvent from "./OrganizationAddEvent";
-import { Spinner } from "./../UI/Spinner/Spinner";
+//import { Spinner } from "./../UI/Spinner/Spinner";
 
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -46,7 +46,7 @@ export default function OrganizationProfile({ org_id }) {
   return (
     <div className="org-profile">
       {orgEvents.length === 0 ? (
-        <div>{Spinner}</div>
+        <div>"loading"</div>
       ) : (
         <>
           <TableContainer component={Paper}>

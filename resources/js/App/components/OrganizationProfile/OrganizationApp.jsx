@@ -34,7 +34,8 @@ export default function OrganizationApp() {
       {!user ? (
         <p>Loading...</p>
       ) : (
-        <div className="container">
+        // <div className="container">
+        <div className="org-app">
           <OrganizationProfile org_id={user.id} />
         </div>
       )}

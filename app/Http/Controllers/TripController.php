@@ -12,7 +12,7 @@ class TripController extends Controller
     public function getUserTrips(Request $request, $id)
     {
         $user_id = $id;
-        $trips = Trip::where('user_id', '=', $user_id)->get();
+        $trips = Trip::orderBy('flight_date')->where('user_id', '=', $user_id)->get();
         return $trips;
     }
     public function userTripsChart()
