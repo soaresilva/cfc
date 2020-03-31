@@ -26,6 +26,7 @@
 
 body {
   background-color: rgb(174, 201, 121) !important;
+  font-family: "Nunito", sans-serif !important;
 }
 
 #app {
@@ -41,11 +42,15 @@ body {
 
   a {
     font-size: 1.5rem;
-    color: rgb(39, 49, 19);
+    color: rgb(50, 63, 24);
+    border: 1px solid rgb(50, 63, 24);
+    border-radius: 8px;
+    padding: 0.5rem;
   }
   a:hover {
     color: rgb(174, 201, 121);
-    text-decoration: underline;
+    text-decoration: none;
+    border: 1px solid rgb(174, 201, 121);
   }
 }
 
