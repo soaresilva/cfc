@@ -50,13 +50,3 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
   });
   return <div>{events}</div>;
 }
-
-// const expansionStyles = makeStyles((theme) => ({
-//   root: {
-//     width: "100%"
-//   },
-//   heading: {
-//     fontSize: theme.typography.pxToRem(15),
-//     fontWeight: theme.typography.fontWeightRegular
-//   }
-// }));

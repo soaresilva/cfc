@@ -2,15 +2,11 @@ import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
 import OrganizationAddEvent from "./OrganizationAddEvent";
-//import { Spinner } from "./../UI/Spinner/Spinner";
-
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { useStyles, StyledTableCell, StyledTableRow } from "../UI/Tables/tables";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
 export default function OrganizationProfile({ org_id }) {
@@ -53,12 +49,12 @@ export default function OrganizationProfile({ org_id }) {
           <h3 align="left">Summary</h3>
             <Table className={classes.table} aria-label="customized table">
               <TableHead align="left">
-                <TableRow>
+                <StyledTableRow>
                   <StyledTableCell>Total Number of Events</StyledTableCell>
                   <StyledTableCell>Total Distances Traveled</StyledTableCell>
                   <StyledTableCell>Total Carbon Footprint</StyledTableCell>
                   <StyledTableCell>Total Carbon Offset</StyledTableCell>
-                </TableRow>
+                </StyledTableRow>
               </TableHead>
               <TableBody>
                 <StyledTableRow>
@@ -81,27 +77,3 @@ export default function OrganizationProfile({ org_id }) {
     </div>
   );
 }
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 700
-  }
-});
-
-const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white
-  },
-  body: {
-    fontSize: 14
-  }
-}))(TableCell);
-
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    "&:nth-of-type(odd)": {
-      backgroundColor: theme.palette.background.default
-    }
-  }
-}))(TableRow);

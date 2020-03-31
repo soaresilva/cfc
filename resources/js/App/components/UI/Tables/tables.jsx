@@ -5,8 +5,9 @@ import TableRow from "@material-ui/core/TableRow";
 
 export const useStyles = makeStyles({
   table: {
-    minWidth: 700
+    width: "74vw"
   }
+
 });
 
 export const StyledTableCell = withStyles((theme) => ({
@@ -15,7 +16,7 @@ export const StyledTableCell = withStyles((theme) => ({
     color: theme.palette.common.white
   },
   body: {
-    fontSize: 14
+    fontSize: "1em"
   }
 }))(TableCell);
 

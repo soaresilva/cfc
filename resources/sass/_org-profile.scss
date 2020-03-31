@@ -28,6 +28,45 @@
   display: flex;
   justify-self: center;
 }
+
+.add_trips_to_events {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  //flex-direction: column;
+
+
+  p {
+    padding:0;
+    margin:0;
+    font-weight: bold;
+  }
+
+  &__airport_info {
+    flex-direction: column;
+    padding:1em .5em;
+  }
+
+  
+}
+
+
+.trip_history_table {
+  @media(min-width:320px) {
+    width:30vw;
+    font-size:.5em;
+
+  }
+  @media(min-width:800px) {
+    width:75vw;
+    font-size:1em;
+
+  }
+ 
+}
+
+
+
 // .org-event {
 //   display:flex;
 //   flex-direction: column;
