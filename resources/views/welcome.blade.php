@@ -108,9 +108,9 @@
             {{-- Navbar for checked in users --}}
             @if (Auth::check())
             <div class="nav-item dropdown ml-auto">
-                <span class="dropdown"
+                <a href="#" class="dropdown"
                     data-toggle="dropdown">{{ Auth::user()->first_name }}{{ " " }}{{ Auth::user()->surname  }}
-                </span>
+                </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="{{ url('/home') }}">Profile</a>
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -126,8 +126,8 @@
             {{-- Navbar for checked in organizations --}}
             @elseif (Auth::guard('organization')->check())
             <div class="nav-item dropdown ml-auto">
-                <span class="dropdown" data-toggle="dropdown">{{ Auth::guard('organization')->user()->name }}
-                </span>
+                <a href="#" class="dropdown" data-toggle="dropdown">{{ Auth::guard('organization')->user()->name }}
+                </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="{{ url('/organization') }}">Profile</a>
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();

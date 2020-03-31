@@ -10,6 +10,8 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import DeleteIcon from '@material-ui/icons/Delete';
+
 
 export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents, org_id, setShowOrgTrips }) {
   const [orgTrips, setOrgTrips] = useState([]);
@@ -59,16 +61,16 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
     return (
       <TableRow key={index}>
-        <TableCell component="th" scope="row">
+        <StyledTableCell component="th" scope="row">
           {trip.airport_from} - {trip.airport_to}
-        </TableCell>
-        <TableCell align="right">{trip.distance}</TableCell>
-        <TableCell align="right">{trip.carbon_amount}</TableCell>
-        <TableCell align="right">{trip.offset_amount}</TableCell>
-        <TableCell align="right">{trip.flight_date} </TableCell>
-        <TableCell align="right">
+        </StyledTableCell>
+        <StyledTableCell align="right">{trip.distance}</StyledTableCell>
+        <StyledTableCell align="right">{trip.carbon_amount}</StyledTableCell>
+        <StyledTableCell align="right">{trip.offset_amount}</StyledTableCell>
+        <StyledTableCell align="right">{trip.flight_date} </StyledTableCell>
+        <StyledTableCell align="right">
           <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
-        </TableCell>
+        </StyledTableCell>
       </TableRow>
     );
   });
@@ -85,9 +87,9 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
             totalCarbonOffset={totalCarbonOffset}
           />
           <br />
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} className="trip_history_table">
             <h4 align="left">Trips</h4>
-            <Table className={classes.table} aria-label="simple table">
+            <Table className={classes.table} aria-label="customized table">
               <TableHead align="left">
                 <StyledTableRow>
                   <StyledTableCell>Trip Route</StyledTableCell>
@@ -114,16 +116,18 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
 
 function DeleteTripButton({ handleDeleteTrip, trip }) {
   return (
-    <button className="delete-trip-button" onClick={() => handleDeleteTrip(trip.id)}>
-      delete trip
-    </button>
+    <DeleteIcon onClick={() => handleDeleteTrip(trip.id)} /> 
   );
 }
 
 function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
   return (
-    <button className="delete-event-button" onClick={() => handleDeleteEventAndTrips(event_id)}>
-      delete event
-    </button>
+    <div onClick={() => handleDeleteEventAndTrips(event_id)}>
+    <DeleteIcon  /> 
+    delete event
+    </div>
   );
 }
+
+
+
