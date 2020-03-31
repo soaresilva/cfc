@@ -33,7 +33,7 @@
 
 .Video {
   object-fit: cover;
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -83,8 +83,49 @@
   }
 }
 
-/* @media (max-width: 1050px) {
-  .WelcomeDescription {
-    margin-left: 2rem;
+@media (max-width: 1050px) {
+  .WelcomeTitle {
+    font-size: 2.7rem;
   }
-} */
+  .WelcomeDescription {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .WelcomeDescription {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .WelcomeTitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .WelcomeDescription {
+    font-size: 1rem;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .WelcomeDescription {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .WelcomeTitle {
+    margin-bottom: 1.5rem;
+  }
+  .WelcomeDescription {
+    width: 20ch;
+    margin-left: 3.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .WelcomeDescription {
+    margin-left: 2.5rem;
+  }
+}
