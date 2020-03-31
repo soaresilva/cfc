@@ -1,7 +1,7 @@
 .Footer {
   position: relative;
   height: 70vh;
-  width: 98.9vw;
+  width: 100%;
   background-image: url("/images/woods.jpg");
   background-size: cover;
   color: white;
@@ -21,7 +21,6 @@
 .ContactInfo {
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
 }
 
 .Contact {

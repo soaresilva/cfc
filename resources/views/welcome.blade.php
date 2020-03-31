@@ -98,6 +98,7 @@
         .logregcontainer {
             display: flex;
         }
+        
     </style>
 </head>
 
@@ -169,7 +170,7 @@
 
 
 
-        <div id="root"></div>
+        <div id="root" class="Wrapper"></div>
 
     </div>
 
