@@ -1,68 +1,90 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border-right: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-right: none;
 }
 
 .WelcomeText {
-    position: relative;
-    height: 100vh;
-    width: 70vw;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
+  position: relative;
+  height: 100vh;
+  width: 70vw;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 .WelcomeTitle {
-    font-size: 5rem;
-    margin-bottom: 3rem;
+  font-size: 5rem;
+  margin-bottom: 3rem;
 }
+
 .WelcomeDescription {
-    width: 40ch;
-    align-self: flex-start;
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 2.5rem;
+  width: 40ch;
+  align-self: flex-start;
+  font-size: 2rem;
+  text-align: start;
+  margin-left: 2.5rem;
 }
 
 .Video {
-    object-fit: cover;
-    width: 99vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+  object-fit: cover;
+  width: 99vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .Section-CardItems {
-    color: white;
-    width: 98.9vw;
-    height: 70vh;
-    background-color: #1f2317;
-    position: relative;
+  color: white;
+  width: 98.9vw;
+  height: 70vh;
+  background-color: #1f2317;
+  position: relative;
 }
 .CardItems {
-    display: flex;
-    justify-content: space-between;
-    width: 70vw;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 .SearchSection {
-    color: white;
-    position: relative;
-    min-height: 100vh;
-    width: 98.9vw;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #62684d;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 98.9vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #62684d;
 }
+
+@media (max-width: 1445px) {
+  .WelcomeTitle {
+    font-size: 4rem;
+  }
+  .WelcomeDescription {
+    margin-left: 6.5rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .WelcomeTitle {
+    font-size: 3.5rem;
+  }
+}
+
+/* @media (max-width: 1050px) {
+  .WelcomeDescription {
+    margin-left: 2rem;
+  }
+} */
