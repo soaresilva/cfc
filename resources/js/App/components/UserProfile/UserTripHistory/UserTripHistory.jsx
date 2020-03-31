@@ -5,6 +5,9 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import DeleteIcon from "@material-ui/icons/Delete";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import { deleteTrip } from "../../../../Api/trips";
 import UserTripSummary from "../UserTripSummary";
@@ -56,19 +59,21 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
       <ExpansionPanel expanded={expanded === "panel" + index} onChange={handleChange("panel" + index)} key={index}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
           <Typography className={classes.heading}>
-            {trip.airport_from} - {trip.airport_to}
+            <span>
+              {trip.airport_from} - {trip.airport_to}
+            </span>
           </Typography>
-          <Typography className={classes.secondaryHeading}>{trip.flight_date}</Typography>
+          <Typography className={classes.secondaryHeading}>
+            <span>{trip.flight_date}</span>
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            <div className="ExpansionPanelDescription">
-              <h6> Distance: {trip.distance}(km)</h6>
-              <h6>Carbon Footprint: {trip.carbon_amount}(t) </h6>
-              <h6>Carbon Offset: {trip.offset_amount}(t)</h6>
-              <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
-            </div>
-          </Typography>
+          <div className="ExpansionPanelDescription">
+            <span> Distance: {trip.distance}(km)</span>
+            <span>Carbon Footprint: {trip.carbon_amount}(t) </span>
+            <span>Carbon Offset: {trip.offset_amount}(t)</span>
+            <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
+          </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     );
@@ -76,11 +81,9 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
 
   return (
     <div>
+      <h3>Summary</h3>
       <UserTripSummary totalDistance={totalDistance} totalCarbonFootprint={totalCarbonFootprint} totalCarbonOffset={totalCarbonOffset} />
-      {/* <div className="user-history">
-        <h3>Trip History</h3>
-        {trips}
-      </div> */}
+      <h3 style={{ marginTop: "2rem" }}>Trips</h3>
       <div className={classes.root}>{trips}</div>
     </div>
   );
@@ -88,8 +91,10 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
 
 function DeleteTripButton({ handleDeleteTrip, trip }) {
   return (
-    <button className="delete-trip-button" onClick={() => handleDeleteTrip(trip.id)}>
-      delete trip
-    </button>
+    <Tooltip title="Delete" onClick={() => handleDeleteTrip(trip.id)}>
+      <IconButton aria-label="delete">
+        <DeleteIcon />
+      </IconButton>
+    </Tooltip>
   );
 }

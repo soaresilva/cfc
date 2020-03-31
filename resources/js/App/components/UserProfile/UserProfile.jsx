@@ -20,5 +20,9 @@ export default function UserProfile({ user_id }) {
     getUserTrips();
   }, []);
 
-  return <div>{!userTrips ? <Spinner /> : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}</div>;
+  return (
+    <div style={{ marginTop: "2rem", textAlign: "center" }}>
+      {!userTrips ? <Spinner /> : <UserTripHistory setUserTrips={setUserTrips} userTrips={userTrips} />}
+    </div>
+  );
 }
