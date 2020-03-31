@@ -20,6 +20,7 @@ const FlightSearch = (props) => {
   const [submitted, setSubmitted] = useState(false);
   const [economyClass, setEconomyClass] = useState(true);
   const [businessClass, setBusinessClas] = useState(false);
+  const [tripQuantity, setTripQuantity] = useState(0);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -66,6 +67,12 @@ const FlightSearch = (props) => {
     }
   };
 
+  const handleSetTripQuantity = async (e) => {
+    setTripQuantity(e.target.value);
+  }
+  console.log("tripQuantity", tripQuantity);
+
+
   return (
     // Selecting a flight
     <div className="FlightSearch">
@@ -86,6 +93,9 @@ const FlightSearch = (props) => {
             <Checkbox onChange={economyClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
+            <label>Quantity:</label>
+            <input type="number" value={tripQuantity} onChange={handleSetTripQuantity}/>
+
           </div>
         </div>
         <FlightSection
@@ -99,7 +109,7 @@ const FlightSearch = (props) => {
 
       {/* Offset options */}
       <div id="flightsID"></div>
-      <OffsetSection />
+      {tripQuantity !== 0 ? <OffsetSection tripQuantity={tripQuantity}/> : ""}
     </div>
   );
 };
