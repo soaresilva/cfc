@@ -9,6 +9,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 
+import Spinner from "../../UI/Spinner/Spinner";
 import { deleteTrip } from "../../../../Api/trips";
 import UserTripSummary from "../UserTripSummary";
 import "./UserTripHistory.css";
@@ -50,6 +51,7 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
     }
   };
 
+  console.log("trips", userTrips);
   const trips = userTrips.map((trip, index) => {
     totalDistance = totalDistance + trip.distance;
     totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
@@ -79,12 +81,19 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
     );
   });
 
+  let content = null;
+  if (userTrips.length === 0) {
+    content = <Spinner />;
+  } else {
+    content = trips;
+  }
+
   return (
     <div>
-      <h3>Summary</h3>
+      <h3 style={{ marginBlock: ".7rem" }}>Summary</h3>
       <UserTripSummary totalDistance={totalDistance} totalCarbonFootprint={totalCarbonFootprint} totalCarbonOffset={totalCarbonOffset} />
-      <h3 style={{ marginTop: "2rem" }}>Trips</h3>
-      <div className={classes.root}>{trips}</div>
+      <h3 style={{ marginTop: "2rem", marginBottom: ".7rem" }}>Trips</h3>
+      <div className={classes.root}>{content}</div>
     </div>
   );
 }
