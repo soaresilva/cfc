@@ -14,10 +14,14 @@ export default function UserTripSummary({ totalDistance, totalCarbonFootprint, t
     head: {
       backgroundColor: theme.palette.common.black,
       color: theme.palette.common.white,
-      overflowX: "unset"
+      overflowX: "unset",
+      fontFamily: "Nunito, sans-serif",
+      fontSize: "1rem",
+      fontWeight: "600"
     },
     body: {
-      fontSize: 14
+      fontSize: 16,
+      fontFamily: "Nunito, sans-serif"
     }
   }))(TableCell);
 

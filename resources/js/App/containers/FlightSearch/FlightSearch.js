@@ -20,7 +20,7 @@ const FlightSearch = (props) => {
   const [submitted, setSubmitted] = useState(false);
   const [economyClass, setEconomyClass] = useState(true);
   const [businessClass, setBusinessClas] = useState(false);
-  const [tripQuantity, setTripQuantity] = useState(0);
+  const [tripQuantity, setTripQuantity] = useState(1);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -79,7 +79,7 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SelectAirportFrom></SelectAirportFrom>
+            <SelectAirportFrom />
             <SelectAirportTo />
             <DatePickerFrom />
             <DatePickerTo />
