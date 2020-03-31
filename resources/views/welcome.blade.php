@@ -14,6 +14,9 @@
 
     <!-- Styles -->
     <script src="https://kit.fontawesome.com/4895718c7d.js" crossorigin="anonymous"></script>
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
 
     <style>
         html,
@@ -74,39 +77,95 @@
             margin-top: 10rem;
             margin-bottom: 30px;
         }
+
+        .dropdown,
+        .dropdown-item {
+            padding: 0 15px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .dropdown:hover,
+        .dropdown-item:hover {
+            text-decoration: none;
+            color: greenyellow;
+        }
+
+        .logregcontainer {
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <div class="flex-center position-ref full-height">
-        <div class="top-right links">
-            {{-- Checking if an user or organization are logged in --}}
+
+        <nav class="top-right links dropdown-menu-right">
+            {{-- Navbar for checked in users --}}
             @if (Auth::check())
-            <a href="{{ url('/home') }}">
-                {{ Auth::user()->first_name }}{{ " " }}{{ Auth::user()->surname  }}
-            </a>
+            <div class="nav-item dropdown ml-auto">
+                <span class="dropdown"
+                    data-toggle="dropdown">{{ Auth::user()->first_name }}{{ " " }}{{ Auth::user()->surname  }}
+                </span>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="{{ url('/home') }}">Profile</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </div>
+
+            {{-- Navbar for checked in organizations --}}
             @elseif (Auth::guard('organization')->check())
-            <a href="{{ url('/home') }}">{{ Auth::guard('organization')->user()->name }}</a>
+            <div class="nav-item dropdown ml-auto">
+                <span class="dropdown" data-toggle="dropdown">{{ Auth::guard('organization')->user()->name }}
+                </span>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="{{ url('/organization') }}">Profile</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </div>
+            {{-- Navbar for guests --}}
+
             @else
+            <div class="logregcontainer">
+                <div class="nav-item dropdown ml-auto">
+                    <span class="dropdown" data-toggle="dropdown">
+                        Login
+                    </span>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                        <a class="dropdown-item" href="{{ route('org-login') }}">Login as Organization</a>
+                    </div>
+                </div>
 
-            
-            <a href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('org-login'))
-            <a href="{{ route('org-login') }}">Login as Organization</a>
+                <div class="nav-item dropdown ml-auto">
+                    <span class="dropdown" data-toggle="dropdown">
+                        Register
+                    </span>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="{{ route('register') }}">Register</a>
+                        <a class="dropdown-item" href="{{ route('org-register') }}">Register as Organization</a>
+                    </div>
+                </div>
+            </div>
             @endif
-
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Register</a>
-            @endif
-
-            @if (Route::has('org-register'))
-            <a href="{{ route('org-register') }}">Register as Organization</a>
-            @endif
-
-            @endif
-        </div>
-
+        </nav>
 
 
 
@@ -117,6 +176,15 @@
     <script src="{{ mix('js/app.js') }}"></script>
 
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+
 </body>
 
 </html>
