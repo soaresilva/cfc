@@ -1,13 +1,12 @@
 import { DateTime } from "luxon";
 
-const searchFlights = async (origin, destination, numberOfLayovers, date) => {
-  const todayDate = DateTime.local().toFormat("dd/MM/yyyy");
+const searchFlights = async (origin, destination, numberOfLayovers, dateFrom, dateTo) => {
   const query = new URLSearchParams({
     partner: "picky",
     flyFrom: origin,
     to: destination,
-    dateFrom: todayDate,
-    dateTo: date,
+    dateFrom: dateFrom,
+    dateTo: dateTo,
     max_stopovers: numberOfLayovers,
     limit: 8
   });
@@ -16,8 +15,8 @@ const searchFlights = async (origin, destination, numberOfLayovers, date) => {
   const data = await response.json();
   return {
     data: data.data,
-    dateFrom: todayDate,
-    dateTo: date
+    dateFrom: dateFrom,
+    dateTo: dateTo
   };
 };
 

@@ -41,8 +41,7 @@ export default function UserTripSummary({ totalDistance, totalCarbonFootprint, t
 
   const useStyles = makeStyles({
     table: {
-      marginTop: "3rem",
-      minWidth: 400
+      minWidth: 550
     }
   });
 
@@ -60,9 +59,11 @@ export default function UserTripSummary({ totalDistance, totalCarbonFootprint, t
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
               <StyledTableCell component="th" scope="row">
-                {row.name}
+                <span>{row.name}</span>
               </StyledTableCell>
-              <StyledTableCell align="right">{row.amount}</StyledTableCell>
+              <StyledTableCell align="right">
+                <span>{row.amount}</span>
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

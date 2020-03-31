@@ -8,12 +8,12 @@ import FlightSection from "../FlightSection/FlightSection";
 import SelectAirportTo from "../../components/SelectAirports/SelectAirportTo";
 import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom";
 import OffsetSection from "../OffsetSection/OffsetSection";
-import DatePicker from "./../../components/DatePicker/DatePicker";
-
+import DatePickerTo from "./../../components/DatePicker/DatePickerTo";
+import DatePickerFrom from "./../../components/DatePicker/DatePickerFrom";
 import searchFlights from "../../functions/searchFlights";
 
 const FlightSearch = (props) => {
-  const { airportFrom, airportTo, date } = props;
+  const { airportFrom, airportTo, dateFrom, dateTo } = props;
   const [numberOfLayovers, setNumberOfLayovers] = useState(2);
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -57,12 +57,11 @@ const FlightSearch = (props) => {
 
   const getFlightsHandler = async () => {
     try {
-      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers, date);
+      const data = await searchFlights(airportFrom, airportTo, numberOfLayovers, dateFrom, dateTo);
       setFlightData(data.data);
       setLoading(false);
       setSubmitted(true);
-    } 
-    catch {
+    } catch {
       throw new Error("Could not find flights");
     }
   };
@@ -83,7 +82,8 @@ const FlightSearch = (props) => {
           <div className="Dropdown">
             <SelectAirportFrom></SelectAirportFrom>
             <SelectAirportTo />
-            <DatePicker />
+            <DatePickerFrom />
+            <DatePickerTo />
             <Button clicked={searchFlightHandler}>Search</Button>
           </div>
           <div className="CheckboxOption">
@@ -118,7 +118,8 @@ const mapStateToProps = (state) => {
   return {
     airportTo: state.airportTo,
     airportFrom: state.airportFrom,
-    date: state.date
+    dateFrom: state.dateFrom,
+    dateTo: state.dateTo
   };
 };
 
