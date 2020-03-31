@@ -1,4 +1,56 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+.org-app {
+  background-color: transparent;
+}
+
+.org-heading {
+  color: blue;
+  background-color: #a9d37c;
+  text-align: center;
+}
+
+.org-profile {
+  color: white;
+  text-align: center;
+}
+
+.event-intro {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.showOrgTripsButton {
+  display: flex;
+  justify-self: center;
+}
+
+.userprofile {
+  color: black;
+  padding: 0;
+}
+
+.card-header {
+  text-align: center;
+  font-size: larger;
+}
+
+.card-body {
+  background-color: rgba(174, 201, 121, 0.281);
+}
+
+body {
+  background-color: #aec979 !important;
+}
+
+#app {
+  background-color: #aec979;
+}
+
+#orgProfile {
+  background-color: rgba(174, 201, 121, 0.281);
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9943,51 +9995,5 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-.org-app {
-  background-color: transparent;
-}
-
-.org-heading {
-  color: blue;
-  background-color: #a9d37c;
-  text-align: center;
-}
-
-.org-profile {
-  color: white;
-  text-align: center;
-}
-
-.event-intro {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.showOrgTripsButton {
-  display: flex;
-  justify-self: center;
-}
-
-.userprofile {
-  color: black;
-}
-
-.card-header {
-  text-align: center;
-  font-size: larger;
-}
-
-.card-body {
-  background-color: rgba(174, 201, 121, 0.281);
-}
-
-#app {
-  background-color: #aec979;
-}
-
-#orgProfile {
-  background-color: rgba(174, 201, 121, 0.281);
 }
 /*# sourceMappingURL=app.css.map*/

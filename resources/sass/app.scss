@@ -4,9 +4,6 @@
 // Variables
 @import "variables";
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 //UserProfile
 @import "user-profile";
 
@@ -15,6 +12,7 @@
 
 .userprofile {
   color: black;
+  padding: 0;
 }
 
 .card-header {
@@ -26,6 +24,10 @@
   background-color: rgba(174, 201, 121, 0.281);
 }
 
+body {
+  background-color: rgb(174, 201, 121) !important;
+}
+
 #app {
   background-color: rgb(174, 201, 121);
 }
@@ -33,3 +35,6 @@
 #orgProfile {
   background-color: rgba(174, 201, 121, 0.281);
 }
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
