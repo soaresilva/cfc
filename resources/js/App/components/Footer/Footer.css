@@ -17,3 +17,33 @@
   justify-content: space-evenly;
   margin-top: 1rem;
 }
+
+.ContactInfo {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.Contact {
+  padding: 0rem;
+}
+
+.ContactPerson {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+code {
+  text-decoration: none;
+  color: white;
+}

@@ -11,7 +11,7 @@ function OffsetSection(props) {
   const [isUserOrg, setIsUserOrg] = useState(null);
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount, dateDepart } = props;
+  const { fetched, cityFrom, cityTo, distance, duration, totalCO2amount, dateDepart, tripQuantity } = props;
 
   const farmers = {
     title: "Reforestation in Nicaragua",
@@ -117,6 +117,7 @@ function OffsetSection(props) {
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
                 dateDepart={dateDepart}
+                tripQuantity={tripQuantity}
               />
             </div>
             <div className="CardItem-Project">
@@ -135,6 +136,7 @@ function OffsetSection(props) {
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
                 dateDepart={dateDepart}
+                tripQuantity={tripQuantity}
               />
             </div>
             <div className="CardItem-Project">
@@ -153,6 +155,7 @@ function OffsetSection(props) {
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
                 dateDepart={dateDepart}
+                tripQuantity={tripQuantity}
               />
             </div>
           </div>
@@ -167,6 +170,7 @@ function OffsetSection(props) {
               offset={0}
               clicked={handleOpenSnackbar}
               dateDepart={dateDepart}
+              tripQuantity ={tripQuantity}
             >
               Add to profile without offsetting
             </AddTripToDB>
