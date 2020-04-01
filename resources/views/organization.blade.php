@@ -1,4 +1,6 @@
-@extends('layouts.auth')
+@extends('layouts.auth', [
+'title' => 'Organization profile'
+])
 
 @section('content')
 <div class="container-fluid">

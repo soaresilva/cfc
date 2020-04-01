@@ -85,15 +85,11 @@ function CardItem(props) {
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p className="CardItemsLandingPage_description">Start your journey by registering an account</p>
-            <ul>
+            <p className="CardItemsLandingPage_description">Register an account to access extra features:</p>
+            <ul className="CardItemsLandingPage_features">
               <li>Add trips to your profile</li>
               <li>See your trip history and your flights' carbon footprint</li>
-            </ul>
-            <p>For organizations:</p>
-            <ul>
-              <li>Calculate the carbon footprint of your events</li>
-              <li></li>
+              <li>Organizations can create events and calculate their footprint</li>
             </ul>
           </div>
           <div className="CardItemsLandingPage__links">
@@ -109,23 +105,21 @@ function CardItem(props) {
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div className="CardItemsLandingPage_description">
-            {/* <p>It is surprising how many climate-​harming CO₂ emissions arise when flying, driving, living, working and partying.</p> */}
             <p>
-              CFC offers you a solution for your business and your everyday life. Make a concrete commitment to greater climate protection
-              and sustainability with our education project and company offers and help shape the future.
+              Carbon Voyage calculates the carbon footprint of your flights, helping you and your organization making more informed
+              decisions when it comes to flying across the globe.
             </p>
+            <p>Maybe your seminar could be a webinar instead!</p> <p>Make a concrete commitment for a more sustainable future.</p>
           </div>
-          <p></p>
         </div>
       ) : (
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p className="CardItemsLandingPage_description">Offset with us and save the planet</p>
-            <ul>
-              <li>Some advantages</li>
-              <li>More advantages</li>
-              <li>Did you know about this advantage?</li>
+            <p className="CardItemsLandingPage_description">Offset the carbon footprint of your flights through our trusted partners</p>
+            <ul className="CardItemsLandingPage_features">
+              <li>Invest in sustainable development projects in newly industrialising countries</li>
+              <li>Finance citizen-led clean energy projects</li>
             </ul>
           </div>
           <div className="CardItemsLandingPage__icons" onClick={scrollToFlightsSection}>

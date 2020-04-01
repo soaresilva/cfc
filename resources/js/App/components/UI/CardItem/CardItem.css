@@ -59,7 +59,12 @@
 
 .CardItemsLandingPage_description {
   max-width: 33ch;
-  margin: 0 auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+.CardItemsLandingPage_features {
+  list-style-type: square;
 }
 
 ul {
@@ -68,7 +73,7 @@ ul {
 
 li {
   text-align: start;
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .CardItemsLandingPage__Alinks {
@@ -107,6 +112,7 @@ li {
   .CardItem {
     width: 26vw;
     height: 50vh;
+    margin-top: 1rem;
   }
   .CardItemsLandingPage {
     width: 26vw;
@@ -121,11 +127,9 @@ li {
 @media (max-width: 760px) {
   .CardItem {
     width: 27vw;
-    height: 45vh;
   }
   .CardItemsLandingPage {
     width: 27vw;
-    height: 45vh;
     font-size: 0.75rem;
   }
   h1 {
@@ -135,10 +139,10 @@ li {
 
 @media (max-width: 575px) {
   .CardItem {
-    height: 33vh;
+    height: 50vh;
   }
   .CardItemsLandingPage {
-    height: 33vh;
+    height: 50vh;
     font-size: 0.6rem;
   }
   h1 {
@@ -148,10 +152,11 @@ li {
 
 @media (max-width: 475px) {
   .CardItem {
-    height: 29vh;
+    /* height: 29vh; */
+    margin-top: 1rem;
   }
   .CardItemsLandingPage {
-    height: 29vh;
+    /* height: 29vh; */
     font-size: 0.5rem;
   }
   h1 {
@@ -169,5 +174,21 @@ li {
   }
   .CardItemsLandingPage {
     width: 29vw;
+  }
+  .CardItemsLandingPage_description {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .CardItem {
+    height: 45vh;
+  }
+  .CardItemsLandingPage {
+    height: 45vh;
+    font-size: 0.5rem;
+  }
+  .CardItemsLandingPage__icons {
+    margin: 0.6rem;
   }
 }

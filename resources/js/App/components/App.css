@@ -113,16 +113,16 @@
     margin-left: 5rem;
   }
   .Section-CardItems {
-    height: 50vh;
+    height: 70vh;
+  }
+  .CardItems {
+    height: 65vh;
   }
 }
 
 @media (max-width: 600px) {
   .WelcomeDescription {
     margin-left: 1rem;
-  }
-  .Section-CardItems {
-    height: 47vh;
   }
 }
 
@@ -131,7 +131,7 @@
     width: 85vw;
   }
   .Section-CardItems {
-    height: 35vh;
+    height: 55vh;
   }
 }
 
@@ -145,6 +145,10 @@
   }
   .CardItems {
     width: 95vw;
+    height: 55vh;
+  }
+  .Section-CardItems {
+    height: 60vh;
   }
 }
 @media (max-width: 300px) {
