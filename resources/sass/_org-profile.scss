@@ -66,7 +66,35 @@
 }
 
 
+.delete_event {
+  font-size: .9em;
+}
 
+.org-help {
+  display:flex;
+  justify-content: flex-end;
+}
+
+// .instructions {
+
+// }
+
+.question{
+  color:black;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.instruction {
+  color:black;
+  background-color: rgba(159, 201, 240,.5);
+  padding:1em;
+
+  h5{
+    font-style: italic;
+  }
+
+}
 // .org-event {
 //   display:flex;
 //   flex-direction: column;

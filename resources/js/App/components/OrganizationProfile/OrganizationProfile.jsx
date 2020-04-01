@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationEventHistory from "./OrganizationEventHistory";
 import OrganizationAddEvent from "./OrganizationAddEvent";
+import Instructions from "./Instructions";
 import { useStyles, StyledTableCell, StyledTableRow } from "../UI/Tables/tables";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -46,7 +47,7 @@ export default function OrganizationProfile({ org_id }) {
       ) : (
         <>
           <TableContainer component={Paper}>
-          <h3 align="left">Summary</h3>
+            <h3 align="left">Summary</h3>
             <Table className={classes.table} aria-label="customized table">
               <TableHead align="left">
                 <StyledTableRow>
@@ -69,11 +70,15 @@ export default function OrganizationProfile({ org_id }) {
             </Table>
           </TableContainer>
 
-          <h3>Event History</h3>
+          {/* <h3>Event History</h3> */}
           <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id} />
         </>
       )}
+      <br />
       <OrganizationAddEvent org_id={org_id} getEvents={getEvents} />
+      <div className="org-help">
+        <Instructions />
+      </div>
     </div>
   );
 }

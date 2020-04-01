@@ -98,7 +98,6 @@ const FlightSearch = (props) => {
           businessClass={businessClass}
         />
       </div>
-
       {/* Offset options */}
       <div id="flightsID"></div>
       <OffsetSection tripQuantity={quantity} />
