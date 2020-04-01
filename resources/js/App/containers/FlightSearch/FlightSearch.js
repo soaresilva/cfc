@@ -106,7 +106,11 @@ const FlightSearch = (props) => {
       </div>
       {/* Offset options */}
       <div id="flightsID"></div>
+<<<<<<< HEAD
        <OffsetSection tripQuantity={tripQuantity}/>
+=======
+      <OffsetSection tripQuantity={tripQuantity} />
+>>>>>>> 24c4dbf336d921cb70fef49260bd3053114c6ab5
     </div>
   );
 };

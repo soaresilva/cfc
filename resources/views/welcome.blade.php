@@ -95,7 +95,6 @@
         .logregcontainer {
             display: flex;
         }
-        
     </style>
 </head>
 
@@ -143,9 +142,9 @@
             @else
             <div class="logregcontainer">
                 <div class="nav-item dropdown ml-auto">
-                    <span class="dropdown" data-toggle="dropdown">
+                    <a href="#" class="dropdown" data-toggle="dropdown">
                         Login
-                    </span>
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="{{ route('login') }}">Login</a>
                         <a class="dropdown-item" href="{{ route('org-login') }}">Login as Organization</a>
@@ -153,9 +152,9 @@
                 </div>
 
                 <div class="nav-item dropdown ml-auto">
-                    <span class="dropdown" data-toggle="dropdown">
+                    <a href="#" class="dropdown" data-toggle="dropdown">
                         Register
-                    </span>
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="{{ route('register') }}">Register</a>
                         <a class="dropdown-item" href="{{ route('org-register') }}">Register as Organization</a>
