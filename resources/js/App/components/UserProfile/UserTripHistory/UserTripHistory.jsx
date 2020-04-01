@@ -19,13 +19,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100%"
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
+    // fontSize: theme.typography.pxToRem(14),
     flexBasis: "33.33%",
-    flexShrink: 0
+    flexShrink: 0,
+    fontFamily: "Nunito, sans-serif"
   },
   secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary
+    // fontSize: theme.typography.pxToRem(14),
+    color: theme.palette.text.secondary,
+    padding: "0 16px 0 16px"
   }
 }));
 
@@ -71,9 +73,9 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <div className="ExpansionPanelDescription">
-            <span> Distance: {trip.distance}(km)</span>
-            <span>Carbon Footprint: {trip.carbon_amount}(t) </span>
-            <span>Carbon Offset: {trip.offset_amount}(t)</span>
+            <span>Distance: {trip.distance}km</span>
+            <span>Carbon Footprint: {trip.carbon_amount}t </span>
+            <span>Carbon Offset: {trip.offset_amount}t</span>
             <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
           </div>
         </ExpansionPanelDetails>
@@ -97,10 +99,11 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
           marginTop: "2rem",
           backgroundColor: "black",
           color: "white",
-          padding: "1.15rem",
-          fontSize: "1.2rem",
+          padding: "1rem",
+          fontSize: "1rem",
           borderRadius: "3px",
-          marginBottom: "-.04rem"
+          marginBottom: "-.03rem",
+          fontWeight: "600"
         }}
       >
         Trips list

@@ -68,9 +68,8 @@ const FlightSearch = (props) => {
 
   const handleSetTripQuantity = async (e) => {
     setTripQuantity(e.target.value);
-  }
+  };
   console.log("tripQuantity", tripQuantity);
-
 
   return (
     // Selecting a flight
@@ -80,7 +79,7 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SelectAirportFrom></SelectAirportFrom>
+            <SelectAirportFrom />
             <SelectAirportTo />
             <DatePickerFrom />
             <DatePickerTo />
@@ -94,8 +93,7 @@ const FlightSearch = (props) => {
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
             <label>Quantity:</label>
-            <input type="number" value={tripQuantity} onChange={handleSetTripQuantity}/>
-
+            <input type="number" value={tripQuantity} onChange={handleSetTripQuantity} />
           </div>
         </div>
         <FlightSection
@@ -109,7 +107,11 @@ const FlightSearch = (props) => {
 
       {/* Offset options */}
       <div id="flightsID"></div>
+<<<<<<< HEAD
        <OffsetSection tripQuantity={tripQuantity}/>
+=======
+      <OffsetSection tripQuantity={tripQuantity} />
+>>>>>>> 8a0fb148e13d9c24d42cca6e206c88538af3b8a0
     </div>
   );
 };

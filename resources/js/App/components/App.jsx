@@ -8,7 +8,7 @@ import Footer from "../components/Footer/Footer";
 export default class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Wrapper">
         <video playsInline autoPlay muted loop className="Video">
           <source src="/videos/coverr-wood-1568650087945.mp4" type="video/mp4" />
         </video>
