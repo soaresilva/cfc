@@ -50,11 +50,12 @@
   height: 70vh;
   background-color: #1f2317;
   position: relative;
+  transition: 0.6s all;
 }
 .CardItems {
   display: flex;
   justify-content: space-between;
-  width: 70vw;
+  width: 75vw;
   margin: 0 auto;
 }
 
@@ -111,21 +112,39 @@
     font-size: 1rem;
     margin-left: 5rem;
   }
+  .Section-CardItems {
+    height: 50vh;
+  }
 }
 
 @media (max-width: 600px) {
   .WelcomeDescription {
     margin-left: 1rem;
   }
+  .Section-CardItems {
+    height: 47vh;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
+  .CardItems {
+    width: 85vw;
+  }
+  .Section-CardItems {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 435px) {
   .WelcomeTitle {
     margin-bottom: 1.5rem;
   }
   .WelcomeDescription {
     width: 20ch;
     margin-left: 3.5rem;
+  }
+  .CardItems {
+    width: 95vw;
   }
 }
 @media (max-width: 300px) {
