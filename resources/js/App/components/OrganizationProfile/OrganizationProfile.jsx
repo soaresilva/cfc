@@ -69,7 +69,7 @@ export default function OrganizationProfile({ org_id }) {
             </Table>
           </TableContainer>
 
-          <h3>Event History</h3>
+          {/* <h3>Event History</h3> */}
           <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id} />
         </>
       )}

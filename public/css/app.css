@@ -25,6 +25,34 @@
   justify-self: center;
 }
 
+.add_trips_to_events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_trips_to_events p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.add_trips_to_events__airport_info {
+  flex-direction: column;
+  padding: 1em 0.5em;
+}
+
+@media (min-width: 320px) {
+  .trip_history_table {
+    width: 30vw;
+    font-size: 0.5em;
+  }
+}
+@media (min-width: 800px) {
+  .trip_history_table {
+    width: 75vw;
+    font-size: 1em;
+  }
+}
+
 .userprofile {
   color: black;
   padding: 0;
@@ -41,14 +69,31 @@
 
 body {
   background-color: #aec979 !important;
+  font-family: "Nunito", sans-serif !important;
 }
 
 #app {
   background-color: #aec979;
 }
 
-#orgProfile {
+.card-body-react {
   background-color: rgba(174, 201, 121, 0.281);
+}
+
+.card-body-link {
+  text-align: center;
+}
+.card-body-link a {
+  font-size: 1.5rem;
+  color: #323f18;
+  border: 1px solid #323f18;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.card-body-link a:hover {
+  color: #aec979;
+  text-decoration: none;
+  border: 1px solid #aec979;
 }
 
 /*!

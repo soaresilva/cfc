@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../../../sass/app.scss";
 import OrganizationTripHistory from "./OrganizationTripHistory";
-import {expansionStyles} from '../UI/Tables/tables';
+import { expansionStyles } from "../UI/Tables/tables";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
@@ -48,5 +48,10 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
       </div>
     );
   });
-  return <div>{events}</div>;
+  return (
+    <div>
+      <h3>Event History</h3>
+      {events}
+    </div>
+  );
 }
