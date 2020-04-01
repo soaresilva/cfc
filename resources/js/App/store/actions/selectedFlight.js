@@ -43,3 +43,10 @@ export const selectDateTo = (dateTo) => {
     dateTo: dateTo
   };
 };
+
+export const selectQuantity = (value) => {
+  return {
+    type: actionType.SELECT_QUANTITY,
+    quantity: value
+  };
+};

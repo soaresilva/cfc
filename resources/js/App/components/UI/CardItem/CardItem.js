@@ -130,15 +130,7 @@ function CardItem(props) {
           </div>
           <div className="CardItemsLandingPage__icons" onClick={scrollToFlightsSection}>
             <p>Let's start, shall we?</p>
-            <div
-              style={{
-                cursor: "pointer",
-                marginLeft: ".5rem",
-                border: "1px solid white",
-                padding: ".25rem",
-                borderRadius: "7px"
-              }}
-            >
+            <div className="Arrow">
               <ArrowDownwardIcon />
             </div>
           </div>

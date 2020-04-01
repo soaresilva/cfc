@@ -180,7 +180,7 @@ function OffsetSection(props) {
       ) : (
         <>
           <h1>Select a flight to see offset options</h1>
-          <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" />
+          {/* <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" /> */}
           <div id="cardsID"></div>
         </>
       )}

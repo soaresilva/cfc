@@ -25,3 +25,33 @@
   border-radius: 7px;
   box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
+
+@media (max-width: 950px) {
+  .CardItem-Calc {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .CardItem-About {
+    margin-left: -2rem;
+  }
+}
+@media (max-width: 575px) {
+  .CardItem-Calc {
+    margin-top: -2rem;
+  }
+  .CardItem-About {
+    margin-top: -2rem;
+  }
+  .CardItem-Offset {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 475px) {
+  .CardItem-Calc {
+    margin-left: .4rem;
+    margin-right: .4rem;
+  }
+  .CardItem-About {
+    margin-left: .4rem;
+  }
+}

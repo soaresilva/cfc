@@ -32,7 +32,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="ContactPerson">
+        {/* <div className="ContactPerson">
           <h5>Diogo Soares Silva</h5>
           <a href="mailto:diogo.soares.silva&#64;gmail.com">
             <h6>
@@ -50,8 +50,8 @@ function Footer() {
               <LinkedInIcon />
             </a>
           </div>
-        </div>
-        <div className="ContactPerson">
+        </div> */}
+        {/* <div className="ContactPerson">
           <h5>Gabrielle Wildfeuer</h5>
           <a href="mailto:gpwildfeuer&#64;email.wm.edu">
             <h6>
@@ -66,7 +66,7 @@ function Footer() {
               <LinkedInIcon />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <a href="https://github.com/soaresilva/cfc">
         <p>View our code on GitHub</p>

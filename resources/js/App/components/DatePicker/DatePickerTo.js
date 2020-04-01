@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import { selectDateTo } from "../../store/actions/index";
 import "react-day-picker/lib/style.css";
-// import "../../../../../node_modules/react-day-picker/lib/style.css";
+import "./DatePicker.css";
 
 export class DatePickerTo extends React.Component {
   constructor(props) {
@@ -21,11 +21,10 @@ export class DatePickerTo extends React.Component {
 
   render() {
     return (
-      <div style={{ color: "black" }}>
+      <div style={{ color: "black" }} className="DayPickerInput">
         <DayPickerInput
           inputProps={{
             style: {
-              width: "9vw",
               height: 55,
               textAlign: "center",
               borderRadius: "7px",
@@ -35,7 +34,7 @@ export class DatePickerTo extends React.Component {
             }
           }}
           dayPickerProps={{
-            month: new Date(2020, 2),
+            month: new Date(2020, 3),
             showWeekNumbers: true,
             todayButton: "Today"
           }}
