@@ -53,6 +53,30 @@
   }
 }
 
+.delete_event {
+  font-size: 0.9em;
+}
+
+.org-help {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instruction {
+  color: black;
+  background-color: rgba(159, 201, 240, 0.5);
+  padding: 1em;
+}
+.instruction h5 {
+  font-style: italic;
+}
+
 .userprofile {
   color: black;
   padding: 0;

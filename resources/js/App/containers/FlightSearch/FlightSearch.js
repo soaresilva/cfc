@@ -104,14 +104,9 @@ const FlightSearch = (props) => {
           businessClass={businessClass}
         />
       </div>
-
       {/* Offset options */}
       <div id="flightsID"></div>
-<<<<<<< HEAD
        <OffsetSection tripQuantity={tripQuantity}/>
-=======
-      <OffsetSection tripQuantity={tripQuantity} />
->>>>>>> 8a0fb148e13d9c24d42cca6e206c88538af3b8a0
     </div>
   );
 };

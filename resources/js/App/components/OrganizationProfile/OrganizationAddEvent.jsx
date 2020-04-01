@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function OrganizationAddEvent({ org_id, getEvents }) {
   const [showAddEventForm, setShowAddEventForm] = useState(false);
@@ -23,9 +23,15 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
         'date': addEventDate,
       }) 
     })
-    getEvents();
     setShowAddEventForm(!showAddEventForm);
+    setAddEventName("");
+    setAddEventDescription("");
+    setAddEventDate("");
   };
+
+  useEffect(() => {
+    getEvents();
+  },[showAddEventForm])
 
   const handleShowAddEventForm = () => {
     setShowAddEventForm(!showAddEventForm);

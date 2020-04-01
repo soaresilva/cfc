@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../../../../sass/app.scss";
 import { deleteTrip, deleteEventAndTrips } from "../../../Api/trips";
 import OrganizationEventSummary from "./OrganizationEventSummary";
 import AddTripsToEvent from "./AddTripsToEvent";
@@ -106,10 +107,9 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
           <br />
         </div>
       )}
-      <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
-
-
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
+      <br/>
+      <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
     </div>
   );
 }
@@ -122,8 +122,8 @@ function DeleteTripButton({ handleDeleteTrip, trip }) {
 
 function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
   return (
-    <div onClick={() => handleDeleteEventAndTrips(event_id)}>
-    <DeleteIcon  /> 
+    <div onClick={() => handleDeleteEventAndTrips(event_id)} className="delete_event" >
+    <DeleteIcon/> 
     delete event
     </div>
   );
