@@ -28,9 +28,12 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography component={"div"}>
-              <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">
-                {showOrgTrips[index] === false ? "See event summary and trips" : "Close event summary and trips"}
-              </button>
+              <div className="org_event_description">
+                <p>{event.description}</p>
+                <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">
+                  {showOrgTrips[index] === false ? "See event summary and trips" : "Close event summary and trips"}
+                </button>
+              </div>
               {showOrgTrips[index] ? (
                 <OrganizationTripHistory
                   setShowOrgTrips={setShowOrgTrips[index]}
@@ -50,7 +53,9 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
   });
   return (
     <div>
-      <h3>Event History</h3>
+      <div className="event_history">
+        <h3>Event History</h3>
+      </div>
       {events}
     </div>
   );

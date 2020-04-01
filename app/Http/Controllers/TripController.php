@@ -103,6 +103,12 @@ class TripController extends Controller
 
     }
 
+    public function deleteEventlessTrips(Request $request, $trip_id) {
+        Trip::where('id', '=', $trip_id)->delete();
+        return response()->json(['okay' => true], 200);
+
+    }
+
     public function addTripToEvent($trip_id, $event_id)
     {
         $trip = Trip::findOrFail($trip_id);
@@ -110,6 +116,11 @@ class TripController extends Controller
         $trip->save();
         return response()->json(['okay' => true], 200);
 
+    }
+
+    public function getAllOrgTrips(Request $request, $org_id) {
+        $trips = Trip::where('organization_id', '=', $org_id)->get();
+        return $trips;
     }
 
 }
