@@ -112,7 +112,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(30 * totalCO2amount).toFixed(2)}
+                price={(25 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -131,7 +131,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(35 * totalCO2amount).toFixed(2)}
+                price={(30 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -150,7 +150,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(25 * totalCO2amount).toFixed(2)}
+                price={(35 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -170,7 +170,7 @@ function OffsetSection(props) {
               offset={0}
               clicked={handleOpenSnackbar}
               dateDepart={dateDepart}
-              tripQuantity ={tripQuantity}
+              tripQuantity={tripQuantity}
             >
               Add to profile without offsetting
             </AddTripToDB>
@@ -180,7 +180,7 @@ function OffsetSection(props) {
       ) : (
         <>
           <h1>Select a flight to see offset options</h1>
-          <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" />
+          {/* <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" /> */}
           <div id="cardsID"></div>
         </>
       )}

@@ -10,17 +10,17 @@ import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom
 import OffsetSection from "../OffsetSection/OffsetSection";
 import DatePickerTo from "./../../components/DatePicker/DatePickerTo";
 import DatePickerFrom from "./../../components/DatePicker/DatePickerFrom";
+import Select from "../../components/UI/Select/Select";
 import searchFlights from "../../functions/searchFlights";
 
 const FlightSearch = (props) => {
-  const { airportFrom, airportTo, dateFrom, dateTo } = props;
+  const { airportFrom, airportTo, dateFrom, dateTo, quantity } = props;
   const [numberOfLayovers, setNumberOfLayovers] = useState(2);
   const [flightData, setFlightData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [economyClass, setEconomyClass] = useState(true);
   const [businessClass, setBusinessClas] = useState(false);
-  const [tripQuantity, setTripQuantity] = useState(1);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -66,11 +66,6 @@ const FlightSearch = (props) => {
     }
   };
 
-  const handleSetTripQuantity = async (e) => {
-    setTripQuantity(e.target.value);
-  };
-  console.log("tripQuantity", tripQuantity);
-
   return (
     // Selecting a flight
     <div className="FlightSearch">
@@ -83,6 +78,7 @@ const FlightSearch = (props) => {
             <SelectAirportTo />
             <DatePickerFrom />
             <DatePickerTo />
+            <Select />
             <Button clicked={searchFlightHandler}>Search</Button>
           </div>
           <div className="CheckboxOption">
@@ -92,8 +88,6 @@ const FlightSearch = (props) => {
             <Checkbox onChange={economyClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
-            <label>Quantity:</label>
-            <input type="number" value={tripQuantity} onChange={handleSetTripQuantity} />
           </div>
         </div>
         <FlightSection
@@ -106,7 +100,11 @@ const FlightSearch = (props) => {
       </div>
       {/* Offset options */}
       <div id="flightsID"></div>
+<<<<<<< HEAD
       <OffsetSection tripQuantity={tripQuantity} />
+=======
+      <OffsetSection tripQuantity={quantity} />
+>>>>>>> 29f3931beb0dac563ed23444869d068e089284fc
     </div>
   );
 };
@@ -116,7 +114,8 @@ const mapStateToProps = (state) => {
     airportTo: state.airportTo,
     airportFrom: state.airportFrom,
     dateFrom: state.dateFrom,
-    dateTo: state.dateTo
+    dateTo: state.dateTo,
+    quantity: state.quantity
   };
 };
 

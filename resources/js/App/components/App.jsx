@@ -13,9 +13,9 @@ export default class App extends React.Component {
           <source src="/videos/coverr-wood-1568650087945.mp4" type="video/mp4" />
         </video>
         <div className="WelcomeText">
-          <h1 className="WelcomeTitle">Carbon Footprint Calculator</h1>
+          <h1 className="WelcomeTitle">Carbon Voyage</h1>
           <h1 className="WelcomeDescription">
-            Shape our future<br></br> CFC is your partner for effective climate protection – both locally and globally
+            Carbon Voyage reveals the true ecological impact of your flights – and lets you offset it accordingly
           </h1>
         </div>
         <CardsInfoSection />

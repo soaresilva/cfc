@@ -25,3 +25,55 @@
   border-radius: 7px;
   box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
+
+@media (max-width: 950px) {
+  .CardItem-Calc {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -1rem;
+  }
+  .CardItem-About {
+    margin-left: -2rem;
+    margin-top: -1rem;
+  }
+  .CardItem-Offset {
+    margin-top: -1rem;
+  }
+}
+/* @media (max-width: 575px) {
+
+} */
+@media (max-width: 475px) {
+  .CardItem-Calc {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+  .CardItem-About {
+    margin-left: 0.4rem;
+  }
+  .CardItem-Calc {
+    margin-top: -0.5rem;
+  }
+  .CardItem-About {
+    margin-top: -0.5rem;
+  }
+  .CardItem-Offset {
+    margin-top: -0.5rem;
+  }
+}
+
+/* @media (max-width: 375px) {
+  .CardItem-Calc {
+    margin-left: .4rem;
+    margin-right: .4rem;
+    height: 70vh;
+  }
+  .CardItem-About {
+    margin-left: .4rem;
+    height: 70vh;
+  }
+  .CardItem-Offset {
+    margin-top: -2rem;
+    height: 70vh;
+  }
+} */

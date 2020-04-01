@@ -11,6 +11,7 @@ const initialState = {
   dateDepart: null,
   dateFrom: null,
   dateTo: null,
+  quantity: null,
   fetched: false
 };
 
@@ -62,6 +63,11 @@ const reducer = (state = initialState, action) => {
         dateFrom: action.dateFrom
       };
 
+    case actionTypes.SELECT_QUANTITY:
+      return {
+        ...state,
+        quantity: action.quantity
+      }
     default:
       return state;
   }

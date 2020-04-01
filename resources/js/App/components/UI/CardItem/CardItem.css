@@ -3,6 +3,7 @@
   width: 22vw;
   text-align: center;
   margin-top: 2rem;
+  transition: 0.6s all;
 }
 
 .CardItemsInfo {
@@ -42,6 +43,7 @@
   width: 22vw;
   height: 60vh;
   padding-bottom: 2rem;
+  transition: 0.6s all;
 }
 
 .CardItemsLandingPage__links {
@@ -57,7 +59,12 @@
 
 .CardItemsLandingPage_description {
   max-width: 33ch;
-  margin: 0 auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+.CardItemsLandingPage_features {
+  list-style-type: square;
 }
 
 ul {
@@ -66,7 +73,7 @@ ul {
 
 li {
   text-align: start;
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .CardItemsLandingPage__Alinks {
@@ -82,4 +89,106 @@ li {
   color: white;
   text-decoration: none;
   border: 1px solid white;
+}
+
+.Arrow {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  border: 1px solid white;
+  padding: 0.25rem;
+  border-radius: 7px;
+}
+
+@media (max-width: 1100px) {
+  .CardItem {
+    width: 24vw;
+  }
+  .CardItemsLandingPage {
+    width: 24vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .CardItem {
+    width: 26vw;
+    height: 50vh;
+    margin-top: 1rem;
+  }
+  .CardItemsLandingPage {
+    width: 26vw;
+    height: 50vh;
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .CardItem {
+    width: 27vw;
+  }
+  .CardItemsLandingPage {
+    width: 27vw;
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .CardItem {
+    height: 50vh;
+  }
+  .CardItemsLandingPage {
+    height: 50vh;
+    font-size: 0.6rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .CardItem {
+    /* height: 29vh; */
+    margin-top: 1rem;
+  }
+  .CardItemsLandingPage {
+    /* height: 29vh; */
+    font-size: 0.5rem;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  .MuiSvgIcon-root {
+    height: 0.6em !important;
+    width: 0.6em !important;
+  }
+}
+
+@media (max-width: 435px) {
+  .CardItem {
+    width: 29vw;
+  }
+  .CardItemsLandingPage {
+    width: 29vw;
+  }
+  .CardItemsLandingPage_description {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .CardItem {
+    height: 45vh;
+  }
+  .CardItemsLandingPage {
+    height: 45vh;
+    font-size: 0.5rem;
+  }
+  .CardItemsLandingPage__icons {
+    margin: 0.6rem;
+  }
 }

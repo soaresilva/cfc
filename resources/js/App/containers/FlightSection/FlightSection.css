@@ -12,3 +12,10 @@
   justify-content: center;
   padding-top: 1.5rem;
 }
+
+@media (max-width: 797px) {
+  .FlightSection {
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+  }
+}

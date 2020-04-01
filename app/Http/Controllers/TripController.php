@@ -25,7 +25,6 @@ class TripController extends Controller
         $airportlabel = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('airport_to')->toArray();
         $chartLabels = array_map(function ($a, $b) {return $a . ', ' . $b;}, $airportlabel, $datelabel);
 
-        // dd($chartLabels);
         $userChart = new UserTripsChart;
         $userChart->labels($chartLabels);
         $userChart->dataset('CO2 (t) emitted', 'horizontalBar', $carbon->values())->backgroundColor('grey');
