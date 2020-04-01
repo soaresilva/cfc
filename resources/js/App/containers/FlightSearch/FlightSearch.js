@@ -20,7 +20,7 @@ const FlightSearch = (props) => {
   const [submitted, setSubmitted] = useState(false);
   const [economyClass, setEconomyClass] = useState(true);
   const [businessClass, setBusinessClas] = useState(false);
-  const [tripQuantity, setTripQuantity] = useState(0);
+  const [tripQuantity, setTripQuantity] = useState(1);
 
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
@@ -109,7 +109,7 @@ const FlightSearch = (props) => {
 
       {/* Offset options */}
       <div id="flightsID"></div>
-      {tripQuantity !== 0 ? <OffsetSection tripQuantity={tripQuantity}/> : ""}
+       <OffsetSection tripQuantity={tripQuantity}/>
     </div>
   );
 };
