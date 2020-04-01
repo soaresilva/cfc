@@ -85,11 +85,15 @@ function CardItem(props) {
         <div className="CardItemsLandingPage">
           <h1>{children}</h1>
           <div>
-            <p className="CardItemsLandingPage_description">Start your journey by creating an account</p>
+            <p className="CardItemsLandingPage_description">Start your journey by registering an account</p>
             <ul>
-              <li>Some advantages</li>
-              <li>More advantages</li>
-              <li>Did you know about this advantage?</li>
+              <li>Add trips to your profile</li>
+              <li>See your trip history and your flights' carbon footprint</li>
+            </ul>
+            <p>For organizations:</p>
+            <ul>
+              <li>Calculate the carbon footprint of your events</li>
+              <li></li>
             </ul>
           </div>
           <div className="CardItemsLandingPage__links">
@@ -97,7 +101,7 @@ function CardItem(props) {
               User
             </a>
             <a href="/register/organization" className="CardItemsLandingPage__Alinks">
-              Organizaton
+              Organization
             </a>
           </div>
         </div>
