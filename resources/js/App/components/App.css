@@ -94,10 +94,11 @@
   }
   .WelcomeDescription {
     font-size: 1.6rem;
+    /* text-align: center; */
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .WelcomeDescription {
     margin-left: 0rem;
   }
@@ -110,7 +111,6 @@
   }
   .WelcomeDescription {
     font-size: 1rem;
-    margin-left: 5rem;
   }
   .Section-CardItems {
     height: 70vh;

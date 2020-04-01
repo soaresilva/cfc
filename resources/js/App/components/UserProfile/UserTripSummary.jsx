@@ -38,7 +38,7 @@ export default function UserTripSummary({ totalDistance, totalCarbonFootprint, t
   }
 
   const rows = [
-    createData("Total Distances Traveled", totalDistance + " km"),
+    createData("Total Distance Traveled", totalDistance + " km"),
     createData("Total Carbon Footprint", totalCarbonFootprint + " CO2/t"),
     createData("Total Carbon Offset", totalCarbonOffset + " CO2/t")
   ];
