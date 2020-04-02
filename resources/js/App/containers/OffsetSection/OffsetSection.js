@@ -26,10 +26,10 @@ function OffsetSection(props) {
       "In rural communities in western Kenya, food is traditionally cooked over an open fire. Thanks to the efficient cook stoves, 40 to 50 per cent less firewood is used, saving households a lot of time and money. The women finance their subsidised cook stoves in local saving and loaning groups. In addition, these saving groups finance medical health care, school fees or high-quality seed."
   };
   const forest = {
-    title: "Swiss projects",
-    swissForest: "Offset half of your emissions in Swiss carbon offset projects. ",
+    title: "Welsh community energy",
+    welshForest: "Offset half of your emissions in Welsh carbon offset projects. ",
     moreInfoForest:
-      "At least half of your emissions will be reduced in Swiss carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
+      "At least half of your emissions will be reduced in Welsh carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
   };
 
   const handleOpenSnackbar = () => {
@@ -142,8 +142,8 @@ function OffsetSection(props) {
             <div className="CardItem-Project">
               <CardItem
                 fetched={fetched}
-                photo="/images/swissOffset.jpg"
-                description={forest.swissForest}
+                photo="/images/welshOffset.jpg"
+                description={forest.welshForest}
                 moreInfo={forest.moreInfoForest}
                 title={forest.title}
                 cityFrom={cityFrom}
