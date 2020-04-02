@@ -45,7 +45,13 @@ export default function UserApp() {
           </div>
         </div>
       </div> */}
-      {!user ? <Spinner /> : <UserProfile user_id={user.id} />}
+      {!user ? (
+        <div style={{ textAlign: "center" }}>
+          <Spinner />
+        </div>
+      ) : (
+        <UserProfile user_id={user.id} />
+      )}
     </div>
   );
 }

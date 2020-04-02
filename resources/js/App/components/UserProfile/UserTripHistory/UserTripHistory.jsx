@@ -9,7 +9,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 import DeleteTripSnackbar from "../../UI/Snackbar/DeleteTripSnackbar";
-//import Spinner from "../../UI/Spinner/Spinner";
+import Spinner from "../../UI/Spinner/Spinner";
 import { deleteTrip } from "../../../../Api/trips";
 import UserTripSummary from "../UserTripSummary";
 import "./UserTripHistory.css";
@@ -79,7 +79,11 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
 
   let content = null;
   if (userTrips.length === 0) {
-    content = <p>You don't have any trips yet!</p>;
+    content = (
+      <div style={{ textAlign: "center" }}>
+        <Spinner />
+      </div>
+    );
   } else {
     content = trips;
   }
