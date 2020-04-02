@@ -77,12 +77,18 @@ const FlightSearch = (props) => {
             </div>
           </div>
           <div className="CheckboxOption">
-            <label>Direct flights only:</label>
-            <Checkbox onChange={directFlightsClickHandler} inputProps={{ "aria-label": "secondary checkbox" }} />
-            <label>Economy class:</label>
-            <FormControlLabel control={<Checkbox checked={economyClass} onChange={handleChange} name="economyClass" />} defaultChecked />
-            <label>Business class:</label>
-            <FormControlLabel control={<Checkbox checked={!economyClass} onChange={handleChange} name="businessClass" />} />
+            <div className="CheckboxOptionItem">
+              <label>Direct flights only:</label>
+              <Checkbox onChange={directFlightsClickHandler} inputProps={{ "aria-label": "secondary checkbox" }} />
+            </div>
+            <div className="CheckboxOptionItem">
+              <label>Economy class:</label>
+              <FormControlLabel control={<Checkbox checked={economyClass} onChange={handleChange} name="economyClass" />} defaultChecked />
+            </div>
+            <div className="CheckboxOptionItem">
+              <label>Business class:</label>
+              <FormControlLabel control={<Checkbox checked={!economyClass} onChange={handleChange} name="businessClass" />} />
+            </div>
           </div>
           <Button clicked={searchFlightHandler}>Search</Button>
         </div>

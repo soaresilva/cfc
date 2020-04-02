@@ -28,7 +28,7 @@ class TripController extends Controller
         $userChart = new UserTripsChart;
         $userChart->labels($chartLabels);
         $userChart->dataset('CO2 (t) emitted', 'bar', $carbon->values())->backgroundColor('grey');
-        $userChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green');
+        $userChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('#62684d');
 
         return view('home', compact('userChart'));
     }
@@ -54,7 +54,7 @@ class TripController extends Controller
                 ],
             ],
         ]);
-        $orgChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green')->options([
+        $orgChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('#62684d')->options([
             'scales' => [
                 'yAxes' => [
                     'ticks' => [
