@@ -10,7 +10,7 @@
 /vendor
 .env
 .env.backup
-.envy.copy
+.env.copy
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
