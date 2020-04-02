@@ -47,9 +47,9 @@ code {
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   .Footer {
-    height: 60vh;
+    height: 65vh;
     justify-content: space-around;
   }
   .ContactInfo {
@@ -65,7 +65,7 @@ code {
 
 @media (max-width: 800px) {
   .Footer {
-    height: 60vh;
+    height: 70vh;
     justify-content: space-around;
   }
   .ContactInfo {
