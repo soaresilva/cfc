@@ -79,7 +79,6 @@ const FlightSearch = (props) => {
             <DatePickerFrom />
             <DatePickerTo />
             <Select />
-            <Button clicked={searchFlightHandler}>Search</Button>
           </div>
           <div className="CheckboxOption">
             <label>Direct flights only:</label>
@@ -89,6 +88,7 @@ const FlightSearch = (props) => {
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
           </div>
+            <Button clicked={searchFlightHandler}>Search</Button>
         </div>
         <FlightSection
           flightData={flightData}

@@ -45,3 +45,21 @@
   border-radius: 7px;
   box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
 }
+
+@media (max-width: 950px) {
+  .CardItem-Project {
+    margin-right: 4rem;
+    margin-left: -2.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .FlightGif {
+    height: 40vh;
+  }
+}
+@media (max-width: 395px) {
+  .FlightGif {
+    height: 30vh;
+  }
+}
