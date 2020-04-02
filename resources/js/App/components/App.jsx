@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./App.css";
-import FlightSearch from "../containers/FlightSearch/FlightSearch";
+import FlightSearch from "../containers/FlightSearch/FlightSearch.js";
 import CardsInfoSection from "./../containers/CardsInfoSection/CardsInfoSection";
-import Footer from "../components/Footer/Footer";
+import Footer from "../Components/Footer/Footer";
 
 export default class App extends React.Component {
   render() {

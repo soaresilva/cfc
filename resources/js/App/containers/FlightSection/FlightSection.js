@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
 import Alert from "@material-ui/lab/Alert";
-
 import "./FlightSection.css";
-import Flight from "./../../components/Flight/Flight";
-import Spinner from "../../components/UI/Spinner/Spinner";
+import Flight from "./../../Components/Flight/Flight";
+import Spinner from "../../Components/UI/Spinner/Spinner";
 
 const FlightSection = (props) => {
   const { flightData, loading, submitted, economyClass, businessClass } = props;

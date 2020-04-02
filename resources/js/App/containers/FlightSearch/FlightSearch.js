@@ -3,14 +3,14 @@ import { connect } from "react-redux";
 
 import "./FlightSearch.css";
 import Checkbox from "@material-ui/core/Checkbox";
-import Button from "../../components/UI/Button/ButtonRed";
+import Button from "../../Components/UI/Button/ButtonRed";
 import FlightSection from "../FlightSection/FlightSection";
-import SelectAirportTo from "../../components/SelectAirports/SelectAirportTo";
-import SelectAirportFrom from "../../Components/SelectAirports/SelectAirportFrom";
+import SelectAirportDestination from "../../Components/SelectAirports/SelectAirportDestination";
+import SelectAirportOrigin from "../../Components/SelectAirports/SelectAirportOrigin";
 import OffsetSection from "../OffsetSection/OffsetSection";
-import DatePickerTo from "./../../components/DatePicker/DatePickerTo";
-import DatePickerFrom from "./../../components/DatePicker/DatePickerFrom";
-import Select from "../../components/UI/Select/Select";
+import DatePickerTo from "./../../Components/DatePicker/DatePickerTo";
+import DatePickerFrom from "./../../Components/DatePicker/DatePickerFrom";
+import Select from "../../Components/UI/Select/Select";
 import searchFlights from "../../functions/searchFlights";
 
 const FlightSearch = (props) => {
@@ -74,12 +74,11 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SelectAirportFrom />
-            <SelectAirportTo />
+            <SelectAirportOrigin />
+            <SelectAirportDestination />
             <DatePickerFrom />
             <DatePickerTo />
             <Select />
-            <Button clicked={searchFlightHandler}>Search</Button>
           </div>
           <div className="CheckboxOption">
             <label>Direct flights only:</label>
@@ -89,6 +88,7 @@ const FlightSearch = (props) => {
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
           </div>
+            <Button clicked={searchFlightHandler}>Search</Button>
         </div>
         <FlightSection
           flightData={flightData}

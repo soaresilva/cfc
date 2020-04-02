@@ -67,9 +67,10 @@
 @media (max-width: 797px) {
   .Dropdown {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 95vw;
+    height: 46vh;
   }
   .SearchSection {
     flex-direction: column;

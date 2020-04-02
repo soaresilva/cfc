@@ -28,11 +28,10 @@
 }
 
 .WelcomeDescription {
-  width: 40ch;
   align-self: flex-start;
   font-size: 2rem;
-  text-align: start;
-  margin-left: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .Video {
@@ -77,9 +76,6 @@
   .WelcomeTitle {
     font-size: 4rem;
   }
-  .WelcomeDescription {
-    margin-left: 6.5rem;
-  }
 }
 
 @media (max-width: 1250px) {
@@ -94,13 +90,6 @@
   }
   .WelcomeDescription {
     font-size: 1.6rem;
-    /* text-align: center; */
-  }
-}
-
-@media (max-width: 1000px) {
-  .WelcomeDescription {
-    margin-left: 0rem;
   }
 }
 
@@ -110,7 +99,7 @@
     margin-bottom: 0.5rem;
   }
   .WelcomeDescription {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .Section-CardItems {
     height: 70vh;
@@ -120,9 +109,9 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .WelcomeDescription {
-    margin-left: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -139,20 +128,11 @@
   .WelcomeTitle {
     margin-bottom: 1.5rem;
   }
-  .WelcomeDescription {
-    width: 20ch;
-    margin-left: 3.5rem;
-  }
   .CardItems {
     width: 95vw;
     height: 55vh;
   }
   .Section-CardItems {
     height: 60vh;
-  }
-}
-@media (max-width: 300px) {
-  .WelcomeDescription {
-    margin-left: 2.5rem;
   }
 }

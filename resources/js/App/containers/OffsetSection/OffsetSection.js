@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 import "./OffsetSection.css";
-import CardItem from "./../../components/UI/CardItem/CardItem";
-import AddTripToDB from "../../components/AddTrip/AddTripToDB";
-import CustomizedSnackbar from "../../components/UI/Snackbar/Snackbar";
+import CardItem from "./../../Components/UI/CardItem/CardItem";
+import AddTripToDB from "../../Components/AddTrip/AddTripToDB";
+import CustomizedSnackbar from "../../Components/UI/Snackbar/Snackbar";
 
 function OffsetSection(props) {
   const [userId, setUserId] = useState(null);
@@ -180,7 +180,7 @@ function OffsetSection(props) {
       ) : (
         <>
           <h1>Select a flight to see offset options</h1>
-          {/* <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" /> */}
+          <img className="FlightGif" src="/images/flightGIF.gif" alt="flightGif" />
           <div id="cardsID"></div>
         </>
       )}
