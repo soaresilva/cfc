@@ -88,20 +88,7 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
     <div>
       <h3 style={{ marginTop: "2rem" }}></h3>
       <UserTripSummary totalDistance={totalDistance} totalCarbonFootprint={totalCarbonFootprint} totalCarbonOffset={totalCarbonOffset} />
-      <h3
-        style={{
-          marginTop: "2rem",
-          backgroundColor: "black",
-          color: "white",
-          padding: "1rem",
-          fontSize: "1rem",
-          borderRadius: "3px",
-          marginBottom: "-.03rem",
-          fontWeight: "600"
-        }}
-      >
-        Trips list
-      </h3>
+      <h3 className="TripsList">Trips list</h3>
       <div className={classes.root}>{content}</div>
     </div>
   );

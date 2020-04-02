@@ -47,15 +47,12 @@
   .CardItem-Calc {
     margin-left: 0.4rem;
     margin-right: 0.4rem;
+    margin-top: -0.5rem;
   }
+
   .CardItem-About {
+    margin-top: -0.5rem;
     margin-left: 0.4rem;
-  }
-  .CardItem-Calc {
-    margin-top: -0.5rem;
-  }
-  .CardItem-About {
-    margin-top: -0.5rem;
   }
   .CardItem-Offset {
     margin-top: -0.5rem;
