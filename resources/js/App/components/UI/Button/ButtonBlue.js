@@ -6,7 +6,7 @@ import "./Button.css";
 function buttonBlue(props) {
   const { clicked, children, sendUserTripsToDB, openSnackbar } = props;
   return (
-    <div>
+    <div className="ButtonBlue">
       <Button
         variant="contained"
         color="primary"

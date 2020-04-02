@@ -159,7 +159,7 @@ function OffsetSection(props) {
               />
             </div>
           </div>
-          <div style={{ marginTop: "2rem" }}>
+          <div className="AddTripToDB">
             <AddTripToDB
               cityFrom={cityFrom}
               cityTo={cityTo}

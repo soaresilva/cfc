@@ -113,7 +113,7 @@ li {
     width: 24vw;
   }
   .CardItemsDetails {
-    width: 18vw;
+    width: 19vw;
   }
 }
 
@@ -137,6 +137,7 @@ li {
   }
   .CardItemsPicture {
     width: 26vw;
+    margin-top: 1rem;
   }
   .CardItemsDescription {
     font-size: 0.9rem;
@@ -159,7 +160,7 @@ li {
   }
   .CardItemsDescription {
     width: 27vw;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
   .CardItemsDetails {
     width: 19.75vw;
@@ -209,6 +210,16 @@ li {
   }
   .CardItemsLandingPage_description {
     padding: 0.5rem;
+  }
+  .CardItemsPicture {
+    width: 29vw;
+  }
+  .CardItemsDescription {
+    width: 29vw;
+    font-size: 0.7rem;
+  }
+  .CardItemsDetails {
+    width: 22vw;
   }
 }
 
