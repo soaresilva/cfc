@@ -122,8 +122,8 @@ function DeleteTripButton({ handleDeleteTrip, trip }) {
 
 function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
   return (
-    <div onClick={() => handleDeleteEventAndTrips(event_id)} className="delete_event" >
-    <DeleteIcon/> 
+    <div onClick={() => handleDeleteEventAndTrips(event_id)}>
+    <DeleteIcon className="delete_event" /> 
     delete event
     </div>
   );

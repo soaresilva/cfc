@@ -95,6 +95,30 @@
   }
 
 }
+
+.org_event_description {
+ text-align: left;
+}
+
+.totalSummary{
+  display:flex;
+  justify-content: space-between;
+  padding:.3em;
+}
+
+.event_history {
+  text-align: left;
+  background-color: black;
+  padding:0;
+  margin:0;
+
+  h3 {
+    padding:0;
+    margin:0;
+  }
+
+
+}
 // .org-event {
 //   display:flex;
 //   flex-direction: column;

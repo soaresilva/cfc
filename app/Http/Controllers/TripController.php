@@ -25,7 +25,6 @@ class TripController extends Controller
         $airportlabel = Trip::where('user_id', '=', auth()->user()->id)->orderBy('flight_date')->pluck('airport_to')->toArray();
         $chartLabels = array_map(function ($a, $b) {return $a . ', ' . $b;}, $airportlabel, $datelabel);
 
-        // dd($chartLabels);
         $userChart = new UserTripsChart;
         $userChart->labels($chartLabels);
         $userChart->dataset('CO2 (t) emitted', 'horizontalBar', $carbon->values())->backgroundColor('grey');
@@ -39,7 +38,6 @@ class TripController extends Controller
         // first plucked column is the value, second is the key
         $carbon = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('carbon_amount');
         $offset = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('offset_amount');
-        // dd($carbon);
 
         $datelabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('flight_date')->toArray();
         $airportlabel = Trip::where('organization_id', '=', auth()->guard('organization')->user()->id)->orderBy('flight_date', 'asc')->orderBy('created_at', 'asc')->pluck('airport_to')->toArray();
@@ -47,8 +45,24 @@ class TripController extends Controller
 
         $orgChart = new OrganizationTripsChart;
         $orgChart->labels($chartLabels);
-        $orgChart->dataset('CO2 (t) emitted', 'horizontalBar', $carbon->values())->backgroundColor('grey');
-        $orgChart->dataset('CO2 (t) offset', 'horizontalBar', $offset->values())->backgroundColor('green');
+        $orgChart->dataset('CO2 (t) emitted', 'bar', $carbon->values())->backgroundColor('grey')->options([
+            'scales' => [
+                'yAxes' => [
+                    'ticks' => [
+                        'scaleBeginAtZero' => true,
+                    ],
+                ],
+            ],
+        ]);
+        $orgChart->dataset('CO2 (t) offset', 'bar', $offset->values())->backgroundColor('green')->options([
+            'scales' => [
+                'yAxes' => [
+                    'ticks' => [
+                        'scaleBeginAtZero' => true,
+                    ],
+                ],
+            ],
+        ]);
 
         return view('organization', compact('orgChart'));
     }
@@ -103,6 +117,13 @@ class TripController extends Controller
 
     }
 
+    public function deleteEventlessTrips(Request $request, $trip_id)
+    {
+        Trip::where('id', '=', $trip_id)->delete();
+        return response()->json(['okay' => true], 200);
+
+    }
+
     public function addTripToEvent($trip_id, $event_id)
     {
         $trip = Trip::findOrFail($trip_id);
@@ -110,6 +131,12 @@ class TripController extends Controller
         $trip->save();
         return response()->json(['okay' => true], 200);
 
+    }
+
+    public function getAllOrgTrips(Request $request, $org_id)
+    {
+        $trips = Trip::where('organization_id', '=', $org_id)->get();
+        return $trips;
     }
 
 }

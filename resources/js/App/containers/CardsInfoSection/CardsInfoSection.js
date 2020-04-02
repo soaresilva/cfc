@@ -2,7 +2,7 @@ import React from "react";
 
 import "./CardsInfoSection.css";
 
-import CardItem from "./../../components/UI/CardItem/CardItem";
+import CardItem from "./../../Components/UI/CardItem/CardItem";
 
 export default function CardsInfoSection() {
   return (

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Carbon Footprint Calculator</title>
+    <title>{{$title}} | Carbon Voyage</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

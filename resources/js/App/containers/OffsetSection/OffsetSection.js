@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 import "./OffsetSection.css";
-import CardItem from "./../../components/UI/CardItem/CardItem";
-import AddTripToDB from "../../components/AddTrip/AddTripToDB";
-import CustomizedSnackbar from "../../components/UI/Snackbar/Snackbar";
+import CardItem from "./../../Components/UI/CardItem/CardItem";
+import AddTripToDB from "../../Components/AddTrip/AddTripToDB";
+import CustomizedSnackbar from "../../Components/UI/Snackbar/Snackbar";
 
 function OffsetSection(props) {
   const [userId, setUserId] = useState(null);
@@ -112,7 +112,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(30 * totalCO2amount).toFixed(2)}
+                price={(25 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -131,7 +131,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(35 * totalCO2amount).toFixed(2)}
+                price={(30 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -150,7 +150,7 @@ function OffsetSection(props) {
                 cityTo={cityTo}
                 distance={distance}
                 totalCO2amount={totalCO2amount}
-                price={(25 * totalCO2amount).toFixed(2)}
+                price={(35 * totalCO2amount * tripQuantity).toFixed(2)}
                 userId={userId}
                 isUserOrg={isUserOrg}
                 offset={totalCO2amount}
@@ -170,7 +170,7 @@ function OffsetSection(props) {
               offset={0}
               clicked={handleOpenSnackbar}
               dateDepart={dateDepart}
-              tripQuantity ={tripQuantity}
+              tripQuantity={tripQuantity}
             >
               Add to profile without offsetting
             </AddTripToDB>
