@@ -14,9 +14,14 @@ export default function OrganizationApp() {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
+        console.log("success");
+        console.log(response);
         setUser(response);
       },
-      error: (response) => {}
+      error: (response) => {
+        console.log("error");
+        console.log(response);
+      }
     });
   };
 
@@ -29,6 +34,7 @@ export default function OrganizationApp() {
       {!user ? (
         <p>Loading...</p>
       ) : (
+        // <div className="container">
         <div className="org-app">
           <OrganizationProfile org_id={user.id} />
         </div>

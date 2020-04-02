@@ -33,18 +33,6 @@ export default function UserApp() {
 
   return (
     <div>
-      {/* <div className="row justify-content-center">
-        <div className="col-md-8">
-          <div className="card">
-            <div className="card-header">
-            
-            </div>
-            <div className="card-body">
-              Currently logged user: {user.first_name} {user.surname} #{user.id}
-            </div>
-          </div>
-        </div>
-      </div> */}
       {!user ? (
         <div style={{ textAlign: "center" }}>
           <Spinner />

@@ -56,7 +56,6 @@ const FlightSection = (props) => {
   } else if (flightData.length === 0 && !submitted) {
     flight = (
       <h3 className="Warning">
-        {/* <i className="fas fa-plane-slash"></i>  */}
         <Alert severity="warning"> Warning: Flights might be cancelled due to COVID-19</Alert>
       </h3>
     );

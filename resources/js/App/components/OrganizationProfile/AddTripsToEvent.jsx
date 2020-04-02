@@ -5,7 +5,6 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import OrgAddTripSnackbar from "../UI/Snackbar/OrgAddTripSnackbar";
 import DeleteTripSnackbar from "../UI/Snackbar/DeleteTripSnackbar";
 
-
 export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
   const [showEventlessTrips, setShowEventlessTrips] = useState(false);
   const [eventlessTrips, setEventlessTrips] = useState([]);
@@ -13,7 +12,7 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
   const [wasDeleted, setWasDeleted] = useState(false);
   const [openSnackbarAdd, setOpenSnackbarAdd] = useState(false);
   const [openSnackbarDeleteTrip, setOpenSnackbarDeleteTrip] = useState(false);
-  
+
   const showEventlessTripsUrl = "/api/org/trips/find/";
   const addTripToEventUrl = "/api/org/trips/add/";
   const deleteEventlessTripUrl = "/api/org/trips/delete/";
@@ -82,7 +81,6 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
     setOpenSnackbarDeleteTrip(false);
   };
 
-
   const trips = eventlessTrips.map((trip, index) => {
     return (
       <div className="add_trips_to_events" key={index}>
@@ -92,8 +90,16 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
           </p>
           <em>{trip.flight_date}</em>
         </div>
-        <AddIcon onClick={(trip_id) => {addTripToEvent(trip.id), handleOpenSnackbarAdd()}} />
-        <DeleteIcon onClick={(trip_id) => {deleteEventlessTrip(trip.id),handleOpenSnackbarDeleteTrip()}} />
+        <AddIcon
+          onClick={(trip_id) => {
+            addTripToEvent(trip.id), handleOpenSnackbarAdd();
+          }}
+        />
+        <DeleteIcon
+          onClick={(trip_id) => {
+            deleteEventlessTrip(trip.id), handleOpenSnackbarDeleteTrip();
+          }}
+        />
         <br />
         <hr />
       </div>
@@ -105,9 +111,8 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
       {eventlessTrips.length !== 0 ? <button onClick={handleShowTripsClick}>Add trip to this event</button> : ""}
       {showEventlessTrips ? trips : ""}
       <div>
-          <OrgAddTripSnackbar opened={openSnackbarAdd} clicked={handleCloseSnackbarAdd} wasAdded={wasAdded}  />
-          <DeleteTripSnackbar opened={openSnackbarDeleteTrip} clicked={handleCloseSnackbarDeleteTrip} wasDeleted={wasDeleted} />
-
+        <OrgAddTripSnackbar opened={openSnackbarAdd} clicked={handleCloseSnackbarAdd} wasAdded={wasAdded} />
+        <DeleteTripSnackbar opened={openSnackbarDeleteTrip} clicked={handleCloseSnackbarDeleteTrip} wasDeleted={wasDeleted} />
       </div>
     </div>
   );
