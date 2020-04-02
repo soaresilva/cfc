@@ -16,23 +16,29 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function CustomizedSnackbar({ opened, clicked, userId }) {
+function CustomizedSnackbar({ opened, clicked, userId, wasAdded}) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Snackbar open={opened} autoHideDuration={3500} onClose={clicked}>
-        {userId ? (
+        {userId ? 
+        (<Snackbar open={opened} autoHideDuration={3500} onClose={clicked}>
           <Alert onClose={clicked} severity="success">
             Successfully added to profile!
           </Alert>
-        ) : (
+          </Snackbar>
+        ) : 
+        (<Snackbar open={opened} autoHideDuration={3500} onClose={clicked}>
           <Alert onClose={clicked} severity="info">
             Sign in to save the current trip.
           </Alert>
-        )}
       </Snackbar>
-    </div>
+        )}
+        
+      {/* {wasAdded ? <Snackbar open={opened} autoHideDuration={3500} onClose={clicked}>
+          <Alert severity="success">Trip added!</Alert> 
+      </Snackbar> : ""}*/}
+    </div> 
   );
 }
 

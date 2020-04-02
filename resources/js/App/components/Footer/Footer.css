@@ -12,6 +12,10 @@
   justify-content: space-evenly;
 }
 
+.FooterText {
+  padding: 1.5rem;
+}
+
 .FooterIcons {
   display: flex;
   justify-content: space-evenly;
@@ -52,9 +56,6 @@ code {
     height: 65vh;
     justify-content: space-around;
   }
-  .ContactInfo {
-    flex-direction: column;
-  }
   .ContactPerson {
     padding: 0.5rem;
   }
@@ -63,10 +64,9 @@ code {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   .Footer {
-    height: 70vh;
-    justify-content: space-around;
+    height: 80vh;
   }
   .ContactInfo {
     flex-direction: column;
@@ -81,16 +81,30 @@ code {
 
 @media (max-width: 600px) {
   .Footer {
-    height: 80vh;
-    justify-content: space-around;
-  }
-  .ContactInfo {
-    flex-direction: column;
+    height: 90vh;
   }
   .ContactPerson {
     padding: 0.5rem;
   }
   .FooterIcons {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .Footer {
+    height: 70vh;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.83rem;
+  }
+  h6 {
+    font-size: 0.67rem;
   }
 }

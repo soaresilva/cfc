@@ -12,10 +12,19 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteEventSnackbar from "../UI/Snackbar/DeleteEventSnackbar";
+import DeleteTripSnackbar from "../UI/Snackbar/DeleteTripSnackbar";
+
+
 
 
 export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEvents, org_id, setShowOrgTrips }) {
   const [orgTrips, setOrgTrips] = useState([]);
+
+  const [openSnackbarDeleteEvent, setOpenSnackbarDeleteEvent] = useState(false);
+  const [openSnackbarDeleteTrip, setOpenSnackbarDeleteTrip] = useState(false);
+
+
   const classes = useStyles();
   let totalDistance = 0;
   let totalCarbonFootprint = 0;
@@ -56,6 +65,30 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
     }
   };
 
+
+  const handleOpenSnackbarDeleteEvent = () => {
+    setOpenSnackbarDeleteEvent(true);
+  };
+
+  const handleCloseSnackbarDeleteEvent = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbarDeleteEvent(false);
+  };
+
+  const handleOpenSnackbarDeleteTrip = () => {
+    setOpenSnackbarDeleteTrip(true);
+  };
+
+  const handleCloseSnackbarDeleteTrip = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbarDeleteTrip(false);
+  };
+
+
   const trips = orgTrips.map((trip, index) => {
     totalDistance = totalDistance + trip.distance;
     totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
@@ -70,7 +103,7 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
         <StyledTableCell align="right">{trip.offset_amount}</StyledTableCell>
         <StyledTableCell align="right">{trip.flight_date} </StyledTableCell>
         <StyledTableCell align="right">
-          <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} />
+          <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} handleOpenSnackbarDeleteTrip={handleOpenSnackbarDeleteTrip} />
         </StyledTableCell>
       </TableRow>
     );
@@ -109,20 +142,23 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
       )}
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
       <br/>
-      <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} />
+      <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} handleOpenSnackbarDeleteEvent={handleOpenSnackbarDeleteEvent}/>
+      <DeleteEventSnackbar opened={openSnackbarDeleteEvent} clicked={handleCloseSnackbarDeleteEvent}/>
+      <DeleteTripSnackbar opened={openSnackbarDeleteTrip} clicked={handleCloseSnackbarDeleteTrip}/>
+
     </div>
   );
 }
 
-function DeleteTripButton({ handleDeleteTrip, trip }) {
+function DeleteTripButton({ handleDeleteTrip, trip, handleOpenSnackbarDeleteTrip }) {
   return (
-    <DeleteIcon onClick={() => handleDeleteTrip(trip.id)} /> 
+    <DeleteIcon onClick={() => {handleDeleteTrip(trip.id), handleOpenSnackbarDeleteTrip()}} /> 
   );
 }
 
-function DeleteEventButton({ handleDeleteEventAndTrips, event_id }) {
+function DeleteEventButton({ handleDeleteEventAndTrips, event_id, handleOpenSnackbarDeleteEvent }) {
   return (
-    <div onClick={() => handleDeleteEventAndTrips(event_id)}>
+    <div onClick={() => {handleDeleteEventAndTrips(event_id), handleOpenSnackbarDeleteEvent() }}>
     <DeleteIcon className="delete_event" /> 
     delete event
     </div>

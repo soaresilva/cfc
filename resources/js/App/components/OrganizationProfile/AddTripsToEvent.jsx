@@ -2,15 +2,18 @@ import React, { useState, useEffect } from "react";
 import "../../../../sass/app.scss";
 import AddIcon from "@material-ui/icons/Add";
 import DeleteIcon from "@material-ui/icons/Delete";
-import Alert from "@material-ui/lab/Alert";
-import Snackbar from "@material-ui/core/Snackbar";
+import OrgAddTripSnackbar from "../UI/Snackbar/OrgAddTripSnackbar";
+import DeleteTripSnackbar from "../UI/Snackbar/DeleteTripSnackbar";
+
 
 export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
   const [showEventlessTrips, setShowEventlessTrips] = useState(false);
   const [eventlessTrips, setEventlessTrips] = useState([]);
   const [wasAdded, setWasAdded] = useState(false);
   const [wasDeleted, setWasDeleted] = useState(false);
-
+  const [openSnackbarAdd, setOpenSnackbarAdd] = useState(false);
+  const [openSnackbarDeleteTrip, setOpenSnackbarDeleteTrip] = useState(false);
+  
   const showEventlessTripsUrl = "/api/org/trips/find/";
   const addTripToEventUrl = "/api/org/trips/add/";
   const deleteEventlessTripUrl = "/api/org/trips/delete/";
@@ -52,11 +55,33 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
       await fetch(`${deleteEventlessTripUrl}${trip_id}`);
       showTrips();
       setWasDeleted(true);
-      alert("trip deleted");
     } catch (err) {
       console.log("deleteEventlessTrip error", err);
     }
   };
+
+  const handleOpenSnackbarAdd = () => {
+    setOpenSnackbarAdd(true);
+  };
+
+  const handleCloseSnackbarAdd = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbarAdd(false);
+  };
+
+  const handleOpenSnackbarDeleteTrip = () => {
+    setOpenSnackbarDeleteTrip(true);
+  };
+
+  const handleCloseSnackbarDeleteTrip = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbarDeleteTrip(false);
+  };
+
 
   const trips = eventlessTrips.map((trip, index) => {
     return (
@@ -67,8 +92,8 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
           </p>
           <em>{trip.flight_date}</em>
         </div>
-        <AddIcon onClick={(trip_id) => addTripToEvent(trip.id)} />
-        <DeleteIcon onClick={(trip_id) => deleteEventlessTrip(trip.id)} />
+        <AddIcon onClick={(trip_id) => {addTripToEvent(trip.id), handleOpenSnackbarAdd()}} />
+        <DeleteIcon onClick={(trip_id) => {deleteEventlessTrip(trip.id),handleOpenSnackbarDeleteTrip()}} />
         <br />
         <hr />
       </div>
@@ -80,22 +105,9 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
       {eventlessTrips.length !== 0 ? <button onClick={handleShowTripsClick}>Add trip to this event</button> : ""}
       {showEventlessTrips ? trips : ""}
       <div>
-        {wasDeleted ? (
-          <Snackbar autoHideDuration={1000}>
-            <Alert severity="success">Trip deleted!</Alert>
-            {/* {wasAdded ? <Alert severity="success">Trip added!</Alert> : ""} */}
-          </Snackbar>
-        ) : (
-          ""
-        )}
-        {wasAdded ? (
-          <Snackbar autoHideDuration={3500}>
-            {/* <Alert severity="success">Trip deleted!</Alert> */}
-            <Alert severity="success">Trip added!</Alert>
-          </Snackbar>
-        ) : (
-          ""
-        )}
+          <OrgAddTripSnackbar opened={openSnackbarAdd} clicked={handleCloseSnackbarAdd} wasAdded={wasAdded}  />
+          <DeleteTripSnackbar opened={openSnackbarDeleteTrip} clicked={handleCloseSnackbarDeleteTrip} wasDeleted={wasDeleted} />
+
       </div>
     </div>
   );

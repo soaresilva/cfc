@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
+import AddEventSnackbar from "../UI/Snackbar/AddEventSnackbar";
+
 
 export default function OrganizationAddEvent({ org_id, getEvents }) {
   const [showAddEventForm, setShowAddEventForm] = useState(false);
   const [addEventName, setAddEventName] = useState("");
   const [addEventDescription, setAddEventDescription] = useState("");
   const [addEventDate, setAddEventDate] = useState("");
+
+  const [openSnackbarAdd, setOpenSnackbarAdd] = useState(false);
 
 
   const addEventUrl = "/api/org/event/add/";
@@ -51,6 +55,18 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
   };
 
 
+  const handleOpenSnackbarAdd = () => {
+    setOpenSnackbarAdd(true);
+  };
+
+  const handleCloseSnackbarAdd = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbarAdd(false);
+  };
+
+
 
   return (
     <div>
@@ -63,11 +79,13 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
           <br />
           <input onChange={handleAddEventDate} value={addEventDate} type="date" name="date" placeholder="event date" />
           <br />
-          <input  type="submit" value="submit event" />
+          <input  type="submit" value="submit event" onClick={handleOpenSnackbarAdd}/>
         </form>
       ) : (
         ""
       )}
+      <AddEventSnackbar opened={openSnackbarAdd} clicked={handleCloseSnackbarAdd} />
+
     </div>
   );
 }
