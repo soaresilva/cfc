@@ -13,8 +13,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 95vw;
   padding: 0 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .AirportSelectionBoxes {
@@ -37,10 +38,17 @@
 
 .CheckboxOption {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 35vw;
   margin: 1rem auto;
+}
+
+.CheckboxOptionItem {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Blue {
@@ -65,15 +73,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 1315px) {
-  .CheckboxOption {
-    width: 45vw;
-  }
-}
 @media (max-width: 1150px) {
-  .CheckboxOption {
-    width: 65vw;
-  }
   .Dropdown {
     flex-direction: column;
   }
@@ -88,17 +88,10 @@
   }
 }
 
-@media (max-width: 1035px) {
-  .CheckboxOption {
-    width: 65vw;
-  }
-}
-
 @media (max-width: 797px) {
   .Dropdown {
     justify-content: space-evenly;
     align-items: center;
-    width: 95vw;
   }
   .SearchSection {
     flex-direction: column;
@@ -117,5 +110,8 @@
     padding: 0;
     flex-direction: column;
     align-items: center;
+  }
+  .CheckboxOptionItem {
+    width: 100%;
   }
 }

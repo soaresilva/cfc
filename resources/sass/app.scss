@@ -25,12 +25,12 @@
 }
 
 body {
-  background-color: rgb(174, 201, 121) !important;
+  background-color: rgba(174, 201, 121, 0.35) !important;
   font-family: "Nunito", sans-serif !important;
 }
 
 #app {
-  background-color: rgb(174, 201, 121);
+  background-color: rgba(174, 201, 121, 0.35);
 }
 
 .card-body-react {

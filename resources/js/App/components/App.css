@@ -136,3 +136,8 @@
     margin-bottom: 1.5rem;
   }
 }
+
+.MuiFormControlLabel-root {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
