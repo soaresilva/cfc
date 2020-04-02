@@ -1,8 +1,7 @@
 
-
 @media (max-width: 750px) {
-  Button {
+  button {
     /* width: 2rem; */
-    font-size: .75rem !important;
+    font-size: 0.75rem !important;
   }
 }

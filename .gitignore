@@ -1,16 +1,11 @@
 /node_modules
 /public/hot
-/public/js
-/public/css
-/public/mix-manifest.json
-/public/app.css.map
-/public/app.js.map
 /public/storage
 /storage/*.key
 /vendor
 .env
 .env.backup
-.envy.copy
+.env.copy
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -20,6 +15,4 @@ yarn-error.log
 /config/database.php
 /.vagrant
 .phpunit.result.cache
-/public/js/app.js.map
-/public/css/app.css.map
 phploy.ini
