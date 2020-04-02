@@ -74,11 +74,15 @@ const FlightSearch = (props) => {
           <h1>Calculate and offset your Emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
-            <SelectAirportOrigin />
-            <SelectAirportDestination />
-            <DatePickerFrom />
-            <DatePickerTo />
-            <Select />
+            <div className="AirportSelectionBoxes">
+              <SelectAirportOrigin />
+              <SelectAirportDestination />
+            </div>
+            <div className="DateSelectionBoxes">
+              <DatePickerFrom />
+              <DatePickerTo />
+              <Select />
+            </div>
           </div>
           <div className="CheckboxOption">
             <label>Direct flights only:</label>
@@ -88,7 +92,7 @@ const FlightSearch = (props) => {
             <label>Business class:</label>
             <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
           </div>
-            <Button clicked={searchFlightHandler}>Search</Button>
+          <Button clicked={searchFlightHandler}>Search</Button>
         </div>
         <FlightSection
           flightData={flightData}

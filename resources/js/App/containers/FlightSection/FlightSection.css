@@ -15,11 +15,21 @@
   padding-top: 1.5rem;
 }
 
-@media (max-width: 797px) {
+@media (max-width: 1150px) {
   .FlightSection {
-    margin-top: 18rem;
+    margin-top: 13rem;
     margin-bottom: 2rem;
   }
 }
-@media (max-width: 450px) {
+
+@media (max-width: 760px) {
+  .FlightSection {
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .FlightSection {
+    margin-top: 23rem;
+  }
 }

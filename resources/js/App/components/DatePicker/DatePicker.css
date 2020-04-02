@@ -1,8 +1,9 @@
-@media (max-width: 797px) {
+@media (max-width: 555px) {
   .DayPickerInput {
-    width: 18.75rem !important;
+    margin: 0.2rem 0 !important;
+    width: 80% !important;
   }
   input {
-    width: 18.75rem;
+    width: 100%;
   }
 }

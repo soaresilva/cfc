@@ -8,3 +8,14 @@
   outline: none;
   border-radius: 7px;
 }
+
+.MuiAutocomplete-root {
+  margin: 0 0.4rem;
+}
+
+@media (max-width: 555px) {
+  .MuiAutocomplete-root {
+    margin: 0.5rem;
+    width: 12.5rem;
+  }
+}
