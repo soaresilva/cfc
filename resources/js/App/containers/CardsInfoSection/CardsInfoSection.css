@@ -18,6 +18,7 @@
   background-color: #3a452e;
 }
 
+
 @media (max-width: 785px) {
   .CardItem-About,
   .CardItem-Calc,
@@ -27,9 +28,7 @@
     margin-top: 1rem;
   }
 }
-/* @media (max-width: 575px) {
 
-} */
 @media (max-width: 475px) {
   .CardItem-Calc {
     margin-top: -0.5rem;
@@ -42,6 +41,3 @@
     margin-top: -0.5rem;
   }
 }
-/* @media (max-width: 475px) {
-
-} */

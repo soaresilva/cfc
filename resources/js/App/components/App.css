@@ -12,7 +12,7 @@
 .WelcomeText {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 5rem; */
 }
 
 .WelcomeText::after {
@@ -53,8 +52,8 @@
 
 .Video {
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
