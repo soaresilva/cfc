@@ -9759,7 +9759,7 @@ export const availableAirports = [
   { key: "ZHM", title: "ZHM, Shamshernagar, Bangladesh, BD" },
   { key: "ZHP", title: "ZHP, High Prairie, AB [High Prairie], Canada, CA" },
   { key: "ZHY", title: "ZHY, Zhongwei Xiangshan, China, CN" },
-  { key: "ZIA", title: "ZIA, Zhukovsky [Ramenskoye], RU" },
+  { key: "ZIA", title: "ZIA, Moscow (Moskva,Moskau) Zhukovsky [Ramenskoye], RU" },
   { key: "ZIC", title: "ZIC, Victoria, Chile, CL" },
   { key: "ZIG", title: "ZIG, Ziguinchor, Senegal, SN" },
   { key: "ZIH", title: "ZIH, Ixtapa/Zihuatanejo, Mexico, MX" },
