@@ -12,8 +12,8 @@
   color: white;
   padding: 1rem;
   font-size: 1rem;
-  border-radius: 3px;
-  margin-bottom: -.03rem;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -0.03rem;
   font-weight: 600;
 }
 

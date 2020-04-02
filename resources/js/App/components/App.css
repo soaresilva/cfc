@@ -141,3 +141,27 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: rgb(252, 211, 155) !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: rgb(252, 211, 103) !important;
+}
+
+.MuiButton-containedPrimary {
+  color: black !important;
+  background-color: rgb(243, 185, 103) !important;
+}
+
+.MuiButton-containedSecondary {
+  color: black !important;
+  background-color: rgb(252, 211, 155) !important;
+}
+
+.MuiPaginationItem-outlinedSecondary.Mui-selected {
+  color: rgb(252, 211, 155) !important;
+  background-color: rgba(252, 211, 155, 0.12) !important;
+  border: 1px solid rgba(252, 211, 155, 0.5) !important;
+}
