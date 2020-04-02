@@ -11,6 +11,7 @@ import Paper from "@material-ui/core/Paper";
 export default function OrganizationEventSummary({ totalDistance, totalCarbonFootprint, totalCarbonOffset }) {
   const classes = useStyles();
 
+
   return (
     <TableContainer component={Paper}>
       <h3 align="left">Event Summary</h3>
