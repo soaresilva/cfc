@@ -77,21 +77,29 @@
 @media (max-width: 450px) {
   .Flight {
     flex-direction: column;
+    margin: auto auto 1rem auto;
+    justify-content: space-around;
+    height: 45vh;
   }
+  .FlightTitle {
+    font-size: 1.4rem;
+  }
+
+  .FlightInfo {
+    font-size: 1rem;
+  }
+
   .FlightAirports {
     width: 70vw;
+    justify-content: space-around;
   }
   .FlightDuration {
     width: 70vw;
+    justify-content: space-around;
   }
   .FlightStopovers {
     width: 70vw;
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .Flight {
-    height: 45vh;
-    justify-content: space-between;
-    margin-bottom: 0rem;
+    justify-content: space-around;
   }
 }

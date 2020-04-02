@@ -2,10 +2,17 @@
   background-color: rgb(255, 244, 229);
   border-radius: 7px;
   height: 3.5rem;
+  margin: 0 0.4rem;
 }
 
 @media (max-width: 797px) {
   .SelectWrapper {
     width: 18.75rem;
+  }
+}
+@media (max-width: 555px) {
+  .SelectWrapper {
+    margin: 0.4rem;
+    width: 4.5rem;
   }
 }

@@ -6,13 +6,25 @@
 .FlightSearchTitle {
   height: 10rem;
   margin-bottom: 6rem;
+  margin-top: 1.5rem;
 }
 
 .Dropdown {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 70vw;
+  width: 95vw;
+  padding: 0 1rem;
+}
+
+.AirportSelectionBoxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.DateSelectionBoxes {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .DF {
@@ -58,26 +70,52 @@
     width: 45vw;
   }
 }
+@media (max-width: 1150px) {
+  .CheckboxOption {
+    width: 65vw;
+  }
+  .Dropdown {
+    flex-direction: column;
+  }
+  .AirportSelectionBoxes {
+    padding: 1rem;
+    width: 70vw;
+  }
+
+  .DateSelectionBoxes {
+    padding: 1rem;
+    width: 80vw;
+  }
+}
 
 @media (max-width: 1035px) {
   .CheckboxOption {
     width: 65vw;
   }
 }
+
 @media (max-width: 797px) {
   .Dropdown {
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 95vw;
-    height: 46vh;
   }
   .SearchSection {
     flex-direction: column;
     justify-content: space-between;
     background-color: #484d37;
   }
-  .FlightSearchTitle {
-    margin-top: 2rem;
+}
+
+@media (max-width: 555px) {
+  .DateSelectionBoxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .AirportSelectionBoxes {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
   }
 }

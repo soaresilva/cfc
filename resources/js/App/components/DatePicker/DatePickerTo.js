@@ -21,7 +21,7 @@ export class DatePickerTo extends React.Component {
 
   render() {
     return (
-      <div style={{ color: "black" }} className="DayPickerInput">
+      <div style={{ color: "black", margin: "0 0.4rem" }} className="DayPickerInput">
         <DayPickerInput
           inputProps={{
             style: {
