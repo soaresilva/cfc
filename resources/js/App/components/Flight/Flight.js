@@ -53,30 +53,38 @@ const flight = (props) => {
 
   return (
     <div className="Flight">
-      <div>
-        <h1 className="FlightTitle">{cityFrom}</h1>
-        <h3 className="FlightInfo">Departure:</h3>
-        <h4 className="FlightTime">{dateDepart}</h4>
-        <h4 className="FlightTime">{timeDepart}</h4>
+      <div className="FlightAirports">
+        <div>
+          <h1 className="FlightTitle">{cityFrom}</h1>
+          <h3 className="FlightInfo">Departure:</h3>
+          <h4 className="FlightTime">{dateDepart}</h4>
+          <h4 className="FlightTime">{timeDepart}</h4>
+        </div>
+        <div>
+          <h1 className="FlightTitle">{cityTo}</h1>
+          <h3 className="FlightInfo">Arrival:</h3>
+          <h4 className="FlightTime">{dateArrival}</h4>
+          <h4 className="FlightTime">{timeArrival}</h4>
+        </div>
       </div>
-      <div>
-        <h1 className="FlightTitle">{cityTo}</h1>
-        <h3 className="FlightInfo">Arrival:</h3>
-        <h4 className="FlightTime">{dateArrival}</h4>
-        <h4 className="FlightTime">{timeArrival}</h4>
+      <div className="FlightDuration">
+        <div>
+          <h3 className="FlightInfo">Duration:</h3>
+          <h4 className="FlightTime">{fly_duration}</h4>
+        </div>
+        <div>
+          <h3 className="FlightInfo">Price:</h3>
+          <h4 className="FlightTime">€{price}</h4>
+        </div>
       </div>
-      <div>
-        <h3 className="FlightInfo">Duration:</h3>
-        <h4 className="FlightTime">{fly_duration}</h4>
-      </div>
-      <div>
+      {/* <div>
         <h3 className="FlightInfo">Distance:</h3>
         <h4 className="FlightTime">{totalDistance}km</h4>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <h3 className="FlightInfo">Price:</h3>
         <h4 className="FlightTime">€{price}</h4>
-      </div>
+      </div> */}
       <div className="FlightStopovers">{stopovers}</div>
       <Button
         clicked={() => {

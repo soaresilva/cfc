@@ -1,6 +1,8 @@
 .FlightSection {
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .Warning {
@@ -15,7 +17,9 @@
 
 @media (max-width: 797px) {
   .FlightSection {
-    margin-top: 16rem;
+    margin-top: 18rem;
     margin-bottom: 2rem;
   }
+}
+@media (max-width: 450px) {
 }

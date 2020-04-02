@@ -3,3 +3,9 @@
   border-radius: 7px;
   height: 3.5rem;
 }
+
+@media (max-width: 797px) {
+  .SelectWrapper {
+    width: 18.75rem;
+  }
+}

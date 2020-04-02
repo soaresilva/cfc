@@ -1,27 +1,8 @@
-.Button {
-  padding: .5rem;
-  width: 5rem;
-  border-radius: 10px;
-  background-color: #6c757d;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  color: white;
-  transition: .3s all;
-}
 
-.Button:hover {
-  background-color: #5a6268;
-  outline: none;
-}
 
-.ButtonLink {
-  text-decoration: none;
-  color: white;
-  transition: .6s all;
-}
-
-.ButtonLink:hover {
-  text-decoration: none;
-  color: black;
+@media (max-width: 750px) {
+  Button {
+    /* width: 2rem; */
+    font-size: .75rem !important;
+  }
 }
