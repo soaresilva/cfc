@@ -65,15 +65,10 @@ function OffsetSection(props) {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
-        console.log("success");
-        console.log(response);
         setUserId(response.id), console.log("response id", response.id);
         setIsUserOrg(true);
       },
-      error: (response) => {
-        console.log("error");
-        console.log(response);
-      }
+      error: (response) => {}
     });
   };
 
