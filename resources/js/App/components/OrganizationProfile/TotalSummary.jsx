@@ -35,9 +35,9 @@ export default function TotalSummary ({orgEvents, org_id}) {
   });
   
   const trips = allOrgTrips.map(trip => {
-    totalCarbonFootprint = totalCarbonFootprint + trip.carbon_amount;
+    totalCarbonFootprint = Number((totalCarbonFootprint + trip.carbon_amount).toFixed(3));
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
-    totalDistance = Number((totalDistance + trip.distance).toFixed(3));
+    totalDistance = totalDistance + trip.distance;
   });
 
   return (
