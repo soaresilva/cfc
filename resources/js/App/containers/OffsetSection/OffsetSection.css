@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #3a452e;
+  padding: 3rem 0;
 }
 
 .SelectedFlight {
@@ -19,14 +20,16 @@
   align-items: flex-start;
   background-color: #62684d;
   border-radius: 7px;
-  height: 4rem;
   padding: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .AddTripToDB {
   margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 
 .CardItem-Project,
@@ -57,9 +60,6 @@
 @media (max-width: 785px) {
   h6 {
     font-size: 0.7rem;
-  }
-  .AddTripToDB {
-    margin-top: -5rem;
   }
   .CardItem-Project {
     width: 100%;
