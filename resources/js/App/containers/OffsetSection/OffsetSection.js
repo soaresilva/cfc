@@ -21,7 +21,7 @@ function OffsetSection(props) {
   };
   const kenya = {
     title: "Kenya",
-    stovesForKenya: "Use your offsetting to provide more efficient cook stoves for women in Kenya.",
+    stovesForKenya: "Use your offset to provide more efficient stoves for women in Kenya.",
     moreInfoKenya:
       "In rural communities in western Kenya, food is traditionally cooked over an open fire. Thanks to the efficient cook stoves, 40 to 50 per cent less firewood is used, saving households a lot of time and money. The women finance their subsidised cook stoves in local saving and loaning groups. In addition, these saving groups finance medical health care, school fees or high-quality seed."
   };

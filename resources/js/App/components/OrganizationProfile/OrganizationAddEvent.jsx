@@ -56,6 +56,7 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
 
 
   const handleOpenSnackbarAdd = () => {
+    getEvents();
     setOpenSnackbarAdd(true);
   };
 
@@ -71,13 +72,18 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
   return (
     <div>
       <button onClick={handleShowAddEventForm}>Add Event</button>
+      <br />
+      <br />
       {showAddEventForm ? (
         <form method="" action="" onSubmit={addEvent}>
           <input onChange={handleAddEventName} value={addEventName} type="text" name="name" placeholder="event name" />
           <br />
+          <br />
           <input onChange={handleAddEventDescription} value={addEventDescription} type="text" name="description" placeholder="event description" />
+          <br />         
           <br />
           <input onChange={handleAddEventDate} value={addEventDate} type="date" name="date" placeholder="event date" />
+          <br />
           <br />
           <input  type="submit" value="submit event" onClick={handleOpenSnackbarAdd}/>
         </form>

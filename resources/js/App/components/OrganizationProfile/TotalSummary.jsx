@@ -44,19 +44,18 @@ export default function TotalSummary ({orgEvents, org_id}) {
     <div>
     {allOrgTrips !== 0 ? 
         <div>
-
         <div className="totalSummary">
         <h3 align="left">Summary</h3>
         <RefreshIcon onClick={getAllOrgTrips}/>
         </div>
     <TableContainer component={Paper}>
-    <Table className={classes.table} aria-label="customized table">
+    <Table className={classes.table} aria-label="customized table" >
       <TableHead>
         <StyledTableRow>
-          <StyledTableCell>Total Number of Events</StyledTableCell>
-          <StyledTableCell>Total Distances Traveled (km) </StyledTableCell>
-          <StyledTableCell>Total Carbon Footprint (tons)</StyledTableCell>
-          <StyledTableCell>Total Carbon Offset (tons)</StyledTableCell>
+          <StyledTableCell className="headings">Total Number of Events</StyledTableCell>
+          <StyledTableCell className="headings">Total Distances Traveled (km) </StyledTableCell>
+          <StyledTableCell className="headings">Total Carbon Footprint (tons)</StyledTableCell>
+          <StyledTableCell className="headings">Total Carbon Offset (tons)</StyledTableCell>
         </StyledTableRow>
       </TableHead>
       <TableBody>

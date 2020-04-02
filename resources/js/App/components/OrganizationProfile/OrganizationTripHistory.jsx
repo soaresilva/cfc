@@ -126,12 +126,12 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
             <Table className={classes.table} aria-label="customized table">
               <TableHead align="left">
                 <StyledTableRow>
-                  <StyledTableCell>Trip Route</StyledTableCell>
-                  <StyledTableCell align="right">Distance (km) </StyledTableCell>
-                  <StyledTableCell align="right">Carbon Footprint (tons)</StyledTableCell>
-                  <StyledTableCell align="right">Carbon Offset (tons)</StyledTableCell>
-                  <StyledTableCell align="right">Date</StyledTableCell>
-                  <StyledTableCell align="right"></StyledTableCell>
+                  <StyledTableCell className="headings">Trip Route</StyledTableCell>
+                  <StyledTableCell className="headings" align="right">Distance (km) </StyledTableCell>
+                  <StyledTableCell className="headings" align="right">Carbon Footprint (tons)</StyledTableCell>
+                  <StyledTableCell className="headings" align="right">Carbon Offset (tons)</StyledTableCell>
+                  <StyledTableCell className="headings" align="right">Date</StyledTableCell>
+                  <StyledTableCell className="headings" align="right"></StyledTableCell>
                 </StyledTableRow>
               </TableHead>
               <TableBody>{trips}</TableBody>

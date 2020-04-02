@@ -1,11 +1,10 @@
 /node_modules
 /public/hot
-/public/js
-/public/css
-/public/mix-manifest.json
-/public/app.css.map
-/public/app.js.map
 /public/storage
+/public/js/*
+/public/css/*
+/public/videos/*
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
@@ -20,6 +19,4 @@ yarn-error.log
 /config/database.php
 /.vagrant
 .phpunit.result.cache
-/public/js/app.js.map
-/public/css/app.css.map
 phploy.ini

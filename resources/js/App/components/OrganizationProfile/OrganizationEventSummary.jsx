@@ -13,14 +13,14 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
 
 
   return (
-    <TableContainer component={Paper}>
-      <h3 align="left">Event Summary</h3>
+    <TableContainer component={Paper} className="event_summary">
+      <h4 align="left">Event Summary</h4>
       <Table className={classes.table} aria-label="customized table">
         <TableHead align="left">
-          <TableRow>
-            <StyledTableCell>Total Distance Traveled</StyledTableCell>
-            <StyledTableCell align="right">Total Carbon Footprint (tons)</StyledTableCell>
-            <StyledTableCell align="right">Total Carbon Offset (tons)</StyledTableCell>
+          <TableRow >
+            <StyledTableCell className="headings">Total Distance Traveled</StyledTableCell>
+            <StyledTableCell className="headings" align="right">Total Carbon Footprint (tons)</StyledTableCell>
+            <StyledTableCell className="headings" align="right">Total Carbon Offset (tons)</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>

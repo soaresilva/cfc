@@ -10,24 +10,32 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_id }) {
   const [showOrgTrips, setShowOrgTrips] = useState(new Array(orgEvents.length).fill(false));
+  const [expanded, setExpanded] = React.useState(false);
+
   const classes = expansionStyles();
 
   const handleShowOrgTrips = (index) => {
     setShowOrgTrips(showOrgTrips.map((s, i) => (i === index ? !s : s)));
   };
 
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   const events = orgEvents.map((event, index) => {
     return (
       <div className={classes.root} key={index}>
-        <ExpansionPanel>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+        <ExpansionPanel  expanded={expanded === "panel" + index} onChange={handleChange("panel" + index)}>
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
+          <Typography component={"div"} className={classes.heading}>
             <div className="event-intro">
               {event.name}
               <em>{event.date}</em>
             </div>
+            </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography component={"div"}>
+            <Typography component={"div"} className={classes.secondaryHeading}>
               <div className="org_event_description">
                 <p>{event.description}</p>
                 <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">

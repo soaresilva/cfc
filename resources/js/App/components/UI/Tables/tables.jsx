@@ -5,7 +5,10 @@ import TableRow from "@material-ui/core/TableRow";
 
 export const useStyles = makeStyles({
   table: {
-    width: "74vw"
+    minWidth: "75vw",
+    padding:0,
+    fontFamily: "Nunito, sans-serif"
+
   }
 
 });
@@ -16,15 +19,23 @@ export const StyledTableCell = withStyles((theme) => ({
     color: theme.palette.common.white
   },
   body: {
-    fontSize: "1em"
+    fontSize: "1em",
+    fontFamily: "Nunito, sans-serif"
   }
 }))(TableCell);
 
 export const StyledTableRow = withStyles((theme) => ({
   root: {
+    fontFamily: "Nunito, sans-serif",
     "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.background.default
     }
+  },
+  body : {
+    fontFamily: "Nunito, sans-serif"
+  },
+  heading : {
+    fontFamily: "Nunito, sans-serif"
   }
 }))(TableRow);
 
@@ -33,8 +44,21 @@ export const expansionStyles = makeStyles((theme) => ({
   root: {
     width: "100%"
   },
+  // heading: {
+  //   fontSize: theme.typography.pxToRem(15),
+  //   fontWeight: theme.typography.fontWeightRegular
+  // }
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
+    // fontSize: theme.typography.pxToRem(14),
+    flexBasis: "33.33%",
+    flexShrink: 0,
+    fontFamily: "Nunito, sans-serif"
+  },
+  secondaryHeading: {
+    // fontSize: theme.typography.pxToRem(14),
+    color: theme.palette.text.secondary,
+    padding: "0 16px 0 16px",
+    fontFamily: "Nunito, sans-serif"
+
   }
 }));
