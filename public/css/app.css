@@ -13,6 +13,11 @@
   color: white;
   text-align: center;
 }
+.org-profile p {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
 
 .event-intro {
   display: flex;
@@ -75,6 +80,47 @@
 }
 .instruction h5 {
   font-style: italic;
+}
+
+.org_event_description {
+  text-align: left;
+}
+
+.totalSummary {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  color: black;
+}
+
+.event_history {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.event_history h3 {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.event_summary {
+  font-family: Nunito;
+}
+.event_summary h4 {
+  font-family: Nunito;
+}
+
+.trip_history_table {
+  font-family: Nunito;
+}
+
+.MuiTableRow-root {
+  font-family: "Nunito" !important;
+}
+
+.headings {
+  font-family: "Nunito" !important;
 }
 
 .userprofile {

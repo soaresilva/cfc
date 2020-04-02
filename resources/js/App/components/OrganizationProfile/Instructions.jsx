@@ -25,7 +25,7 @@ export default function Instructions() {
             <p> 
               After a trip and carbon offset has been selected, pick an event, press <strong>"see event summary and trips"</strong>, and then add a trip to the event!
             </p>
-            <h5>Happy and safe travels(for you and the enviornment, too!)</h5>
+            <h5>Happy and safe travels (for you and the enviornment, too!)</h5>
             <button onClick={handleShowInstructions}>Close</button>
           </div>
         ) : (

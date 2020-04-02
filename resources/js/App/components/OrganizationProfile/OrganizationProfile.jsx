@@ -40,7 +40,7 @@ export default function OrganizationProfile({ org_id }) {
   return (
     <div className="org-profile">
       {orgEvents.length === 0 ? (
-        <div>"loading"</div>
+        <p>No events found</p>
       ) : (
         <>
         <TotalSummary orgEvents={orgEvents} org_id={org_id}/>
@@ -49,6 +49,7 @@ export default function OrganizationProfile({ org_id }) {
       )}
       <br />
       <OrganizationAddEvent org_id={org_id} getEvents={getEvents} />
+      <br/>
       <div className="org-help">
         <Instructions />
       </div>

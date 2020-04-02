@@ -106,7 +106,7 @@ function CardItem(props) {
           <h1>{children}</h1>
           <div className="CardItemsLandingPage_description">
             <p>
-              Carbon Voyage calculates the carbon footprint of your flights, helping you and your organization making more informed
+              Carbon Voyage calculates the carbon footprint of your flights, helping you and your organization make more informed
               decisions when it comes to flying across the globe.
             </p>
             <p>Maybe your seminar could be a webinar instead!</p> <p>Make a concrete commitment for a more sustainable future.</p>
