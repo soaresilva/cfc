@@ -8,7 +8,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="Footer">
-      <div>
+      <div className="FooterText">
         <h2>Travel. But don't neglect the environment.</h2>
         <h5>Use our calculator for your leisure and business trips and make a difference.</h5>
       </div>
@@ -69,7 +69,7 @@ function Footer() {
         </div>
       </div>
       <a href="https://github.com/soaresilva/cfc">
-        <p>View our code on GitHub</p>
+        <h6>View our code on GitHub</h6>
       </a>
     </div>
   );
