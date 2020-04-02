@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../../sass/app.scss";
-import {useStyles, StyledTableCell, StyledTableRow} from '../UI/Tables/tables';
+import { useStyles, StyledTableCell, StyledTableRow } from "../UI/Tables/tables";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableContainer from "@material-ui/core/TableContainer";
@@ -13,11 +13,11 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
 
   return (
     <TableContainer component={Paper}>
-    <h3 align="left">Event Summary</h3>
+      <h3 align="left">Event Summary</h3>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead align="left">            
+        <TableHead align="left">
           <TableRow>
-            <StyledTableCell>Total Distances Traveled</StyledTableCell>
+            <StyledTableCell>Total Distance Traveled</StyledTableCell>
             <StyledTableCell align="right">Total Carbon Footprint (tons)</StyledTableCell>
             <StyledTableCell align="right">Total Carbon Offset (tons)</StyledTableCell>
           </TableRow>
