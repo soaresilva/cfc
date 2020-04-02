@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import FlightSearch from "../containers/FlightSearch/FlightSearch";
+import FlightSearch from "../containers/FlightSearch/FlightSearch.js";
 import CardsInfoSection from "./../containers/CardsInfoSection/CardsInfoSection";
 import Footer from "../components/Footer/Footer";
 

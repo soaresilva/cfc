@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { createFilterOptions } from "@material-ui/lab/Autocomplete";
-
 import { availableAirports } from "../../destinations/available_airports";
 import { selectAirportTo } from "../../store/actions/index";
 import "./SelectAirports.css";
