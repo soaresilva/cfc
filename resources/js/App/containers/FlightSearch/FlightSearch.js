@@ -63,7 +63,7 @@ const FlightSearch = (props) => {
     <div className="FlightSearch">
       <div className="SearchSection">
         <div className="FlightSearchTitle">
-          <h1>Calculate and offset your Emissions!</h1>
+          <h1>Calculate and offset your emissions!</h1>
           <h1 className="Blue">Flight Explorer</h1>
           <div className="Dropdown">
             <div className="AirportSelectionBoxes">
