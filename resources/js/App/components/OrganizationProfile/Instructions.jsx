@@ -20,11 +20,14 @@ export default function Instructions() {
               After you have given a name, description, and date of your organization's event, then you can add various flight trips to this
               event!
             </p>
+            <br/>
             <p>
               To <strong>add a trip</strong>, click <strong>"search for flights"</strong> at the top of your profile and then use our flight search/ carbon calculator to find flights and the carbon footprint they will produce.</p>
             <p> 
+              <br/>
               After a trip and carbon offset has been selected, pick an event, press <strong>"see event summary and trips"</strong>, and then add a trip to the event!
             </p>
+            <br/>
             <h5>Happy and safe travels (for you and the enviornment, too!)</h5>
             <button onClick={handleShowInstructions}>Close</button>
           </div>

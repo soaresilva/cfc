@@ -3,19 +3,10 @@
 
 }
 
-// .org-heading {
-//   color:blue;
-//   background-color: #a9d37c;
-//   text-align: center;
-// }
-
 
 .org-profile {
   color:white;
   text-align: center;
-  //background-color: rgb(30, 88, 86);
-  //margin:2em;
-
 
   p {
     color:black;
@@ -34,6 +25,9 @@
 .showOrgTripsButton {
   display: flex;
   justify-self: center;
+  border-radius:1em;
+  font-size:.7em;
+  padding:.3em;
 }
 
 .add_trips_to_events {
@@ -54,7 +48,6 @@
     padding:1em .5em;
   }
 
-  
 }
 
 
@@ -100,10 +93,18 @@
 .instruction {
   color:black;
   background-color: rgba(159, 201, 240,.5);
-  padding:1em;
+  padding:2em;
+  border-radius: 5em;
+  margin-top:.5em;
+  
 
   h5{
     font-style: italic;
+  }
+  button {
+    padding:.4em;
+    font-size:.7em;
+    border-radius: 1em;
   }
 
 }
@@ -140,19 +141,9 @@
     font-family: Nunito;
   }
 
-  &__table {
-  //  width:60vw !important;
-  }
-
-  @media(min-width:320px) {
-  //  width:60vw !important;
-  }
-
   &__content {
     @media(min-width:320px) {
-      // text-align:center !important;
       font-size: .7em !important;
-    
       }
   }
 
@@ -164,14 +155,6 @@
 
 .MuiTableRow-root {
   font-family: "Nunito" !important;
-
-}
-
-
-.MuiTableContainer-root {
-  @media(min-width:320px) {
-   // height:15vh !important;
-  }
 }
 
 
@@ -186,13 +169,8 @@
   @media(min-width:576px) {
     font-size:.9rem !important;
     padding: .3rem !important;
-
   }
 
-  @media(min-width:1000px) {
-    //font-size:1.2rem !important;
-
-    }
 }
 
 
@@ -214,15 +192,7 @@
     text-align: left !important;
   }
 
-  @media(min-width:1000px) {
-   // font-size:rem !important;
-
-  }
-
-
 }
-
-
 
 
 .org_trips_table  {
@@ -252,30 +222,19 @@
 
 
 .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
-  @media(min-width:320px) {
-    // line-height: 1em !important;
-   // text-align:center !important;
-   // font-size: .6rem !important;
-   
-   }
-   @media(min-width:576px) {
-    // margin-left: .26rem !important;
-    //font-size: .rem !important;
+  @media(min-width:576px) {
     line-height: 1rem !important;
-    ///padding: .2em 5em !important;
-   }
+  }
 
-   @media(min-width:1000px) {
+  @media(min-width:1000px) {
     line-height: 1.4rem !important;
-
-    }
+  }
 
 
 }
 
 .WithStyles\(ForwardRef\(TableCell\)\)-body-60 {
   @media(min-width:320px) {
-   // text-align:center !important;
    font-size: .7em !important;
    }
    @media(min-width:576px) {
@@ -284,28 +243,13 @@
   }
   @media(min-width:768px) {
     margin:0 !important;
-   // font-size: 1rem !important;
   }
-  @media(min-width:1000px) {
-    //font-size: 1.2rem !important;
-  }
-}
-
-.MuiTableCell-head {
-  @media(min-width:320px) {
-
-  }
-  
 }
 
 .MuiTableCell-root{
   @media(min-width:320px) {
     padding:.3rem .3rem !important;
   }
- 
-  @media(min-width:768px) {
-    //padding: .2em .1em !important;
-    }
 
 }
 
@@ -320,7 +264,6 @@
     padding:0 !important;
     margin:0 !important;
   }
-
 }
 
 

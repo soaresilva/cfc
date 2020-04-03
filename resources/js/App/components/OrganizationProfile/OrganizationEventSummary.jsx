@@ -15,7 +15,7 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
   return (
     <div className="event_summary">
     <TableContainer component={Paper}>
-      <h4 align="left">Event Summary</h4>
+      <h5 align="left">Event Summary</h5>
       <Table className={classes.table} aria-label="customized table" className="event_summary_table">
         <TableHead align="left">
           <TableRow >
