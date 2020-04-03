@@ -19,7 +19,7 @@ export default function AddTripsToEvent({ event_id, org_id, getOrgTrips }) {
 
   const addTripToEvent = async (trip_id) => {
     try {
-      await fetch(`${addTripToEventUrl}/${trip_id}/${event_id}`);
+      await fetch(`${addTripToEventUrl}${trip_id}/${event_id}`);
       getOrgTrips();
       showTrips();
       setWasAdded(true);
