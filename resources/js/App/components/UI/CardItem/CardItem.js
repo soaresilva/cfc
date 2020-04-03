@@ -16,6 +16,7 @@ function CardItem(props) {
     description,
     moreInfo,
     title,
+    link,
     cityFrom,
     cityTo,
     distance,
@@ -60,9 +61,11 @@ function CardItem(props) {
             <p>{description}</p>
             <div className="CardItemsDetails">
               <p>{price}EUR</p>
-              <InfoIcon onClick={handleOpenInfo} />
+              <div style={{ cursor: "pointer" }}>
+                <InfoIcon onClick={handleOpenInfo} />
+              </div>
             </div>
-            <CustomizedModal closed={handleCloseInfo} opened={openInfo} moreInfo={moreInfo} title={title} />
+            <CustomizedModal closed={handleCloseInfo} opened={openInfo} moreInfo={moreInfo} title={title} link={link} />
             <AddTripToDB
               userId={userId}
               isUserOrg={isUserOrg}
