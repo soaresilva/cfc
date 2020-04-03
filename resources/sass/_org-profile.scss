@@ -180,6 +180,12 @@
     padding: 0.3rem !important;
     line-height: 1rem !important;
   }
+  @media (min-width: 768px) {
+    font-size: 0.9rem !important;
+    padding: 1rem !important;
+    line-height: 1rem !important;
+    padding-left: 1rem !important;
+  }
 }
 
 .trip_headings {
@@ -199,6 +205,15 @@
     font-size: 0.9rem !important;
     text-align: left !important;
     line-height: 1rem !important;
+  }
+  @media (min-width: 768px) {
+    font-size: 0.9rem !important;
+    text-align: left !important;
+    line-height: 1rem !important;
+
+    p {
+      font-size: 0.7rem !important;
+    }
   }
 }
 
@@ -271,9 +286,8 @@
   }
 }
 
-
 .makeStyles-secondaryHeading-76 {
-  width:100%; 
+  width: 100%;
   //this might fuck up lyub
 }
 
@@ -294,28 +308,23 @@
 //   padding: 8px 16px 8px 16px !important;
 // }
 
-
-
-
 .org_events_and_trips {
   width: 100%;
 
-
-  @media(min-width:770px) {
+  @media (min-width: 770px) {
     width: calc(100% - 32px);
   }
 
-
   .MuiTableContainer-root {
     //width: 100%;
-   // margin-right:.5rem;
+    // margin-right:.5rem;
 
     @media (min-width: 320px) {
       //width: 75vw;
       //margin-left: -1.7rem !important;
 
       .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
-        padding:0;
+        padding: 0;
       }
     }
     @media (min-width: 375px) {
@@ -323,54 +332,20 @@
     }
 
     @media (min-width: 425px) {
-     // margin-left: -0.2rem !important;
+      // margin-left: -0.2rem !important;
 
       .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
-        padding:0;
+        padding: 0;
       }
     }
 
-    @media (min-width: 530px) {
-     // margin-left: 0.6rem !important;
-    }
-
-    @media (min-width: 550px) {
-      // margin-left: 0.26rem !important;
-      // width: 80vw !important;
-    }
-
-    @media (min-width: 576px) {
-      // width: 82vw !important;
-    }
-
-    @media (min-width: 680px) {
-      // width: 84vw !important;
-    }
-
     @media (min-width: 768px) {
-      // margin-left: -0.8rem !important;
-      // width: 73vw !important;
-    }
-
-    @media (min-width: 800px) {
-      // margin-left: -0.65rem !important;
-    }
-
-    @media (min-width: 800px) {
-      // margin-right: 0.2rem !important;
-      // margin-left: 0 !important;
-    }
-
-    @media (min-width: 1000px) {
-      // margin-left: -0.5rem !important;
-      // width: 75vw !important;
-    }
-    @media (min-width: 1300px) {
-      // width: 75vw !important;
-    }
-
-    @media (min-width: 1400px) {
-      // width: 76vw !important;
+      .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
+        padding: 1rem !important;
+      }
+      .org_trips_cells {
+        padding: 1rem !important;
+      }
     }
   }
 }

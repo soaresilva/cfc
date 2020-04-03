@@ -125,13 +125,11 @@ const useStyles = makeStyles((theme) => ({
     width: "100%"
   },
   heading: {
-    // fontSize: theme.typography.pxToRem(14),
     flexBasis: "33.33%",
     flexShrink: 0,
     fontFamily: "Nunito, sans-serif"
   },
   secondaryHeading: {
-    // fontSize: theme.typography.pxToRem(14),
     color: theme.palette.text.secondary,
     padding: "0 16px 0 16px"
   }
