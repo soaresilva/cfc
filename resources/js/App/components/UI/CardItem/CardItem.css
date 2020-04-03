@@ -94,26 +94,15 @@ li {
   border-radius: 7px;
 }
 
-/* @media (max-width: 1100px) {
-
-} */
-
 @media (max-width: 950px) {
-  .CardItemsLandingPage {
-    font-size: 0.9rem;
-  }
   h1 {
     font-size: 2rem;
-  }
-
-  .CardItemsDescription {
-    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
   .CardItemsLandingPage {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   h1 {
     font-size: 1.7rem;
@@ -126,7 +115,7 @@ li {
 
 @media (max-width: 575px) {
   .CardItemsLandingPage {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   h1 {
     font-size: 1.3rem;
@@ -136,9 +125,6 @@ li {
 @media (max-width: 475px) {
   .CardItem {
     margin-top: 1rem;
-  }
-  .CardItemsLandingPage {
-    font-size: 0.5rem;
   }
   h1 {
     font-size: 1.1rem;
@@ -153,15 +139,9 @@ li {
   .CardItemsLandingPage_description {
     padding: 0.5rem;
   }
-  .CardItemsDescription {
-    font-size: 0.7rem;
-  }
 }
 
 @media (max-width: 375px) {
-  .CardItemsLandingPage {
-    font-size: 0.5rem;
-  }
   .CardItemsLandingPage__icons {
     margin: 0.6rem;
   }
