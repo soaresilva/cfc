@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AddEventSnackbar from "../UI/Snackbar/AddEventSnackbar";
 
+import "../../../../sass/_org-profile.scss"
+
 
 export default function OrganizationAddEvent({ org_id, getEvents }) {
   const [showAddEventForm, setShowAddEventForm] = useState(false);
@@ -42,7 +44,6 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
   };
 
   const handleAddEventName = (e) => {
-    console.log(addEventName);
     setAddEventName(e.target.value);
   };
 
@@ -71,21 +72,21 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
 
   return (
     <div>
-      <button onClick={handleShowAddEventForm}>Add Event</button>
+      <button className="AddEventSubmit" onClick={handleShowAddEventForm}>Add Event</button>
       <br />
       <br />
       {showAddEventForm ? (
         <form method="" action="" onSubmit={addEvent}>
-          <input onChange={handleAddEventName} value={addEventName} type="text" name="name" placeholder="event name" />
+          <input className="AddEventInput" onChange={handleAddEventName} value={addEventName} type="text" name="name" placeholder="event name" />
           <br />
           <br />
-          <input onChange={handleAddEventDescription} value={addEventDescription} type="text" name="description" placeholder="event description" />
+          <input className="AddEventInput" onChange={handleAddEventDescription} value={addEventDescription} type="text" name="description" placeholder="event description" />
           <br />         
           <br />
-          <input onChange={handleAddEventDate} value={addEventDate} type="date" name="date" placeholder="event date" />
+          <input className="AddEventInput" onChange={handleAddEventDate} value={addEventDate} type="date" name="date" placeholder="event date" />
           <br />
           <br />
-          <input  type="submit" value="submit event" onClick={handleOpenSnackbarAdd}/>
+          <input className="AddEventSubmit" type="submit" value="Submit Event" onClick={handleOpenSnackbarAdd}/>
         </form>
       ) : (
         ""

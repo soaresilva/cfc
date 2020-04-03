@@ -53,12 +53,11 @@ function OffsetSection(props) {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
-        setUserId(response.id), console.log("response id", response.id);
+        setUserId(response.id);
         setIsUserOrg(false);
       },
       error: (response) => {
         console.log("error");
-        console.log(response);
       }
     });
   };
@@ -71,14 +70,11 @@ function OffsetSection(props) {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
-        console.log("success");
-        console.log(response);
-        setUserId(response.id), console.log("response id", response.id);
+        setUserId(response.id);
         setIsUserOrg(true);
       },
       error: (response) => {
         console.log("error");
-        console.log(response);
       }
     });
   };
@@ -89,7 +85,6 @@ function OffsetSection(props) {
       makeOrgId();
     }
   }, []);
-  console.log(dateDepart);
 
   return (
     <div className="OffsetSection">

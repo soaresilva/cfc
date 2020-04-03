@@ -27,9 +27,11 @@
 .showOrgTripsButton {
   display: flex;
   justify-self: center;
-  border-radius: 1em;
+  border-radius: 4px;
   font-size: 0.7em;
-  padding: 0.3em;
+  padding: 4px;
+  border: none;
+  background-color: #c6cacf;
 }
 
 .add_trips_to_events {
@@ -88,7 +90,7 @@
   color: black;
   background-color: rgba(159, 201, 240, 0.5);
   padding: 2em;
-  border-radius: 5em;
+  border-radius: 7px;
   margin-top: 0.5em;
 
   h5 {
@@ -99,6 +101,24 @@
     font-size: 0.7em;
     border-radius: 1em;
   }
+}
+
+.AddEventInput {
+  border-radius: 3.5px;
+  outline: none;
+  border: 1px solid black;
+  background-color: beige;
+  padding: 3.5px;
+  width: 20vw;
+}
+
+.AddEventSubmit {
+  border-radius: 3.5px;
+  outline: none;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #c6cacf;
 }
 
 .org_event_description {
@@ -273,7 +293,6 @@
 // .MuiExpansionPanelDetails-root {
 //   padding: 8px 16px 8px 16px !important;
 // }
-
 
 
 
