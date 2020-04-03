@@ -27,7 +27,7 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
       <div className={classes.root} key={index}>
         <ExpansionPanel  expanded={expanded === "panel" + index} onChange={handleChange("panel" + index)}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
-          <Typography component={"div"} className={classes.heading}>
+          <Typography className={classes.heading}>
             <div className="event-intro">
               {event.name}
               <em>{event.date}</em>
@@ -35,12 +35,14 @@ export default function OrganizationEventHistory({ orgEvents, setOrgEvents, org_
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography component={"div"} className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading}>
               <div className="org_event_description">
                 <p>{event.description}</p>
+                <br/>
                 <button onClick={() => handleShowOrgTrips(index)} className="showOrgTripsButton">
                   {showOrgTrips[index] === false ? "See event summary and trips" : "Close event summary and trips"}
                 </button>
+                <br/>
               </div>
               {showOrgTrips[index] ? (
                 <OrganizationTripHistory

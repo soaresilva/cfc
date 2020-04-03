@@ -13,26 +13,28 @@ export default function OrganizationEventSummary({ totalDistance, totalCarbonFoo
 
 
   return (
-    <TableContainer component={Paper} className="event_summary">
+    <div className="event_summary">
+    <TableContainer component={Paper}>
       <h4 align="left">Event Summary</h4>
-      <Table className={classes.table} aria-label="customized table">
+      <Table className={classes.table} aria-label="customized table" className="event_summary_table">
         <TableHead align="left">
           <TableRow >
-            <StyledTableCell className="headings">Total Distance Traveled</StyledTableCell>
+            <StyledTableCell className="headings">Total Distance Traveled (km)</StyledTableCell>
             <StyledTableCell className="headings" align="right">Total Carbon Footprint (tons)</StyledTableCell>
             <StyledTableCell className="headings" align="right">Total Carbon Offset (tons)</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <StyledTableRow>
-            <StyledTableCell component="th" scope="row">
+            <StyledTableCell className="event_summary__content" component="th" scope="row">
               {totalDistance}
             </StyledTableCell>
-            <StyledTableCell align="right">{totalCarbonFootprint}</StyledTableCell>
-            <StyledTableCell align="right">{totalCarbonOffset}</StyledTableCell>
+            <StyledTableCell className="event_summary__content" align="right">{totalCarbonFootprint}</StyledTableCell>
+            <StyledTableCell className="event_summary__content" align="right">{totalCarbonOffset}</StyledTableCell>
           </StyledTableRow>
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
   );
 }

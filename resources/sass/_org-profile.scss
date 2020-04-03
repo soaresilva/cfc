@@ -3,12 +3,11 @@
 
 }
 
-.org-heading {
-  color:blue;
-  background-color: #a9d37c;
-  text-align: center;
-  
-}
+// .org-heading {
+//   color:blue;
+//   background-color: #a9d37c;
+//   text-align: center;
+// }
 
 
 .org-profile {
@@ -16,6 +15,7 @@
   text-align: center;
   //background-color: rgb(30, 88, 86);
   //margin:2em;
+
 
   p {
     color:black;
@@ -60,12 +60,12 @@
 
 .trip_history_table {
   @media(min-width:320px) {
-    width:30vw;
+   // width:30vw;
     font-size:.5em;
 
   }
   @media(min-width:800px) {
-    width:75vw;
+  //  width:75vw;
     font-size:1em;
 
   }
@@ -74,7 +74,12 @@
 
 
 .delete_event {
-  font-size: .9em;
+  //font-size: .9em;
+  @media(min-width:320px) {
+    // width:30vw;
+     font-size:.7rem;
+ 
+   }
 }
 
 .org-help {
@@ -133,7 +138,22 @@
   font-family: Nunito;
   h4 {
     font-family: Nunito;
+  }
 
+  &__table {
+  //  width:60vw !important;
+  }
+
+  @media(min-width:320px) {
+  //  width:60vw !important;
+  }
+
+  &__content {
+    @media(min-width:320px) {
+      // text-align:center !important;
+      font-size: .7em !important;
+    
+      }
   }
 
 }
@@ -147,28 +167,234 @@
 
 }
 
+
+.MuiTableContainer-root {
+  @media(min-width:320px) {
+   // height:15vh !important;
+  }
+}
+
+
 .headings {
   font-family: "Nunito" !important;
+
+  @media(min-width:320px) {
+    font-size:.6rem !important;
+    line-height:1em !important;
+    text-align:center !important;
+  }
+  @media(min-width:576px) {
+    font-size:.9rem !important;
+    padding: .3rem !important;
+
+  }
+
+  @media(min-width:1000px) {
+    //font-size:1.2rem !important;
+
+    }
 }
-// .org-event {
-//   display:flex;
-//   flex-direction: column;
-//   margin-bottom:2em;
-//   border: 1em solid black;
-//   text-align: center;
-//   //margin:1em;
 
-// }
 
-// .org-trip {
-//   display:flex;
-//   flex-direction: column;
-//   border: .8em solid black;
-//   text-align: center;
-//   margin:2em;
+.trip_headings {
+  @media(min-width:320px) {
+    font-size:.5rem !important;
+   // padding-right: 1rem !important;
+    line-height:.8rem !important;
+    text-align: center !important;
 
-// }
+    p {
+      font-size: .2rem !important;
+      color:white;
+      padding:0;
+    }
+  }
+  @media(min-width:576px) {
+    font-size:.9rem !important;    
+    text-align: left !important;
+  }
 
-// .org-summary {
-//   background-color: rgb(58, 190, 5);
-// }
+  @media(min-width:1000px) {
+   // font-size:rem !important;
+
+  }
+
+
+}
+
+
+
+
+.org_trips_table  {
+
+  @media(min-width:320px) {
+    padding:0 !important;
+  }
+}
+
+.org_trips_cells {
+  @media(min-width:320px) {
+    padding:0 !important;
+    text-align: center !important;
+   // font-size: .8em !important;
+
+  }
+  @media(min-width:576px) {
+   // font-size:.9rem !important;
+    padding:0 !important;
+  }
+  @media(min-width:768px) {
+    text-align: left !important;
+    }
+    
+
+}
+
+
+.WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
+  @media(min-width:320px) {
+    // line-height: 1em !important;
+   // text-align:center !important;
+   // font-size: .6rem !important;
+   
+   }
+   @media(min-width:576px) {
+    // margin-left: .26rem !important;
+    //font-size: .rem !important;
+    line-height: 1rem !important;
+    ///padding: .2em 5em !important;
+   }
+
+   @media(min-width:1000px) {
+    line-height: 1.4rem !important;
+
+    }
+
+
+}
+
+.WithStyles\(ForwardRef\(TableCell\)\)-body-60 {
+  @media(min-width:320px) {
+   // text-align:center !important;
+   font-size: .7em !important;
+   }
+   @media(min-width:576px) {
+    padding:0 !important;
+    font-size: .8rem !important;
+  }
+  @media(min-width:768px) {
+    margin:0 !important;
+   // font-size: 1rem !important;
+  }
+  @media(min-width:1000px) {
+    //font-size: 1.2rem !important;
+  }
+}
+
+.MuiTableCell-head {
+  @media(min-width:320px) {
+
+  }
+  
+}
+
+.MuiTableCell-root{
+  @media(min-width:320px) {
+    padding:.3rem .3rem !important;
+  }
+ 
+  @media(min-width:768px) {
+    //padding: .2em .1em !important;
+    }
+
+}
+
+.MuiExpansionPanelDetails-root {
+  @media(min-width:320px) {
+    padding:0 !important;
+  }
+  @media(min-width:576px) {
+    width:100% !important;
+   }
+  @media(min-width:768px) {
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+}
+
+
+.ExpansionPanelDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0 16px 0 16px; */
+}
+
+.MuiExpansionPanelSummary-root {
+  padding: 0 16px 0 16px !important;
+}
+
+.MuiExpansionPanelDetails-root {
+  padding: 8px 16px 8px 16px !important;
+}
+
+
+.org_events_and_trips {
+  @media(min-width:320px) {
+    margin-left: -.7rem !important;
+  }
+  @media(min-width:375px) {
+    margin-left: -.4rem !important;
+  }
+
+  @media(min-width:425px) {
+    margin-left: -.2rem !important;
+  }
+
+  @media(min-width:530px) {
+    margin-left: .6rem !important;
+  }
+
+  @media(min-width:550px) {
+    margin-left: .26rem !important;
+    width:80vw !important;
+  }
+
+  @media(min-width:576px) {
+    width:82vw !important;
+  }
+
+  @media(min-width:680px) {
+    width:84vw !important;
+  }
+
+  @media(min-width:768px) {
+    margin-left: -.8rem !important;
+    width:73vw !important;
+  }
+
+  @media(min-width:800px) {
+    margin-left: -.65rem !important;
+  }
+
+  @media(min-width:800px) {
+    margin-right:.2rem !important;
+    margin-left:0 !important;
+  }
+
+  @media(min-width:1000px) {
+    margin-left: -.5rem !important;
+    width:75vw !important;
+  }
+  @media(min-width:1300px) {
+    width:75vw !important;
+  }
+
+  @media(min-width:1400px) {
+    width:76vw !important;
+  }
+
+}
