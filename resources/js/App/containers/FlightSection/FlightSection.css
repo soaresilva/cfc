@@ -7,6 +7,7 @@
 
 .Warning {
   color: red;
+  margin: 0 2rem;
 }
 
 .Pagination {
@@ -28,8 +29,20 @@
   }
 }
 
+@media (max-width: 760px) {
+  .MuiPagination-ul > li {
+    margin: 0 0.5rem;
+  }
+}
+
 @media (max-width: 555px) {
   .FlightSection {
-    margin-top: 23rem;
+    margin-top: 26rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .MuiPagination-ul > li {
+    margin: 0 0.1rem;
   }
 }

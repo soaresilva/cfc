@@ -17,19 +17,21 @@ function OffsetSection(props) {
     title: "Reforestation in Nicaragua",
     farmersDescription: "Offset your emissions by helping small farmers in Nicaragua with reforestation.",
     moreInfoFarmers:
-      "Support the reforestation project in Nicaragua, the second-poorest country in the western hemisphere. Small-scale farming families are reforesting unused sections of their land with native species. The programme combines practical nature conservation with the creation of new income sources for local families."
+      "Support the reforestation project in Nicaragua, the second-poorest country in the western hemisphere. Small-scale farming families are reforesting unused sections of their land with native species. The programme combines practical nature conservation with the creation of new income sources for local families.",
+    link: "https://tree-nation.com/projects/limay/about"
   };
   const kenya = {
     title: "Kenya",
-    stovesForKenya: "Use your offsetting to provide more efficient cook stoves for women in Kenya.",
-    moreInfoKenya:
-      "In rural communities in western Kenya, food is traditionally cooked over an open fire. Thanks to the efficient cook stoves, 40 to 50 per cent less firewood is used, saving households a lot of time and money. The women finance their subsidised cook stoves in local saving and loaning groups. In addition, these saving groups finance medical health care, school fees or high-quality seed."
+    stovesForKenya: "Use your offset to provide more efficient stoves for women in Kenya.",
+    moreInfoKenya: `In rural communities in western Kenya, food is traditionally cooked over an open fire. Thanks to the efficient cook stoves, 40 to 50 per cent less firewood is used, saving households a lot of time and money. The women finance their subsidised cook stoves in local saving and loaning groups. In addition, these saving groups finance medical health care, school fees or high-quality seed.`,
+    link: "https://www.goldstandard.org/projects/energy-efficient-cook-stoves-siaya-communities-kenya"
   };
   const forest = {
-    title: "Swiss projects",
-    swissForest: "Offset half of your emissions in Swiss carbon offset projects. ",
+    title: "Welsh community energy",
+    welshForest: "Offset your emissions in a Welsh community energy project. ",
     moreInfoForest:
-      "At least half of your emissions will be reduced in Swiss carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
+      "Offset your emissions by investing in Egni Co-op. Egni is a community energy project based in Cwmllynfell, Swansea, South Wales that develops rooftop solar energy, bringing clean energy to thousands of Welsh households.",
+    link: "https://egni.coop/"
   };
 
   const handleOpenSnackbar = () => {
@@ -96,9 +98,9 @@ function OffsetSection(props) {
           <h1>Offset options</h1>
           <div className="SelectedFlight">
             <h6>
-              <b>Your flight:</b> From {cityFrom} to {cityTo} with duration {duration} and distance {distance}km.
+              <b>Your flight:</b> From {cityFrom} to {cityTo} in {duration}, flying a total distance of {distance}km.
             </h6>
-            <h6>CO2 amount &asymp; {totalCO2amount}t</h6>
+            <h6>Your CO2 emissions: &asymp; {totalCO2amount}t</h6>
           </div>
           <div className="CardItems">
             <div className="CardItem-Project">
@@ -108,6 +110,7 @@ function OffsetSection(props) {
                 description={kenya.stovesForKenya}
                 moreInfo={kenya.moreInfoKenya}
                 title={kenya.title}
+                link={kenya.link}
                 cityFrom={cityFrom}
                 cityTo={cityTo}
                 distance={distance}
@@ -127,6 +130,7 @@ function OffsetSection(props) {
                 description={farmers.farmersDescription}
                 moreInfo={farmers.moreInfoFarmers}
                 title={farmers.title}
+                link={farmers.link}
                 cityFrom={cityFrom}
                 cityTo={cityTo}
                 distance={distance}
@@ -142,10 +146,11 @@ function OffsetSection(props) {
             <div className="CardItem-Project">
               <CardItem
                 fetched={fetched}
-                photo="/images/swissOffset.jpg"
-                description={forest.swissForest}
+                photo="/images/welshOffset.jpg"
+                description={forest.welshForest}
                 moreInfo={forest.moreInfoForest}
                 title={forest.title}
+                link={forest.link}
                 cityFrom={cityFrom}
                 cityTo={cityTo}
                 distance={distance}

@@ -12,7 +12,7 @@
 .WelcomeText {
   position: relative;
   height: 100vh;
-  width: 70vw;
+  width: 100%;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -20,11 +20,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
 }
+
+.WelcomeText::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .WelcomeTitle {
   font-size: 5rem;
   margin-bottom: 3rem;
+  z-index: 2;
+  position: relative;
 }
 
 .WelcomeDescription {
@@ -32,30 +45,36 @@
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  max-width: 70vw;
 }
 
 .Video {
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }
 
 .Section-CardItems {
   color: white;
   width: 100%;
-  height: 70vh;
   background-color: #1f2317;
   position: relative;
   transition: 0.6s all;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
+
 .CardItems {
   display: flex;
   justify-content: space-between;
-  width: 75vw;
-  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .SearchSection {
@@ -94,18 +113,15 @@
 }
 
 @media (max-width: 785px) {
+  .CardItems {
+    flex-direction: column;
+  }
   .WelcomeTitle {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   .WelcomeDescription {
     font-size: 1.5rem;
-  }
-  .Section-CardItems {
-    height: 70vh;
-  }
-  .CardItems {
-    height: 65vh;
   }
 }
 
@@ -115,24 +131,37 @@
   }
 }
 
-@media (max-width: 475px) {
-  .CardItems {
-    width: 85vw;
-  }
-  .Section-CardItems {
-    height: 55vh;
-  }
-}
-
 @media (max-width: 435px) {
   .WelcomeTitle {
     margin-bottom: 1.5rem;
   }
-  .CardItems {
-    width: 95vw;
-    height: 55vh;
-  }
-  .Section-CardItems {
-    height: 60vh;
-  }
+}
+
+.MuiFormControlLabel-root {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: rgb(252, 211, 155) !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: rgb(252, 211, 103) !important;
+}
+
+.MuiButton-containedPrimary {
+  color: black !important;
+  background-color: rgb(243, 185, 103) !important;
+}
+
+.MuiButton-containedSecondary {
+  color: black !important;
+  background-color: rgb(252, 211, 155) !important;
+}
+
+.MuiPaginationItem-outlinedSecondary.Mui-selected {
+  color: rgb(252, 211, 155) !important;
+  background-color: rgba(252, 211, 155, 0.12) !important;
+  border: 1px solid rgba(252, 211, 155, 0.5) !important;
 }

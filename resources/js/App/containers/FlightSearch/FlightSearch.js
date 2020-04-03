@@ -12,6 +12,7 @@ import DatePickerTo from "./../../Components/DatePicker/DatePickerTo";
 import DatePickerFrom from "./../../Components/DatePicker/DatePickerFrom";
 import Select from "../../Components/UI/Select/Select";
 import searchFlights from "../../functions/searchFlights";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 const FlightSearch = (props) => {
   const { airportFrom, airportTo, dateFrom, dateTo, quantity } = props;
@@ -22,26 +23,18 @@ const FlightSearch = (props) => {
   const [economyClass, setEconomyClass] = useState(true);
   const [businessClass, setBusinessClas] = useState(false);
 
+  const handleChange = (event) => {
+    if (event.target.checked) {
+      setEconomyClass(!economyClass);
+      setBusinessClas(!businessClass);
+    }
+  };
+
   const directFlightsClickHandler = (event) => {
     if (event.target.checked) {
       setNumberOfLayovers(0);
     } else {
       setNumberOfLayovers(2);
-    }
-  };
-
-  const economyClassClickHandler = (event) => {
-    if (event.target.checked) {
-      setEconomyClass(true);
-    } else {
-      setEconomyClass(false);
-    }
-  };
-  const businessClassClickHandler = (event) => {
-    if (event.target.checked) {
-      setBusinessClas(true);
-    } else {
-      setBusinessClas(false);
     }
   };
 
@@ -54,7 +47,6 @@ const FlightSearch = (props) => {
       }
     }
   };
-
   const getFlightsHandler = async () => {
     try {
       const data = await searchFlights(airportFrom, airportTo, numberOfLayovers, dateFrom, dateTo);
@@ -85,12 +77,18 @@ const FlightSearch = (props) => {
             </div>
           </div>
           <div className="CheckboxOption">
-            <label>Direct flights only:</label>
-            <Checkbox onChange={directFlightsClickHandler} inputProps={{ "aria-label": "secondary checkbox" }} />
-            <label>Economy class:</label>
-            <Checkbox onChange={economyClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
-            <label>Business class:</label>
-            <Checkbox onChange={businessClassClickHandler} color="primary" inputProps={{ "aria-label": "primary checkbox" }} />
+            <div className="CheckboxOptionItem">
+              <label>Direct flights only:</label>
+              <Checkbox onChange={directFlightsClickHandler} inputProps={{ "aria-label": "secondary checkbox" }} />
+            </div>
+            <div className="CheckboxOptionItem">
+              <label>Economy class:</label>
+              <FormControlLabel control={<Checkbox checked={economyClass} onChange={handleChange} name="economyClass" />} defaultChecked />
+            </div>
+            <div className="CheckboxOptionItem">
+              <label>Business class:</label>
+              <FormControlLabel control={<Checkbox checked={!economyClass} onChange={handleChange} name="businessClass" />} />
+            </div>
           </div>
           <Button clicked={searchFlightHandler}>Search</Button>
         </div>

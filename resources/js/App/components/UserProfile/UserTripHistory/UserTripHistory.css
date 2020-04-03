@@ -4,7 +4,17 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  /* padding: 0 16px 0 16px; */
+}
+
+.TripsList {
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -0.03rem;
+  font-weight: 600;
 }
 
 .MuiExpansionPanelSummary-root {
@@ -13,4 +23,51 @@
 
 .MuiExpansionPanelDetails-root {
   padding: 8px 16px 8px 16px !important;
+}
+
+@media (max-width: 769px) {
+  .MuiTable-root {
+    min-width: 0px !important;
+  }
+  .card {
+    margin-left: -13.5vw;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .ExpansionPanelDescription {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-left: 0rem;
+    width: 93.3vw;
+  }
+}
+
+@media (max-width: 388px) {
+  .MuiTableCell-root {
+    font-size: 0.7rem !important;
+  }
+  .MuiTypography-root {
+    font-size: 0.7rem !important;
+  }
+  .TripsList {
+    font-size: 0.7rem;
+  }
+  .ExpansionPanelDescription {
+    font-size: 0.6rem !important;
+  }
+  .card {
+    width: 91vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .ExpansionPanelDescription {
+    font-size: 0.5rem !important;
+  }
 }

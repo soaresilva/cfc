@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <script src="https://kit.fontawesome.com/4895718c7d.js" crossorigin="anonymous"></script>
 
     <style>
         html,

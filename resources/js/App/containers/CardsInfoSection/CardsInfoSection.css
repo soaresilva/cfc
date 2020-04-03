@@ -1,59 +1,39 @@
-.CardItem-About {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: -5rem;
-  background-color: #62684d;
-  border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
-}
-.CardItem-Calc {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: -5rem;
-  background-color: #484d37;
-  border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
-}
+.CardItem-About,
+.CardItem-Calc,
 .CardItem-Offset {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: -5rem;
-  background-color: #3a452e;
   border-radius: 7px;
-  box-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.85), -1.5px -1.5px 4.5px rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  width: 30%;
 }
 
-@media (max-width: 950px) {
-  .CardItem-Calc {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -1rem;
-  }
-  .CardItem-About {
-    margin-left: -2rem;
-    margin-top: -1rem;
-  }
+.CardItem-About {
+  background-color: #62684d;
+}
+
+.CardItem-Calc {
+  background-color: #484d37;
+}
+
+.CardItem-Offset {
+  background-color: #3a452e;
+}
+
+
+@media (max-width: 785px) {
+  .CardItem-About,
+  .CardItem-Calc,
   .CardItem-Offset {
-    margin-top: -1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
-/* @media (max-width: 575px) {
 
-} */
 @media (max-width: 475px) {
   .CardItem-Calc {
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
-  }
-  .CardItem-About {
-    margin-left: 0.4rem;
-  }
-  .CardItem-Calc {
     margin-top: -0.5rem;
   }
+
   .CardItem-About {
     margin-top: -0.5rem;
   }
@@ -61,19 +41,3 @@
     margin-top: -0.5rem;
   }
 }
-
-/* @media (max-width: 375px) {
-  .CardItem-Calc {
-    margin-left: .4rem;
-    margin-right: .4rem;
-    height: 70vh;
-  }
-  .CardItem-About {
-    margin-left: .4rem;
-    height: 70vh;
-  }
-  .CardItem-Offset {
-    margin-top: -2rem;
-    height: 70vh;
-  }
-} */

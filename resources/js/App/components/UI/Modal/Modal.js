@@ -49,7 +49,7 @@ const DialogActions = withStyles((theme) => ({
   }
 }))(MuiDialogActions);
 
-export default function CustomizedModal({ opened, closed, moreInfo, title }) {
+export default function CustomizedModal({ opened, closed, moreInfo, title, link }) {
   return (
     <div>
       <Dialog onClose={closed} aria-labelledby="customized-dialog-title" open={opened}>
@@ -57,7 +57,12 @@ export default function CustomizedModal({ opened, closed, moreInfo, title }) {
           {title}
         </DialogTitle>
         <DialogContent dividers>
-          <Typography gutterBottom>{moreInfo}</Typography>
+          <Typography gutterBottom>
+            {moreInfo}{" "}<br></br>
+            <a href={link} target="_blank" style={{ color: "blue" }}>
+              More Info
+            </a>
+          </Typography>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={closed} color="primary">
