@@ -122,7 +122,7 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
           <TableContainer component={Paper} className="trip_history_table">
             <h5 align="left">Trips</h5>
             <Table className={classes.table} aria-label="customized table">
-              <TableHead  className="trip_headings" align="left">
+              <TableHead className="trip_headings" align="left">
                 <StyledTableRow>
                   <StyledTableCell className="trip_headings">Trip Route</StyledTableCell>
                   <StyledTableCell className="trip_headings">Distance <p>(km)</p> </StyledTableCell>

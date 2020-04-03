@@ -53,7 +53,7 @@ export default function TotalSummary({ orgEvents, org_id }) {
               <TableHead>
                 <StyledTableRow>
                   <StyledTableCell className="headings">Total Number of Events</StyledTableCell>
-                  <StyledTableCell className="headings">Total Distances Traveled (km) </StyledTableCell>
+                  <StyledTableCell className="headings">Total Distance Traveled (km) </StyledTableCell>
                   <StyledTableCell className="headings">Total Carbon Footprint (tons)</StyledTableCell>
                   <StyledTableCell className="headings">Total Carbon Offset (tons)</StyledTableCell>
                 </StyledTableRow>

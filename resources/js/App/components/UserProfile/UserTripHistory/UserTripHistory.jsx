@@ -56,12 +56,12 @@ export default function UserTripHistory({ setUserTrips, userTrips, fetched }) {
     return (
       <ExpansionPanel expanded={expanded === "panel" + index} onChange={handleChange("panel" + index)} key={index}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
-          <Typography className={classes.heading}>
+          <Typography component={"div"} className={classes.heading}>
             <span>
               {trip.airport_from} - {trip.airport_to}
             </span>
           </Typography>
-          <Typography className={classes.secondaryHeading}>
+          <Typography component={"div"} className={classes.secondaryHeading}>
             <span>{trip.flight_date}</span>
           </Typography>
         </ExpansionPanelSummary>
