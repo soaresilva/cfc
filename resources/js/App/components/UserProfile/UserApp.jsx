@@ -14,13 +14,10 @@ export default function UserApp() {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
-        console.log("success");
-        console.log(response);
         setUser(response);
       },
       error: (response) => {
         console.log("error");
-        console.log(response);
       }
     });
   };
@@ -28,8 +25,6 @@ export default function UserApp() {
   useLayoutEffect(() => {
     makeUser();
   }, []);
-
-  console.log("react user example user id", user.id);
 
   return (
     <div>

@@ -44,7 +44,6 @@ export default function OrganizationAddEvent({ org_id, getEvents }) {
   };
 
   const handleAddEventName = (e) => {
-    console.log(addEventName);
     setAddEventName(e.target.value);
   };
 

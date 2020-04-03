@@ -13,8 +13,9 @@ import DeleteTripSnackbar from "../../UI/Snackbar/DeleteTripSnackbar";
 import { deleteTrip } from "../../../../Api/trips";
 import UserTripSummary from "../UserTripSummary";
 import "./UserTripHistory.css";
+import Spinner from "../../UI/Spinner/Spinner";
 
-export default function UserTripHistory({ setUserTrips, userTrips }) {
+export default function UserTripHistory({ setUserTrips, userTrips, fetched }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [openSnackbarDeleteTrip, setOpenSnackbarDeleteTrip] = useState(false);
@@ -78,10 +79,16 @@ export default function UserTripHistory({ setUserTrips, userTrips }) {
   });
 
   let content = null;
-  if (userTrips.length === 0) {
+  if (userTrips.length === 0 && fetched) {
     content = (
       <div style={{ textAlign: "center" }}>
         <p>No trips found</p>
+      </div>
+    );
+  } else if (!fetched) {
+    content = (
+      <div style={{ textAlign: "center" }}>
+        <Spinner />
       </div>
     );
   } else {
