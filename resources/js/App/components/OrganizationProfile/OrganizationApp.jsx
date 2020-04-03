@@ -14,13 +14,11 @@ export default function OrganizationApp() {
       data: { _token: token, message: "bravo" },
       dataType: "JSON",
       success: (response) => {
-        console.log("success");
-        console.log(response);
+        ("success");
         setUser(response);
       },
       error: (response) => {
         console.log("error");
-        console.log(response);
       }
     });
   };
