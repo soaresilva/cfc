@@ -5,7 +5,7 @@
 @section('content')
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-sm-8 col-xs-6">
+    <div class="col-md-10 col-sm-12 col-xs-6">
       <div class="card">
         <div class="card-header">{{ Auth::guard('organization')->user()->name }}'s Profile</div>
         <div class="card-body card-body-link">

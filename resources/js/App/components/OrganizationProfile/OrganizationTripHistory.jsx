@@ -95,26 +95,24 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
     totalCarbonOffset = Number((totalCarbonOffset + trip.offset_amount).toFixed(3));
     return (
       <TableRow key={index}>
-        <StyledTableCell component="th" scope="row">
+        <StyledTableCell className="org_trips_cells" component="th" scope="row">
           {trip.airport_from} - {trip.airport_to}
         </StyledTableCell>
-        <StyledTableCell align="right">{trip.distance}</StyledTableCell>
-        <StyledTableCell align="right">{trip.carbon_amount}</StyledTableCell>
-        <StyledTableCell align="right">{trip.offset_amount}</StyledTableCell>
-        <StyledTableCell align="right">{trip.flight_date} </StyledTableCell>
-        <StyledTableCell align="right">
-          <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} handleOpenSnackbarDeleteTrip={handleOpenSnackbarDeleteTrip} />
-        </StyledTableCell>
+        <StyledTableCell className="org_trips_cells">{trip.distance}</StyledTableCell>
+        <StyledTableCell className="org_trips_cells">{trip.carbon_amount}</StyledTableCell>
+        <StyledTableCell className="org_trips_cells">{trip.offset_amount}</StyledTableCell>
+        <StyledTableCell className="org_trips_cells">{trip.flight_date}</StyledTableCell>
+        <StyledTableCell className="org_trips_cells"> <DeleteTripButton trip={trip} handleDeleteTrip={handleDeleteTrip} handleOpenSnackbarDeleteTrip={handleOpenSnackbarDeleteTrip} /></StyledTableCell>
       </TableRow>
     );
   });
 
   return (
-    <div>
+    <div className="org_trips_table">
       {orgTrips.length === 0 ? (
         <p>No trips found</p>
       ) : (
-        <div>
+        <div className="org_events_and_trips">
           <OrganizationEventSummary
             totalDistance={totalDistance}
             totalCarbonFootprint={totalCarbonFootprint}
@@ -122,16 +120,16 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
           />
           <br />
           <TableContainer component={Paper} className="trip_history_table">
-            <h4 align="left">Trips</h4>
+            <h5 align="left">Trips</h5>
             <Table className={classes.table} aria-label="customized table">
-              <TableHead align="left">
+              <TableHead  className="trip_headings" align="left">
                 <StyledTableRow>
-                  <StyledTableCell className="headings">Trip Route</StyledTableCell>
-                  <StyledTableCell className="headings" align="right">Distance (km) </StyledTableCell>
-                  <StyledTableCell className="headings" align="right">Carbon Footprint (tons)</StyledTableCell>
-                  <StyledTableCell className="headings" align="right">Carbon Offset (tons)</StyledTableCell>
-                  <StyledTableCell className="headings" align="right">Date</StyledTableCell>
-                  <StyledTableCell className="headings" align="right"></StyledTableCell>
+                  <StyledTableCell className="trip_headings">Trip Route</StyledTableCell>
+                  <StyledTableCell className="trip_headings">Distance <p>(km)</p> </StyledTableCell>
+                  <StyledTableCell className="trip_headings">Carbon Footprint <p>(tons)</p></StyledTableCell>
+                  <StyledTableCell className="trip_headings">Carbon Offset <p>(tons)</p></StyledTableCell>
+                  <StyledTableCell className="trip_headings">Date</StyledTableCell>
+                  <StyledTableCell className="trip_headings"></StyledTableCell>
                 </StyledTableRow>
               </TableHead>
               <TableBody>{trips}</TableBody>
@@ -141,7 +139,6 @@ export default function OrganizationTripHistory({ event_id, setOrgEvents, orgEve
         </div>
       )}
       {event_id ? <AddTripsToEvent event_id={event_id} org_id={org_id} getOrgTrips={getOrgTrips} /> : ""}
-      <br/>
       <DeleteEventButton handleDeleteEventAndTrips={handleDeleteEventAndTrips} event_id={event_id} handleOpenSnackbarDeleteEvent={handleOpenSnackbarDeleteEvent}/>
       <DeleteEventSnackbar opened={openSnackbarDeleteEvent} clicked={handleCloseSnackbarDeleteEvent}/>
       <DeleteTripSnackbar opened={openSnackbarDeleteTrip} clicked={handleCloseSnackbarDeleteTrip}/>
@@ -158,8 +155,8 @@ function DeleteTripButton({ handleDeleteTrip, trip, handleOpenSnackbarDeleteTrip
 
 function DeleteEventButton({ handleDeleteEventAndTrips, event_id, handleOpenSnackbarDeleteEvent }) {
   return (
-    <div onClick={() => {handleDeleteEventAndTrips(event_id), handleOpenSnackbarDeleteEvent() }}>
-    <DeleteIcon className="delete_event" /> 
+    <div className="delete_event" onClick={() => {handleDeleteEventAndTrips(event_id), handleOpenSnackbarDeleteEvent() }}>
+    <DeleteIcon  /> 
     delete event
     </div>
   );

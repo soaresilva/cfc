@@ -44,6 +44,8 @@ export default function OrganizationProfile({ org_id }) {
       ) : (
         <>
         <TotalSummary orgEvents={orgEvents} org_id={org_id}/>
+        <br/>
+        <br/>
         <OrganizationEventHistory setOrgEvents={setOrgEvents} orgEvents={orgEvents} org_id={org_id} />
         </>
       )}
