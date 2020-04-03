@@ -30,8 +30,8 @@
     min-width: 0px !important;
   }
   .card {
-    margin-left: -13.5vw;
-    width: 90vw;
+   /* margin-left: -13.5vw;
+    width: 90vw; */
   }
 }
 

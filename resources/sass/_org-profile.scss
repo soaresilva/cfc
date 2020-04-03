@@ -1,23 +1,25 @@
-.org-app{
-  background-color: transparent;
-
+.container-fluid {
+  // background-color: rgba(83, 81, 81, 0.315);
+  //background-color: rgba(68, 156, 238, 0.925);
 }
 
+.org-app {
+  background-color: transparent;
+}
 
 .org-profile {
-  color:white;
+  color: white;
   text-align: center;
 
   p {
-    color:black;
-    padding:0;
-    margin:0;
+    color: black;
+    padding: 0;
+    margin: 0;
   }
-
 }
 
 .event-intro {
-  display:flex;
+  display: flex;
   width: 100%;
   justify-content: space-between;
 }
@@ -25,58 +27,50 @@
 .showOrgTripsButton {
   display: flex;
   justify-self: center;
-  border-radius:1em;
-  font-size:.7em;
-  padding:.3em;
+  border-radius: 1em;
+  font-size: 0.7em;
+  padding: 0.3em;
 }
 
 .add_trips_to_events {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   //flex-direction: column;
 
-
   p {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font-weight: bold;
   }
 
   &__airport_info {
     flex-direction: column;
-    padding:1em .5em;
+    padding: 1em 0.5em;
   }
-
 }
-
 
 .trip_history_table {
-  @media(min-width:320px) {
-   // width:30vw;
-    font-size:.5em;
-
+  @media (min-width: 320px) {
+    // width:30vw;
+    font-size: 0.5em;
   }
-  @media(min-width:800px) {
-  //  width:75vw;
-    font-size:1em;
-
+  @media (min-width: 800px) {
+    //  width:75vw;
+    font-size: 1em;
   }
- 
 }
-
 
 .delete_event {
   //font-size: .9em;
-  @media(min-width:320px) {
+  @media (min-width: 320px) {
     // width:30vw;
-     font-size:.7rem;
- 
-   }
+    font-size: 0.7rem;
+  }
 }
 
 .org-help {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -84,55 +78,51 @@
 
 // }
 
-.question{
-  color:black;
-  display:flex;
+.question {
+  color: black;
+  display: flex;
   justify-content: flex-end;
 }
 
 .instruction {
-  color:black;
-  background-color: rgba(159, 201, 240,.5);
-  padding:2em;
+  color: black;
+  background-color: rgba(159, 201, 240, 0.5);
+  padding: 2em;
   border-radius: 5em;
-  margin-top:.5em;
-  
+  margin-top: 0.5em;
 
-  h5{
+  h5 {
     font-style: italic;
   }
   button {
-    padding:.4em;
-    font-size:.7em;
+    padding: 0.4em;
+    font-size: 0.7em;
     border-radius: 1em;
   }
-
 }
 
 .org_event_description {
- text-align: left;
+  text-align: left;
 }
 
-.totalSummary{
-  display:flex;
+.totalSummary {
+  display: flex;
   justify-content: space-between;
-  padding:.3em;
-  color:black;
+  padding: 0.3em;
+  color: black;
 }
 
 .event_history {
   text-align: left;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   //background-color: black;
 
-
   h3 {
-    padding:0;
-    margin:0;
-    color:black;
+    padding: 0;
+    margin: 0;
+    color: black;
   }
-
 }
 
 .event_summary {
@@ -142,11 +132,10 @@
   }
 
   &__content {
-    @media(min-width:320px) {
-      font-size: .7em !important;
-      }
+    @media (min-width: 320px) {
+      font-size: 0.7em !important;
+    }
   }
-
 }
 
 .trip_history_table {
@@ -157,115 +146,116 @@
   font-family: "Nunito" !important;
 }
 
-
 .headings {
   font-family: "Nunito" !important;
 
-  @media(min-width:320px) {
-    font-size:.6rem !important;
-    line-height:1em !important;
-    text-align:center !important;
+  @media (min-width: 320px) {
+    font-size: 0.6rem !important;
+    line-height: 1em !important;
+    text-align: center !important;
+    padding: 0 !important;
   }
-  @media(min-width:576px) {
-    font-size:.9rem !important;
-    padding: .3rem !important;
+  @media (min-width: 576px) {
+    font-size: 0.9rem !important;
+    padding: 0.3rem !important;
+    line-height: 1rem !important;
   }
-
 }
 
-
 .trip_headings {
-  @media(min-width:320px) {
-    font-size:.5rem !important;
-   // padding-right: 1rem !important;
-    line-height:.8rem !important;
+  @media (min-width: 320px) {
+    font-size: 0.5rem !important;
+    // padding-right: 1rem !important;
+    line-height: 0.8rem !important;
     text-align: center !important;
 
     p {
-      font-size: .2rem !important;
-      color:white;
-      padding:0;
+      font-size: 0.2rem !important;
+      color: white;
+      padding: 0;
     }
   }
-  @media(min-width:576px) {
-    font-size:.9rem !important;    
+  @media (min-width: 576px) {
+    font-size: 0.9rem !important;
     text-align: left !important;
+    line-height: 1rem !important;
   }
-
 }
 
-
-.org_trips_table  {
-
-  @media(min-width:320px) {
-    padding:0 !important;
+.org_trips_table {
+  @media (min-width: 320px) {
+    padding: 0 !important;
   }
 }
 
 .org_trips_cells {
-  @media(min-width:320px) {
-    padding:0 !important;
+  @media (min-width: 320px) {
+    padding: 0 !important;
     text-align: center !important;
-   // font-size: .8em !important;
 
+    font-size: 0.7em !important;
+
+    // font-size: .8em !important;
   }
-  @media(min-width:576px) {
-   // font-size:.9rem !important;
-    padding:0 !important;
+  @media (min-width: 576px) {
+    // font-size:.9rem !important;
+    padding: 0 !important;
+    font-size: 0.8rem !important;
   }
-  @media(min-width:768px) {
+  @media (min-width: 768px) {
     text-align: left !important;
-    }
-    
-
-}
-
-
-.WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
-  @media(min-width:576px) {
-    line-height: 1rem !important;
-  }
-
-  @media(min-width:1000px) {
-    line-height: 1.4rem !important;
-  }
-
-
-}
-
-.WithStyles\(ForwardRef\(TableCell\)\)-body-60 {
-  @media(min-width:320px) {
-   font-size: .7em !important;
-   }
-   @media(min-width:576px) {
-    padding:0 !important;
-    font-size: .8rem !important;
-  }
-  @media(min-width:768px) {
-    margin:0 !important;
+    margin: 0 !important;
   }
 }
 
-.MuiTableCell-root{
-  @media(min-width:320px) {
-    padding:.3rem .3rem !important;
-  }
+// .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
+//   @media(min-width:576px) {
+//     line-height: 1rem !important;
+//   }
 
+//   @media(min-width:1000px) {
+//     line-height: 1.4rem !important;
+//   }
+
+// }
+
+// .WithStyles\(ForwardRef\(TableCell\)\)-body-60 {
+//   @media(min-width:320px) {
+//    font-size: .7em !important;
+//    }
+//    @media(min-width:576px) {
+//     padding:0 !important;
+//     font-size: .8rem !important;
+//   }
+//   @media(min-width:768px) {
+//     margin:0 !important;
+//   }
+// }
+
+.MuiTableCell-root {
+  @media (min-width: 320px) {
+    // padding:.3rem .3rem !important;
+  }
 }
 
 .MuiExpansionPanelDetails-root {
-  @media(min-width:320px) {
-    padding:0 !important;
+  @media (min-width: 320px) {
+    padding: 0 !important;
   }
-  @media(min-width:576px) {
-    width:100% !important;
-   }
-  @media(min-width:768px) {
-    padding:0 !important;
-    margin:0 !important;
+  @media (min-width: 576px) {
+    width: 100% !important;
+  }
+  @media (min-width: 768px) {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
+
+.makeStyles-secondaryHeading-76 {
+  width:100%; 
+  //this might fuck up lyub
+}
 
 .ExpansionPanelDescription {
   display: flex;
@@ -276,68 +266,92 @@
   /* padding: 0 16px 0 16px; */
 }
 
-.MuiExpansionPanelSummary-root {
-  padding: 0 16px 0 16px !important;
-}
+// .MuiExpansionPanelSummary-root {
+//   padding: 0 16px 0 16px !important;
+// }
 
-.MuiExpansionPanelDetails-root {
-  padding: 8px 16px 8px 16px !important;
-}
+// .MuiExpansionPanelDetails-root {
+//   padding: 8px 16px 8px 16px !important;
+// }
+
+
+
 
 
 .org_events_and_trips {
-  @media(min-width:320px) {
-    margin-left: -.7rem !important;
-  }
-  @media(min-width:375px) {
-    margin-left: -.4rem !important;
+  width: 100%;
+
+
+  @media(min-width:770px) {
+    width: calc(100% - 32px);
   }
 
-  @media(min-width:425px) {
-    margin-left: -.2rem !important;
-  }
 
-  @media(min-width:530px) {
-    margin-left: .6rem !important;
-  }
+  .MuiTableContainer-root {
+    //width: 100%;
+   // margin-right:.5rem;
 
-  @media(min-width:550px) {
-    margin-left: .26rem !important;
-    width:80vw !important;
-  }
+    @media (min-width: 320px) {
+      //width: 75vw;
+      //margin-left: -1.7rem !important;
 
-  @media(min-width:576px) {
-    width:82vw !important;
-  }
+      .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
+        padding:0;
+      }
+    }
+    @media (min-width: 375px) {
+      //margin-left: -1.3rem !important;
+    }
 
-  @media(min-width:680px) {
-    width:84vw !important;
-  }
+    @media (min-width: 425px) {
+     // margin-left: -0.2rem !important;
 
-  @media(min-width:768px) {
-    margin-left: -.8rem !important;
-    width:73vw !important;
-  }
+      .WithStyles\(ForwardRef\(TableCell\)\)-head-59 {
+        padding:0;
+      }
+    }
 
-  @media(min-width:800px) {
-    margin-left: -.65rem !important;
-  }
+    @media (min-width: 530px) {
+     // margin-left: 0.6rem !important;
+    }
 
-  @media(min-width:800px) {
-    margin-right:.2rem !important;
-    margin-left:0 !important;
-  }
+    @media (min-width: 550px) {
+      // margin-left: 0.26rem !important;
+      // width: 80vw !important;
+    }
 
-  @media(min-width:1000px) {
-    margin-left: -.5rem !important;
-    width:75vw !important;
-  }
-  @media(min-width:1300px) {
-    width:75vw !important;
-  }
+    @media (min-width: 576px) {
+      // width: 82vw !important;
+    }
 
-  @media(min-width:1400px) {
-    width:76vw !important;
-  }
+    @media (min-width: 680px) {
+      // width: 84vw !important;
+    }
 
+    @media (min-width: 768px) {
+      // margin-left: -0.8rem !important;
+      // width: 73vw !important;
+    }
+
+    @media (min-width: 800px) {
+      // margin-left: -0.65rem !important;
+    }
+
+    @media (min-width: 800px) {
+      // margin-right: 0.2rem !important;
+      // margin-left: 0 !important;
+    }
+
+    @media (min-width: 1000px) {
+      // margin-left: -0.5rem !important;
+      // width: 75vw !important;
+    }
+    @media (min-width: 1300px) {
+      // width: 75vw !important;
+    }
+
+    @media (min-width: 1400px) {
+      // width: 76vw !important;
+    }
+  }
 }

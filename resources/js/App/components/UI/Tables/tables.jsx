@@ -5,7 +5,7 @@ import TableRow from "@material-ui/core/TableRow";
 
 export const useStyles = makeStyles({
   table: {
-    minWidth: "75vw",
+    //minWidth: "75vw",
     padding:0,
     fontFamily: "Nunito, sans-serif"
 
@@ -28,7 +28,8 @@ export const StyledTableRow = withStyles((theme) => ({
   root: {
     fontFamily: "Nunito, sans-serif",
     "&:nth-of-type(odd)": {
-      backgroundColor: theme.palette.background.default
+       backgroundColor: theme.palette.background.default
+      //backgroundColor: "#62684d"
     }
   },
   body : {
