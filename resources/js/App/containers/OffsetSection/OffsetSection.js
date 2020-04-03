@@ -98,9 +98,9 @@ function OffsetSection(props) {
           <h1>Offset options</h1>
           <div className="SelectedFlight">
             <h6>
-              <b>Your flight:</b> From {cityFrom} to {cityTo} with duration {duration} and distance {distance}km.
+              <b>Your flight:</b> From {cityFrom} to {cityTo} in {duration}, flying a total distance of {distance}km.
             </h6>
-            <h6>CO2 amount &asymp; {totalCO2amount}t</h6>
+            <h6>Your CO2 emissions: &asymp; {totalCO2amount}t</h6>
           </div>
           <div className="CardItems">
             <div className="CardItem-Project">
