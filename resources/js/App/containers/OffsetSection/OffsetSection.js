@@ -27,9 +27,9 @@ function OffsetSection(props) {
   };
   const forest = {
     title: "Welsh community energy",
-    welshForest: "Offset half of your emissions in Welsh carbon offset projects. ",
+    welshForest: "Offset your emissions in a Welsh community energy project. ",
     moreInfoForest:
-      "At least half of your emissions will be reduced in Welsh carbon offset projects, the remaining portion in carbon offset projects in developing and newly industrialising countries."
+      "Offset your emissions by investing in Egni Co-op. Egni is a community energy project based in Cwmllynfell, Swansea, South Wales that develops rooftop solar energy, bringing clean energy to thousands of Welsh households."
   };
 
   const handleOpenSnackbar = () => {

@@ -61,15 +61,6 @@
   list-style-type: square;
 }
 
-ul {
-  list-style-position: inside;
-}
-
-li {
-  text-align: start;
-  margin: 0 1rem;
-}
-
 .CardItemsLandingPage__Alinks {
   text-decoration: none;
   color: black;
@@ -106,10 +97,6 @@ li {
   }
   h1 {
     font-size: 1.7rem;
-  }
-  ul {
-    width: 50%;
-    margin: 1rem auto;
   }
 }
 
